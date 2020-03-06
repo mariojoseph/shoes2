@@ -1,0 +1,152 @@
+
+.register-container{
+    max-width: 960px;
+    /* margin-top: 0.1rem; */
+    background-color: #151e2d;
+    margin: 0;
+    padding-bottom: 3rem;
+    
+  }
+
+  .register-heading{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      color: rgb(248, 245, 245);
+      /* color: yellow; */
+      font-size: 0.8rem;
+      padding-bottom: 1.4rem;
+  }
+
+  .register-heading h1{
+
+    padding-bottom: 1rem;
+  }
+
+.register-form{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-gap: 1rem; */
+}
+
+.registerShell{
+
+    color: white;
+    display:grid;
+    padding-bottom: 2rem;
+    /* border-bottom: 1px solid silver; */
+    grid-template-areas:
+    'register-input1'
+    'register-input2'
+    'register-input3';
+}
+
+.register-input1{
+    grid-area:register-input1;
+}
+
+.register-input2{
+    grid-area:register-input2;
+}
+
+.register-input3{
+    grid-area:register-input3;
+}
+
+
+.register-input1,
+.register-input2,
+.register-input3
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.0rem;
+   
+}
+
+
+.register-input1 p,
+.register-input2 p,
+.register-input3 p
+{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.register-input1 input,
+.register-input2 input,
+.register-input3 input
+{
+    display: block;
+    padding: 0.2rem 2rem;
+    font-size: 0.9rem;
+    width: 80vw;
+}
+
+
+.button-register{
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #FFF;
+    border: none;
+    outline: none;
+    margin: auto;
+    margin-top: -1rem;
+    z-index: 100;
+    font-size: .88rem;
+    padding: 7px 30px;
+    font-weight: 300;
+    background: linear-gradient(green, color(olive b(+30%) s(+80%)));
+  
+  }
+  
+ 
+  
+  .button-primary:hover {
+     background-color: darkred; 
+     color: white;
+   }
+  
+
+.registration-message{
+    color: yellow;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    margin-top:2rem;
+}
+
+.registerSuccess{
+    margin: auto;
+}
+
+@media(min-width: 500px) AND (max-width: 680px){
+
+    .register-input1 input,
+    .register-input2 input,
+    .register-input3 input
+    {
+
+        width: 60vw;
+    }
+}
+
+
+@media(min-width: 680px){
+
+    .register-input1 input,
+    .register-input2 input,
+    .register-input3 input
+    {
+        display: block;
+        padding: 0.2rem 2rem;
+        font-size: 0.9rem;
+        width: 28rem;
+    }
+}

@@ -1,0 +1,49 @@
+/*
+Theme Name: have-you-seen-my-shoes2
+Author: Mario
+Version: 1.0
+*/
+
+/* test packages */
+/* @import "modules/mario"; */
+/* 3rd party packages */
+@import "slick-carousel/slick/slick.css";
+/* @import "normalize.css"; */
+
+
+/* base files */
+@import "base/baseline";
+@import "base/variables";
+
+/* shoesHeader */
+
+@import "modules/shoesHeader";
+
+
+/* Pages */
+
+@import "modules/shoesFrontPage";
+
+@import "modules/postYourShoes";
+@import "modules/aboutUs";
+@import "modules/rules";
+@import "modules/past-winners";
+
+@import "modules/singlePost";
+@import "modules/legal";
+
+/* Tool Areas */
+@import "modules/shoesFrontPageGallery";
+@import "modules/hero-slider-past";
+/* @import "modules/hero-slider"; */
+@import "modules/likeBox";
+@import "modules/location";
+@import "modules/acf-map";
+
+/* shoesFooter */
+
+@import "modules/shoesFooter";
+
+/* login Screen & Register Screens*/
+@import "modules/login";
+@import "modules/Register";

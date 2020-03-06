@@ -1,0 +1,73 @@
+
+.past-winners-grid{
+  position: relative;
+  max-width: 960px;
+  /* justify-content: center;  */
+  width: 100%;
+  margin: auto;
+  display:grid;
+  grid-gap: 0px;
+  grid-template-areas:
+  'past-winners-grid-header'
+  'past-winners-grid-middle';
+  /* overflow: hidden; */
+  box-sizing: border-box;
+  margin-top: 0.1rem;
+  padding-bottom: 3rem;
+  background-color: #151e2d;
+  
+  } 
+
+  /* HEADER */
+
+  .past-winners-grid-header{
+  
+    width: 100%;
+    background-color: #151e2d;
+    grid-area:past-winners-grid-header;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    grid-area:  'past-winners-grid-header';
+
+  }
+
+  .past-winners-grid-header h1{
+    color: rgb(248, 245, 245);
+    /* color: yellow; */
+    padding: 1rem;
+    font-family: 'Pacifico', cursive;
+  }
+
+  .past-winners-grid-header-btn{
+
+    margin-top: 1rem;
+  }
+
+
+   /* SLIDER */
+
+  .past-winners-grid-middle{
+    position: relative;
+    margin:auto;
+    padding: 1rem 0;
+    color: white;
+    background-color: #151e2d;
+    color: white;
+    overflow: hidden;
+    /* width:100%; */
+    grid-area:'past-winners-grid-middle';
+    display: grid;
+    grid-column: 1fr;
+  }
+
+  @media(min-width:760px){
+
+    .past-winners-grid-middle{
+      /* width: 100%; */
+    }
+
+  }

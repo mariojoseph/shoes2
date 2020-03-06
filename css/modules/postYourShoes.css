@@ -1,0 +1,416 @@
+/* POST YOUR SHOES */
+
+/* body{
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+  height: auto;
+  box-sizing: border-box;
+} */
+
+.post-grid1{
+  margin: auto;
+  margin-top: 0.1rem;
+  max-width: 960px;
+  display:grid;
+  grid-gap: 0px;
+  grid-template-areas:
+  'post-grid1-left-top-upload'
+  'post-grid1-left-bottom-photo'
+  'post-grid1-right-top-posted'
+  'post-grid1-right-middle-bought'
+  'post-grid1-right-bottom-commentary';
+
+  
+  } 
+
+  /*  grid1-left-top-upload */
+
+  .post-grid1-left-top-upload{
+    grid-area:post-grid1-left-top-upload;
+    width: 100%;
+    background-color: #151e2d;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-bottom: 1px solid silver;
+    box-sizing: border-box;
+    padding: 1rem 0rem;
+    }
+
+    .post-grid1-left-top-upload p{
+      display: block;
+      padding: 1rem 0rem;
+    color:Yellow;
+    font-size: 1.2rem;
+    }
+
+
+    #upload-dialog {
+      padding: 5px;
+      border: 1px solid #336699;
+      background-color: white;
+      color: #336699;
+      background: none;
+      font-size: inherit;
+      font-family: inherit;
+      outline: none;
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer;
+      border-radius: 2px;
+      }
+      
+    #image-name {
+    display: none;
+    vertical-align: middle;
+    color: #336699;
+    margin: 0 15px;
+    }
+
+    #fileInput {
+      display: none;
+      }
+    
+    #cancel-image {
+    padding: 5px;
+    border: 1px solid #336699;
+    background-color: #336699;
+    color: white;
+    font-size: inherit;
+    font-family: inherit;
+    outline: none;
+    display: none;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 2px;
+    }
+    
+  /*  grid1-left-bottom-photo */
+    .post-grid1-left-bottom-photo{
+      grid-area:post-grid1-left-bottom-photo;
+      padding: 1rem 0rem;
+      width: 100%;
+      background-color: #151e2d; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      border-bottom: 1px solid white;
+      padding-bottom: 2rem;
+      }
+
+      .post-grid1-left-bottom-photo p {
+        color:Yellow;
+        font-size: 1.2rem;
+        padding: 1rem 0rem;
+        }
+
+
+
+      #preview-image {
+        border: 5px solid rgsba(0,0,0,0.01);  
+        width: 80%;
+        object-fit: contain;
+        overflow: hidden;
+        
+        }
+
+
+
+  /*  post-grid1-right-middle-bought */
+
+  .post-grid1-right-top-posted{
+
+    background-color: #151e2d; 
+    display: flex;
+    width: 100%;
+    justify-content:space-evenly;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid silver;
+    padding: 1rem 0rem;
+  }
+
+  .post-grid1-right-top-posted p{
+    display: inline-block;
+    padding: 1rem;
+    color: yellow;
+    font-size: 1.2rem;
+
+  }
+
+  .post-grid1-right-top-posted input{
+    display: block;
+    width: 80%;
+    padding: 0.2rem;
+    font-size: 0.9rem;
+  }
+
+
+  .post-grid1-right-middle-bought{
+
+    background-color: black;
+    width: 100%;
+    color: white;
+    background-color: #151e2d;
+    display:grid;
+    grid-gap: 0px;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid silver;
+    grid-template-areas:
+    'post-grid2-left-top-label'
+    'post-grid2-left-top-name'
+    'post-grid2-right-top-address'
+    'post-grid2-left-bottom-city '
+    'post-grid2-right-bottom-country';
+    }
+
+    .post-grid2-left-top-label {
+      grid-area:post-grid2-left-top-label;
+      color: yellow;
+      font-size: 1.2rem;
+    } 
+
+  
+    .post-grid2-left-top-name{
+      grid-area:post-grid2-left-top-name;
+
+    }
+
+    .post-grid2-right-top-address{
+      grid-area:post-grid2-right-top-address;
+    }
+
+    .post-grid2-left-bottom-city{
+      grid-area:post-grid2-left-bottom-city;
+    }
+
+    .post-grid2-right-bottom-country{
+      grid-area:post-grid2-right-bottom-country;
+    }
+
+    .post-grid2-left-top-name,
+    .post-grid2-right-top-address,
+    .post-grid2-left-bottom-city,
+    .post-grid2-right-bottom-country{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.0rem;
+      width: 100%;
+  
+    }
+
+    .post-grid2-left-top-name p,
+    .post-grid2-right-top-address p,
+    .post-grid2-left-bottom-city p,
+    .post-grid2-right-bottom-country p{
+
+      display: inline-block;
+      padding: 1rem;
+      font-size: 1rem;
+  
+    }
+
+    .post-grid2-left-top-name input,
+    .post-grid2-right-top-address input,
+    .post-grid2-left-bottom-city input,
+    .post-grid2-right-bottom-country select{
+
+      display: block;
+      width: 80%;
+      padding: 0.2rem;
+      font-size: 0.9rem;
+    }
+
+    .post-grid2-right-bottom-country select{
+
+      background-color: white;
+    }
+
+  .post-grid1-right-bottom-commentary{
+    background-color: #151e2d;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .post-grid1-right-bottom-commentary p{
+
+    display: inline-block;
+    padding: 1rem;
+    color: yellow;
+    font-size: 1.2rem;
+  }
+
+
+  .post-grid1-right-bottom-commentary textarea{
+    display: block;
+    width: 80%;
+    min-height: 10rem;
+    padding: 0.2rem;
+    font-size: 0.9rem;
+
+    }
+
+.ShoesSubmit-note{
+  font-size: .9rem;
+  background-color: darkorange;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  }
+
+.ShoesSubmit-note:hover{
+  background-color: rgb(228, 153, 15);
+  }
+
+  .temp{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 50;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+  }
+  
+  .main-img{
+    position: relative;
+    display: none;
+  
+  }
+  
+  .main-img img{
+    width: 100%;
+    transform: rotate(90deg);
+  
+  }.temp{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 50;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+  }
+  
+  /* Message */
+  .post-shoes-modal{
+    display: none;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+  }
+
+  .post-shoes-message{
+    position: absolute;
+    display: block;
+    background-color: rgba(45, 46, 43, 0.8);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.7rem;
+    padding: 1rem 0rem;
+    width: 60%;
+    z-index: 8;
+  }
+
+  .post-shoes-message-shell{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem;
+    text-align: center;
+    color: yellow;
+  }
+
+  .post-shoes-message-shell h5{
+    padding: 2rem 0rem;
+  }
+
+  .ShoesImage-button{
+    text-shadow: 1px 1px 1px rgba(245, 245, 245, 0.12);
+    background-image: linear-gradient(to bottom,green, #2a4134);
+    display: inline-block;
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    z-index: 50;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    cursor: pointer;
+
+  }
+
+
+
+
+
+
+  
+ 
+@media(min-width: 760px){
+
+  .post-grid1{
+
+    display:grid;
+    grid-gap: 0px;
+    grid-template-areas:
+    'post-grid1-left-top-upload post-grid1-right-top-posted'
+    'post-grid1-left-bottom-photo post-grid1-right-middle-bought'
+    'post-grid1-left-bottom-photo post-grid1-right-bottom-commentary';
+    box-sizing: border-box;
+    grid-template-columns: 2fr 1fr;
+    
+    }
+
+  .post-grid1-left-top-upload{
+  
+    border: 1px solid white;
+    padding: 2rem 0rem;
+  }
+
+
+  .post-grid1-right-top-posted{
+
+    border: 1px solid white;
+    padding: 1.5rem 0rem;
+    }
+
+    .post-grid1-left-bottom-photo{
+  
+      border: 1px solid white;
+      height: 50rem;
+  
+    }
+   .post-grid1-right-middle-bought{
+    margin-top: 0px;
+    border: 1px solid white;
+    height: 30rem;
+    
+  }
+
+   .post-grid1-right-bottom-commentary{
+    border: 1px solid white;
+    height: 20rem;
+
+   }
+}

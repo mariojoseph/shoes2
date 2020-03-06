@@ -1,0 +1,61 @@
+.locationBackground{
+  position: relative;
+  max-width: 960px;
+  margin: auto;
+  display:grid;
+  grid-gap: 0px;
+  grid-template-areas:
+  'locationTitle'
+  'aboutContent'
+  'aboutPicture';
+  box-sizing: border-box;
+  margin-top: 0.1rem;
+  background-color: #151e2d;
+
+}
+
+
+
+.locationTitle {
+  width: 100%;
+  background-color: #151e2d;
+  grid-area:'locationTitle';
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.locationTitle h1{
+  
+  /* color: yellow; */
+  color: rgb(248, 245, 245);
+  padding: 1rem;
+  font-family: 'Pacifico', cursive; 
+
+}
+
+.locationButton{
+  margin-top: 1rem;
+}
+
+.locationContent{
+  grid-area:'aboutContent';
+  position: relative;
+  /* margin-top: 2rem; */
+  background-color: #151e2d;
+
+  color: white;
+
+  padding: 1rem 5%;
+  margin: auto;
+
+}
+
+.locationContent h2{
+  font-size: 20px;
+  font-family: 'Kalam', cursive;
+
+}

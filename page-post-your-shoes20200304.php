@@ -1,0 +1,89 @@
+<?php acf_form_head(); ?>
+<?php
+    get_header();
+
+    // while(have_posts()){
+    //  the_post();
+    //  pageBanner();
+            
+    ?>
+
+<body>
+    
+<div class="post-grid1">
+
+    <div class="post-grid1-left-top-upload"  id="mario">
+
+        <p>Upload Your Photo</p>
+        <button id="upload-dialog">Choose Image</button>
+        <!-- <input type="file"  class="shoePhoto" id="fileInput" name="image" accept="image/jpg,image/png, image/gif" /> -->
+        <input type="file"  class="shoePhoto" id="fileInput" name="image" accept="image/jpg" />
+        <img id="testing1" />
+        <span id="image-name"></span>
+        <!-- <button id="upload-button">Upload</button> -->
+        <button id="cancel-image">Cancel</button>
+
+    </div>
+
+    <div class="post-grid1-left-bottom-photo">
+        <p>Photo Chosen </p>
+
+        <img id="preview-image" src="<?php echo get_theme_file_uri('/images/frontPageShoes.jpg'); ?>" alt="heart">
+
+
+    </div>
+
+    <div class="post-grid1-right-top-posted">
+        <p>Posted by:</p>  
+        <input class="posted-by" type="text" placeholder="posted by" name="posted-by"><br>
+
+    </div>
+<div class="post-grid1-right-middle-bought">
+                <div class="post-grid2-left-top-label">
+                        <p class="bought-from">Brought From</p>
+                </div>
+
+    <!-- <h1>post-grid1-right-middle-bought-from</h1> -->
+                <div class="post-grid2-left-top-name">
+                        <p>Shop Name</p>
+                        <input class="name" type="text" placeholder="name" name="name">
+                </div>
+                <div class="post-grid2-right-top-address">
+                        <p>Shop Address</p>
+                        <input class="address" type="text" placeholder="address" name="address">    
+                </div>
+                <div class="post-grid2-left-bottom-city">
+                        <p>City</p>
+                        <input class="city" type="text" placeholder="city" name="city">
+                </div>
+
+                <div class="post-grid2-right-bottom-country">
+                        <p>Country</p>
+                        <select name="" id="countryList" onchange="getSelectedValue();" data-country="<?php echo esc_url(site_url('')); ?>" >
+                                
+                        </select>
+    
+                </div>  
+
+</div>
+    <div class="post-grid1-right-bottom-commentary">
+            <p class="">Commentary</p>
+            <textarea placeholder="Any comments here..."></textarea>
+            <br>
+            <span class="ShoesSubmit-note">Create Post</span>
+    </div>
+</div>
+
+
+</body>
+
+  
+
+<?php 
+// }
+
+    get_footer();
+
+?>
+
+

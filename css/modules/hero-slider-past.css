@@ -1,0 +1,68 @@
+  /* Dots */
+
+  .dot-class{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.dot-class li{
+    display: block;
+    margin-right: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(104, 98, 124, 0.3);
+    z-index: 50;
+    cursor: pointer;
+}
+
+/* .dot-class li:first-child{
+  background-color: rgba(104, 98, 124, 0.9);
+} */
+
+
+/* Slider */
+
+.hero-sliderP-container{
+    position: relative;
+    width: 350px;
+    margin: auto;
+    border: 1px solid rgba(151, 141, 141, 0.8);
+    overflow: hidden;
+  }
+
+.hero-sliderP{
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  
+.hero-sliderP p{
+font-size: 1rem;
+font-weight: bold;
+text-align: center;
+margin-left: -15%;
+padding: 1rem 0;
+}
+
+.hero-sliderP img{
+width: 100vw;
+}
+
+@media(min-width: 500px){
+
+  .hero-sliderP-container{
+    position: relative;
+    width: 400px;
+    margin: auto;
+    border: 1px solid rgba(151, 141, 141, 0.8);
+    overflow: hidden;
+  }
+
+  .hero-sliderP img{
+    width: 400px;
+    }
+
+}
+
