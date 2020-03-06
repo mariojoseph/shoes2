@@ -73,9 +73,9 @@ if($success == 'Success you can Login'){
 </div>
 
 <?php }else{ ?>
-
+  
     <div class="register-heading">
-
+   
     <h1>Don't have an account?</h1>
     <h2>Register for one now</h2>
 </div>
@@ -101,7 +101,7 @@ if($success == 'Success you can Login'){
 <?php
 }
 ?>
-
+<?php [TheChamp-Sharing]  ?>
 <input type="hidden" name="task" value="register" />
 </form>
  

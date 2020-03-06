@@ -27,11 +27,11 @@
 
             <?php
             } else { ?>
-            <!-- <a href="<?php echo esc_url(site_url('login')); ?>" class="btn btn--dark-orange">Log In</a> -->
+            <a href="<?php echo esc_url(site_url('login')); ?>" class="btn btn--dark-orange">Log In</a>
 
-            <a href="<?php echo wp_login_url(); ?>" class="btn btn--dark-orange">Log In</a>
-             <!-- <a href="<?php echo esc_url(site_url('register')); ?>" class="btn btn--dark-green">Sign Up</a> -->
-            <a href="<?php echo wp_registration_url(); ?>" class="btn btn--dark-green">Sign Up</a>
+            <!-- <a href="<?php echo wp_login_url(); ?>" class="btn btn--dark-orange">Log In</a> -->
+             <a href="<?php echo esc_url(site_url('register')); ?>" class="btn btn--dark-green">Sign Up</a>
+            <!-- <a href="<?php echo wp_registration_url(); ?>" class="btn btn--dark-red">Sign Up</a> -->
 
           <?php  }?>
 
@@ -62,10 +62,10 @@
         <?php
         } else { ?>
 
-      <!-- <a href="<?php echo esc_url(site_url('login')); ?>" class="btn btn--dark-orange">Log In</a>
-      <a href="<?php echo esc_url(site_url('register')); ?>" class="btn btn--dark-green">Sign Up</a> -->
-        <a href="<?php echo wp_login_url(); ?>" class="btn btn--dark-orange">Log In</a>
-        <a href="<?php echo wp_registration_url(); ?>" class="btn btn--dark-red">Sign Up</a>
+      <a href="<?php echo esc_url(site_url('login')); ?>" class="btn btn--dark-orange">Log In</a>
+      <a href="<?php echo esc_url(site_url('register')); ?>" class="btn btn--dark-green">Sign Up</a>
+        <!-- <a href="<?php echo wp_login_url(); ?>" class="btn btn--dark-orange">Log In</a>
+        <a href="<?php echo wp_registration_url(); ?>" class="btn btn--dark-red">Sign Up</a> -->
 
     <?php  }?>
 
