@@ -28,7 +28,7 @@
     <div class="post-grid1-left-bottom-photo">
         <p>Photo Chosen </p>
 
-        <img id="preview-image" src="<?php echo get_theme_file_uri('/images/frontPageShoes.jpg'); ?>" alt="heart">
+        <img id="preview-image" src="<?php echo get_theme_file_uri('/images/FrontPageShoes.jpg'); ?>" alt="heart">
 
 
     </div>
