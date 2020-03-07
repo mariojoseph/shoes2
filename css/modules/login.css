@@ -1,8 +1,32 @@
+/* BASE */
 
+
+*{
+    max-width: 960px;
+    margin: auto;
+    padding: 0;
+    /* box-shadow: 30px 0px 40px rgba(0,0,0,0.1), -30px 0px 40px rgba(0,0,0,0.1); */
+    box-sizing: border-box;
+    }
+    
+body{
+margin: 0;
+padding: 0;
+background-color: black;
+height: auto;
+box-sizing: border-box;
+}
+
+
+
+
+
+/* xxx */
 body.login{
-    background-color: black;
+    /* background-color: black; */
     color: white;
     margin-top: -3rem;
+    margin: auto;
 }
 
 #login a{
