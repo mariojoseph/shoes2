@@ -1,5 +1,13 @@
+
+body.login{
+    background-color: black;
+    color: white;
+    margin-top: -3rem;
+}
+
 #login a{
     background-image: none;
+   
 }
 
 
@@ -15,14 +23,9 @@
 }
 
 #login h1{
+ 
     padding-bottom: 2rem;
     text-align: center;
-}
-
-body.login{
-    background-color: black;
-    color: white;
-    
 }
 
 
@@ -31,15 +34,46 @@ body.login{
     color: white;
 }
 
+
+p.message{
+    text-align: center;
+    font-size: 1rem;   
+    background-color: #151e2d !important; 
+    /* background-color: rgba(40, 40, 40, 0.3); */
+    border: 1px solid white;
+
+}
+
+/* Social Login Treatment */
+
+.login form{
+    background-color: #151e2d;
+    border: 1px solid rgb(104,104,104);
+}
+
+.the_champ_social_login_title{
+    padding: 0.5rem 0rem;
+}
+.the_champ_outer_login_container{
+    margin-bottom: 3rem;
+}
+
+/* Register Treatment */
+
 p.message.register{
     text-align: center;
     font-size: 1rem;
     /* background-color: rgba(40, 40, 40, 0.3); */
     background-color: #151e2d;
-    border: 1px solid white;
+    border: 1px solidrgb(104,104,104);
 }
 
-.login form{
-    background-color: #151e2d;
-    border: 1px solid white;
+
+#registerform p label{
+    color: white;
 }
+
+/* logged Out Treatment
+.message{
+
+} */
