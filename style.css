@@ -3065,102 +3065,45 @@ font-size: 1rem;
 
 /* login Screen & Register Screens*/
 
-.login-container{
-    position: relative;
-    max-width: 960px;
-    margin-top: 0.1rem;
-    background-color: #151e2d;
-    padding: 5rem 0rem;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+#login a{
+    background-image: none;
+}
 
-.heading{
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      color: rgb(248, 245, 245);
-      /* color: yellow; */
-      font-size: 0.8rem;
-      padding-bottom: 1.4rem;
-  }
+#login h1:after{
 
-.login-form{
-      padding: 2rem 3rem;
-      border: solid 1px rgb(80, 80, 75);
+    content: "Have You Seen My Shoes";
+    font-size: 1.5rem;   
+    color: yellow; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+   
 
-    }
+}
 
-#loginform{
+#login h1{
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+body.login{
+    background-color: black;
+    color: white;
     
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
 }
 
-#loginform p{
-position: relative;
-display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
--webkit-box-orient: vertical;
--webkit-box-direction: normal;
-    -ms-flex-direction: column;
-        flex-direction: column;
-}
-
-#loginform label{
+.login #backtoblog a, .login #nav a {
     color: white;
-    padding-bottom: 1rem;
 }
 
-#user_login{
-    /* color: black; */
-    /* padding-bottom: 1rem; */
-    width: 100%;
+p.message.register{
+    text-align: center;
     font-size: 1rem;
-    padding: 0.2rem;
+    /* background-color: rgba(40, 40, 40, 0.3); */
+    background-color: #151e2d;
+    border: 1px solid white;
 }
 
-#user_pass{
-    /* color: black; */
-    /* padding-bottom: 1rem; */
-    width: 100%;
-    font-size: 1rem;
-    padding: 0.2rem;
-}
-
-.button-primary{
-    display: inline-block;
-    cursor: pointer;
-    border-radius: 4px;
-    overflow: hidden;
-    text-decoration: none;
-    color: #FFF;
-    border: none;
-    outline: none;
-    margin-right: 1rem;
-    z-index: 100;
-    font-size: .88rem;
-    padding: 7px 30px;
-    font-weight: 300;
-    background: -webkit-gradient(linear, left top, left bottom, from(darkorange), to(rgb(230, 38, 0)));
-    background: linear-gradient(darkorange, rgb(230, 38, 0));
-  
-  }
-
-.button-primary:hover {
-     background-color: darkred; 
-     color: white;
-   }
-
-.wrapper{
-
-    color: white;
+.login form{
+    background-color: #151e2d;
+    border: 1px solid white;
 }

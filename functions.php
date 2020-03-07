@@ -53,6 +53,56 @@ function myFunction(){
 
 add_action ('init', myFunction);
 
+// // LOGIN SCREEN 2 - CUSTOMIZE WP LOGIN SCREEN
+
+add_filter('login_headerurl', 'ourHeaderURL');
+
+function ourHeaderUrl(){
+    return esc_url(site_url('/'));
+}
+
+add_filter('login_headertitle', 'ourLoginTitle');
+
+function ourLoginTitle(){
+    return get_bloginfo('name');
+}
+
+// Creating CSS for Login Page
+function ourLoginCSS() {
+
+    wp_enqueue_style('shoes2_style', get_stylesheet_uri(), NULL, microtime());
+    wp_enqueue_style('custom-google-fonts','//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i|Pacifico|Indie+Flower|Kalam:300,400,700|Teko');
+    wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+    
+    }
+
+// Redirecting Login page to Front Page
+add_action('login_enqueue_scripts', 'ourLoginCSS');
+
+add_action('admin_init', 'redirectSubsToFrontend');
+
+function redirectSubsToFrontend() {
+
+	$ourCurrentUser = wp_get_current_user();
+
+	if (count($ourCurrentUser->roles)== 1 AND $ourCurrentUser->roles[0] == 'subscriber'){
+		wp_redirect(site_url('/'));
+		exit;
+	} 
+}
+
+// Hiding Top Admin Bar
+add_action('wp_loaded', 'noSubsAdminBar');
+
+function noSubsAdminBar(){
+	$ourCurrentUser = wp_get_current_user();
+
+	if (count($ourCurrentUser->roles) == 1 AND $ourCurrentUser->roles[0] == 'subscriber'){
+		show_admin_bar(false);
+	}
+}
+     
+// // END LOGIN SCREEN 2
 
 // // LOGIN SCREEN
 
@@ -96,27 +146,9 @@ add_action ('init', myFunction);
 
 // // Redirect Subscriber Accounts out of Admin and onto homepage
 
-// add_action('admin_init', 'redirectSubsToFrontend');
 
-// function redirectSubsToFrontend() {
 
-// 	$ourCurrentUser = wp_get_current_user();
 
-// 	if (count($ourCurrentUser->roles)== 1 AND $ourCurrentUser->roles[0] == 'subscriber'){
-// 		wp_redirect(site_url('/'));
-// 		exit;
-// 	} 
-// }
-
-// add_action('wp_loaded', 'noSubsAdminBar');
-
-// function noSubsAdminBar(){
-// 	$ourCurrentUser = wp_get_current_user();
-
-// 	if (count($ourCurrentUser->roles) == 1 AND $ourCurrentUser->roles[0] == 'subscriber'){
-// 		show_admin_bar(false);
-// 	}
-// }
 
 // // REGISTRATION SCREEN
 // /* Main redirection of the default login page */
