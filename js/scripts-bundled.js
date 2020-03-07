@@ -13519,9 +13519,9 @@ function () {
 
       this.imgMain.style.position = 'absolute';
       this.imgMain.style.display = 'block';
-      this.imgMain.style.top = '30%';
-      this.imgMain.style.marginLeft = '15%';
-      this.imgMain.style.width = '70%';
+      this.imgMain.style.top = '15%';
+      this.imgMain.style.marginLeft = '20%';
+      this.imgMain.style.width = '60%';
       this.imgMain.style.zIndex = '8'; // TESTING END
       // Reset the opacity
 
