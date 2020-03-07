@@ -3065,13 +3065,10 @@ font-size: 1rem;
 
 /* login Screen & Register Screens*/
 
-/* xxx */
-
 body.login{
-    /* background-color: black; */
+    background-color: black;
     color: white;
     margin-top: -3rem;
-    margin: auto;
 }
 
 #login a{
