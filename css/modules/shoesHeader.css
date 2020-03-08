@@ -238,14 +238,13 @@
       align-items: center;
     }
     
-    .btn--dark-green,
-    .btn--dark-orange{
+    .site_header__iPad_buttons .btn--dark-green,
+    .site_header__iPad_buttons .btn--dark-orange{
       display: none;
     }
 
 
-    .site_header__menu_util{
-  
+    .site_header__menu_util .btn--red{
       display: none;
     }
 

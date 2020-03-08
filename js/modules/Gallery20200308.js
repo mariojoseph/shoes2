@@ -48,7 +48,15 @@ class Gallery {
   imgClick(e) {
     
     // Modaly Set Up
+    this.modal.style.position = 'fixed';
     this.modal.style.display = 'block';
+    this.modal.style.zIndex = '5';
+    this.modal.style.left = '0';
+    this.modal.style.top = '0';
+    this.modal.style.right = '0';
+    this.modal.style.height = '100%';
+    this.modal.style.width = '100%';
+    this.modal.style.backgroundColor = 'rgba(0,0,0,0.7)';
 
     
     // // Something Else
@@ -56,9 +64,16 @@ class Gallery {
     // // TESTING BEGINNING
     // var mario = this.imgTotal.getBoundingClientRect();
     this.link = e.target.getAttribute('longdesc');
-
+    // let left = mario.left;
+    // let right = mario.right;
+    // let top = mario.top;
+    // this.thumbnails.style.position = 'relative';
+    this.imgMain.style.position = 'absolute';
     this.imgMain.style.display = 'block';
-
+    this.imgMain.style.top = '15%';
+    this.imgMain.style.marginLeft = '20%';
+    this.imgMain.style.width = '60%';
+    this.imgMain.style.zIndex = '8';
    
 
     // TESTING END
