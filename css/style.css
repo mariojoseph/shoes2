@@ -10,7 +10,8 @@ Version: 1.0
 @import "slick-carousel/slick/slick.css";
 /* @import "normalize.css"; */
 
-
+/* Normalize */
+@import "base/normalize";
 /* base files */
 @import "base/baseline";
 @import "base/variables";

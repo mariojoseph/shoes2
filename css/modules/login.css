@@ -1,7 +1,8 @@
 
 body.login{
     background-color: black;
-    /* border: 4px solid green; */
+
+    /* width: 80% !important; */
     color: white;
     margin-top: -3rem;
     width:100%;

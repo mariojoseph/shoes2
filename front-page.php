@@ -56,8 +56,8 @@
             </div>
 
             <div class="grid3">
-                <h1>This week's TOP Contenders</h1>
-                <i class=" fa fa-caret-down" ></i>
+                <h1>This week's TOP Contenders  <i class=" fa fa-caret-down" ></i></h1>
+              
 
                 
 
@@ -108,8 +108,7 @@
 
 
         <div class="grid5">
-                <h1>This week's Contenders</h1>
-                <i class=" fa fa-caret-down" ></i>
+        <h1>This week's Contenders <i class=" fa fa-caret-down" ></i></h1>
             </div>
 
     </div>

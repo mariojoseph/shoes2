@@ -70,8 +70,8 @@
               
            ?>
            
-          <span class="like-box-cover" data-like="<?php echo $likeCount->posts[0]->ID;?>" data-shoe="<?php the_ID();?>" data-exists="<?php echo $existStatus;?>" data-user="<?php echo $author ?>" data-logged="<?php echo $UserLogged ?>" data-date="<?php echo $date ?>" data-week="<?php echo $week ?>" data-year="<?php echo $year ?>">
-                <div class="like-box">
+          <span class="like-box" data-like="<?php echo $likeCount->posts[0]->ID;?>" data-shoe="<?php the_ID();?>" data-exists="<?php echo $existStatus;?>" data-user="<?php echo $author ?>" data-logged="<?php echo $UserLogged ?>" data-date="<?php echo $date ?>" data-week="<?php echo $week ?>" data-year="<?php echo $year ?>">
+                <div class="like-box-cover">
                 <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
               <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
                 </div>
@@ -114,7 +114,7 @@
         
         <div class="single-right-top-middle">
         
-            <h1>Bought from</h1>
+            <h1 class="single-right-top-middle-button">Bought from</h1>
  
             <a href="<?php echo site_url('/location?variable='.$data) ?>"><button type="button" name="button">Store Location</button></a>
        
@@ -129,7 +129,7 @@
         </div>
         <div class="single-right-bottom-middle">
 
-        <h1>Commentary</h1>
+        <h1 class="single-right-top-middle-button2">Commentary</h1>
 
         <div class="flex-buttons-commentary2">
         <p><?php echo get_field(commentary); print_r($existStatus); ?></p>

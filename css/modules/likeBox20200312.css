@@ -81,14 +81,8 @@
 
       /* LIKE BOX - SINGLE PAGE  */
 
-      .like-box-cover {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
      .like-box {
+        position: relative;
         font-size: 1rem;
         background-color: #EDEDED;
         box-shadow: 1px 1px 1px rgba(0, 0, 0, .25);
@@ -96,7 +90,9 @@
         padding: 1.3rem 1.8rem;
         border-radius: 4px;
         cursor: pointer;
-  
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       .like-box:hover {
@@ -123,7 +119,6 @@
         transition: all .35s ease-out;
         color: red;
         position: absolute;
-        transform: translate(-50%, -50%);
         /* margin-left: 47%; */
 
         /* left: 10px; */
@@ -136,7 +131,6 @@
         transition: all .4s ease-out;
         color: red;
         position: absolute;
-        transform: translate(-50%, -50%);
         visibility: hidden;
         opacity: 0;
       }

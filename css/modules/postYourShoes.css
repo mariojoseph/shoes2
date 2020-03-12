@@ -11,7 +11,7 @@
 .post-grid1{
   margin: auto;
   margin-top: 0.1rem;
-  max-width: 960px;
+  /* max-width: 960px; */
   display:grid;
   grid-gap: 0px;
   grid-template-areas:
@@ -28,11 +28,11 @@
 
   .post-grid1-left-top-upload{
     grid-area:post-grid1-left-top-upload;
-    width: 100%;
+    /* width: 100%; */
     background-color: #151e2d;
     display: flex;
     flex-direction: column;
-    color: white;
+    justify-content: center;
     border-bottom: 1px solid silver;
     box-sizing: border-box;
     padding: 1rem 0rem;
@@ -40,9 +40,10 @@
 
     .post-grid1-left-top-upload p{
       display: block;
-      padding: 1rem 0rem;
-    color:Yellow;
-    font-size: 1.2rem;
+      text-align: center;
+      /* padding: 1rem 0rem; */
+      color:Yellow;
+      font-size: 1.2rem;
     }
 
 
@@ -55,10 +56,12 @@
       font-size: inherit;
       font-family: inherit;
       outline: none;
-      display: inline-block;
-      vertical-align: middle;
+      display: block;
+      /* vertical-align: middle; */
       cursor: pointer;
       border-radius: 2px;
+      /* width: 8rem; */
+      margin: auto;
       }
       
     #image-name {
@@ -81,11 +84,40 @@
     font-family: inherit;
     outline: none;
     display: none;
-    vertical-align: middle;
+    margin: auto;
+    /* vertical-align: middle; */
     cursor: pointer;
     border-radius: 2px;
+    /* width: 8rem; */
     }
     
+/*  grid1-right-top-posted */
+  .post-grid1-right-top-posted{
+
+    background-color: #151e2d; 
+    display: flex;
+    width: 100%;
+    justify-content:space-evenly;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid silver;
+    padding: 1rem 0rem;
+  }
+
+  .post-grid1-right-top-posted p{
+    display: inline-block;
+    padding: 1rem;
+    color: yellow;
+    font-size: 1.2rem;
+
+  }
+
+  .post-grid1-right-top-posted input{
+    display: block;
+    width: 80%;
+    padding: 0.2rem;
+    font-size: 0.9rem;
+  }
   /*  grid1-left-bottom-photo */
     .post-grid1-left-bottom-photo{
       grid-area:post-grid1-left-bottom-photo;
@@ -121,32 +153,6 @@
 
   /*  post-grid1-right-middle-bought */
 
-  .post-grid1-right-top-posted{
-
-    background-color: #151e2d; 
-    display: flex;
-    width: 100%;
-    justify-content:space-evenly;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 1px solid silver;
-    padding: 1rem 0rem;
-  }
-
-  .post-grid1-right-top-posted p{
-    display: inline-block;
-    padding: 1rem;
-    color: yellow;
-    font-size: 1.2rem;
-
-  }
-
-  .post-grid1-right-top-posted input{
-    display: block;
-    width: 80%;
-    padding: 0.2rem;
-    font-size: 0.9rem;
-  }
 
 
   .post-grid1-right-middle-bought{
@@ -172,6 +178,7 @@
       grid-area:post-grid2-left-top-label;
       color: yellow;
       font-size: 1.2rem;
+      text-align: center;
     } 
 
   
@@ -361,11 +368,6 @@
   }
 
 
-
-
-
-
-  
  
 @media(min-width: 760px){
 
@@ -378,39 +380,61 @@
     'post-grid1-left-bottom-photo post-grid1-right-middle-bought'
     'post-grid1-left-bottom-photo post-grid1-right-bottom-commentary';
     box-sizing: border-box;
-    grid-template-columns: 2fr 1fr;
-    
+    grid-template-columns: 3fr 2fr;
     }
 
   .post-grid1-left-top-upload{
   
     border: 1px solid white;
-    padding: 2rem 0rem;
+    padding: 0rem;
+    padding-bottom: 1rem;
   }
 
 
   .post-grid1-right-top-posted{
 
     border: 1px solid white;
-    padding: 1.5rem 0rem;
+    padding: 0rem;
+    padding-bottom: 1rem;
+    /* padding: 1.5rem 0rem; */
     }
+
+    .post-grid1-right-top-posted p{
+
+      padding: 0rem;
+       padding-bottom: 1rem;
+  
+      }
 
     .post-grid1-left-bottom-photo{
   
       border: 1px solid white;
-      height: 50rem;
-  
+      height: 33 rem;
+      justify-content: flex-start;
+      padding-bottom: 0;
     }
+
    .post-grid1-right-middle-bought{
     margin-top: 0px;
     border: 1px solid white;
-    height: 30rem;
+    height: 10 rem;
+    padding-bottom: 2rem;
     
   }
 
    .post-grid1-right-bottom-commentary{
     border: 1px solid white;
-    height: 20rem;
+    height: 23rem;
 
    }
+
+   .post-grid2-left-top-name p,
+   .post-grid2-right-top-address p,
+   .post-grid2-left-bottom-city p,
+   .post-grid2-right-bottom-country p{
+
+    padding: 0.3rem;
+ 
+   }
+
 }

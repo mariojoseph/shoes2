@@ -1,7 +1,6 @@
 
 .container{
   position: relative;
-  max-width: 960px;
   margin-top: 0.1rem;
   display: grid;
   background-color: #151e2d;
@@ -73,7 +72,7 @@ align-items: center;
 .grid2{
   grid-area: grid2;
   width: 100%;
-  padding: 1rem;
+  /* padding: 1rem; */
   /* background-color: rgba(245, 245, 245, 0.9); */
   /* background-color: rgba(245, 245, 245, 0.7); */
   /* background-image: linear-gradient(to bottom, rgba(88, 79, 79, 0.6), rgba(164, 151,151, 0.1)); */
@@ -81,14 +80,14 @@ align-items: center;
   /* background-image: linear-gradient(to bottom, rgba(245, 245, 245, 0.7)), rgba(21, 30, 45, 0.8)); */
  background-color: #151e2d;
  display: flex;
- justify-content: space-around;
+ justify-content: center;
  align-items: center;
 }
 
 
 .grid2-image{
   /* flex: 0 95vw; */
-  width: 90%;
+  width: 80%;
   height: 0;
   padding-top:40%;
   background-image: url('images/frontPageLogo.png');
@@ -98,12 +97,45 @@ align-items: center;
 }
 
 
-.grid3{
+/* .grid3{
   grid-area: grid3;
   width: 100%;
   background-color: #151e2d;
   display: flex; 
+  justify-content: center;
+  align-items: center;
   border-bottom: 1px solid silver;
+  
+}
+
+.grid3 h1{
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: Roboto sans-serif;
+  color: white;
+  text-align: center;
+
+}
+
+.grid3 i{
+ display: block;
+  font-size: 1.4rem;
+  background-color: #151e2d;
+  color: white;
+ 
+} */
+
+.grid3{
+  position: relative;
+  grid-area: grid3;
+  width: 100%;
+    background-color: #151e2d;
+  border-bottom: 1px solid silver;
+  /* background-color: #181818; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid3 h1{
@@ -115,7 +147,8 @@ align-items: center;
 }
 
 .grid3 i{
-  margin-left: -10%;
+  
+  /* margin-left: -10%; */
   font-size: 1.4rem;
   background-color: #151e2d;
   color: white;
@@ -209,7 +242,7 @@ max-width: 100vw;
   border-bottom: 1px solid silver;
   /* background-color: #181818; */
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -223,7 +256,7 @@ max-width: 100vw;
 
 .grid5 i{
   
-  margin-left: -10%;
+  /* margin-left: -10%; */
   font-size: 1.4rem;
   background-color: #151e2d;
   color: white;
@@ -289,11 +322,11 @@ max-width: 100vw;
   }
 
   .grid4{
-    height: 27rem;
+    height: 26rem;
   }
  
   .grid4-image{
-    height: 27rem;
+    height: 26rem;
     width: 50vw;
   }
 
@@ -366,16 +399,16 @@ max-width: 100vw;
   }
 
   .grid4{
-    height: 29rem;
+    height: 28rem;
   }
  
   .grid4-image{
-    height: 29rem;
+    height: 28rem;
     width: 50vw;
   }
 
   .photoImages{
-    height: 29rem;
+    height: 28rem;
     width: 50vw;
   }
   
@@ -449,16 +482,16 @@ max-width: 100vw;
   }
 /* working */
   .grid4{
-    height: 27rem;
+    height: 26rem;
   }
  
   .grid4-image{
-    height: 27rem;
+    height: 26rem;
     width: 29rem;
   }
 
   .photoImages{
-    height: 27rem;
+    height: 26rem;
     width: 29rem;
   }
   

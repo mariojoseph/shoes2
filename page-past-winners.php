@@ -18,8 +18,6 @@
                 <div class="past-winners-grid-header-btn">
                 <a href="<?php echo esc_url(site_url('/')); ?>" class="btn  btn--red">Return to Home</a>    
                 </div>
-                
-        
     </div>
 
     <div class="past-winners-grid-middle">

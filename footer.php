@@ -13,11 +13,11 @@
 
         <h3 class="headline">Explore</h3>
 
-        <ul>
-            <li><a href="<?php echo site_url('/about-us') ?>">About Us</a></li>
-            <li><a href="<?php echo site_url('/popular-shoe-types') ?>">Popular Shoe Types</a></li>
-            <li><a href="<?php echo site_url('/history-of-shoes') ?>">History of Shoes</a></li>
-        </ul>
+        <div class="site-footer__grid2_ul">
+            <div><a href="<?php echo site_url('/about-us') ?>">About Us</a></div>
+            <div><a href="<?php echo site_url('/popular-shoe-types') ?>">Popular Shoe Types</a></div>
+            <div><a href="<?php echo site_url('/history-of-shoes') ?>">History of Shoes</a></div>
+        </div>
 
 </div>
 
@@ -25,11 +25,11 @@
 
     <h3 class="headline">Administration</h3>
 
-    <ul>
-        <li><a href="<?php echo site_url('/privacy') ?>">Privacy Policy</a></li>
-        <li><a href="<?php echo site_url('/Legal') ?>">Legal</a></li>
-        <li><a href="<?php echo site_url('/contact-us') ?>">Contact Us</a></li>
-    </ul>
+    <div class="site-footer__grid3_ul">
+        <div><a href="<?php echo site_url('/privacy') ?>">Privacy Policy</a></div>
+        <div><a href="<?php echo site_url('/Legal') ?>">Legal</a></div>
+        <div><a href="<?php echo site_url('/contact-us') ?>">Contact Us</a></div>
+    </div>
 
 </div>
 
@@ -37,15 +37,17 @@
 
     <h3 class="headline">Connect With Us</h3>
 
-    <nav>
-        <ul class="social-icons-list">
-            <li><a href="#" class="social-color-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="#" class="social-color-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="#" class="social-color-youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-            <li><a href="#" class="social-color-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-            <li><a href="#" class="social-color-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-        </ul>
-    </nav>
+    <!-- <nav> -->
+
+        <div class="social-icons-list">
+            <div class=""><a href="#" class="social-color-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+            <div class=""><a href="#" class="social-color-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+            <div class=""><a href="#" class="social-color-youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a></div>
+            <div class=""><a href="#" class="social-color-facebook"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
+            <div class=""><a href="#" class="social-color-facebook"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+        </div>
+
+    <!-- </nav> -->
 
 </div>
 
@@ -61,4 +63,8 @@
 
 <?php wp_footer(); ?>
 </body>
+
+<!-- Main Container Footer -->
+</div>
+<!-- END Main Container Footer -->
 </html>

@@ -208,7 +208,7 @@
       display: grid;
       height: 5rem;
       grid-template-columns: 5fr 2fr 1fr;
-    
+      
     }
 
     .text h1{
@@ -246,6 +246,10 @@
 
     .site_header__menu_util .btn--red{
       display: none;
+    }
+
+    .main-navigation{
+      margin-left: -2rem;
     }
 
   }
@@ -292,7 +296,9 @@
       display: none;
     }
   
-  
+    .main-navigation{
+      margin-left: -3rem;
+    }
   
   }
   
@@ -339,15 +345,25 @@
   
       display: flex;
       justify-content: center;
-      align-items: flex-end;
+      align-items: center;
     }
   
+    .site_header__iPad_text_rules{
+      border: 1px solid pink;
+      background-color: rgba(214, 120, 214, 0.2);
+      border-radius: 4px;
+      padding: 5px 8px;
+  
+    }
+
     .site_header__iPad_text a{
       list-style: none;
       text-decoration: none;
-      color: pink;
-      font-size: 1.1rem;
+      color: rgb(248, 192, 201);
+      z-index: 80;
+      font-size: 0.9rem;
       font-weight: 400;
+  
     }
   
     .site-header__menu_items__rules{
