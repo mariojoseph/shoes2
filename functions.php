@@ -3,6 +3,180 @@
 require get_theme_file_path('/inc/shoe-route.php');
 require get_theme_file_path('/inc/like-route.php');
 
+// Header Login page ......................................................................
+
+add_action('login_head', 'pageBanner1');
+
+function pageBanner1($args=null){
+	?>
+
+<!-- Main Container Footer -->
+<div class="mainContainer">
+<!-- END Main Container Footer -->
+
+<head>
+		<meta charset="<?php bloginfo('charset'); ?>">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	   <?php wp_head(); ?>
+
+<!-- making a change -->
+<header class="site-header login-header">
+
+<div class="main-header">
+
+    <div class="text">
+    <a href="<?php echo esc_url(site_url('/')); ?>" ><h1>The site for those who &nbsp <img src="<?php echo get_theme_file_uri('/images/smallHeart.png'); ?>" alt=""> 
+    <strong>&nbsp shoes</strong></h1></a>    
+
+    </div>
+
+    <div class="site_header__iPad_buttons">
+
+        <a href="<?php echo esc_url(site_url('post-your-shoes')); ?>" class="btn btn--red">Post Your Shoes</a>
+
+        <?php if (is_user_logged_in()){ ?>
+
+            <a href="<?php echo wp_logout_url(); ?>" class="btn btn--dark-orange">Log Out</a>
+
+            <?php
+            } else { ?>
+            <!-- <a href="<?php echo esc_url(site_url('login')); ?>" class="btn btn--dark-orange">Log In</a> -->
+
+            <a href="<?php echo wp_login_url(); ?>" class="btn btn--dark-orange">Log In</a>
+             <!-- <a href="<?php echo esc_url(site_url('register')); ?>" class="btn btn--dark-green">Sign Up</a> -->
+            <a href="<?php echo wp_registration_url(); ?>" class="btn btn--dark-green">Sign Up</a>
+
+          <?php  }?>
+
+         </div>
+
+     <div class="site_header__iPad_text">
+        <div class="site_header__iPad_text_rules"><i class="fa fa-heartbeat" aria-hidden="true" style="color: #E75480;"></i><a href="<?php echo esc_url(site_url('rules')); ?>" class="removeHyphen">&nbsp Rules</a></div>
+      </div>
+
+    <div class="main-navigation">
+
+        <i class="site-header__menu-trigger fa fa-bars" style="color: white;" aria-hidden="true" alt="mario"></i>
+
+    </div>
+
+</div>
+
+
+<div class="site-header__menu">
+
+ <div class="site_header__menu_util">
+
+    <a href="<?php echo esc_url(site_url('post-your-shoes')); ?>" class="btn btn--red">Post Your Shoes</a>
+    <?php if (is_user_logged_in()){ ?>
+
+        <a href="<?php echo wp_logout_url(); ?>" class="btn btn--dark-orange">Log Out</a>
+
+        <?php
+        } else { ?>
+
+      <!-- <a href="<?php echo esc_url(site_url('login')); ?>" class="btn btn--dark-orange">Log In</a>
+      <a href="<?php echo esc_url(site_url('register')); ?>" class="btn btn--dark-green">Sign Up</a> -->
+        <a href="<?php echo wp_login_url(); ?>" class="btn btn--dark-orange">Log In</a>
+        <a href="<?php echo wp_registration_url(); ?>" class="btn btn--dark-green">Sign Up</a>
+
+    <?php  }?>
+
+
+ </div>
+
+  <div class="site-header__menu_items">
+          <div class="site-header__menu_items__home"><i class="fa fa-home" style="color: yellow;" aria-hidden="true" alt="mario"></i><a href="<?php echo esc_url(site_url(' ')); ?>" class="removeHyphen">&nbsp Home</a></div>
+      <div class="site-header__menu_items__rules"><i class="fa fa-heartbeat" aria-hidden="true" style="color: #E75480;"></i><a href="<?php echo esc_url(site_url('rules')); ?>" class="removeHyphen">&nbsp Rules</a></div>
+      <div class="site-header__menu_items__past"><i class="fa fa-trophy" aria-hidden="true" style="color: goldenrod;"></i><a href="<?php echo esc_url(site_url('past-winners')); ?>" >&nbsp Past Shoe Winners</a></div>
+      <div class="site-header__menu_items__about"><i class="fa fa-heart" style="color: red;" aria-hidden="true" style="color: white;"></i><a href="<?php echo esc_url(site_url('about-us')); ?>" >&nbsp About Us</a></div>
+  </div>
+
+</div>
+
+</header>
+
+</head>
+
+
+<?php
+}
+// FooterLogin page ...............................................
+
+add_action('login_footer', 'pageBanner');
+
+function pageBanner($args=null){
+	?>
+<footer>
+
+<footer class="site-footer">
+
+<div class="site-footer__grid1">
+
+    <h1 class=""><a href="<?php echo site_url() ?>">Have You Seen My <strong>Shoes</strong></a></h1>
+    <p><a class="" href="#">E-mail: <i>info@have-you-seen-my-shoes.com</i></a></p>
+
+</div>
+
+<div class="site-footer__grid2">
+
+        <h3 class="headline">Explore</h3>
+
+        <div class="site-footer__grid2_ul">
+            <div><a href="<?php echo site_url('/about-us') ?>">About Us</a></div>
+            <div><a href="<?php echo site_url('/popular-shoe-types') ?>">Popular Shoe Types</a></div>
+            <div><a href="<?php echo site_url('/history-of-shoes') ?>">History of Shoes</a></div>
+        </div>
+
+</div>
+
+<div class="site-footer__grid3">
+
+    <h3 class="headline">Administration</h3>
+
+    <div class="site-footer__grid3_ul">
+        <div><a href="<?php echo site_url('/privacy') ?>">Privacy Policy</a></div>
+        <div><a href="<?php echo site_url('/Legal') ?>">Legal</a></div>
+        <div><a href="<?php echo site_url('/contact-us') ?>">Contact Us</a></div>
+    </div>
+
+</div>
+
+<div class="site-footer__grid4">
+
+    <h3 class="headline">Connect With Us</h3>
+
+    <!-- <nav> -->
+
+        <div class="social-icons-list">
+            <div class=""><a href="#" class="social-color-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+            <div class=""><a href="#" class="social-color-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+            <div class=""><a href="#" class="social-color-youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a></div>
+            <div class=""><a href="#" class="social-color-facebook"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
+            <div class=""><a href="#" class="social-color-facebook"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+        </div>
+
+    <!-- </nav> -->
+
+</div>
+
+
+<div class="site-footer__grid5">
+    <br>
+    <h3>Copyright &copy; 2019</h3>
+
+</div>
+
+
+</footer>
+
+</div>
+<?php
+}
+
+
+
+
 // register scripts / styles
 function shoes_files() {
 wp_enqueue_script('googleMap', '//maps.googleapis.com/maps/api/js?key=AIzaSyDn63VvrALmyYEatDMhxwyLKzx_jwcIOBI', NULL, '1.0', false);

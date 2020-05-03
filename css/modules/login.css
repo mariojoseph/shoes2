@@ -1,10 +1,14 @@
 
+.login-header{
+    border-bottom: solid 2px white;
+}
+
 body.login{
     background-color: black;
 
     /* width: 80% !important; */
+    border: 1px solid white;
     color: white;
-    margin-top: -3rem;
     width:100%;
 }
 
@@ -13,23 +17,28 @@ body.login{
    
 }
 
+#login{
+    margin-top: -5rem;
+}
 
 #login h1:after{
 
-    content: "Have You Seen My Shoes";
+    /* content: "Have You Seen My Shoes";
     font-size: 1.5rem;   
     color: yellow; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
-   
+    */
 
 }
 
 #login h1{
  
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
+    /* display: none !important; */
     text-align: center;
 }
+
 
 
 
