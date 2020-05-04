@@ -11,7 +11,7 @@ function pageBanner1($args=null){
 	?>
 
 <!-- Main Container Header -->
-<div class="mainContainer login-container">
+<div class="login-container">
 <!-- END Main Container Header -->
 
 <head>
@@ -98,7 +98,7 @@ function pageBanner1($args=null){
 
 </head>
 
-
+</div>
 <?php
 }
 // FooterLogin page ...............................................

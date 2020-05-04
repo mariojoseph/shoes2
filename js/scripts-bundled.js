@@ -14024,6 +14024,7 @@ function () {
       console.log(heart);
 
       if (currentLikeBox.attr('data-logged') == 'no') {
+        console.log('Im in the right area');
         this.likeResponse.html("You need to log in / Sign In to Vote");
         this.likeResponse.css('color', 'white');
         return null;
@@ -14041,6 +14042,7 @@ function () {
             ;
           }, 2000);
         } else {
+          console.log('Im in the wrong area');
           this.likeResponse.html("Thank You for Voting");
           this.likeResponse.css('color', 'yellow');
           heart.removeClass('fa-heart-o');

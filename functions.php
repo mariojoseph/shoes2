@@ -51,7 +51,7 @@ function pageBanner1($args=null){
 	?>
 
 <!-- Main Container Header -->
-<div class="mainContainer login-container">
+<div class="mainContainer ">
 <!-- END Main Container Header -->
 
 <head>
@@ -137,8 +137,8 @@ function pageBanner1($args=null){
 </header>
 
 </head>
-
 </div>
+
 <?php
 }
 // FooterLogin page ...............................................
@@ -148,6 +148,10 @@ add_action('login_footer', 'pageBanner');
 function pageBanner($args=null){
 	?>
 
+<!-- Main Container Header -->
+
+<!-- END Main Container Header -->
+<div class="login-container">
 <footer class="site-footer">
 
 <div class="site-footer__grid1">
@@ -209,6 +213,7 @@ function pageBanner($args=null){
 
 </footer>
 
+</div>
 
 <?php
 }

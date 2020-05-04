@@ -139,15 +139,6 @@ p.message.register{
 
 /* LOGIN FOOTER */
 
-.login-container{
-    max-width: 960px;
-    margin: auto;
-    padding: 0;
-    box-shadow: 30px 0px 40px rgba(0,0,0,0.1), -30px 0px 40px rgba(0,0,0,0.1);
-    box-sizing: border-box;
-
-}
-
 .site-footer__grid1 h2{
     color: black;
     font-size: 1.4rem;
