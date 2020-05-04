@@ -3,6 +3,46 @@
 require get_theme_file_path('/inc/shoe-route.php');
 require get_theme_file_path('/inc/like-route.php');
 
+// Basics Login Page
+
+// // LOGIN SCREEN 2 - CUSTOMIZE WP LOGIN SCREEN
+
+add_filter('login_headerurl', 'ourHeaderURL');
+
+function ourHeaderUrl(){
+    return esc_url(site_url('/'));
+}
+
+add_filter('login_headertitle', 'ourLoginTitle');
+
+function ourLoginTitle(){
+    return get_bloginfo('name');
+}
+
+// Creating CSS for Login Page
+function ourLoginCSS() {
+
+    wp_enqueue_style('shoes2_style', get_stylesheet_uri(), NULL, microtime());
+    wp_enqueue_style('custom-google-fonts','//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i|Pacifico|Indie+Flower|Kalam:300,400,700|Teko');
+    wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+    
+    }
+
+// Redirecting Login page to Front Page
+add_action('login_enqueue_scripts', 'ourLoginCSS');
+
+add_action('admin_init', 'redirectSubsToFrontend');
+
+function redirectSubsToFrontend() {
+
+	$ourCurrentUser = wp_get_current_user();
+
+	if (count($ourCurrentUser->roles)== 1 AND $ourCurrentUser->roles[0] == 'subscriber'){
+		wp_redirect(site_url('/'));
+		exit;
+	} 
+}
+
 // Header Login page ......................................................................
 
 add_action('login_head', 'pageBanner1');
@@ -108,20 +148,20 @@ add_action('login_footer', 'pageBanner');
 function pageBanner($args=null){
 	?>
 
-<footer class="login-footer">
+<footer class="site-footer">
 
-<div class="login-footer__grid1">
+<div class="site-footer__grid1">
 
-    <h1 class=""><a href="<?php echo site_url() ?>">Have You Seen My <strong>Shoes</strong></a></h1>
+    <h2 class=""><a href="<?php echo site_url() ?>">Have You Seen My <strong>Shoes</strong></a></h2>
     <p><a class="" href="#">E-mail: <i>info@have-you-seen-my-shoes.com</i></a></p>
 
 </div>
 
-<div class="login-footer__grid2">
+<div class="site-footer__grid2">
 
         <h3 class="headline">Explore</h3>
 
-        <div class="login-footer__grid2_ul">
+        <div class="site-footer__grid2_ul">
             <div><a href="<?php echo site_url('/about-us') ?>">About Us</a></div>
             <div><a href="<?php echo site_url('/popular-shoe-types') ?>">Popular Shoe Types</a></div>
             <div><a href="<?php echo site_url('/history-of-shoes') ?>">History of Shoes</a></div>
@@ -129,11 +169,11 @@ function pageBanner($args=null){
 
 </div>
 
-<div class="login-footer__grid3">
+<div class="site-footer__grid3">
 
     <h3 class="headline">Administration</h3>
 
-    <div class="login-footer__grid3_ul">
+    <div class="site-footer__grid3_ul">
         <div><a href="<?php echo site_url('/privacy') ?>">Privacy Policy</a></div>
         <div><a href="<?php echo site_url('/Legal') ?>">Legal</a></div>
         <div><a href="<?php echo site_url('/contact-us') ?>">Contact Us</a></div>
@@ -141,7 +181,7 @@ function pageBanner($args=null){
 
 </div>
 
-<div class="login-footer__grid4">
+<div class="site-footer__grid4">
 
     <h3 class="headline">Connect With Us</h3>
 
@@ -160,7 +200,7 @@ function pageBanner($args=null){
 </div>
 
 
-<div class="login-footer__grid5">
+<div class="site-footer__grid5">
     <br>
     <h3>Copyright &copy; 2019</h3>
 
@@ -226,43 +266,7 @@ function myFunction(){
 
 add_action ('init', myFunction);
 
-// // LOGIN SCREEN 2 - CUSTOMIZE WP LOGIN SCREEN
 
-add_filter('login_headerurl', 'ourHeaderURL');
-
-function ourHeaderUrl(){
-    return esc_url(site_url('/'));
-}
-
-add_filter('login_headertitle', 'ourLoginTitle');
-
-function ourLoginTitle(){
-    return get_bloginfo('name');
-}
-
-// Creating CSS for Login Page
-function ourLoginCSS() {
-
-    wp_enqueue_style('shoes2_style', get_stylesheet_uri(), NULL, microtime());
-    wp_enqueue_style('custom-google-fonts','//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i|Pacifico|Indie+Flower|Kalam:300,400,700|Teko');
-    wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-    
-    }
-
-// Redirecting Login page to Front Page
-add_action('login_enqueue_scripts', 'ourLoginCSS');
-
-add_action('admin_init', 'redirectSubsToFrontend');
-
-function redirectSubsToFrontend() {
-
-	$ourCurrentUser = wp_get_current_user();
-
-	if (count($ourCurrentUser->roles)== 1 AND $ourCurrentUser->roles[0] == 'subscriber'){
-		wp_redirect(site_url('/'));
-		exit;
-	} 
-}
 
 // Hiding Top Admin Bar
 add_action('wp_loaded', 'noSubsAdminBar');

@@ -3593,31 +3593,31 @@ font-size: 1rem;
     border-bottom: solid 2px white;
 }
 
+/* Removing h1 at the top */
+
+#login h1{
+    display: none;
+    text-align: center;
+}
+
 /* Removing WordPress Logo */
 
 .login h1 a{
     background-image: none !important;
 }
 
-body.login{
+/* Decorating Login form */
 
+.login form{
+    background-color: black;
+    /* background-color: #151e2d; */
+    /* border: 1px solid rgb(104,104,104); */
+}
+
+/* Turning label font white */
+
+#loginform p label{
     color: white;
- 
- 
-}
-
-.login-footer__grid1{
-
-}
-
-#login a{
-    background-image: none;
-   
-}
-
-#login{
-    margin-top: -5rem;
-    margin: auto;
 }
 
 #login h1:after{
@@ -3629,11 +3629,6 @@ body.login{
     font-weight: 400;
     */
 
-}
-
-#login h1{
-    display: none;
-    text-align: center;
 }
 
 .login #backtoblog a, .login #nav a {
@@ -3651,30 +3646,52 @@ p.message{
 
 /* Social Login Treatment */
 
-.login form{
-    background-color: #151e2d;
-    border: 1px solid rgb(104,104,104);
-}
-
 .the_champ_social_login_title{
-    padding: 0.5rem 0rem;
+    padding: 1rem 0rem;
+    color: white
 }
 
 .the_champ_outer_login_container{
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
+
+}
+
+.the_champ_login_ul{
+    background-color: #151e2d;
+    border: 1px solid rgb(104,104,104);
+    height: 3rem;
+}
+
+.theChampLogin{
+
+    margin: 0.5rem !important;
+}
+
+/* REGISTER / LOGIN HYPERLINK BUTTONS */
+
+#login #nav{
+    text-align: center;
+
 }
 
 /* Register Treatment */
 
 p.message.register{
-    text-align: center;
-    font-size: 1rem;
+    /* text-align: center;
+    font-size: 1rem; */
     /* background-color: rgba(40, 40, 40, 0.3); */
-    background-color: #151e2d;
-    border: 1px solidrgb(104,104,104);
+    /* background-color: #151e2d;
+    border: 1px solidrgb(104,104,104); */
+    display:none !important;
+
 }
 
 #registerform p label{
+    color: white;
+}
+
+#reg_passmail{
+    margin-top: -2rem;
     color: white;
 }
 
@@ -3685,231 +3702,16 @@ p.message.register{
 
 /* LOGIN FOOTER */
 
-.login-footer {
-    /* padding: 2rem 0 3.5rem 0; */
-    /* background-image: linear-gradient(#FFF, #ECECEC);   */
-    /* background-color: linear-gradient(#FFF, #ECECEC);   */
-    width: 100%;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#ECECEC));
-    background-image: linear-gradient(#FFF, #ECECEC);
-    display:grid;
-    grid-template-areas:
-    
-     'login-footer__grid1 login-footer__grid1'
-     'login-footer__grid2 login-footer__grid3'
-     'login-footer__grid4 login-footer__grid4'
-     'login-footer__grid5 login-footer__grid5';
-    
-    grid-template-columns: 1fr 1fr;
-    
-    }
-
-.login-footer__grid1{
-        grid-area: login-footer__grid1;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        width: 100%;
-    
-    }
-
-.login-footer__grid1 h1{
-        font-size: 1.4rem;
-        margin-bottom: .33rem;
-        font-weight: 200;
-        text-align: center;
-    }
-
-.login-footer__grid1 h1 strong{
-        font-size: 1.6rem;
-        font-weight: 600;
-    }
-
-.login-footer__grid1 a{
-    
-        text-decoration: none;
-        color: #666;
-        text-align: center;
-    }
-
-.login-footer__grid1 p{ 
-    
-        text-align: center;
-    }
-
-.login-footer__grid1 p{
-    
-        text-decoration: none;
-        color: #666;
-        margin-bottom: 1rem;
-    }
-
-.headline {
-        color: #666;
-        margin-bottom: .33rem;
-    }
-
-.login-footer__grid2{
-        grid-area: login-footer__grid2;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        margin-bottom: 1rem;
-    }
-
-.login-footer__grid2_ul{
-        text-align: center;
-        list-style-type: none;
-    
-    }
-
-.login-footer__grid2 a{
-      
-        text-decoration: none;
-        color: #999;
-    }
-
-.login-footer__grid3{
-        grid-area: login-footer__grid3;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        margin-bottom: 1rem;
-    }
-
-.login-footer__grid3_ul{
-        text-align: center;
-        list-style-type: none;
-    
-    }
-
-.login-footer__grid3 a{
-      
-        text-decoration: none;
-        color: #999;
-    }
-
-.login-footer__grid4{
-        grid-area: login-footer__grid4;
-    
-        display: -webkit-box;
-    
-        display: -ms-flexbox;
-    
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        width: 100%;
-    }
-
-.login-footer__grid4 h3{
+.site-footer__grid1 h2{
+    color: black;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: 200;
     text-align: center;
-    }
+}
 
-/* .login-footer__grid4 ul{
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-    } */
-
-.social-icons-list {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        /* flex-direction: row; */
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        list-style: none;
-        width: 100%;
-      }
-
-.social-icons-list {
-        /* flex: 1; */
-        margin: 0 8px;
-      }
-
-.social-icons-list a {
-        display: block;
-        margin: 0 8px;
-        text-align: center;
-        color: #FFF;
-        font-size: 1.25rem;
-        padding: 5px 10px;
-    
-    }
-
-.social-icons-list li a:hover {
-        opacity: .75;
-      }
-
-.social-color-facebook {background-color: #4862a3}
-
-.social-color-twitter {background-color: #55acee}
-
-.social-color-youtube {background-color: #cc1e1f}
-
-.social-color-linkedin {background-color: #0077b5}
-
-.social-color-instagram {background-color: #d8226b}
-
-.login-footer__grid5{
-        grid-area: login-footer__grid5;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        width: 100%;
-        margin-top: 2rem;
-    }
-
-.login-footer__grid5 h3{
-    display: block;
-    background-color:rgb(211, 204, 204);
-    width: 96%;
-    /* font-style: italic; */
-    text-align: center;
-    padding: 0.2rem 1rem;
-    color: #f0f0f0;
-    font-size: 1rem;
-    }
+.site-footer__grid1 h2 strong{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
