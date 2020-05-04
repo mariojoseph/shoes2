@@ -138,7 +138,7 @@ function pageBanner1($args=null){
 
 </head>
 
-
+</div>
 <?php
 }
 // FooterLogin page ...............................................
@@ -209,7 +209,7 @@ function pageBanner($args=null){
 
 </footer>
 
-</div>
+
 <?php
 }
 

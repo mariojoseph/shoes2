@@ -3581,9 +3581,9 @@ font-size: 1rem;
 
 /* login Screen & Register Screens*/
 
-/* Creating Container for Login Page*/
+/* Turning log in black */
 
-.login-container{
+.login{
     background-color: black;
 }
 
@@ -3670,8 +3670,9 @@ p.message{
 /* REGISTER / LOGIN HYPERLINK BUTTONS */
 
 #login #nav{
+    margin-top: -1rem;
+    margin-bottom: 2rem;
     text-align: center;
-
 }
 
 /* Register Treatment */
@@ -3695,10 +3696,13 @@ p.message.register{
     color: white;
 }
 
-/* logged Out Treatment
-.message{
+#login #nav a:first-child{
+    color: orange;
+}
 
-} */
+#login #nav a:nth-child(2){
+    color: red;
+}
 
 /* LOGIN FOOTER */
 
