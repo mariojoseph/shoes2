@@ -107,6 +107,7 @@ add_action('login_footer', 'pageBanner');
 
 function pageBanner($args=null){
 	?>
+<footer>
 
 <footer class="login-footer">
 
