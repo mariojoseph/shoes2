@@ -14,11 +14,19 @@ class Like {
   ourClickDispatcher(e) {
     var currentLikeBox = $(e.target).closest(".like-box");
     var heart = $(e.target);
-    console.log(heart);
-   
+
+    console.log("testing beginning");
+
+    console.log(currentLikeBox.attr('data-exists'));
+    console.log(currentLikeBox.attr('data-posted'));
+
+
+    console.log("testing end");
+
+    // Week and Year Declaration
 
     if (currentLikeBox.attr('data-logged') == 'no') {
-      console.log('Im in the right area')
+
       this.likeResponse.html("You need to log in / Sign In to Vote");
       this.likeResponse.css('color', 'white');
       return null;
@@ -39,18 +47,26 @@ class Like {
 
   
       } else {
-        console.log('Im in the wrong area')
-        this.likeResponse.html("Thank You for Voting");
-        this.likeResponse.css('color', 'yellow');
-        heart.removeClass('fa-heart-o');
-        heart.addClass('fa-heart');
-        heart.css('visibility', 'visible');
-        heart.css('opacity', 1 );
-        this.createLike(currentLikeBox);
+        if(currentLikeBox.attr('data-posted') == 'yes'){
+          this.likeResponse.html("Sorry you have already voted this week, if you wish to vote, please delete your previous LIKE");
+          this.likeResponse.css('color', 'red');
+          return null;
+        } else{
 
-        setTimeout(function(){ 
-          location.reload();
-          ; }, 2000);
+          this.likeResponse.html("Thank You for Voting");
+          this.likeResponse.css('color', 'yellow');
+          heart.removeClass('fa-heart-o');
+          heart.addClass('fa-heart');
+          heart.css('visibility', 'visible');
+          heart.css('opacity', 1 );
+          this.createLike(currentLikeBox);
+  
+          setTimeout(function(){ 
+            location.reload();
+            ; }, 2000);
+
+        }
+
       }
 
     }

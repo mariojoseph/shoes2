@@ -30,52 +30,86 @@
             }
             
               $author = get_current_user_id();
+              $image = get_the_ID();
+              $alreadyPosted = 'no';
+              $existStatus = 'no';
+            // // $date = "July 12th 2019"; 
+            // $date = current_time('F jS, Y');
+            // $week = date('W');
+            // $year = date('Y');
+            // $likeCount = new WP_Query(array(
+            //   'post_type' => 'like',
+            //   'meta_query' => array(
+            //     'relation' => 'AND',
+            //     array(
+            //         'liked-user' => 'liked',
+            //         'compare' => '=',
+            //         'value' => $author   
+            //     ),
+            //     array(
+            //       'key' => 'liked',
+            //       'compare' => '=',
+            //       'value' =>  get_the_ID()
+            //   )
 
-            // $date = "July 12th 2019"; 
-            $date = current_time('F jS, Y');
-            $week = date('W');
-            $year = date('Y');
-            $likeCount = new WP_Query(array(
-              'post_type' => 'like',
-              'meta_query' => array(
-                'relation' => 'AND',
-                array(
-                    'liked-user' => 'liked',
-                    'compare' => '=',
-                    'value' => $author   
-                ),
-                array(
-                  'key' => 'liked',
-                  'compare' => '=',
-                  'value' =>  get_the_ID()
-              )
-
-              )));
+            //   )));
     
 
-              $existStatus ='no';
+            //   $existStatus ='no';
 
-              $likeCount->the_post();
+            //   $likeCount->the_post();
 
-              $count = $likeCount->found_posts;
+            //   $count = $likeCount->found_posts;
+            //   $userWeek = get_field('liked-week');
+            //   $userYear = get_field('liked-year');
 
 
-                if($likeCount->found_posts){
-                  $existStatus = 'yes';
+            //     if($likeCount->found_posts){
+            //       $existStatus = 'yes';
              
+            //     }
+
+            $likeCount = new WP_Query(array(
+              'post_type' => 'like',
+              'posts_per_page' => -1,
+              'meta_query' => array(
+                array(
+                  'liked-user' =>'liked',
+                  'compare' => '=',
+                  'value' => $author
+                )
+              )));
+
+              while($likeCount->have_posts()) {
+                  $likeCount->the_post();
+
+                  $userWeek = get_field('liked-week');
+                  $userYear = get_field('liked-year');
+                  if(($userWeek == $week) && ($userYear == $year)){
+                    $alreadyPosted = 'yes';
+                  };
+
+                  $liked = get_field('liked');
+                  
+                  if($liked == $image ){
+                      $existStatus = 'yes';
+                  }
+
                 }
+
+
 
                 wp_reset_postdata();
               // }
               
            ?>
            
-          <span class="like-box-cover" data-like="<?php echo $likeCount->posts[0]->ID;?>" data-shoe="<?php the_ID();?>" data-exists="<?php echo $existStatus;?>" data-user="<?php echo $author ?>" data-logged="<?php echo $UserLogged ?>" data-date="<?php echo $date ?>" data-week="<?php echo $week ?>" data-year="<?php echo $year ?>">
-                <div class="like-box">
-                <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
+          <span class="like-box" data-like="<?php echo $likeCount->posts[0]->ID;?>" data-shoe="<?php the_ID();?>" data-exists="<?php echo $existStatus;?>" data-user="<?php echo $author ?>" data-logged="<?php echo $UserLogged ?>" data-posted="<?php echo $alreadyPosted  ?>">
+              <div class="like-box-inner">
+              <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
               <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
-                </div>
-          </span>      
+              </div>
+              </span>
     
           <script>
                                     console.log(<?= json_encode($year); ?>);
@@ -114,7 +148,7 @@
         
         <div class="single-right-top-middle">
         
-            <h1>Bought from</h1>
+            <h1 class="single-right-top-middle-button">Bought from</h1>
  
             <a href="<?php echo site_url('/location?variable='.$data) ?>"><button type="button" name="button">Store Location</button></a>
        
@@ -129,7 +163,7 @@
         </div>
         <div class="single-right-bottom-middle">
 
-        <h1>Commentary</h1>
+        <h1 class="single-right-top-middle-button2">Commentary</h1>
 
         <div class="flex-buttons-commentary2">
         <p><?php echo get_field(commentary); print_r($existStatus); ?></p>

@@ -35,6 +35,7 @@ width: 100%;
  left: 0px; */
  height: auto;
  object-fit: cover;
+ transform: rotate(90deg);
  /* transform: rotate(90deg); */
 
 

@@ -81,14 +81,14 @@
 
       /* LIKE BOX - SINGLE PAGE  */
 
-      .like-box-cover {
+      .like-box {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
       }
-
-     .like-box {
+      
+     .like-box-inner {
         font-size: 1rem;
         background-color: #EDEDED;
         box-shadow: 1px 1px 1px rgba(0, 0, 0, .25);
@@ -99,7 +99,7 @@
   
       }
 
-      .like-box:hover {
+      .like-box-inner:hover {
         background-color: #DEDEDE;
       }
 
@@ -115,7 +115,7 @@
       } */
 
 
-      .like-box .fa-heart-o {
+      .like-box-inner .fa-heart-o {
         /* display: inline-block; */
         /* left: 20%; */
         /* margin-top: -1vh; */
@@ -129,7 +129,7 @@
         /* left: 10px; */
       }
 
-      .like-box .fa-heart {
+      .like-box-inner .fa-heart {
         /* left: 20%;
         margin-top: -1vh; */
         cursor: pointer;
@@ -141,7 +141,7 @@
         opacity: 0;
       }
       .like-box[data-exists="yes"] .fa-heart {
-        transform: scale(1);
+        /* transform: scale(1); */
         visibility: visible;
         opacity: 1;
       }

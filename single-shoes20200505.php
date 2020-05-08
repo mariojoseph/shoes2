@@ -58,6 +58,8 @@
               $likeCount->the_post();
 
               $count = $likeCount->found_posts;
+              $userWeek = get_field('liked-week');
+              $userYear = get_field('liked-year');
 
 
                 if($likeCount->found_posts){
@@ -70,12 +72,12 @@
               
            ?>
            
-          <span class="like-box" data-like="<?php echo $likeCount->posts[0]->ID;?>" data-shoe="<?php the_ID();?>" data-exists="<?php echo $existStatus;?>" data-user="<?php echo $author ?>" data-logged="<?php echo $UserLogged ?>" data-date="<?php echo $date ?>" data-week="<?php echo $week ?>" data-year="<?php echo $year ?>">
-                <div class="like-box-cover">
-                <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
+          <span class="like-box" data-like="<?php echo $likeCount->posts[0]->ID;?>" data-shoe="<?php the_ID();?>" data-exists="<?php echo $existStatus;?>" data-user="<?php echo $author ?>" data-logged="<?php echo $UserLogged ?>" data-date="<?php echo $date ?>" data-week="<?php echo $week ?>" data-userWeek="<?php echo $userWeek;?>" data-year="<?php echo $year ?>" data-userYear="<?php echo $userYear;?>">
+              <div class="like-box-inner">
+              <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
               <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
-                </div>
-          </span>      
+              </div>
+              </span>
     
           <script>
                                     console.log(<?= json_encode($year); ?>);

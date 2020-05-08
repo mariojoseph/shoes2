@@ -76,6 +76,8 @@
 
  </div>
 
+   <!-- <hr style="border: 0.5px solid grey; width: 80%; margin: 5px auto;"> -->
+ 
   <div class="site-header__menu_items">
           <div class="site-header__menu_items__home"><i class="fa fa-home" style="color: yellow;" aria-hidden="true" alt="mario"></i><a href="<?php echo esc_url(site_url(' ')); ?>" class="removeHyphen">&nbsp Home</a></div>
       <div class="site-header__menu_items__rules"><i class="fa fa-heartbeat" aria-hidden="true" style="color: #E75480;"></i><a href="<?php echo esc_url(site_url('rules')); ?>" class="removeHyphen">&nbsp Rules</a></div>
