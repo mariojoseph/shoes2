@@ -14020,20 +14020,26 @@ function () {
     key: "ourClickDispatcher",
     value: function ourClickDispatcher(e) {
       var currentLikeBox = (0, _jquery.default)(e.target).closest(".like-box");
-      var heart = (0, _jquery.default)(e.target);
-      console.log("testing beginning");
-      console.log(currentLikeBox.attr('data-exists'));
-      console.log(currentLikeBox.attr('data-posted'));
-      console.log("testing end"); // Week and Year Declaration
+      var heart = (0, _jquery.default)(e.target); // console.log("testing beginning");
+      // console.log(currentLikeBox.attr('data-exists'));
+      // console.log(currentLikeBox.attr('data-posted'));
+      // console.log("testing end");
+      // Week and Year Declaration
 
       if (currentLikeBox.attr('data-logged') == 'no') {
-        this.likeResponse.html("You need to log in / Sign In to Vote");
-        this.likeResponse.css('color', 'white');
+        var message = "You need to Log In / Sign In to Vote";
+        var messageColor = "orange";
+        this.messageResponse(message, messageColor);
+        setTimeout(function () {
+          window.location.href = "http://localhost:3000/wp-login.php";
+          ;
+        }, 2000);
         return null;
       } else {
         if (currentLikeBox.attr('data-exists') == 'yes') {
-          this.likeResponse.html("You have deleted your vote. You can now vote again");
-          this.likeResponse.css('color', 'green');
+          var _message = "You have deleted your vote. You can now vote again";
+          var _messageColor = "green";
+          this.messageResponse(_message, _messageColor);
           heart.removeClass('fa-heart');
           heart.addClass('fa-heart-o');
           heart.css('visibility', 'visible');
@@ -14045,12 +14051,14 @@ function () {
           }, 2000);
         } else {
           if (currentLikeBox.attr('data-posted') == 'yes') {
-            this.likeResponse.html("Sorry you have already voted this week, if you wish to vote, please delete your previous LIKE");
-            this.likeResponse.css('color', 'red');
+            var _message2 = "Sorry you have already voted this week, if you wish to vote, please delete your previous LIKE";
+            var _messageColor2 = "red";
+            this.messageResponse(_message2, _messageColor2);
             return null;
           } else {
-            this.likeResponse.html("Thank You for Voting");
-            this.likeResponse.css('color', 'yellow');
+            var _message3 = "Thank You for Voting";
+            var _messageColor3 = "green";
+            this.messageResponse(_message3, _messageColor3);
             heart.removeClass('fa-heart-o');
             heart.addClass('fa-heart');
             heart.css('visibility', 'visible');
@@ -14138,6 +14146,19 @@ function () {
         }
       }); // location.reload();
 
+    }
+  }, {
+    key: "messageResponse",
+    value: function messageResponse(message, messageColor) {
+      this.likeResponse.html(message);
+      this.likeResponse.css('color', 'yellow');
+      this.likeResponse.css('background-color', messageColor);
+      this.likeResponse.css('width', '80%');
+      this.likeResponse.css('margin', 'auto');
+      this.likeResponse.css('margin-top', '1rem');
+      this.likeResponse.css('margin-bottom', '4rem');
+      this.likeResponse.css('padding', '4px 3px');
+      this.likeResponse.css('border-radius', '5px');
     }
   }]);
 

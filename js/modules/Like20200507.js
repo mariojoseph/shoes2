@@ -15,18 +15,34 @@ class Like {
     var currentLikeBox = $(e.target).closest(".like-box");
     var heart = $(e.target);
 
+    console.log("testing beginning");
+
+    console.log(currentLikeBox.attr('data-exists'));
+    console.log(currentLikeBox.attr('data-posted'));
+
+
+    console.log("testing end");
+
     // Week and Year Declaration
-
-    const userWeek = currentLikeBox.attr('data-userWeek');
-    const userYear = currentLikeBox.attr('data-userYear');
-
-    const Week = currentLikeBox.attr('data-Week');
-    const Year = currentLikeBox.attr('data-Year');
 
     if (currentLikeBox.attr('data-logged') == 'no') {
 
-      this.likeResponse.html("You need to log in / Sign In to Vote");
-      this.likeResponse.css('color', 'white');
+      this.likeResponse.html("You need to Log In / Sign In to Vote");
+      this.likeResponse.css('color', 'yellow');
+      this.likeResponse.css('background-color', 'gray');
+      this.likeResponse.css('width', '80%');
+      this.likeResponse.css('margin', 'auto');
+      this.likeResponse.css('margin-top', '1rem');
+      this.likeResponse.css('margin-bottom', '4rem');
+      this.likeResponse.css('padding', '4px 3px');
+      this.likeResponse.css('border-radius', '5px');
+
+
+      setTimeout(function(){ 
+        window.location.href = "http://localhost:3000/wp-login.php";
+        ; }, 2000);
+
+
       return null;
     } else {
 
@@ -45,19 +61,12 @@ class Like {
 
   
       } else {
-        if(Week == userWeek && Year == userYear ){
+        if(currentLikeBox.attr('data-posted') == 'yes'){
           this.likeResponse.html("Sorry you have already voted this week, if you wish to vote, please delete your previous LIKE");
           this.likeResponse.css('color', 'red');
           return null;
         } else{
 
-          console.log(currentLikeBox.attr('data-userWeek'));
-          console.log(currentLikeBox.attr('data-userYear'));
-          console.log('user');
-          console.log(currentLikeBox.attr('data-Week'));
-          console.log(currentLikeBox.attr('data-Year'));
-          console.log('current');
-          
           this.likeResponse.html("Thank You for Voting");
           this.likeResponse.css('color', 'yellow');
           heart.removeClass('fa-heart-o');

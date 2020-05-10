@@ -9,8 +9,10 @@
   <div class="locationBody">
   
   <div class="locationTitle">
+             <div class="locationLabel">
+                 <h1>Location of Seller</h1>
+             </div> 
 
-            <h1>Location of Seller</h1>
 
    						<div class="locationButton">
 									<a href="<?php echo esc_url(site_url('/')); ?>" class="btn  btn--red ">Return to Home</a>	

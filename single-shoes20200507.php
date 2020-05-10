@@ -148,10 +148,10 @@
         
         <div class="single-right-top-middle">
         
-        <div class="single-right-top-middle-case">
-            <h1 class="single-right-top-middle-button">Bought From</h1>
+            <h1 class="single-right-top-middle-button">Bought from</h1>
+ 
             <a href="<?php echo site_url('/location?variable='.$data) ?>"><button type="button" name="button">Store Location</button></a>
-        </div>
+       
 
           <div class="flex-buttons-commentary">
           <p><?php echo get_field(name); ?>,</p> 
@@ -159,11 +159,8 @@
           <p><?php echo get_field(city); ?>,</p>
           <p><?php echo get_field(country); ?>,</p>                    
           </div>
-          <hr style="margin-top: 2rem; background-color: rgb(74,126,187); border: none; width: 80%; height: 1px">
+       
         </div>
-
-     
-
         <div class="single-right-bottom-middle">
 
         <h1 class="single-right-top-middle-button2">Commentary</h1>

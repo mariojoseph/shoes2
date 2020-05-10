@@ -88,7 +88,6 @@
         padding: 1rem;
         display: flex;
         flex-direction: column;
-        background-color: rgba(110, 124, 30, 0.28)
     }
   
   .single-right-top h1{
@@ -108,44 +107,33 @@
 
   .single-right-top-middle{
         grid-area:single-right-top-middle;
-        /* display: flex;
-        flex-direction: column; */
+        display: flex;
+        flex-direction: column;
         /* justify-content: center;
         align-items: center; */
-        /* margin: 1rem; */
+        margin: 1rem;
         /* background-image: linear-gradient(to bottom, rgb(13, 39, 63), rgb(14, 43, 70));*/
         /* background-image: linear-gradient(to bottom, rgba(13,59,102,1), rgba(13,59,102,0.8)); */
-        /* background-color: white;
-        border: 1px solid silver; */
+        background-color: white;
+        border: 1px solid silver;
     }
     
-    .single-right-top-middle-case{
-      display: flex;
-      justify-content:  space-between;
-      align-items: center;
-      padding: 0rem 1rem;
-      margin-top: 2rem;
-    }
+
 
     .single-right-top-middle h1{
 
-      color: yellow;
+      color: white;
+      background-image: linear-gradient(to bottom, rgba(9, 34, 58, 0.9), rgba(8, 26, 43, 0.9));
+      /* background-color: rgb(0, 176, 80); */
       font-family: 'Roboto', sans-serif;
-      font-size: 1.3rem;
-      font-weight: 500;
-      margin-left: 1rem;
-      margin-bottom: 2rem;
-      /* background-image: linear-gradient(to bottom, rgba(9, 34, 58, 0.9), rgba(8, 26, 43, 0.9));
-      background-color: rgb(0, 176, 80); */
-      /* font-family: 'Roboto', sans-serif;
       font-size: 1.3rem;
       font-weight: 500;
       display: block;
       padding: 0.5rem 0rem;
       width: 100%;
       margin: 0;
-      margin-bottom: 1rem;} */
-    }
+      margin-bottom: 1rem;}
+    
 
     .single-right-top-middle a{
       position: relative;
@@ -182,40 +170,35 @@
 
     
   .flex-buttons-commentary{
-        /* margin-top: 2rem; */
+        margin-top: 2rem;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        padding: 0rem 2rem;
-        /* background-color: rgb(240, 240, 240); */
+        padding: 1rem;
+        margin: 0.5rem;
+        background-color: rgb(240, 240, 240);
         /* border: 1px solid grey; */
    }
   
    .flex-buttons-commentary p{
      display: block;
      margin: 0;
-     color: white;
           
    }
-
 
 
   
 
       .single-right-bottom-middle{
         grid-area:single-right-bottom-middle;
-
         display: flex;
-        flex-direction: column; 
-        justify-content: flex-start;
-        align-items: flex-start;
-        /* margin: 1rem; 
-        margin-top: 2rem; */
-        /* border: 1px solid silver; */
+        flex-direction: column;
+        margin: 1rem;
+        border: 1px solid silver;
         /* background-color: rgba(60, 62, 92, 0.733); */
         /* background-image: linear-gradient(to bottom, rgb(13, 39, 63), rgb(14, 43, 70)); */
-        /* background-color: white; */
+        background-color: white;
       }
 /* 
       .single-right-bottom-middle h1{
@@ -228,33 +211,27 @@
 
         .single-right-bottom-middle h1{
 
-          color:yellow;
-          /* background-image: linear-gradient(to bottom, rgba(9, 34, 58, 0.9), rgba(8, 26, 43, 0.9)); */
+          color: white;
+          background-image: linear-gradient(to bottom, rgba(9, 34, 58, 0.9), rgba(8, 26, 43, 0.9));
           /* background-color: rgb(0, 176, 80); */
           font-family: 'Roboto', sans-serif;
           font-size: 1.3rem;
           font-weight: 500;
-          margin-left: 2rem;
-
-          /* display: block; */
-          /* padding: 0.5rem 0rem; */
-          /* width: 100%; */
-          /* margin: 0; */
-          /* margin-bottom: 1rem; */
-        }
+          display: block;
+          padding: 0.5rem 0rem;
+          width: 100%;
+          margin: 0;
+          margin-bottom: 1rem;}
 
         .flex-buttons-commentary2{
-          /* margin-top: 2rem; */
-          /* display: flex;
+          margin-top: 2rem;
+          display: flex;
           flex-direction: column;
           justify-content: flex-start;
-          align-items: flex-start; */
+          align-items: flex-start;
           padding: 1rem;
-          color: white;
-          padding: 0rem 2rem;
-          margin-bottom: 2rem;
-          /* margin: 0.5rem;
-          background-color: rgb(240, 240, 240); */
+          margin: 0.5rem;
+          background-color: rgb(240, 240, 240);
           /* border: 1px solid grey; */
      }
     

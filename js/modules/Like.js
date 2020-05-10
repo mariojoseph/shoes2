@@ -15,26 +15,36 @@ class Like {
     var currentLikeBox = $(e.target).closest(".like-box");
     var heart = $(e.target);
 
-    console.log("testing beginning");
+    // console.log("testing beginning");
 
-    console.log(currentLikeBox.attr('data-exists'));
-    console.log(currentLikeBox.attr('data-posted'));
+    // console.log(currentLikeBox.attr('data-exists'));
+    // console.log(currentLikeBox.attr('data-posted'));
 
 
-    console.log("testing end");
+    // console.log("testing end");
 
     // Week and Year Declaration
 
     if (currentLikeBox.attr('data-logged') == 'no') {
 
-      this.likeResponse.html("You need to log in / Sign In to Vote");
-      this.likeResponse.css('color', 'white');
+      const message = "You need to Log In / Sign In to Vote";
+      const messageColor = "orange";
+      this.messageResponse(message, messageColor);
+
+      setTimeout(function(){ 
+        window.location.href = "http://localhost:3000/wp-login.php";
+        ; }, 2000);
+
+
       return null;
     } else {
 
       if (currentLikeBox.attr('data-exists') == 'yes') {
-        this.likeResponse.html("You have deleted your vote. You can now vote again");
-        this.likeResponse.css('color', 'green');
+     
+        const message = "You have deleted your vote. You can now vote again";
+        const messageColor = "green";
+        this.messageResponse(message, messageColor);
+
         heart.removeClass('fa-heart');
         heart.addClass('fa-heart-o');
         heart.css('visibility', 'visible');
@@ -48,13 +58,18 @@ class Like {
   
       } else {
         if(currentLikeBox.attr('data-posted') == 'yes'){
-          this.likeResponse.html("Sorry you have already voted this week, if you wish to vote, please delete your previous LIKE");
-          this.likeResponse.css('color', 'red');
+   
+          const message = "Sorry you have already voted this week, if you wish to vote, please delete your previous LIKE";
+          const messageColor = "red";
+          this.messageResponse(message, messageColor);
+
           return null;
         } else{
 
-          this.likeResponse.html("Thank You for Voting");
-          this.likeResponse.css('color', 'yellow');
+          const message = "Thank You for Voting";
+          const messageColor = "green";
+          this.messageResponse(message, messageColor);
+
           heart.removeClass('fa-heart-o');
           heart.addClass('fa-heart');
           heart.css('visibility', 'visible');
@@ -156,6 +171,20 @@ class Like {
     });
     // location.reload();
   }
+
+  messageResponse(message, messageColor){
+   
+    this.likeResponse.html(message);
+    this.likeResponse.css('color', 'yellow');
+    this.likeResponse.css('background-color', messageColor);
+    this.likeResponse.css('width', '80%');
+    this.likeResponse.css('margin', 'auto');
+    this.likeResponse.css('margin-top', '1rem');
+    this.likeResponse.css('margin-bottom', '4rem');
+    this.likeResponse.css('padding', '4px 3px');
+    this.likeResponse.css('border-radius', '5px');
+  }
+
 }
 
 export default Like;
