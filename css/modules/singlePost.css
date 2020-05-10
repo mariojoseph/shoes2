@@ -46,7 +46,7 @@
           }  
   
   .single-left-photo{
-      /* padding: 1rem; */
+      margin-bottom: -4px;
       }
 
   .single-left-photo img{

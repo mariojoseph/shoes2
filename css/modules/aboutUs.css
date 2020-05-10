@@ -6,8 +6,7 @@
     grid-gap: 0px;
     grid-template-areas:
     'aboutUsTitle'
-    'aboutUsContent'
-    'aboutUsPicture';
+    'aboutUsContent';
     box-sizing: border-box;
     margin-top: 0.1rem;
     background-color: #151e2d;
@@ -45,15 +44,14 @@
 }
 /* SHOPPING */
 
-.aboutUsPicture{ 
-  grid-area: 'aboutUsPicture';
-  background-image: url('images/aboutUsShoes.png');
-  /* background-position: center; */
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin: auto;
-  width: 80%;
-  padding-top: 60%;
+.aboutUsContent img{ 
+
+  margin: 0 10%;
+  object-fit: cover;
+  width:80%;
+  
+
+
 }
 
 

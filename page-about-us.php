@@ -25,7 +25,6 @@
             }
             ?></p>
             </div>
-            <div class="aboutUsPicture">
 
             <!-- <img src="<?php echo get_theme_file_uri('/images/aboutUsShoes.png'); ?>" alt=""> -->
             </div>
