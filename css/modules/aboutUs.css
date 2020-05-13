@@ -30,12 +30,13 @@
 
 margin: auto;
 border: 1px solid rgb(225, 240, 15);
-background-color: rgb(167, 164, 32);
+/* background-color: rgb(167, 164, 32); */
 border-radius: 4px;
 padding: 5px 8px;
 }
 .aboutUsButton a{
-  color: white;
+  /* color: white; */
+  color: yellow;
   text-decoration: none;
  
 }
