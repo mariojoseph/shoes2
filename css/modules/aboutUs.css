@@ -22,6 +22,7 @@
 }
 
 .aboutUsTitle h1{ 
+  font-family: 'Pacifico', cursive;
   color: white;
   text-align: center;
 }
@@ -66,23 +67,40 @@ padding: 5px 8px;
 
 
 
+@media(min-width:760px) and (max-width: 800px){
+
+  .aboutUsTitle {
+    margin-top: 2rem;
+    grid-area:'aboutUsTitle';
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    box-sizing: border-box;
+  }
+
+}
+
+@media(min-width:800px){
+
+  .aboutUsTitle {
+    margin-top: 2rem;
+    grid-area:'aboutUsTitle';
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    box-sizing: border-box;
+  }
+
+}
+
+
 
   
 
-  
-
-
-  /* 
-  
-
-  
-
 
   
 
 
 
-
+/* 
   @media(min-width:760px){
 
     .aboutUsTitle {
@@ -118,6 +136,6 @@ padding: 5px 8px;
       font-size: 20px;
       font-family: 'Kalam', cursive;
     }
-  } 
+  }  */
   
-  */
+  

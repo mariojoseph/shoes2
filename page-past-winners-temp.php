@@ -16,7 +16,7 @@
                 <h1>Past Shoe Winners</h1>
 
                 <div class="past-winners-grid-header-btn">
-                <i class="fa fa-home" style="color: yellow;" aria-hidden="true" alt="mario"></i><a href="<?php echo esc_url(site_url(' ')); ?>" class="removeHyphen">&nbsp Home</a>
+                <i class="fa rulesButtonColor fa-home" style="color: yellow;" aria-hidden="true" alt="mario"></i><a href="<?php echo esc_url(site_url(' ')); ?>" class="removeHyphen">&nbsp Home</a>  
                 </div>
     </div>
 

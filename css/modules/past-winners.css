@@ -12,7 +12,7 @@
   /* overflow: hidden; */
   box-sizing: border-box;
   margin-top: 0.1rem;
-  padding-bottom: 8.5rem;
+  padding-bottom: 3rem;
   background-color: #151e2d;
   
   } 
@@ -22,15 +22,16 @@
 
   .past-winners-grid-header{
   
-    width: 100%;
+    /* width: 100%; */
     background-color: #151e2d;
-    grid-area:past-winners-grid-header;
     color: white;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    box-sizing: border-box;
+    box-sizing: border-box; */
     grid-area:  'past-winners-grid-header';
 
   }
@@ -38,14 +39,22 @@
   .past-winners-grid-header h1{
     color: rgb(248, 245, 245);
     /* color: yellow; */
-    padding: 1rem;
+    /* padding: 1rem; */
     font-family: 'Pacifico', cursive;
     text-align: center;
   }
 
   .past-winners-grid-header-btn{
-    margin-top: 1rem;
+    border: 1px solid rgb(225, 240, 15);
+    /* background-color: rgb(167, 164, 32); */
+    border-radius: 4px;
+    padding: 5px 8px;
     margin: auto;
+  }
+
+  .past-winners-grid-header-btn a{
+    color: yellow;
+    text-decoration: none;
   }
 
 
@@ -54,7 +63,7 @@
   .past-winners-grid-middle{
     position: relative;
     margin:auto;
-    /* padding: 1rem 0; */
+    padding: 1rem 0;
     color: white;
     background-color: #151e2d;
     color: white;
@@ -65,6 +74,17 @@
   }
 
 @media(min-width: 500px){
+
+  .past-winners-grid-header{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 7fr 4fr;
+  
+  }
+
+  .past-winners-grid-header h1{
+    text-align: right;
+  }
 
   .past-winners-grid-middle{
     
