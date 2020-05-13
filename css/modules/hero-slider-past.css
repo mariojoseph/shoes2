@@ -26,7 +26,7 @@
 
 .hero-sliderP-container{
     position: relative;
-    width: 350px;
+    width: 95%;
     margin: auto;
     border: 1px solid rgba(151, 141, 141, 0.8);
     overflow: hidden;
@@ -53,16 +53,18 @@ width: 100vw;
 @media(min-width: 500px){
 
   .hero-sliderP-container{
-    position: relative;
-    width: 400px;
-    margin: auto;
+    width: 96%;
+    /* margin: auto;
     border: 1px solid rgba(151, 141, 141, 0.8);
-    overflow: hidden;
-  }
+    overflow: hidden; */
+  } 
 
   .hero-sliderP img{
-    width: 400px;
-    }
+    /* width: 100%; */
+    width: 380px;
+    
+  } 
 
 }
+
 

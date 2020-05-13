@@ -32,6 +32,7 @@ Version: 1.0
 
 @import "modules/singlePost";
 @import "modules/legal";
+@import "modules/history";
 
 /* Tool Areas */
 @import "modules/shoesFrontPageGallery";
