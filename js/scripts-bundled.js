@@ -14431,7 +14431,7 @@ function () {
 
       this.Size = this.carouselSliderPWImages[0].clientWidth;
       this.events();
-      console.log(this.carouselSliderPWImages.length);
+      console.log(this.carouselSliderPWImages);
     }
   }
 
@@ -14441,6 +14441,7 @@ function () {
       // console.log(this.Size);
       this.carouselSliderPW.style.transform = "translateX(" + -this.Size * this.counter + "px)";
       this.dotClassDots[this.dot].style.backgroundColor = "rgba(104, 98, 124, 0.9)";
+      this.carouselSliderPWImages[this.counter + 1].style.opacity = "0.4";
       var MyTimer = setInterval(this.changeScene.bind(this), 3000);
     }
   }, {
@@ -14453,11 +14454,15 @@ function () {
         this.counter = this.carouselSliderPWImages.length - this.counter;
         this.carouselSliderPW.style.transform = "translateX(" + -this.Size * this.counter + "px)";
         this.dotClassDots[this.dot].style.backgroundColor = "rgba(104, 98, 124, 0.9)";
+        this.carouselSliderPWImages[this.counter + 1].style.opacity = "0.4";
       } else {
+        console.log(this.carouselSliderPWImages[1]);
         this.dotClassDots[this.dot].style.backgroundColor = "rgba(104, 98, 124, 0.3)";
+        this.carouselSliderPWImages[this.counter + 1].style.opacity = "1";
         this.dot++;
         this.carouselSliderPW.style.transition = "transform 0.5s ease-in-out";
         this.counter++;
+        this.carouselSliderPWImages[this.counter + 1].style.opacity = "0.4";
         this.carouselSliderPW.style.transform = "translateX(" + -this.Size * this.counter + "px)";
 
         if (this.dot !== 5) {

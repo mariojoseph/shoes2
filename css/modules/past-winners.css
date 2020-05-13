@@ -12,7 +12,7 @@
   /* overflow: hidden; */
   box-sizing: border-box;
   margin-top: 0.1rem;
-  padding-bottom: 3rem;
+  padding-bottom: 8.5rem;
   background-color: #151e2d;
   
   } 
@@ -54,7 +54,7 @@
   .past-winners-grid-middle{
     position: relative;
     margin:auto;
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
     color: white;
     background-color: #151e2d;
     color: white;

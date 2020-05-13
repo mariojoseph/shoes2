@@ -47,7 +47,8 @@ padding: 1rem 0;
 }
 
 .hero-sliderP img{
-width: 100vw;
+width: 400px;
+opacity: 1;
 }
 
 @media(min-width: 500px){
