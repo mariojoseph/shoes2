@@ -34,7 +34,7 @@
 
 .hero-sliderP{
     display: flex;
-    width: 100%;
+    width: 320px;
     height: auto;
   }
   
@@ -47,14 +47,15 @@ padding: 1rem 0;
 }
 
 .hero-sliderP img{
-width: 400px;
+width: 380px;
 opacity: 1;
 }
 
-@media(min-width: 500px){
+@media(min-width: 600px){
 
-  .hero-sliderP-container{
-    width: 96%;
+  .hero-sliderP{
+    /* width: 700px; */
+    width: 320px;
     /* margin: auto;
     border: 1px solid rgba(151, 141, 141, 0.8);
     overflow: hidden; */
@@ -62,7 +63,7 @@ opacity: 1;
 
   .hero-sliderP img{
     /* width: 100%; */
-    width: 380px;
+    width: 400px;
     
   } 
 
