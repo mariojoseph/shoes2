@@ -10,7 +10,7 @@
                 <h1 > Rules</h1>
             </div>
             <div class="rulesButton">
-                        <a href="<?php echo esc_url(site_url('/')); ?>" class="btn  btn--red ">Return to Home</a>    
+            <i class="fa fa-home" style="color: white;" aria-hidden="true" alt="mario"></i><a href="<?php echo esc_url(site_url(' ')); ?>" class="removeHyphen">&nbsp Home</a>  
             </div>
         </div> 
         <div class="rulesContent">

@@ -27,7 +27,16 @@
 }
 
 .aboutUsButton{
-  margin: 0;
+
+margin: auto;
+border: 1px solid rgb(225, 240, 15);
+background-color: rgb(167, 164, 32);
+border-radius: 4px;
+padding: 5px 8px;
+}
+.aboutUsButton a{
+  color: white;
+  text-decoration: none;
  
 }
   
