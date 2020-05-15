@@ -2185,43 +2185,27 @@ padding: 5px 8px;
           box-sizing: border-box;
   margin-top: 0.1rem;
   background-color: #151e2d;
-  padding-bottom: 5rem;
 
 }
+
+/* Title and Buttons */
 
 .rulesTitle {
   grid-area:'rulesTitle';
   display: grid;
   grid-template-columns: 1fr;
   margin: auto;
-  /* flex-direction: column;
-  justify-content: center;
-  align-content: center; */
-  /* width: 100%;
-  background-color: #151e2d;
-
-  
-  box-sizing: border-box; */
 }
 
 .rulesTitle h1{
   color: white;
   text-align: center;
   font-family: 'Pacifico', cursive;
-  /* color: rgb(248, 245, 245);
-  padding: 1rem;
-  font-family: 'Pacifico', cursive; 
-  text-align: center; */
-
 }
 
 .rulesButton{
 
   margin: auto;
-  /* border: 1px solid rgb(225, 240, 15);
-  background-color: rgb(167, 164, 32); */
-  /* border: 1px solid rgb(225, 240, 15);
-  background-color: rgb(207, 12, 6); */
   border: 1px solid rgb(225, 240, 15);
   border-radius: 4px;
   padding: 5px 8px;
@@ -2233,30 +2217,101 @@ padding: 5px 8px;
    
   }
 
+/* RULES CONTENT */
+
 .rulesContent{
   grid-area:'rulesContent';
-  position: relative;
-  margin: 0rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0 1rem;
+  display: grid;
+ 
+  grid-template-areas: 
+  'rulesContent-General'
+  'rulesContent-Vote'
+  'rulesContent-Post'
+  'rulesContent-End'
+  ;
+
   color: white;
-  font-size: 20px;
-  font-family: 'Kalam', cursive;
  
 }
 
-.rulesContent ul{
-  padding-left: 2rem;
-  list-style-type: square;
+/* RULES CONTENT - GENERAL */
+
+.rulesContent-General{
+  padding: 1rem;
+  grid-area:rulesContent-General;
 }
 
-@media(min-width:760px) and (max-width: 800px){
+.rulesContent-General ul{
+  list-style-type: square;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+.rulesContent-General li{
+  padding: 0.5rem 0rem;
+}
+
+.rulesContent-General p{
+  display: inline;
+  color: yellow;
+}
+
+/* RULES CONTENT - VOTE */
+
+.rulesContent-Vote{
+  grid-area:rulesContent-Vote;
+}
+
+.rulesContent-Post{
+  grid-area:rulesContent-Post;
+}
+
+.rulesContent-Vote h4, .rulesContent-Post h4{
+  text-align: center;
+  display: block;
+  border: 1px solid rgb(65, 63, 63);
+  /* background-color: rgba(65, 63, 63, 0.2); */
+  background-color: rgba(48, 47, 47, 0.2);
+  margin: 0rem 1rem;
+  padding: 0.5rem 0rem;
+  color: yellow;
+}
+
+.rulesContent-Vote ul, .rulesContent-Post ul{
+ 
+  display: block;
+  border: 1px solid rgb(48, 47, 47);
+  background-color: rgba(48, 47, 47, 0.2);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 0rem 1rem;
+  list-style-type: square;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+.rulesContent-Vote li, .rulesContent-Post li{
+  padding: 0rem 1rem;
+}
+
+.rulesContent-End{
+  grid-area:rulesContent-End;
+  padding: 1rem;
+}
+
+.rulesContent-End ul{
+ list-style: none;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  background-color: rgb(104, 99, 26);
+}
+
+.rulesContent-End li{
+  padding: 0rem 0rem;
+
+}
+
+@media(min-width:760px) and (max-width: 960px){
 
   .rulesTitle {
     margin-top: 2rem;
@@ -2268,9 +2323,21 @@ padding: 5px 8px;
     
   }
 
+  .rulesContent{
+    grid-area:'rulesContent';
+    display: grid;
+    grid-template-areas: 
+    'rulesContent-General'
+    'rulesContent-Vote rulesContent-Post'
+    'rulesContent-End'
+    ;
+    color: white;
+   
+  }
+
 }
 
-@media(min-width:800px){
+@media(min-width:960px){
 
   .rulesTitle {
     margin-top: 2rem;
@@ -2281,40 +2348,18 @@ padding: 5px 8px;
             box-sizing: border-box;
   }
 
-}
-
-/* @media(min-width:760px){
- */
-
-/* .rulesLabel{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .rulesLabel h1{
-
+  .rulesContent{ 
+    display: grid;
+    grid-template-areas: 
+    'rulesContent-General'
+    'rulesContent-Vote rulesContent-Post'
+    'rulesContent-End'
+    ;
     color: white;
-  }
-
-  .rulesButton{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  .rulesContent{
-    grid-area:'rulesContent';
-    position: relative;
-    margin: 2rem 0;
-    display: block;
-    padding: 0 3rem;
-    color: white;
-    font-size: 20px;
-    font-family: 'Kalam', cursive;
    
-  } */
+  }
 
-/* } */
+}
 
 .past-winners-grid{
   position: relative;
