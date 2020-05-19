@@ -818,9 +818,9 @@ body{
       display: -ms-flexbox;
   
       display: flex;
-      -webkit-box-flex: 2fr;
-          -ms-flex: 2fr 1fr 1fr;
-              flex: 2fr 1fr 1fr;
+      -webkit-box-flex: 1fr;
+          -ms-flex: 1fr 1fr 1fr;
+              flex: 1fr 1fr 1fr;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;

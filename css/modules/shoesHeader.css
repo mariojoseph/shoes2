@@ -245,7 +245,7 @@
     .site_header__iPad_buttons{
   
       display: flex;
-      flex: 2fr 1fr 1fr;
+      flex: 1fr 1fr 1fr;
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
