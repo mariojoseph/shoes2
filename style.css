@@ -718,6 +718,7 @@ body{
     background: -webkit-gradient(linear, left top, left bottom, from(#af111c), to(rgb(117, 0, 8)));
     background: linear-gradient(#af111c, rgb(117, 0, 8));
     border: 1px solid rgb(175, 17, 28);
+    padding: 7px 5px !important;
    }
 
 .btn--red:hover {

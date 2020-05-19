@@ -151,6 +151,7 @@
   .btn--red {
     background: linear-gradient($heartRed, color($heartRed b(+30%) s(+80%)));
     border: 1px solid color($heartRed);
+    padding: 7px 5px !important;
    }
   
    .btn--red:hover {
