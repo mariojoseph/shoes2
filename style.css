@@ -2244,6 +2244,7 @@ padding: 5px 8px;
 .rulesContent-General{
   padding: 1rem;
   grid-area:rulesContent-General;
+
 }
 
 .rulesContent-General ul{
@@ -2254,7 +2255,7 @@ padding: 5px 8px;
 
 .rulesContent-General li:first-child{
   color: yellow;
-  font-size: 1.5rem;
+
 }
 
 .rulesContent-General li{
@@ -2276,14 +2277,36 @@ padding: 5px 8px;
   grid-area:rulesContent-Post;
 }
 
-.rulesContent-Vote h4, .rulesContent-Post h4{
+.rulesContent-Post-Case{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: 1px solid rgb(65, 63, 63);
+  margin: 0rem 1rem;
+  padding: 0.5rem 0rem;
+  color: yellow;
+}
+
+.rulesContent-Post-Case h4{
+  display: block;
+  margin:0;
+  padding: 4px;
+}
+
+.rulesContent-Vote h4 {
   text-align: center;
   display: block;
   border: 1px solid rgb(65, 63, 63);
   /* background-color: rgba(65, 63, 63, 0.2); */
   background-color: rgba(48, 47, 47, 0.2);
   margin: 0rem 1rem;
-  padding: 0.5rem 0rem;
+  padding: 0.7rem 0rem;
   color: yellow;
 }
 
@@ -2499,6 +2522,11 @@ padding-top:30%;
    
   }
 
+  .rulesContent-General{
+    border: solid 1px yellow;
+    margin: 2rem;
+  }
+
 }
 
 @media(min-width:960px){
@@ -2523,7 +2551,11 @@ padding-top:30%;
     ;
     grid-template-columns: 1fr 1fr;
     color: white;
-   
+  }
+
+  .rulesContent-General{
+    border: solid 1px yellow;
+    margin: 2rem;
   }
 
 }

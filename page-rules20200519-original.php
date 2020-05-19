@@ -41,9 +41,8 @@
             </div>
 
             <div class="rulesContent-Post">
-                <div class="rulesContent-Post-Case">
-                <h4>Post your favorite shoes</h4>
-                <a href="<?php echo esc_url(site_url('post-your-shoes')); ?>" class="btn btn--red btnRules">Post Your Shoes</a>
+                <div class="">
+                     <h4>Post your favorite shoes  <a href="<?php echo esc_url(site_url('post-your-shoes')); ?>" class="btn btn--red btnRules">Post Your Shoes</a></h4>
                 </div>
                
                 <ul>

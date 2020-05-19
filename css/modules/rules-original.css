@@ -103,31 +103,15 @@
   grid-area:rulesContent-Post;
 }
 
-.rulesContent-Post-Case{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  border: 1px solid rgb(65, 63, 63);
-  margin: 0rem 1rem;
-  padding: 0.5rem 0rem;
-  color: yellow;
-}
 
-.rulesContent-Post-Case h4{
-  display: block;
-  margin:0;
-  padding: 4px;
-}
-
-
-.rulesContent-Vote h4 {
+.rulesContent-Vote h4, .rulesContent-Post h4{
   text-align: center;
   display: block;
   border: 1px solid rgb(65, 63, 63);
   /* background-color: rgba(65, 63, 63, 0.2); */
   background-color: rgba(48, 47, 47, 0.2);
   margin: 0rem 1rem;
-  padding: 0.7rem 0rem;
+  padding: 0.5rem 0rem;
   color: yellow;
 }
 .rulesContent-Vote ul, .rulesContent-Post ul{
