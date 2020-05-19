@@ -273,7 +273,7 @@
   
       display: grid;
       height: 5rem;
-      grid-template-columns: 5fr 5fr 1fr;
+      grid-template-columns: 6fr 5fr 1fr;
     
     }
 
