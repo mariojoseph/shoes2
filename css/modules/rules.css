@@ -54,12 +54,12 @@
   display: grid;
  
   grid-template-areas: 
-  'rulesContent-General'
+  'rulesContent-General '
   'rulesContent-Vote'
   'rulesContent-Post'
   'rulesContent-End'
   ;
-
+  grid-gap: 20px;
   color: white;
  
 }
@@ -75,7 +75,7 @@
 .rulesContent-General ul{
   list-style-type: square;
   line-height: 1.5rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .rulesContent-General li{
   padding: 0.5rem 0rem;
@@ -123,22 +123,157 @@
   padding: 0rem 1rem;
 }
 
+.rulesContent-Vote-Image1{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: auto;
+ }
+
+.rulesContent-Vote-Image1a{
+  display: inline-block;
+  /* height: 3rem; */
+  height: 0;
+padding-top:60%;
+  width: 100%;
+  background-image: url('images/VoteImage1.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 1rem 0.5rem;
+/* width: 80%;
+display: block;
+height: 0;
+padding-top:40%;
+background-image: url('images/smallHeart.png');
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat; */
+
+}
+.rulesContent-Vote-Image2{
+ display: flex;
+ justify-content: center;
+ list-style: none;
+ margin: auto;
+}
+ 
+.rulesContent-Vote-Image2a{
+  display: inline-block;
+  /* height: 3rem; */
+  height: 0;
+padding-top:15%;
+  width: 20%;
+  background-image: url('images/smallHeartEmpty.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 1rem 0.5rem;
+/* width: 80%;
+display: block;
+height: 0;
+padding-top:40%;
+background-image: url('images/smallHeart.png');
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat; */
+
+}
+.rulesContent-Vote-Image2b{
+  display: inline-block;
+  /* height: 3rem; */
+  height: 0;
+padding-top:15%;
+  width: 20%;
+  background-image: url('images/smallHeart.png');
+ 
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+  margin: 1rem 0.5rem;
+/* width: 80%;
+display: block;
+height: 0;
+padding-top:40%;
+background-image: url('images/smallHeart.png');
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat; */
+
+}
+
+.btnRules{
+
+  font-size: 12px;
+  padding: 3px;
+  margin-left: 20%;
+  margin-bottom: -3px;
+
+}
+
+.rulesContent-Post-Image1{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: auto;
+ }
+
+.rulesContent-Post-Image1a{
+  display: inline-block;
+  /* height: 3rem; */
+  height: 0;
+padding-top:20%;
+  width: 30%;
+  background-image: url('images/PostImage1.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 1rem 0.5rem;
+  border: 1px solid grey;
+/* width: 80%;
+display: block;
+height: 0;
+padding-top:40%;
+background-image: url('images/smallHeart.png');
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat; */
+
+}
+
+.rulesContent-Post-Image2{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: auto;
+ }
+
+.rulesContent-Post-Image2a{
+  display: inline-block;
+  /* height: 3rem; */
+  height: 0;
+padding-top:30%;
+  width: 70%;
+  background-image: url('images/PostImage2.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 1rem 0.5rem;
+  border: 1px solid grey;
+ 
+}
 .rulesContent-End{
   grid-area:rulesContent-End;
   padding: 1rem;
 }
 
 
-.rulesContent-End ul{
- list-style: none;
-  line-height: 2rem;
-  font-size: 1.5rem;
-  background-color: rgb(104, 99, 26);
+.rulesContent-End h2{
+  text-align: center;
+  color: yellow;
 }
-.rulesContent-End li{
-  padding: 0rem 0rem;
 
-}
 
 @media(min-width:760px) and (max-width: 960px){
 
@@ -154,11 +289,13 @@
   .rulesContent{
     grid-area:'rulesContent';
     display: grid;
+    grid-gap: 0px;
     grid-template-areas: 
-    'rulesContent-General'
+    'rulesContent-General rulesContent-General'
     'rulesContent-Vote rulesContent-Post'
-    'rulesContent-End'
+    'rulesContent-End rulesContent-End'
     ;
+    grid-template-columns: 1fr 1fr;
     color: white;
    
   }

@@ -59,6 +59,9 @@
     z-index: 40;
     }
   
+    .site-header__menu-trigger{
+      cursor: pointer;
+    }
   
   .site-header__menu{
     visibility: hidden;
