@@ -22,6 +22,14 @@
 
     <div class="past-winners-grid-middle">
          
+        <ul class="dot-class">
+            <li class="baby"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
         <div class="hero-sliderP-container">
 
             <div class="hero-sliderP">
@@ -66,14 +74,6 @@
      
             </div>
         </div>
-
-        <ul class="dot-class">
-            <li class="baby"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
     </div>  
    
 </div>

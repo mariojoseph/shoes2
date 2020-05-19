@@ -33,7 +33,6 @@
     flex-direction: column;
     box-sizing: border-box; */
     grid-area:  'past-winners-grid-header';
-    padding-bottom: 3rem;
 
   }
 
@@ -90,7 +89,7 @@
   .past-winners-grid-middle{
     
     padding: 0;
-    width: 100%;
+    width: 80%;
 
   } 
 }
