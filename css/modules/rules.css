@@ -77,6 +77,12 @@
   line-height: 1.5rem;
   font-size: 1.2rem;
 }
+
+.rulesContent-General li:first-child{
+  color: yellow;
+  font-size: 1.5rem;
+}
+
 .rulesContent-General li{
   padding: 0.5rem 0rem;
 }

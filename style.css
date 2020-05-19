@@ -2251,6 +2251,11 @@ padding: 5px 8px;
   font-size: 1.2rem;
 }
 
+.rulesContent-General li:first-child{
+  color: yellow;
+  font-size: 1.5rem;
+}
+
 .rulesContent-General li{
   padding: 0.5rem 0rem;
 }
@@ -2721,7 +2726,8 @@ padding-top:30%;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        background-color: rgba(110, 124, 30, 0.28)
+        /* background-color: rgba(110, 124, 30, 0.28) */
+        background-color: rgba(77, 75, 75, 0.28)
     }
 
 .single-right-top h1{
