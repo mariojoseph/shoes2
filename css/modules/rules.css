@@ -312,13 +312,16 @@ padding-top:30%;
     box-sizing: border-box;
   }
 
-  .rulesContent{ 
+  .rulesContent{
+    grid-area:'rulesContent';
     display: grid;
+    grid-gap: 0px;
     grid-template-areas: 
-    'rulesContent-General'
+    'rulesContent-General rulesContent-General'
     'rulesContent-Vote rulesContent-Post'
-    'rulesContent-End'
+    'rulesContent-End rulesContent-End'
     ;
+    grid-template-columns: 1fr 1fr;
     color: white;
    
   }
