@@ -33,9 +33,7 @@
 
       .like-countF {
         position: absolute;
-        left: 55%;
-        font-size: 1.3rem;
-        margin-top:-0.7rem;
+        left: 70%;
         /* display: inline-block;
       left: float; */
         /* margin-top: 1rem;
@@ -151,25 +149,4 @@
       .like-box[data-exists="yes"] .fa-heart-o {
         visibility: hidden;
         opacity: 0;
-      }
-
-      @media(min-width:500px){
-    
-        .like-countF {
-          position: absolute;
-          left: 60%;
-          font-size: 1.5rem;
-          margin-top:-0.8rem;
-        }
-  
-        .like-boxF .fa-heart-o {
-          left: 35%;
-          margin-top: -1rem;
-        }
-  
-        .like-boxF .fa-heart {
-          left: 35%;
-          margin-top: -1rem;
-        }
-
       }
