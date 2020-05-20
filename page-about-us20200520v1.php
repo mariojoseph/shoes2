@@ -1,5 +1,7 @@
 <?php get_header();?>
 
+
+<body>
     
 <div class="aboutUsBody">
     <div class="aboutUsBackground">
@@ -30,7 +32,9 @@
 
 
     </div>
+</div>
 
+</body>
 
 
 <?php get_footer();?>

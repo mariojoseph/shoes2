@@ -269,6 +269,22 @@
          margin: 2rem auto;
       }
   
+      .singleShoeButton{
+
+        margin: auto;
+        border: 1px solid rgb(225, 240, 15);
+        /* border: 1px solid red; */
+        border-radius: 4px;
+        padding: 5px 8px;
+        }
+      
+        .singleShoeButton a{
+          /* color: red; */
+          color: yellow;
+          text-decoration: none;
+         
+        }
+
 
   
     /* SINGLE POST - Like */

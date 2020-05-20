@@ -173,8 +173,11 @@
               </div>
         </div>
         <div class="single-right-bottom">
-
-          <span><a href="<?php echo esc_url(site_url('/')); ?>" class="btn  btn--red ">Return to Home</a></span>
+            <div class="singleShoeButton">
+                        <i class="fa fa-home" style="color: yellow;" aria-hidden="true" alt="mario"></i><a href="<?php echo esc_url(site_url(' ')); ?>" class="removeHyphen">&nbsp Home</a>
+                                    <!-- <a href="<?php echo esc_url(site_url('/')); ?>" class="btn  btn--red">Return to Home</a>     -->
+            </div>
+          <!-- <span><a href="<?php echo esc_url(site_url('/')); ?>" class="btn  btn--red ">Return to Home</a></span> -->
         </div>
 
       </div>

@@ -2967,6 +2967,22 @@ padding-top:30%;
          margin: 2rem auto;
       }
 
+.singleShoeButton{
+
+        margin: auto;
+        border: 1px solid rgb(225, 240, 15);
+        /* border: 1px solid red; */
+        border-radius: 4px;
+        padding: 5px 8px;
+        }
+
+.singleShoeButton a{
+          /* color: red; */
+          color: yellow;
+          text-decoration: none;
+         
+        }
+
 /* SINGLE POST - Like */
 
 /* .like-box .fa-heart {
@@ -3437,7 +3453,7 @@ width: 380px;
 opacity: 1;
 }
 
-@media(min-width: 600px){
+@media(min-width: 600px) and (max-width: 760){
 
   .hero-sliderP{
     /* width: 700px; */
@@ -3456,6 +3472,30 @@ opacity: 1;
   .hero-sliderP img{
     /* width: 100%; */
     width: 400px;
+    
+  } 
+
+}
+
+@media(min-width: 760px){
+
+  .hero-sliderP{
+    /* width: 700px; */
+    width: 400px;
+    /* margin: auto;
+    border: 1px solid rgba(151, 141, 141, 0.8);
+    overflow: hidden; */
+  } 
+
+  .hero-sliderP-container{
+  
+    width: 100%;
+ 
+  }
+
+  .hero-sliderP img{
+    /* width: 100%; */
+    width: 500px;
     
   } 
 
