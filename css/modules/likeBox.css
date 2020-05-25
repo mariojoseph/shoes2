@@ -75,7 +75,7 @@
         opacity: 1;
       }
 
-      .like-boxF[Fdata-exists="yes"] .fa-heart-o {
+      .like-boxF[data-exists="yes"] .fa-heart-o {
         visibility: hidden;
         opacity: 0;
       }

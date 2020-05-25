@@ -35,7 +35,8 @@
               $existStatus = 'no';
             $week = date('W');
             $year = date('Y');
-            $date = current_time('F jS, Y');
+            // // $date = "July 12th 2019"; 
+            // $date = current_time('F jS, Y');
             // $week = date('W');
             // $year = date('Y');
             // $likeCount = new WP_Query(array(
@@ -105,7 +106,7 @@
               
            ?>
            
-          <span class="like-box" data-like="<?php echo $likeCount->posts[0]->ID;?>" data-shoe="<?php the_ID();?>" data-exists="<?php echo $existStatus;?>" data-user="<?php echo $author ?>" data-logged="<?php echo $UserLogged ?>" data-posted="<?php echo $alreadyPosted  ?>" data-date="<?php echo $date  ?>" data-week="<?php echo $week?>" data-year="<?php echo $year  ?>">
+          <span class="like-box" data-like="<?php echo $likeCount->posts[0]->ID;?>" data-shoe="<?php the_ID();?>" data-exists="<?php echo $existStatus;?>" data-user="<?php echo $author ?>" data-logged="<?php echo $UserLogged ?>" data-posted="<?php echo $alreadyPosted  ?>">
               <div class="like-box-inner">
               <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
               <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
@@ -114,7 +115,7 @@
     
           <script>
           console.log(<?= json_encode($alreadyPosted); ?>);
-                                    console.log(<?= json_encode($week); ?>);
+                                    // console.log(<?= json_encode($year); ?>);
           </script>
      
     </div>

@@ -14082,9 +14082,10 @@ function () {
         'dateId': currentLikeBox.data('date'),
         'weekId': currentLikeBox.data('week'),
         'yearId': currentLikeBox.data('year'),
-        'status': 'publish' //  alert(currentLikeBox.data('professor'));
-
+        'status': 'publish'
       };
+      console.log("checking");
+      console.log($shoeId); //  alert(currentLikeBox.data('professor'));
 
       _jquery.default.ajax({
         beforeSend: function beforeSend(xhr) {

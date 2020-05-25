@@ -103,7 +103,8 @@ class Like {
       'yearId': currentLikeBox.data('year'),
       'status': 'publish'
     }
-
+    console.log("checking");
+    console.log($shoeId);
     //  alert(currentLikeBox.data('professor'));
 
       $.ajax({
