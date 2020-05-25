@@ -3636,8 +3636,8 @@ opacity: 1;
         /* left: 20%; */
         /* margin-top: -1rem; */
         cursor: pointer;
-        -webkit-transition: all .35s ease-out;
-        transition: all .35s ease-out;
+        -webkit-transition: all .4s ease-out;
+        transition: all .4s ease-out;
         color: red;
         position: absolute;
         -webkit-transform: translate(-50%, -50%);
