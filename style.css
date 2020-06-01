@@ -3918,7 +3918,7 @@ grid-template-columns: 1fr 1fr;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .site-footer__grid4 h3{
@@ -3942,7 +3942,7 @@ justify-content: space-between;
         -ms-flex-pack: center;
             justify-content: center;
     list-style: none;
-    width: 100%;
+    /* width: 100%; */
   }
 
 .social-icons-list {
@@ -3986,14 +3986,14 @@ justify-content: space-between;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
+    /* width: 100%; */
     margin-top: 2rem;
 }
 
 .site-footer__grid5 h3{
 display: block;
 background-color:rgb(211, 204, 204);
-width: 96%;
+/* width: 96%; */
 /* font-style: italic; */
 text-align: center;
 padding: 0.2rem 1rem;
