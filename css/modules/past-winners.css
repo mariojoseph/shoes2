@@ -73,6 +73,7 @@
     grid-area:'past-winners-grid-middle';
     display: grid;
     grid-column: 1fr;
+    overflow-x: hidden;
   }
 
 @media(min-width: 500px){

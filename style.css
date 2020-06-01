@@ -2637,6 +2637,7 @@ padding-top:30%;
     grid-area:'past-winners-grid-middle';
     display: grid;
     grid-column: 1fr;
+    overflow-x: hidden;
   }
 
 @media(min-width: 500px){
@@ -3435,14 +3436,14 @@ width: 100%;
     /* background-color: rgb(36, 33, 33); */
     background-color: rgba(39, 38, 38, 0.4);
     border: 1px solid rgba(151, 141, 141, 0.8);
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
 .hero-sliderP{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 380px;
+    width: 360px;
     height: auto;
   }
 
