@@ -1,7 +1,7 @@
 
 .past-winners-grid{
   position: relative;
-  /* max-width: 960px; */
+  max-width: 960px;
   /* justify-content: center;  */
   margin: auto;
   display:grid;
@@ -14,7 +14,7 @@
   margin-top: 0.1rem;
   padding-bottom: 3rem;
   background-color: #151e2d;
-  border-color: red;
+  
   
   } 
 
@@ -35,7 +35,7 @@
     box-sizing: border-box; */
     grid-area:  'past-winners-grid-header';
     padding-bottom: 3rem;
-
+ 
   }
 
   .past-winners-grid-header h1{
@@ -91,7 +91,7 @@
   .past-winners-grid-middle{
     
     padding: 0;
-    width: 100%;
+    width: 98%;
 
   } 
 }

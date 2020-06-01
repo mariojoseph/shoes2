@@ -2566,7 +2566,7 @@ padding-top:30%;
 
 .past-winners-grid{
   position: relative;
-  /* max-width: 960px; */
+  max-width: 960px;
   /* justify-content: center;  */
   margin: auto;
   display:grid;
@@ -2580,7 +2580,7 @@ padding-top:30%;
   margin-top: 0.1rem;
   padding-bottom: 3rem;
   background-color: #151e2d;
-  border-color: red;
+  
   
   }
 
@@ -2600,7 +2600,7 @@ padding-top:30%;
     box-sizing: border-box; */
     grid-area:  'past-winners-grid-header';
     padding-bottom: 3rem;
-
+ 
   }
 
 .past-winners-grid-header h1{
@@ -2655,7 +2655,7 @@ padding-top:30%;
   .past-winners-grid-middle{
     
     padding: 0;
-    width: 100%;
+    width: 98%;
 
   } 
 }
@@ -3408,7 +3408,7 @@ width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 2rem 0rem 2rem 2rem;
+    /* padding: 2rem 0rem 1rem 1rem; */
 }
 
 .dot-class li{
@@ -3428,8 +3428,9 @@ width: 100%;
 /* Slider */
 
 .hero-sliderP-container{
+  border-color: red;
     position: relative;
-    width: 99%;
+    width: 98%;
     margin: auto;
     /* background-color: rgb(36, 33, 33); */
     background-color: rgba(39, 38, 38, 0.4);
@@ -3470,7 +3471,7 @@ opacity: 1;
 
   .hero-sliderP-container{
   
-    width: 100%;
+    width: 98%;
  
   }
 
@@ -3494,7 +3495,7 @@ opacity: 1;
 
   .hero-sliderP-container{
   
-    width: 100%;
+    width: 98%;
  
   }
 
