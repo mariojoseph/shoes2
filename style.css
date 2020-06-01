@@ -2292,7 +2292,7 @@ padding: 5px 8px;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   border: 1px solid rgb(65, 63, 63);
-  margin: 0rem 1rem;
+  /* margin: 0rem 1rem; */
   padding: 0.5rem 0rem;
   color: yellow;
 }
@@ -2309,7 +2309,7 @@ padding: 5px 8px;
   border: 1px solid rgb(65, 63, 63);
   /* background-color: rgba(65, 63, 63, 0.2); */
   background-color: rgba(48, 47, 47, 0.2);
-  margin: 0rem 1rem;
+  /* margin: 0rem 1rem; */
   padding: 0.7rem 0rem;
   color: yellow;
 }
