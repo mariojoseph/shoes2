@@ -37,7 +37,7 @@ function createShoe($data) {
   print_r("is this working?? END");
   
   $post_info= array(  'post_type' => 'shoes',       
-                      'post_status' => 'publish',
+                      'post_status' => 'pending',
                       'post_title' => 'Shoe Post',
                       'post_content' => 'Shoe Posts from users.' );
   
