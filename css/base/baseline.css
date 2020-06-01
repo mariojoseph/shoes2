@@ -9,6 +9,10 @@
 
 } */
 
+/* *{
+  border-style:solid;
+} */
+
 .mainContainer{
   max-width: 960px;
   margin: auto;

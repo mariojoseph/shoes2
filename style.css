@@ -512,6 +512,10 @@ template {
 
 } */
 
+/* *{
+  border-style:solid;
+} */
+
 .mainContainer{
   max-width: 960px;
   margin: auto;
@@ -2562,7 +2566,7 @@ padding-top:30%;
 
 .past-winners-grid{
   position: relative;
-  max-width: 960px;
+  /* max-width: 960px; */
   /* justify-content: center;  */
   margin: auto;
   display:grid;
@@ -2576,6 +2580,7 @@ padding-top:30%;
   margin-top: 0.1rem;
   padding-bottom: 3rem;
   background-color: #151e2d;
+  border-color: red;
   
   }
 
