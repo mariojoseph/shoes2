@@ -93,33 +93,37 @@
   color: yellow;
 }
 
-/* RULES CONTENT - VOTE */
-
-.rulesContent-Vote{
-  grid-area:rulesContent-Vote;
-}
+/* RULES CONTENT - POST */
 
 .rulesContent-Post{
   grid-area:rulesContent-Post;
 }
 
 .rulesContent-Post-Case{
+  color: yellow;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  border: 1px solid rgb(65, 63, 63);
+  justify-content: space-between;
+  /* padding: 0.5rem 0rem; */
   margin: 0rem 1rem;
-  padding: 0.5rem 0rem;
-  color: yellow;
+  border: 1px solid rgb(65, 63,2, 63);
+  /* background-color: grey; */
 }
 
 .rulesContent-Post-Case h4{
-  display: block;
-  margin:0;
-  padding: 4px;
+  /* padding: 2px; */
+  padding-left: 5px;
+  margin: 0.7rem auto;
 }
 
+.rulesContent-Post-Case.btn{
+  /* padding: 4px; */
+}
+/* RULES CONTENT - VOTE */
 
+.rulesContent-Vote{
+  grid-area:rulesContent-Vote;
+}
 .rulesContent-Vote h4 {
   text-align: center;
   display: block;
@@ -231,7 +235,7 @@ background-repeat: no-repeat; */
 
   font-size: 12px;
   padding: 3px;
-  margin-left: 20%;
+  /* margin-left: 20%; */
   margin-bottom: -3px;
 
 }
