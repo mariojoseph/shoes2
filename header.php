@@ -15,15 +15,23 @@
 
 <div class="main-header">
 
-    <div class="text">
-    <a href="<?php echo esc_url(site_url('/')); ?>" ><h1>The site for those who &nbsp <img src="<?php echo get_theme_file_uri('/images/smallHeart.png'); ?>" alt=""> 
+    <div class="main-header-text">
+    <a href="<?php echo esc_url(site_url('/')); ?>" ><h1>for those who &nbsp <img src="<?php echo get_theme_file_uri('/images/smallHeart.png'); ?>" alt=""> 
     <strong>&nbsp shoes</strong></h1></a>    
+   
+    </div>
+    
+    <div class="main-header-image">
+    <input type="file" style="display: none" />
+    <!-- <a href="<?php echo esc_url(site_url('post-your-shoes')); ?>" ><img src="<?php echo get_theme_file_uri('/images/PostYourShoes.png'); ?>" alt=""></a> -->
+    <a href="<?php echo esc_url(site_url('post-your-shoes')); ?>" ><i class="fa fa-camera fa-lg" style="color: rgb(244,232,23);"></i></a>
 
     </div>
-
+   
     <div class="site_header__iPad_buttons">
 
-        <a href="<?php echo esc_url(site_url('post-your-shoes')); ?>" class="btn btn--red">Post Your Shoes</a>
+        <!-- <a href="<?php echo esc_url(site_url('post-your-shoes')); ?>" class="btn btn--red">Post Your Shoes</a> -->
+      
 
         <?php if (is_user_logged_in()){ ?>
 

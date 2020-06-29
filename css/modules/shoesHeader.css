@@ -12,18 +12,19 @@
   position: relative;
    display: grid;
    height:4.0rem;
-   grid-template-columns: 6fr 1fr;
+   grid-template-columns: 4fr 1fr 1fr;
   }
   
-  .text{
+  .main-header-text{
    height:4.0rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     /* border: solid 1px yellow; */
   }
+
   
-  .text h1{
+  .main-header-text h1{
     
     font-size: 1rem;
     color: rgba(247, 247, 7, 0.925);
@@ -38,15 +39,28 @@
     white-space: nowrap;
   }
   
-  .text img{
+  .main-header-text img{
     width: 7%;
   }
 
-  .text a{
+  .main-header-text a{
     text-decoration: none;
     cursor: pointer;
   }
   
+  .main-header-image{
+    display: flex;
+    align-items: center;
+  }
+
+  /* .main-header-image img{
+    width: 45px;
+  } */
+
+  .fa-camera {
+    width: 70px;
+  }
+
   .main-navigation{
     /* border: solid 1px yellow; */
     height:4.0rem;
@@ -195,10 +209,10 @@
       position: relative;
        display: grid;
        height:4.0rem;
-       grid-template-columns: 5fr 1fr;
+       grid-template-columns: 4fr 1fr 1fr;
       }
 
-      .text h1{
+      .main-header-text h1{
         font-size: 1.1rem;
       }
 
@@ -220,12 +234,16 @@
   
       display: grid;
       height:4.0rem;
-      grid-template-columns: 5fr 2fr 1fr;
+      grid-template-columns: 6fr 1fr 1fr 1fr;
       
     }
 
-    .text h1{
+    .main-header-text h1{
       font-size: 1.2rem;
+    }
+
+    .main-header-text h1:before{
+      content: "The site "
     }
 
     .btn {
@@ -241,6 +259,9 @@
       padding-top: 5rem;
   
     }
+
+
+
   
     .site_header__iPad_buttons{
   
@@ -255,6 +276,7 @@
     .site_header__iPad_buttons .btn--dark-orange{
       display: none;
     }
+
 
 
     .site_header__menu_util .btn--red{
@@ -273,12 +295,16 @@
   
       display: grid;
       height:4.0rem;
-      grid-template-columns: 6fr 5fr 1fr;
+      grid-template-columns: 5fr 1fr 3fr 1fr;
     
     }
 
-    .text h1{
+    .main-header-text h1{
       font-size: 1.2rem;
+    }
+
+    .main-header-text h1:before{
+      content: "The site "
     }
 
     .btn {
@@ -323,12 +349,17 @@
   
       display: grid;
       height:4.0rem;
-      grid-template-columns: 3fr 3fr 1fr 1fr;
+      grid-template-columns: 6fr 2fr 3fr 2fr 1fr;
     
     }
 
-    .text h1{
+    .main-header-text h1{
       font-size: 1.2rem;
+    }
+
+
+    .main-header-text h1:before{
+      content: "The site "
     }
 
     .btn {

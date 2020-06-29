@@ -13696,6 +13696,7 @@ function () {
 
     if (window.location.href.indexOf('/post-your-shoes') > -1) {
       // Variable for Images
+      this.uploadDialog;
       var _PREVIEW_URL = 0; // Call to start events function
 
       this.events(); // alert("is anybody out there cara");
@@ -14425,7 +14426,7 @@ function () {
 
     if (window.location.href.indexOf('/past-winners') > -1) {
       this.carouselSliderPW = document.querySelector('.hero-sliderP');
-      this.carouselSliderPWImages = document.querySelectorAll('.hero-sliderP img');
+      this.carouselSliderPWImages = document.querySelectorAll('.pastImage');
       this.dotClassDots = document.querySelectorAll('.dot-class li');
       this.counter = 1;
       this.dot = 0; // Changed to actual size to avoid issues. Can change afterwards

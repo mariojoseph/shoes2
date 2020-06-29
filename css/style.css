@@ -29,10 +29,13 @@ Version: 1.0
 @import "modules/aboutUs";
 @import "modules/rules";
 @import "modules/past-winners";
+@import "modules/past-winners-single";
 
 @import "modules/singlePost";
 @import "modules/legal";
 @import "modules/history";
+@import "modules/blog";
+@import "modules/blog-single";
 
 /* Tool Areas */
 @import "modules/shoesFrontPageGallery";

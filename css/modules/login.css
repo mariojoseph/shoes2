@@ -39,6 +39,9 @@ div#login{
 }
 
 /* Turning label font white */
+/* #user_login{
+    display: none !important;
+} */
 
 #loginform p label{
     color: white;

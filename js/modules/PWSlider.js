@@ -8,7 +8,7 @@ class PWSlider{
       if(window.location.href.indexOf('/past-winners') > -1){
        
         this.carouselSliderPW = document.querySelector('.hero-sliderP');
-        this.carouselSliderPWImages = document.querySelectorAll('.hero-sliderP img');
+        this.carouselSliderPWImages = document.querySelectorAll('.pastImage');
         this.dotClassDots = document.querySelectorAll('.dot-class li');
         this.counter = 1;
         this.dot = 0;

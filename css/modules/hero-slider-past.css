@@ -54,6 +54,33 @@ width: 380px;
 opacity: 1;
 }
 
+/* Like Set Up */
+
+.pastLikes{
+  position: absolute;
+  top: 9rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 300;
+
+}
+
+/* .pastLikes h1{
+  color: white;
+  font-weight: 100;
+  font-size: 1.3rem;
+  display: inline-block;
+  max-width: 100%;
+}
+
+
+.pastLikes h1 img{
+  display: inline-block;
+  margin-bottom: -0.5rem;
+  width: 25%;
+} */
+
+
 @media(min-width: 600px) and (max-width: 760){
 
   .hero-sliderP{

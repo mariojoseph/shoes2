@@ -49,12 +49,19 @@
                             // $size = "full";
                             $pastWinnerImage1 = wp_get_attachment_image_src($pastWinnerImage['id'], $size);
                            ?>
-                           <div>
+
+                        <div class="shellContainer">
                             <p><?php echo $winnerWeek2; ?></p>
-                            <img src="<?php echo $pastWinnerImage1[0]; ?>" longdesc=" <?php  print_r($longDesc) ?> "alt="what the" width="<?php echo $width; ?>" height="<?php echo $height; ?>" alt="shoe1">               
-                            <script>
-                                // console.log(<?php echo json_encode($winnerWeek2);?>);
-                            </script>
+                           <div class="grid4-likeScore">
+                           <h1> <img class= "likeImage" style="width: 20px;" src="<?php echo get_theme_file_uri('/images/smallHeart.png'); ?>" alt=""> &nbsp <?php print_r( $pastWinnerImageLikes) ; ?></h1>
+                            </div>                                
+            
+                            <img class="pastImage" src="<?php echo $pastWinnerImage1[0]; ?>" longdesc=" <?php  print_r($longDesc) ?> "alt="what the" width="<?php echo $width; ?>" height="<?php echo $height; ?>" alt="shoe1">   
+                            <a href="<?php the_permalink(); ?>"  ><button id="testing" type="button" name="button">View</button></a>   
+                            </div> 
+                           <div>
+         
+                                <!-- <div class="pastLikes"><h1> <img src="<?php echo get_theme_file_uri('/images/smallHeart.png'); ?>" alt=""> &nbsp <?php print_r($pastWinnerImageLikes) ; ?></h1></div> -->
                         </div>
 
 
@@ -63,8 +70,10 @@
                 ?>
 
                  <?php wp_reset_postdata(); ?>
-     
+
+                 <div class="pastlikes"><h1>Steven</h1></div>    
             </div>
+  
         </div>
 
         <ul class="dot-class">

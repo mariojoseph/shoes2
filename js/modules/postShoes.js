@@ -4,7 +4,9 @@ class PostShoes {
   constructor() {
 
     if(window.location.href.indexOf('/post-your-shoes') > -1){
+      
     // Variable for Images
+        this.uploadDialog;
     var _PREVIEW_URL =0
 
     // Call to start events function
