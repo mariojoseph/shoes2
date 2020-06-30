@@ -511,7 +511,7 @@ max-width: 100vw;
   .grid5{
     grid-area: grid5;
     border-top: 1px solid rgb(99, 97, 97);
-    z-index: 45;
+    /* z-index: 45; */
     height: 22rem;
     border-right: 1px solid rgb(99, 97, 97);
     border-bottom: 1px solid rgb(99, 97, 97);
@@ -526,7 +526,7 @@ max-width: 100vw;
   .grid6{
     grid-area: grid6;
     /* border-top: 1px solid rgb(99, 97, 97); */
-    z-index: 45;
+    /* z-index: 45; */
     height: 22rem;
     border-bottom: 1px solid rgb(99, 97, 97);
   }
@@ -616,7 +616,7 @@ max-width: 100vw;
   .grid5{
     grid-area: grid5;
     border-top: 1px solid rgb(99, 97, 97);
-    z-index: 45;
+    /* z-index: 5; */
     height: 22rem;
     border-right: 1px solid rgb(99, 97, 97);
     border-bottom: 1px solid rgb(99, 97, 97);
@@ -631,7 +631,7 @@ max-width: 100vw;
   .grid6{
     grid-area: grid6;
     /* border-top: 1px solid rgb(99, 97, 97); */
-    z-index: 45;
+    /* z-index: 5; */
     height: 22rem;
     border-bottom: 1px solid rgb(99, 97, 97);
   }
@@ -720,7 +720,7 @@ max-width: 100vw;
   .grid5{
     grid-area: grid5;
     border-top: 1px solid rgb(99, 97, 97);
-    z-index: 45;
+    /* z-index: 5; */
     height: 22rem;
     border-right: 1px solid rgb(99, 97, 97);
     border-bottom: 1px solid rgb(99, 97, 97);
@@ -735,7 +735,7 @@ max-width: 100vw;
   .grid6{
     grid-area: grid6;
     /* border-top: 1px solid rgb(99, 97, 97); */
-    z-index: 45;
+    /* z-index: 5; */
     height: 22rem;
     border-bottom: 1px solid rgb(99, 97, 97);
   }
@@ -903,7 +903,7 @@ max-width: 100vw;
   .grid5{
     grid-area: grid5;
     border-top: 1px solid rgb(99, 97, 97);
-    z-index: 45;
+    /* z-index: 5; */
     height: 22rem;
     border-right: 1px solid rgb(99, 97, 97);
     border-bottom: 1px solid rgb(99, 97, 97);
@@ -918,7 +918,7 @@ max-width: 100vw;
   .grid6{
     grid-area: grid6;
     /* border-top: 1px solid rgb(99, 97, 97); */
-    z-index: 45;
+    /* z-index: 5; */
     height: 22rem;
     border-bottom: 1px solid rgb(99, 97, 97);
   }
