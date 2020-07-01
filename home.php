@@ -17,7 +17,7 @@
 
                     <article class="blogContent-post">
                         <h2 class="blogContent-post-title"><?php the_title(); ?></h2>
-                        <h4>Posted on <?php the_time('n,j,y');?></h4>
+                        <h4>Posted on <?php the_time('M j Y');?></h4>
                         <h2 class="blogContent-post-content"><?php the_excerpt();?><p><a class="btn" href="<?php the_permalink() ?>">Continue Reading &raquo;</a></p></h2>
 
                     </article>

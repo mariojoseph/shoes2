@@ -5,7 +5,7 @@
 <div class="site-footer__grid1">
 
     <h1 class=""><a href="<?php echo site_url() ?>">Have You Seen My <strong>Shoes</strong></a></h1>
-    <p><a class="" href="#">E-mail: <i>info@have-you-seen-my-shoes.com</i></a></p>
+    <p><a class="" href="#">E-mail: <i>info@haveyouseenmyshoes.com</i></a></p>
 
 </div>
 
@@ -40,11 +40,11 @@
     <!-- <nav> -->
 
         <div class="social-icons-list">
-            <div class=""><a href="#" class="social-color-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
-            <div class=""><a href="#" class="social-color-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
-            <div class=""><a href="#" class="social-color-youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a></div>
-            <div class=""><a href="#" class="social-color-facebook"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
-            <div class=""><a href="#" class="social-color-facebook"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+            <div class=""><a href="https://www.facebook.com/haveyouseenmyshoes-112529203843527" class="social-color-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+            <div class=""><a href="https://twitter.com/haveyouseenmys7" class="social-color-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+            <div class=""><a href="https://www.youtube.com/channel/UC0586AAuVdLtiFF2WJmRkIg/?guided_help_flow=5" class="social-color-youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a></div>
+            <!-- <div class=""><a href="#" class="social-color-facebook"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div> -->
+            <div class=""><a href="https://www.instagram.com/husmshoes/" class="social-color-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
         </div>
 
     <!-- </nav> -->
