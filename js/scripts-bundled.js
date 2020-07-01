@@ -14051,25 +14051,18 @@ function () {
             ;
           }, 2000);
         } else {
-          if (currentLikeBox.attr('data-posted') == 'yes') {
-            var _message2 = "Sorry you have already voted this week, if you wish to vote, please delete your previous LIKE";
-            var _messageColor2 = "red";
-            this.messageResponse(_message2, _messageColor2);
-            return null;
-          } else {
-            var _message3 = "Thank You for Voting";
-            var _messageColor3 = "green";
-            this.messageResponse(_message3, _messageColor3);
-            heart.removeClass('fa-heart-o');
-            heart.addClass('fa-heart');
-            heart.css('visibility', 'visible');
-            heart.css('opacity', 1);
-            this.createLike(currentLikeBox);
-            setTimeout(function () {
-              location.reload();
-              ;
-            }, 2000);
-          }
+          var _message2 = "Thank You for Voting";
+          var _messageColor2 = "green";
+          this.messageResponse(_message2, _messageColor2);
+          heart.removeClass('fa-heart-o');
+          heart.addClass('fa-heart');
+          heart.css('visibility', 'visible');
+          heart.css('opacity', 1);
+          this.createLike(currentLikeBox);
+          setTimeout(function () {
+            location.reload();
+            ;
+          }, 2000);
         }
       }
     }

@@ -30,12 +30,12 @@
                     <li class="rulesContent-Vote-Image1">
                         <div class="rulesContent-Vote-Image1a"></div>
                     </li>
-                    <li>You have only one heart to use to nominate, which will change from hollow to complete</li>
+                    <li>You can vote by pressing the heart, which will change from hollow to complete.</li>
                     <li class="rulesContent-Vote-Image2">
                                     <div class="rulesContent-Vote-Image2a"></div>
                                     <div class="rulesContent-Vote-Image2b"></div>
                     </li>
-                    <li>You will need to Log On / Sign In to ensure that everyone has only one vote for the week</li>
+                    <li>Remember you can only vote once for a Photo. To ensure this we require you to Log On / Sign In</li>
                     <li>The following week we will show the winner of the week</li> 
                 </ul>
             </div>

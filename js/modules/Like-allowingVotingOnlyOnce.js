@@ -57,7 +57,14 @@ class Like {
 
   
       } else {
+        if(currentLikeBox.attr('data-posted') == 'yes'){
+   
+          const message = "Sorry you have already voted this week, if you wish to vote, please delete your previous LIKE";
+          const messageColor = "red";
+          this.messageResponse(message, messageColor);
 
+          return null;
+        } else{
 
           const message = "Thank You for Voting";
           const messageColor = "green";
@@ -73,6 +80,7 @@ class Like {
             location.reload();
             ; }, 2000);
 
+        }
 
       }
 
