@@ -108,38 +108,31 @@
 
         <div class="grid5">
             <div class="grid5-title">
-                <h1> Site Rules</h1>
+                <h1> Rules</h1>
+                <div class="grid5-button-case"><i class="fa fa-heartbeat" aria-hidden="true" style="color: #E75480;"></i><a href="<?php echo esc_url(site_url('rules')); ?>" class="removeHyphen">&nbsp More Details</a></div>
          
             </div> 
-            <div class="grid5-content">          
+            <div class="grid5-content">
                 <ul>
                     <li>The Rules are to have Fun !!!</li>
                     <li><p> <u>VOTE</u>&nbsp for your favorite shoes of the week (See this week's contenders below !!!) </p> AND</li>
                     <li><p> <u>POST</u> your favorite shoes </p> and maybe win the prize of "SHOES OF THE WEEK" and soon we will be giving prizes for the winners !!!</li>
                 </ul>
-    
-                <div class="grid5-button">
-            <div class="grid5-button-case"><i class="fa fa-heartbeat" aria-hidden="true" style="color: #E75480;"></i><a href="<?php echo esc_url(site_url('rules')); ?>" class="removeHyphen">&nbsp More Details</a></div>
-            </div>
-  
             </div>
         </div>                
 
         <div class="grid6">
             <div class="grid6-title">
                 <h1> Shoes Blog</h1>
+                <div class="grid6-button-case"><i class="fa fa-newspaper-o" aria-hidden="true" style="color: #F5DEB3;"></i><a href="<?php echo esc_url(site_url('blog')); ?>" class="removeHyphen">&nbsp Shoes Blog</a></div>
+         
             </div> 
             <div class="grid6-content">
-                <div class="grid6-text">
-                    <ul>
-                        <li>Please visit our Blog where we will tell you weekly the latest trends on Shoes</li>
-                        <li>We'll also give advice on what shoes goes with what clothes, where to get the best discounts and lots more</li>
-                    </ul>
-                    <div class="grid6-content-image"></div>
-                </div>
-                <div class="grid6-button">
-                <div class="grid6-button-case"><i class="fa fa-newspaper-o" aria-hidden="true" style="color: #F5DEB3;"></i><a href="<?php echo esc_url(site_url('blog')); ?>" class="removeHyphen">&nbsp Shoes Blog</a></div>
-                </div>
+                <ul>
+                    <li>Please visit our Blog where we will tell you weekly the latest trends on Shoes</li>
+                    <li>We'll also give advice on what shoes goes with what clothes, where to get the best discounts and lots more</li>
+                </ul>
+                <div class="grid6-content-image"></div>
             </div>
         </div>                
 
