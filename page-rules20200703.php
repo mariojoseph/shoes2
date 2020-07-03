@@ -43,8 +43,7 @@
             <div class="rulesContent-Post">
                 <div class="rulesContent-Post-Case">
                 <h4>Post your favorite shoes</h4>
-                <a href="<?php echo esc_url(site_url('post-your-shoes')); ?>" ><i class="fa fa-camera fa-lg" style="color: rgb(244,232,23);"></i></a>
-                <!-- <a href="<?php echo esc_url(site_url('post-your-shoes')); ?>" class="btn btn--red btnRules">Post Your Shoes</a> -->
+                <a href="<?php echo esc_url(site_url('post-your-shoes')); ?>" class="btn btn--red btnRules">Post Your Shoes</a>
                 </div>
                
                 <ul>

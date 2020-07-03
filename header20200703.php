@@ -66,7 +66,7 @@
 
  <div class="site_header__menu_util">
 
-    <!-- <a href="<?php echo esc_url(site_url('post-your-shoes')); ?>" class="btn btn--red">Post Your Shoes</a> -->
+    <a href="<?php echo esc_url(site_url('post-your-shoes')); ?>" class="btn btn--red">Post Your Shoes</a>
     <?php if (is_user_logged_in()){ ?>
 
         <a href="<?php echo wp_logout_url(); ?>" class="btn btn--dark-orange">Log Out</a>
