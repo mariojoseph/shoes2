@@ -119,7 +119,7 @@
                 </ul>
     
                 <div class="grid5-button">
-            <div class="grid5-button-case"><i class="fa fa-heartbeat" aria-hidden="true" style="color: #E75480;"></i><a href="<?php echo esc_url(site_url('rules')); ?>" class="removeHyphen">&nbsp More Details</a></div>
+            <div class="grid5-button-case"><i class="fa fa-heartbeat" aria-hidden="true" style="color: #E75480;"></i><a href="<?php echo esc_url(site_url('rules')); ?>" class="removeHyphen">&nbsp Rules</a></div>
             </div>
   
             </div>

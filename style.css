@@ -1360,15 +1360,15 @@ margin-top: 2rem;
 
 .grid5-button-case{
 
-  border: 1px solid palevioletred;
-  background-color: rgb(41, 13, 41);
+  border: 1px solid pink;
+  /* background-color: rgb(41, 13, 41); */
   padding: 6px;
   border-radius: 5px;
  }
 
 .grid5-button-case a{
  
-   color:pink;
+   color: pink;
    text-decoration: none;
  
  }
@@ -1490,15 +1490,15 @@ margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid yellow;
-  background-color: rgb(95, 94, 76);
+  border: 1px solid #F5DEB3;
+  /* background-color: rgb(95, 94, 76); */
   padding: 6px;
   border-radius: 5px;
  }
 
 .grid6-button-case a{
  
-  color: white;
+  color: #f8eacf;
   text-decoration: none;
  
  }
