@@ -8,7 +8,7 @@
     <div class="blog-image">
         <div class="blog-image-filter">
             <div class="blogTitle">
-                <h1>Have You Seen My Shoes Blog</h1>
+                <h1>Shoes Blog</h1>
             </div>
             <div class="blogContent">
                 <p><?php
