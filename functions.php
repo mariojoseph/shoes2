@@ -398,5 +398,19 @@ function fix_number($value, $post_id, $field){
     return $value;
 }
 
+add_filter('comments_open', 'my_comments_open', 10 , 2);
+
+function my_comments_open($open, $post_id){
+    $post = get_post($post_id);
+
+    if('shoes' == $post->post_type || 'pastWinners' == $post->post_type )
+        $open = true;
+    
+    return $open;
+
+
+}
+
+
 ?>
 

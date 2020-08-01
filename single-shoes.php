@@ -185,7 +185,16 @@
       </div>
       
   </div>
+  <section class="singleshoes-comments-color">
+<div class="comment-section" style="height: auto;">
+    <?php
+        if(comments_open() || '0' != get_comments_number()) :comments_template();
+        endif; 
+    ?>
 
+</div>
+
+</section>
 </body>
   <?php } ?>
  

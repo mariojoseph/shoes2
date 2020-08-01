@@ -1,0 +1,86 @@
+.comments-body h2{
+    color: yellow;
+    text-align: center;
+    margin-bottom: 3rem;
+    /* background-color: rgba(77, 75, 75, 0.99) */
+}
+.comments{
+    background-color: rgba(77, 75, 75, 0.39);
+    padding-bottom: 2rem;
+}
+
+.comment-list{
+    display: grid;
+    grid-column: 1fr;
+    row-gap: 1rem;
+    list-style: none;
+    /* background-color: rgba(77, 75, 75, 0.99); */
+ 
+}
+
+.comment-list li{
+    border: 1px solid white;
+    width: 90%;
+    padding: 0.5rem;
+    /* background-color: rgba(77, 75, 75, 0.99); */
+    color: yellow;
+}
+
+.comment-list a{
+    color: grey;
+}
+
+.comments-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid grey;
+    padding-bottom: 3rem;
+    /* background-color: rgba(77, 75, 75, 0.99) */
+}
+
+.comment-form-comment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comment-form-comment textarea{
+    margin-top: 1rem;
+    width: 80%;
+}
+
+
+.comments-form h3{
+    font-size: 2rem;
+    color: yellow;
+}
+
+.comments-form a{
+    color: white;
+}
+
+/* .comment-form-comment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+} */
+
+
+.comment-reply-title{
+    visibility: hidden;
+    position: relative;
+}
+
+
+.comment-reply-title:after{
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    content: "Leave a Comment";
+}

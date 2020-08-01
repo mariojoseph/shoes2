@@ -9,7 +9,7 @@
     'single-blogContent';
     box-sizing: border-box;
     margin-top: 0.1rem;
-    background: rgba(39,62,84);
+    background: black;
 
 }
 
@@ -72,7 +72,9 @@
   }
 
   .single-blogContent-post{
-      padding: 1rem 0rem 1rem 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      /* padding: 0rem 0rem 1rem 1rem; */
   }
 
   .single-blogContent-post-title{

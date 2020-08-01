@@ -30,18 +30,9 @@
         </div>
 </div>
 
-<section >
-<div class="comment-section">
-    <?php
-        if(comments_open() || '0' != get_comments_number()) :comments_template();
-        endif; 
-    ?>
 
 </div>
 
-</div>
-
-</section>
 <?php get_footer();?>
 
   

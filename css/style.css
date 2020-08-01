@@ -36,6 +36,7 @@ Version: 1.0
 @import "modules/history";
 @import "modules/blog";
 @import "modules/blog-single";
+@import "modules/comments";
 
 /* Tool Areas */
 @import "modules/shoesFrontPageGallery";
