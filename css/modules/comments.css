@@ -48,10 +48,8 @@
 }
 
 .comment-form-comment textarea{
-    margin-top: 1rem;
     width: 80%;
 }
-
 
 .comments-form h3{
     font-size: 2rem;
@@ -83,4 +81,20 @@
     left: 0;
     right: 0;
     content: "Leave a Comment";
+}
+
+
+.form-submit input{
+    color: yellow;
+    background-color: rgba(95, 114, 52, 0.2);
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    border: 1px solid yellow;
+
+}
+
+.comment-form-url{
+    display: none;
 }

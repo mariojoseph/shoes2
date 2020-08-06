@@ -1,3 +1,101 @@
-.shoesHistoryBody{
-    
-}  
+.historyBackground{
+    position: relative;
+    max-width: 960px;
+    margin: auto;
+    display:grid;
+    grid-gap: 0px;
+    grid-template-areas:
+    'historyTitle'
+    'historyContent';
+    box-sizing: border-box;
+    margin-top: 0.1rem;
+    background-color: #151e2d;
+   padding-bottom: 5rem;
+  }
+  
+  
+  .historyTitle {
+  grid-area: historyTitle;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: auto;
+  }
+  
+  .historyTitle h1{ 
+  font-family: 'Pacifico', cursive;
+  color: white;
+  text-align: center;
+  }
+  
+  .historyButton{
+  
+  margin: auto;
+  border: 1px solid rgb(225, 240, 15);
+  /* background-color: rgb(167, 164, 32); */
+  border-radius: 4px;
+  padding: 5px 8px;
+  }
+  .historyButton a{
+  /* color: white; */
+  color: yellow;
+  text-decoration: none;
+  
+  }
+  
+  .historyContent{
+  grid-area:historyContent;
+  position: relative;
+  margin: 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  color: white;
+  font-size: 20px;
+  font-family: 'Kalam', cursive;
+  }
+  /* SHOPPING */
+  
+  .historyContent img{ 
+  
+  margin: 0 10%;
+  object-fit: cover;
+  width:80%;
+  
+  
+  
+  }
+  
+  
+  
+  @media(min-width:760px) and (max-width: 800px){
+  
+  .historyTitle {
+    margin-top: 2rem;
+    grid-area:'historyTitle';
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    box-sizing: border-box;
+  }
+  
+  }
+  
+  @media(min-width:800px){
+  
+  .historyTitle {
+    margin-top: 2rem;
+    grid-area:'historyTitle';
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    box-sizing: border-box;
+  }
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+ 

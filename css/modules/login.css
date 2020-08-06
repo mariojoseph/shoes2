@@ -165,6 +165,14 @@ p.message.register{
     font-weight: 600;
 }
 
+#backtoblog a{
+    font-size: 1rem;
+}
+
+#nav a{
+    font-size: 1rem;
+}
+
 @media(min-width: 500px) and (max-width:767px){
 
     .login form{
@@ -193,6 +201,29 @@ p.message.register{
 
     }
 
+    #loginform p label{
+        font-size: 1.2rem;
+      
+    }
+
+    #loginform p{
+        margin-top: 1.5rem;
+    }
+
+    #wp-submit{
+        margin-top: 1.5rem
+    }
+
+
+    #backtoblog a{
+        font-size: 1.3rem;
+    }
+    
+    #nav a{
+        font-size: 1.3rem;
+    }
+
+
 }
 
 
@@ -207,6 +238,28 @@ p.message.register{
 
         padding-bottom: 20rem;
 
+    }
+
+    #loginform p label{
+        font-size: 1.2rem;
+      
+    }
+
+    #loginform p{
+        margin-top: 1.5rem;
+    }
+
+    #wp-submit{
+        margin-top: 1.5rem
+    }
+
+
+    #backtoblog a{
+        font-size: 1.3rem;
+    }
+    
+    #nav a{
+        font-size: 1.3rem;
     }
 
 

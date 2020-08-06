@@ -1,41 +1,36 @@
-<?php get_header(); ?>
+<?php get_header();?>
 
-<div class="shoesHistoryBody">
- 
-        <?php while(have_posts()){ ?>
-    <div class="shoesHistoryTitle">
-            <div class="shoesHistoryLabel">
-                <h1 >History of Shoes</h1>
+    
+<div class="historyBody">
+    <div class="historyBackground">
+
+            <?php while(have_posts()){ ?>
+                <div class="historyTitle">
+
+                        <div class="historyLabel">
+                        <h1 > History of Shoes</h1>
+                        </div>
+                      
+                        <div class="historyButton">
+                        <i class="fa fa-home" style="color: yellow;" aria-hidden="true" alt="mario"></i><a href="<?php echo esc_url(site_url(' ')); ?>" class="removeHyphen">&nbsp Home</a>
+                                    <!-- <a href="<?php echo esc_url(site_url('/')); ?>" class="btn  btn--red">Return to Home</a>     -->
+                        </div>
+                </div>
+    
+            <div class="historyContent">
+            <p><?php
+                the_post(); 
+                the_content();
+            }
+            ?></p>
             </div>
-            <div class="shoesHistoryButton">
-                        <a href="<?php echo esc_url(site_url('/')); ?>" class="btn  btn--red ">Return to Home</a>    
+
+          
             </div>
-    </div> 
-    <div class="shoesHistoryIntro">
-            <div class="ShoesHistory-Heading">
-                <p><?php the_post();?> <p>
-            </div>
-            <div class="shoesHistoryIntro-Content">
-                <p><?php the_content();} ?></p>
-            </div>
+
+
     </div>
-   <div class="shoesHistoryBrand">
-        <?php
-        $args = array('category_name' => 'shoesHistory');
-        $catPost = get_posts($args);
-        
-        foreach($catPost as $post): setup_postdata($post); ?>
 
-        <div>
-            <h2><?php the_title(); ?></h2>
-            <h2><?php the_content(); ?></h2>
-        </div>
-        <?php endforeach?>
 
-        </div>
-   
-</div>
-<?php
-    get_footer();
 
-?>
+<?php get_footer();?>
