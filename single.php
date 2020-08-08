@@ -5,7 +5,7 @@
     <div class="single-blog-image">
         <div class="single-blog-image-filter">
             <div class="single-blogContent">
-                <p><?php
+                <div class="single-blogContent-Casing"><?php
                     if(have_posts()):
                         while(have_posts()):the_post();?>
 
@@ -22,7 +22,7 @@
                     echo '<p>No content found </p>';
                 endif;
                 ?>
-                </p>
+                </div>
             </div>
 
                 <!-- <img src="<?php echo get_theme_file_uri('/images/aboutUsShoes.png'); ?>" alt=""> -->

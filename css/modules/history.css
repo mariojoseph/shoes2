@@ -57,12 +57,9 @@
   
   .historyContent img{ 
   
-  margin: 0 10%;
-  object-fit: cover;
-  width:80%;
-  
-  
-  
+  margin: 0 0;
+  /* object-fit: contain; */
+  /* width:100%; */
   }
   
   
