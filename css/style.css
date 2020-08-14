@@ -30,7 +30,8 @@ Version: 1.0
 @import "modules/rules";
 @import "modules/past-winners";
 @import "modules/past-winners-single";
-
+@import "modules/brands";
+@import "modules/brands-single";
 @import "modules/singlePost";
 @import "modules/legal";
 @import "modules/history";
