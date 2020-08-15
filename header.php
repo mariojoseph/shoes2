@@ -8,7 +8,7 @@
 <head>
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="http://www.yoursite.com/favicon.ico?v=2" />
+    <link rel="icon" href="http:/localhost:3000/favicon.ico?v=2" />
      <?php wp_head(); ?>
 
 <!-- making a change -->
