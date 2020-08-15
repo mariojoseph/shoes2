@@ -413,7 +413,7 @@ function my_comments_open($open, $post_id){
 
 
 
-// Load parent theme stylesheet
+// Load parent theme stylesheets
 function total_child_enqueue_parent_theme_style() {
 	// Dynamically get version number of the parent stylesheet (lets browsers re-cache your stylesheet when you update your theme)
 	$theme   = wp_get_theme( 'Total' );
