@@ -1,0 +1,137 @@
+.contactBackground{
+    position: relative;
+    max-width: 960px;
+    margin: auto;
+    display:grid;
+    grid-gap: 0px;
+    grid-template-areas:
+    'contactTitle'
+    'contactContent';
+    box-sizing: border-box;
+    margin-top: 0.1rem;
+    background-color: #151e2d;
+   padding-bottom: 5rem;
+  }
+  
+  
+  .contactTitle {
+  grid-area: contactTitle;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: auto;
+  }
+  
+  .contactTitle h1{ 
+  font-family: 'Pacifico', cursive;
+  color: white;
+  text-align: center;
+  }
+  
+  .contactButton{
+  
+  margin: auto;
+  border: 1px solid rgb(225, 240, 15);
+  /* background-color: rgb(167, 164, 32); */
+  border-radius: 4px;
+  padding: 5px 8px;
+  }
+  .contactButton a{
+  /* color: white; */
+  color: yellow;
+  text-decoration: none;
+  
+  }
+  
+  .contactContent{
+  grid-area:contactContent;
+  position: relative;
+  margin: 2rem 1rem;
+  padding: 0 1rem;
+  text-align: justify;
+  color: white;
+  font-size: 20px;
+  font-family: 'Kalam', cursive;
+  }
+  
+  
+/* Additional Content */
+.contact-form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-form-button{
+    border-radius: 0.3rem;
+    border: 1px solid rgb(10, 54, 32);
+    background-color: green;
+    color: white;
+    padding: 2px;
+}
+
+.contact-form-input{
+    padding: 0.5rem;
+}
+
+
+  
+  @media(min-width:760px) and (max-width: 800px){
+  
+  .contactTitle {
+    margin-top: 2rem;
+    grid-area:'historyTitle';
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    box-sizing: border-box;
+  }
+
+  .contactContent p{
+    width: 80%;
+    margin: 1rem auto 2rem auto;
+
+    }
+
+  .contact-form input,.contact-form textarea {
+    width: 80%;
+    margin: 0 auto;
+    }
+
+    .contact-form-button{
+        padding: 3px;
+        width: 82%;
+        margin: 0 auto;
+    }
+  }
+  
+  @media(min-width:800px){
+  
+  .contactTitle {
+    margin-top: 2rem;
+    grid-area:'historyTitle';
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    box-sizing: border-box;
+  }
+
+  .contactContent p{
+    width: 80%;
+    margin: 1rem auto 2rem auto;
+
+    }
+  
+  .contact-form input,.contact-form textarea {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom:0.5rem;
+    }
+
+    .contact-form-button{
+        padding: 3px;
+        width: 82%;
+        margin: 0 auto;
+    }
+
+  }
+  
+

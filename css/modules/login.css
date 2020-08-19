@@ -106,7 +106,6 @@ p.message{
 /* REGISTER / LOGIN HYPERLINK BUTTONS */
 
 #login #nav{
-    margin-top: -1rem;
     margin-bottom: 2rem;
     text-align: center;
 }

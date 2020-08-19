@@ -1,27 +1,36 @@
-<?php get_header(); ?>
+<?php get_header();?>
 
-<div class="legalBody">
-    <div class="legalBackground">
+    
+<div class="historyBody">
+    <div class="historyBackground">
 
-        <?php while(have_posts()){ ?>
-        <div class="legalTitle">
-            <div class="legalLabel">
-                <h1 >Web Site Disclaimer </h1>
+            <?php while(have_posts()){ ?>
+                <div class="historyTitle">
+
+                        <div class="historyLabel">
+                        <h1 > Legal </h1>
+                        </div>
+                      
+                        <div class="historyButton">
+                        <i class="fa fa-home" style="color: yellow;" aria-hidden="true" alt="mario"></i><a href="<?php echo esc_url(site_url(' ')); ?>" class="removeHyphen">&nbsp Home</a>
+                                    <!-- <a href="<?php echo esc_url(site_url('/')); ?>" class="btn  btn--red">Return to Home</a>     -->
+                        </div>
+                </div>
+    
+            <div class="historyContent">
+            <p><?php
+                the_post(); 
+                the_content();
+            }
+            ?></p>
             </div>
-            <div class="legalButton">
-                        <a href="<?php echo esc_url(site_url('/')); ?>" class="btn  btn--red ">Return to Home</a>    
+
+          
             </div>
-        </div> 
-        <div class="legalContent">
-        <p><?php
-            the_post(); 
-            the_content();
-        }
-        ?></p>
-        </div>
+
+
     </div>
-</div>
-<?php
-    get_footer();
 
-?>
+
+
+<?php get_footer();?>

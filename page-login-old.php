@@ -7,13 +7,13 @@
 
 <div class="heading">
 
-    <h1 style="color: white;">Log in to your Account</h1>
+    <h1>Log in to your Account</h1>
 </div>
 
 <div class="login-form">
 
     <?php
-    get_template_part('template-parts/content', 'login');
+    get_template_part('content', 'login');
     ?>
 
 </div>

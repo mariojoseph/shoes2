@@ -38,6 +38,8 @@ Version: 1.1
 @import "modules/brands-single";
 @import "modules/singlePost";
 @import "modules/legal";
+@import "modules/privacy";
+@import "modules/contact-us";
 @import "modules/history";
 @import "modules/popular";
 @import "modules/popular-single";
