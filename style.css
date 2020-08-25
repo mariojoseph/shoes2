@@ -4535,10 +4535,12 @@ margin: 0 0;
 
 .wpforms-container-full button{
   background-color: green !important;
-  border-radius: 0.4rem !important;
+  border-radius: 0.3rem !important;
   color: white !important;
   border: none !important;
   font-family: 'Times New Roman', Times, serif !important;
+  font-size: 15px !important;
+  padding: 5px 10px !important;
 }
 
 @media(min-width:760px) and (max-width: 800px){
