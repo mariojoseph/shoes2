@@ -102,8 +102,8 @@
         width: 82%;
         margin: 0 auto;
     }
-    .wpforms-field-container{
-      width: 80%;
+    .wpforms-container-full{
+      width: 80% !important;
     }
   }
   
@@ -134,8 +134,8 @@
         width: 82%;
         margin: 0 auto;
     }
-    .wpforms-field-container{
-      width: 80%;
+    .wpforms-container-full{
+      width: 80% !important;
     }
 
   }
