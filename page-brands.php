@@ -53,7 +53,7 @@
                                     <div class="brands-thumbnails-slider-like">
                                         
                                     <span class="like-boxF" data-exists="<?php print_r($existStatusF) ?>">
-                                        <p><?php the_title(); ?></p>
+                                        <a href="<?php the_permalink(); ?>"><p><?php the_title(); ?></p></a>
                                     </span>
 
                                     </div>
@@ -95,7 +95,7 @@
                                     <div class="brands-thumbnails-slider-like">
                                         
                                     <span class="like-boxF" data-exists="<?php print_r($existStatusF) ?>">
-                                        <p><?php the_title(); ?></p>
+                                    <a href="<?php the_permalink(); ?>"><p><?php the_title(); ?></p></a>
                                     </span>
 
                                     </div>
@@ -137,7 +137,7 @@
                                     <div class="brands-thumbnails-slider-like">
                                         
                                     <span class="like-boxF" data-exists="<?php print_r($existStatusF) ?>">
-                                        <p><?php the_title(); ?></p>
+                                    <a href="<?php the_permalink(); ?>"><p><?php the_title(); ?></p></a>
                                     </span>
 
                                     </div>

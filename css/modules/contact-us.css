@@ -102,6 +102,9 @@
         width: 82%;
         margin: 0 auto;
     }
+    .wpforms-field-container{
+      width: 80%;
+    }
   }
   
   @media(min-width:800px){
@@ -131,7 +134,11 @@
         width: 82%;
         margin: 0 auto;
     }
+    .wpforms-field-container{
+      width: 80%;
+    }
 
   }
   
+
 

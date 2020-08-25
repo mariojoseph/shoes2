@@ -24,12 +24,12 @@
             }
             ?></p>
 
-            <form class="contact-form" saction="">
+            <!-- <form class="contact-form" saction="">
                 <input class="contact-form-input" type="text" placeholder="Your Name">
                 <input class="contact-form-input" type="text" placeholder="Email">
                 <textarea class="contact-form-input" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
                 <button class="contact-form-button">Send</button>
-            </form>
+            </form> -->
             </div>
 
           

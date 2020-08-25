@@ -3827,6 +3827,10 @@ padding-top:30%;
     cursor: pointer;
   }
 
+.like-boxF a{
+    text-decoration: none;
+  }
+
 @media(min-width: 500px){
   
     .brands-grid-header{
@@ -4556,6 +4560,9 @@ margin: 0 0;
         width: 82%;
         margin: 0 auto;
     }
+    .wpforms-field-container{
+      width: 80%;
+    }
   }
 
 @media(min-width:800px){
@@ -4585,6 +4592,9 @@ margin: 0 0;
         padding: 3px;
         width: 82%;
         margin: 0 auto;
+    }
+    .wpforms-field-container{
+      width: 80%;
     }
 
   }
