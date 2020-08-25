@@ -87,13 +87,13 @@
   }
 
   .contactContent p{
-    width: 80%;
+    /* width: 80%; */
     margin: 1rem auto 2rem auto;
 
     }
 
   .contact-form input,.contact-form textarea {
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
     }
 
@@ -102,7 +102,7 @@
         width: 82%;
         margin: 0 auto;
     }
-    .wpforms-container-full{
+    .wpforms-field-container{
       width: 80% !important;
     }
   }
@@ -118,13 +118,13 @@
   }
 
   .contactContent p{
-    width: 80%;
+    /* width: 80%; */
     margin: 1rem auto 2rem auto;
 
     }
   
   .contact-form input,.contact-form textarea {
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
     margin-bottom:0.5rem;
     }
@@ -135,7 +135,7 @@
         margin: 0 auto;
     }
     .wpforms-container-full{
-      width: 80% !important;
+      /* width: 80% !important; */
     }
 
   }
