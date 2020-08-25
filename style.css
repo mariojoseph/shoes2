@@ -4533,6 +4533,14 @@ margin: 0 0;
     padding: 0.5rem;
 }
 
+.wpforms-container-full button{
+  background-color: green !important;
+  border-radius: 0.4rem !important;
+  color: white !important;
+  border: none !important;
+  font-family: 'Times New Roman', Times, serif !important;
+}
+
 @media(min-width:760px) and (max-width: 800px){
   
   .contactTitle {
@@ -4560,8 +4568,8 @@ margin: 0 0;
         width: 82%;
         margin: 0 auto;
     }
-    .wpforms-field-container{
-      width: 80%;
+    .wpforms-container-full{
+      width: 80% !important;
     }
   }
 
@@ -4593,9 +4601,11 @@ margin: 0 0;
         width: 82%;
         margin: 0 auto;
     }
-    .wpforms-field-container{
-      width: 80%;
+    .wpforms-container-full{
+      width: 80% !important;
     }
+
+
 
   }
 
