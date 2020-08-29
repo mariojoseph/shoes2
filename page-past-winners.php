@@ -57,11 +57,11 @@
                             </div>                                
             
                             <img class="pastImage" src="<?php echo $pastWinnerImage1[0]; ?>" longdesc=" <?php  print_r($longDesc) ?> "alt="what the" width="<?php echo $width; ?>" height="<?php echo $height; ?>" alt="shoe1">   
-                            <a href="<?php the_permalink(); ?>"  ><button id="testing" type="button" name="button">View</button></a>   
+                            <a href="<?php echo esc_url(the_permalink()); ?>"  ><button id="testing" type="button" name="button">View</button></a>   
                             </div> 
                            <div>
          
-                                <!-- <div class="pastLikes"><h1> <img src="<?php echo get_theme_file_uri('/images/smallHeart.png'); ?>" alt=""> &nbsp <?php print_r($pastWinnerImageLikes) ; ?></h1></div> -->
+                              
                         </div>
 
 

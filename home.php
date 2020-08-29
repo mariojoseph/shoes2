@@ -18,7 +18,7 @@
                     <article class="blogContent-post">
                         <h2 class="blogContent-post-title"><?php the_title(); ?></h2>
                         <h4>Posted on <?php the_time('M j Y');?></h4>
-                        <h2 class="blogContent-post-content"><?php the_excerpt();?><p><a class="btn" href="<?php the_permalink() ?>">Continue Reading &raquo;</a></p></h2>
+                        <h2 class="blogContent-post-content"><?php the_excerpt();?><p><a class="btn" href="<?php echo esc_url(the_permalink()) ?>">Continue Reading &raquo;</a></p></h2>
 
                     </article>
                 
@@ -30,7 +30,6 @@
                 </p>
             </div>
 
-                <!-- <img src="<?php echo get_theme_file_uri('/images/aboutUsShoes.png'); ?>" alt=""> -->
                 </div>
         </div>
 </div>

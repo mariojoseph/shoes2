@@ -95,7 +95,7 @@
                             </div>                                
             
                            <img class="photoImages" src="<?php echo($imageBestShoes1[0] ); ?>" alt="shoe1">
-                            <a href="<?php echo $longDesc ?>"  ><button id="testing" type="button" name="button">Vote</button></a>   
+                            <a href="<?php echo esc_url($longDesc) ?>"  ><button id="testing" type="button" name="button">Vote</button></a>   
                             </div>       
                             <?php
    
@@ -240,7 +240,7 @@
 
                                 </div>
                                 <div class="thumbnails-container">
-                                     <a href="<?php echo $longDescThumb ;?>"><button>Vote</button> </a>  
+                                     <a href="<?php echo esc_url($longDescThumb) ;?>"><button>Vote</button> </a>  
                                 </div>
 
                             </div>                
@@ -250,8 +250,6 @@
                     ?>
 
             <script>
-                                    console.log(<?php json_encode($existStatusF); ?>);
-                                    console.log(<?php json_encode($counter); ?>);
             </script>                            
             </div>
 

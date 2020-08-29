@@ -49,11 +49,11 @@
                   $brandImage1 = wp_get_attachment_image_src($brandImage['id'], $brandImageSize);
                      ?>
                                 <div class="brands-thumbnails-slider">
-                                    <a href="<?php the_permalink(); ?>">  <img class="brands-thumbnails-slider-img" src="<?php echo $brandImage1[0]; ?>" alt="shoe1"></a>
+                                    <a href="<?php echo esc_url(the_permalink()); ?>">  <img class="brands-thumbnails-slider-img" src="<?php echo $brandImage1[0]; ?>" alt="shoe1"></a>
                                     <div class="brands-thumbnails-slider-like">
                                         
                                     <span class="like-boxF" data-exists="<?php print_r($existStatusF) ?>">
-                                        <a href="<?php the_permalink(); ?>"><p><?php the_title(); ?></p></a>
+                                        <a href="<?php echo esc_url(the_permalink()); ?>"><p><?php the_title(); ?></p></a>
                                     </span>
 
                                     </div>
@@ -91,11 +91,11 @@
                   $brandImage1 = wp_get_attachment_image_src($brandImage['id'], $brandImageSize);
                      ?>
                                 <div class="brands-thumbnails-slider">
-                                    <a href="<?php the_permalink(); ?>">  <img class="brands-thumbnails-slider-img" src="<?php echo $brandImage1[0]; ?>" alt="shoe1"></a>
+                                    <a href="<?php echo esc_url(the_permalink()); ?>">  <img class="brands-thumbnails-slider-img" src="<?php echo $brandImage1[0]; ?>" alt="shoe1"></a>
                                     <div class="brands-thumbnails-slider-like">
                                         
                                     <span class="like-boxF" data-exists="<?php print_r($existStatusF) ?>">
-                                    <a href="<?php the_permalink(); ?>"><p><?php the_title(); ?></p></a>
+                                    <a href="<?php echo esc_url(the_permalink()); ?>"><p><?php the_title(); ?></p></a>
                                     </span>
 
                                     </div>
@@ -133,11 +133,11 @@
                   $brandImage1 = wp_get_attachment_image_src($brandImage['id'], $brandImageSize);
                      ?>
                                 <div class="brands-thumbnails-slider">
-                                    <a href="<?php the_permalink(); ?>">  <img class="brands-thumbnails-slider-img" src="<?php echo $brandImage1[0]; ?>" alt="shoe1"></a>
+                                    <a href="<?php echo esc_url(the_permalink()); ?>">  <img class="brands-thumbnails-slider-img" src="<?php echo $brandImage1[0]; ?>" alt="shoe1"></a>
                                     <div class="brands-thumbnails-slider-like">
                                         
                                     <span class="like-boxF" data-exists="<?php print_r($existStatusF) ?>">
-                                    <a href="<?php the_permalink(); ?>"><p><?php the_title(); ?></p></a>
+                                    <a href="<?php echo esc_url(the_permalink()); ?>"><p><?php the_title(); ?></p></a>
                                     </span>
 
                                     </div>

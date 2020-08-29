@@ -13,7 +13,7 @@
                       
                         <div class="contactButton">
                         <i class="fa fa-home" style="color: yellow;" aria-hidden="true" alt="mario"></i><a href="<?php echo esc_url(site_url(' ')); ?>" class="removeHyphen">&nbsp Home</a>
-                                    <!-- <a href="<?php echo esc_url(site_url('/')); ?>" class="btn  btn--red">Return to Home</a>     -->
+                    
                         </div>
                 </div>
     
@@ -24,12 +24,6 @@
             }
             ?></p>
 
-            <!-- <form class="contact-form" saction="">
-                <input class="contact-form-input" type="text" placeholder="Your Name">
-                <input class="contact-form-input" type="text" placeholder="Email">
-                <textarea class="contact-form-input" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                <button class="contact-form-button">Send</button>
-            </form> -->
             </div>
 
           

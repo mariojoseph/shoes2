@@ -36,39 +36,6 @@
             $week = date('W');
             $year = date('Y');
             $date = current_time('F jS, Y');
-            // $week = date('W');
-            // $year = date('Y');
-            // $likeCount = new WP_Query(array(
-            //   'post_type' => 'like',
-            //   'meta_query' => array(
-            //     'relation' => 'AND',
-            //     array(
-            //         'liked-user' => 'liked',
-            //         'compare' => '=',
-            //         'value' => $author   
-            //     ),
-            //     array(
-            //       'key' => 'liked',
-            //       'compare' => '=',
-            //       'value' =>  get_the_ID()
-            //   )
-
-            //   )));
-    
-
-            //   $existStatus ='no';
-
-            //   $likeCount->the_post();
-
-            //   $count = $likeCount->found_posts;
-            //   $userWeek = get_field('liked-week');
-            //   $userYear = get_field('liked-year');
-
-
-            //     if($likeCount->found_posts){
-            //       $existStatus = 'yes';
-             
-            //     }
 
             $likeCount = new WP_Query(array(
               'post_type' => 'like',
@@ -112,10 +79,6 @@
               </div>
               </span>
     
-          <script>
-          console.log(<?= json_encode($alreadyPosted); ?>);
-                                    console.log(<?= json_encode($week); ?>);
-          </script>
      
     </div>
    
@@ -152,7 +115,7 @@
         
         <div class="single-right-top-middle-case">
             <h1 class="single-right-top-middle-button">Bought From</h1>
-            <a href="<?php echo site_url('/location?variable='.$data) ?>"><button type="button" name="button">Store Location</button></a>
+            <a href="<?php echo esc_url(site_url('/location?variable='.$data)) ?>"><button type="button" name="button">Store Location</button></a>
         </div>
 
           <div class="flex-buttons-commentary">
@@ -177,9 +140,9 @@
         <div class="single-right-bottom">
             <div class="singleShoeButton">
                         <i class="fa fa-home" style="color: yellow;" aria-hidden="true" alt="mario"></i><a href="<?php echo esc_url(site_url(' ')); ?>" class="removeHyphen">&nbsp Home</a>
-                                    <!-- <a href="<?php echo esc_url(site_url('/')); ?>" class="btn  btn--red">Return to Home</a>     -->
+                            
             </div>
-          <!-- <span><a href="<?php echo esc_url(site_url('/')); ?>" class="btn  btn--red ">Return to Home</a></span> -->
+        
         </div>
 
       </div>

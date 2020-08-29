@@ -9,7 +9,7 @@
                     if(have_posts()):
                         while(have_posts()):the_post();?>
 
-                    <a class="btn"href="<?php echo site_url('/blog'); ?>"><i class="fa fa-home"></i> Blog Home</a>
+                    <a class="btn"href="<?php echo esc_url(echo site_url('/blog')); ?>"><i class="fa fa-home"></i> Blog Home</a>
                     <article class="single-blogContent-post">
                         <h2 class="single-blogContent-post-title"><?php the_title(); ?></h2>
                         <h4>Posted on <?php the_time('n,j,y');?></h4>
@@ -25,7 +25,7 @@
                 </div>
             </div>
 
-                <!-- <img src="<?php echo get_theme_file_uri('/images/aboutUsShoes.png'); ?>" alt=""> -->
+    
                 </div>
         </div>
 </div>

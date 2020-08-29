@@ -24,27 +24,25 @@
     
     <div class="main-header-image">
     <input type="file" style="display: none" />
-    <!-- <a href="<?php echo esc_url(site_url('post-your-shoes')); ?>" ><img src="<?php echo get_theme_file_uri('/images/PostYourShoes.png'); ?>" alt=""></a> -->
     <a href="<?php echo esc_url(site_url('post-your-shoes')); ?>" ><i class="fa fa-camera fa-lg" style="color: rgb(244,232,23);"></i></a>
 
     </div>
    
     <div class="site_header__iPad_buttons">
 
-        <!-- <a href="<?php echo esc_url(site_url('post-your-shoes')); ?>" class="btn btn--red">Post Your Shoes</a> -->
       
 
         <?php if (is_user_logged_in()){ ?>
 
-            <a href="<?php echo wp_logout_url(); ?>" class="btn btn--dark-orange">Log Out</a>
+            <a href="<?php echo esc_url(wp_logout_url()); ?>" class="btn btn--dark-orange">Log Out</a>
 
             <?php
             } else { ?>
             <!-- <a href="<?php echo esc_url(site_url('login')); ?>" class="btn btn--dark-orange">Log In</a> -->
 
-            <a href="<?php echo wp_login_url(); ?>" class="btn btn--dark-orange">Log In</a>
+            <a href="<?php echo esc_url(wp_login_url()); ?>" class="btn btn--dark-orange">Log In</a>
              <!-- <a href="<?php echo esc_url(site_url('register')); ?>" class="btn btn--dark-green">Sign Up</a> -->
-            <a href="<?php echo wp_registration_url(); ?>" class="btn btn--dark-green">Register</a>
+            <a href="<?php echo esc_url(wp_registration_url()); ?>" class="btn btn--dark-green">Register</a>
 
           <?php  }?>
 
@@ -70,15 +68,15 @@
     <!-- <a href="<?php echo esc_url(site_url('post-your-shoes')); ?>" class="btn btn--red">Post Your Shoes</a> -->
     <?php if (is_user_logged_in()){ ?>
 
-        <a href="<?php echo wp_logout_url(); ?>" class="btn btn--dark-orange">Log Out</a>
+        <a href="<?php echo esc_url(wp_logout_url()); ?>" class="btn btn--dark-orange">Log Out</a>
 
         <?php
         } else { ?>
 
       <!-- <a href="<?php echo esc_url(site_url('login')); ?>" class="btn btn--dark-orange">Log In</a>
       <a href="<?php echo esc_url(site_url('register')); ?>" class="btn btn--dark-green">Sign Up</a> -->
-        <a href="<?php echo wp_login_url(); ?>" class="btn btn--dark-orange">Log In</a>
-        <a href="<?php echo wp_registration_url(); ?>" class="btn btn--dark-green">Register</a>
+        <a href="<?php echo esc_url(wp_login_url()); ?>" class="btn btn--dark-orange">Log In</a>
+        <a href="<?php echo esc_url(wp_registration_url()); ?>" class="btn btn--dark-green">Register</a>
 
     <?php  }?>
 
