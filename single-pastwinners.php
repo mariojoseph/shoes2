@@ -48,7 +48,7 @@
         
         <div class="singleP-right-top-middle-case">
             <h1 class="singleP-right-top-middle-button">Bought From</h1>
-            <a href="<?php echo echo esc_url(site_url('/location?variable='.$data)) ?>"><button type="button" name="button">Store Location</button></a>
+            <a href="<?php echo esc_url(site_url('/location?variable='.$data)) ?>"><button type="button" name="button">Store Location</button></a>
         </div>
 
           <div class="flex-buttons-commentary">
