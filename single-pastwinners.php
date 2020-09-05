@@ -29,7 +29,7 @@
        $data = get_the_ID();
       ?>
 
-      <img src="<?php echo $image['url']; ?>" alt="what the" width="<?php echo $width; ?>" height="<?php echo $height; ?>">
+      <img src="<?php echo esc_url($image['url']); ?>" alt="what the" width="<?php echo esc_attr($width); ?>" height="<?php echo esc_attr($height); ?>">
 
     </div>
   </div>
@@ -38,7 +38,7 @@
 
         <div class="singleP-right-top">
 
-          <h1>Posted by <?php echo get_field(postedBy); ?></h1>
+          <h1>Posted by <?php echo esc_html(get_field(postedBy)); ?></h1>
            <span class="metabox__main"></span> 
            <br>
            <span class="singleP-right-top-date"><?php the_time('F j Y g:i a'); ?></span> 
@@ -52,10 +52,10 @@
         </div>
 
           <div class="flex-buttons-commentary">
-          <p><?php echo get_field(name); ?>,</p> 
-          <p><?php echo get_field(address); ?>,</p>
-          <p><?php echo get_field(city); ?>,</p>
-          <p><?php echo get_field(country); ?>,</p>                    
+          <p><?php echo esc_attr(get_field(name)); ?>,</p> 
+          <p><?php echo esc_attr(get_field(address)); ?>,</p>
+          <p><?php echo esc_attr(get_field(city)); ?>,</p>
+          <p><?php echo esc_attr(get_field(country)); ?>,</p>                    
           </div>
           <hr style="margin-top: 2rem; background-color: rgb(74,126,187); border: none; width: 80%; height: 1px">
         </div>
@@ -67,7 +67,7 @@
         <h1 class="singleP-right-top-middle-button2">Commentary</h1>
 
         <div class="flex-buttons-commentary2">
-        <p><?php echo get_field(commentary); print_r($existStatus); ?></p>
+        <p><?php echo esc_html(get_field(commentary)); print_r(esc_attr($existStatus)); ?></p>
               </div>
         </div>
         <div class="singleP-right-bottom">

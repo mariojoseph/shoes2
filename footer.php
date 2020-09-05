@@ -4,7 +4,7 @@
 
 <div class="site-footer__grid1">
 
-    <h1 class=""><a href="<?php echo site_url() ?>">Have You Seen My <strong>Shoes</strong></a></h1>
+    <h1 class=""><a href="<?php echo esc_url(site_url()) ?>">Have You Seen My <strong>Shoes</strong></a></h1>
     <p><a class="" href="#">E-mail: <i>info@haveyouseenmyshoes.com</i></a></p>
 
 </div>
@@ -14,9 +14,9 @@
         <h3 class="headline">Explore</h3>
 
         <div class="site-footer__grid2_ul">
-            <div><a href="<?php echo site_url('/about-us') ?>">About Us</a></div>
+            <div><a href="<?php echo esc_url(site_url('/about-us')) ?>">About Us</a></div>
             <div><a href="<?php echo esc_url(site_url('/brands ')); ?>">Popular Shoe Brands</a></div>
-            <div><a href="<?php echo site_url('/history-of-shoes') ?>">History of Shoes</a></div>
+            <div><a href="<?php echo esc_url(site_url('/history-of-shoes')) ?>">History of Shoes</a></div>
         </div>
 
 </div>
@@ -26,9 +26,9 @@
     <h3 class="headline">Administration</h3>
 
     <div class="site-footer__grid3_ul">
-        <div><a href="<?php echo site_url('/privacy') ?>">Privacy Policy</a></div>
-        <div><a href="<?php echo site_url('/Legal') ?>">Legal</a></div>
-        <div><a href="<?php echo site_url('/contact-us') ?>">Contact Us</a></div>
+        <div><a href="<?php echo esc_url(site_url('/privacy')) ?>">Privacy Policy</a></div>
+        <div><a href="<?php echo esc_url(site_url('/Legal')) ?>">Legal</a></div>
+        <div><a href="<?php echo esc_url(site_url('/contact-us')) ?>">Contact Us</a></div>
     </div>
 
 </div>

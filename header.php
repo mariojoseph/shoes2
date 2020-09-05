@@ -17,7 +17,7 @@
 <div class="main-header">
 
     <div class="main-header-text">
-    <a href="<?php echo esc_url(site_url('/')); ?>" ><h1>for those who &nbsp <img src="<?php echo get_theme_file_uri('/images/smallHeart.png'); ?>" alt=""> 
+    <a href="<?php echo esc_url(site_url('/')); ?>" ><h1>for those who &nbsp <img src="<?php echo esc_url(get_theme_file_uri('/images/smallHeart.png')); ?>" alt=""> 
     <strong>&nbsp shoes</strong></h1></a>    
    
     </div>

@@ -30,7 +30,7 @@
                         }
                 ?>
                 
-                <img class="grid1-image-case-sub" src="<?php echo $imageWinner1[0]; ?>" longdesc=" <?php  print_r($longDesc) ?> "alt="what the" width="<?php echo $width; ?>" height="<?php echo $height; ?>" alt="shoe1">
+                <img class="grid1-image-case-sub" src="<?php echo esc_url($imageWinner1[0]); ?>" longdesc=" <?php esc_attr(print_r($longDesc)) ?> "alt="what the" width="<?php echo esc_attr($width); ?>" height="<?php echo esc_attr($height); ?>" alt="shoe1">
 
                 <?php wp_reset_postdata(); ?>
 
@@ -40,13 +40,10 @@
                 
                 </div>
                 <div class="grid1-likeScore">
-                <h1> <img src="<?php echo get_theme_file_uri('/images/smallHeart.png'); ?>" alt=""> &nbsp <?php print_r($imageWinnerLikes) ; ?></h1>
+                <h1> <img src="<?php echo esc_url(get_theme_file_uri('/images/smallHeart.png')); ?>" alt=""> &nbsp <?php print_r($imageWinnerLikes) ; ?></h1>
                 </div>
                 <!-- </div> -->
 
-                <script>
-                    // console.log(<?= json_encode($imageWinnerLikes); ?>);
-                </script>
             </div>
 
             <div class="grid2">
@@ -91,10 +88,10 @@
 
                            <div class="shellContainer">
                            <div class="grid4-likeScore">
-                           <h1> <img class= "likeImage" src="<?php echo get_theme_file_uri('/images/smallHeart.png'); ?>" alt=""> &nbsp <?php print_r($likesBestShoes) ; ?></h1>
+                           <h1> <img class= "likeImage" src="<?php echo get_theme_file_uri('/images/smallHeart.png'); ?>" alt=""> &nbsp <?php print_r(esc_attr($likesBestShoes)) ; ?></h1>
                             </div>                                
             
-                           <img class="photoImages" src="<?php echo($imageBestShoes1[0] ); ?>" alt="shoe1">
+                           <img class="photoImages" src="<?php echo( esc_url($imageBestShoes1[0]) ); ?>" alt="shoe1">
                             <a href="<?php echo esc_url($longDesc) ?>"  ><button id="testing" type="button" name="button">Vote</button></a>   
                             </div>       
                             <?php
@@ -228,13 +225,13 @@
                       
 
                             <div class="thumbnails-slider">
-                            <img class="thumbnails-slider-img" src="<?php echo $image1[0]; ?>" longdesc=" <?php  print_r($longDesc) ?> "alt="what the" width="<?php echo $width; ?>" height="<?php echo $height; ?>" alt="shoe1">
+                            <img class="thumbnails-slider-img" src="<?php echo esc_url($image1[0]); ?>" longdesc=" <?php  print_r(esc_attr($longDesc)) ?> "alt="what the" width="<?php echo esc_attr($width); ?>" height="<?php echo esc_attr($height); ?>" alt="shoe1">
                                 <div class="thumbnails-slider-like">
                                      
-                                <span class="like-boxF" data-exists="<?php print_r($existStatusF) ?>">
+                                <span class="like-boxF" data-exists="<?php esc_attr(print_r($existStatusF)) ?>">
                                     <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
                                     <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
-                                    <span class="like-countF"><?php print_r($imageLike) ?></span>
+                                    <span class="like-countF"><?php esc_attr(print_r($imageLike)) ?></span>
                   
                                 </span>
 
@@ -260,7 +257,7 @@
             <div class="front-page-modal">
                 <div class="main-img">
                 <a href="#portfolio" class="close"></a>
-                <img src=<?php echo get_theme_file_uri('/images/frontPagePik2.png') ?> alt="" id="current">
+                <img src=<?php echo esc_url(get_theme_file_uri('/images/frontPagePik2.png')) ?> alt="" id="current">
                 <button class="image-button">Vote</button>
                 </div>
             </div>

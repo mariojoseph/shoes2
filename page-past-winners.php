@@ -53,10 +53,10 @@
                         <div class="shellContainer">
                             <p><?php echo $winnerWeek2; ?></p>
                            <div class="grid4-likeScore">
-                           <h1> <img class= "likeImage" style="width: 20px;" src="<?php echo get_theme_file_uri('/images/smallHeart.png'); ?>" alt=""> &nbsp <?php print_r( $pastWinnerImageLikes) ; ?></h1>
+                           <h1> <img class= "likeImage" style="width: 20px;" src="<?php echo get_theme_file_uri('/images/smallHeart.png'); ?>" alt=""> &nbsp <?php esc_html(print_r( $pastWinnerImageLikes)) ; ?></h1>
                             </div>                                
             
-                            <img class="pastImage" src="<?php echo $pastWinnerImage1[0]; ?>" longdesc=" <?php  print_r($longDesc) ?> "alt="what the" width="<?php echo $width; ?>" height="<?php echo $height; ?>" alt="shoe1">   
+                            <img class="pastImage" src="<?php echo esc_url($pastWinnerImage1[0]); ?>" longdesc=" <?php  print_r(esc_attr($longDesc)) ?> "alt="what the" width="<?php echo esc_attr($width); ?>" height="<?php echo esc_attr($height); ?>" alt="shoe1">   
                             <a href="<?php echo esc_url(the_permalink()); ?>"  ><button id="testing" type="button" name="button">View</button></a>   
                             </div> 
                            <div>

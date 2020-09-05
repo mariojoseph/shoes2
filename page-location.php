@@ -15,7 +15,6 @@
 
 
    						<div class="locationButton">
-                  <!-- <a href="<?php echo esc_url(site_url('/')); ?>" class="btn  btn--red ">Return to Home</a>	 -->
                   <a href='javascript:history.back()' class="btn  btn--red ">Return to Shoe Post</a>	
             </div> 
   </div>

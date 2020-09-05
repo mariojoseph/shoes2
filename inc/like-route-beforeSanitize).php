@@ -39,7 +39,7 @@ function updateShoesPost($data) {
 
  
   $selector = 'field_5cebf5c256328';
-  $post_id = sanitize_text_field($data['shoeId']);
+  $post_id = $data['shoeId'];
   $previous_like_value = get_field($selector, $post_id);
   $value = $previous_like_value+1;
  //  $post_id = $data['shoeId'];
@@ -93,7 +93,7 @@ function createLike($data) {
 
   //  START OF SHOE UPDATE
    $selector = 'field_5cebf5c256328';
-   $post_id = sanitize_text_field($data['shoeId']);
+   $post_id = $data['shoeId'];
    $previous_like_value = get_field($selector, $post_id);
    $value = $previous_like_value+1;
   //  $post_id = $data['shoeId'];
@@ -147,13 +147,13 @@ function createLike($data) {
 }
 
 function deleteLike($data) {
-  // $post_id = sanitize_text_field($data['shoeId']);
-  // $shoe = sanitize_text_field($data['shoeId']);
+  $post_id = $data['shoeId'];
+  $shoe = sanitize_text_field($data['shoeId']);
   $likeId = sanitize_text_field($data['like']);
 
     //  START OF SHOE UPDATE
     $selector = 'field_5cebf5c256328';
-    $post_id = sanitize_text_field($data['shoeId']);
+    $post_id = $data['shoeId'];
     $previous_like_value = get_field($selector, $post_id);
     $value = $previous_like_value - 1;
    //  $post_id = $data['shoeId'];

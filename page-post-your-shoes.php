@@ -16,11 +16,9 @@
 
         <p>Upload Your Photo</p>
         <button id="upload-dialog">Choose Image</button>
-        <!-- <input type="file"  class="shoePhoto" id="fileInput" name="image" accept="image/jpg,image/png, image/gif" /> -->
         <input type="file"  class="shoePhoto" id="fileInput" name="image" accept="image/jpg" />
         <img id="testing1" />
         <span id="image-name"></span>
-        <!-- <button id="upload-button">Upload</button> -->
         <button id="cancel-image">Cancel</button>
 
     </div>
@@ -28,7 +26,7 @@
     <div class="post-grid1-left-bottom-photo">
         <p>Photo Chosen </p>
 
-        <img id="preview-image" src="<?php echo get_theme_file_uri('/images/FrontPageShoes.jpg'); ?>" alt="heart">
+        <img id="preview-image" src="<?php echo esc_url(get_theme_file_uri('/images/FrontPageShoes.jpg')); ?>" alt="heart">
 
 
     </div>
@@ -43,7 +41,6 @@
                         <p class="bought-from">Brought From</p>
                 </div>
 
-    <!-- <h1>post-grid1-right-middle-bought-from</h1> -->
                 <div class="post-grid2-left-top-name">
                         <p>Shop Name</p>
                         <input class="name" type="text" placeholder="name" name="name">

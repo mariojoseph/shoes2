@@ -72,7 +72,7 @@
               
            ?>
            
-          <span class="like-box" data-like="<?php echo $likeCount->posts[0]->ID;?>" data-shoe="<?php the_ID();?>" data-exists="<?php echo $existStatus;?>" data-user="<?php echo $author ?>" data-logged="<?php echo $UserLogged ?>" data-posted="<?php echo $alreadyPosted  ?>" data-date="<?php echo $date  ?>" data-week="<?php echo $week?>" data-year="<?php echo $year  ?>">
+          <span class="like-box" data-like="<?php echo esc_attr($likeCount->posts[0]->ID);?>" data-shoe="<?php the_ID();?>" data-exists="<?php echo esc_attr($existStatus);?>" data-user="<?php echo esc_attr($author) ?>" data-logged="<?php echo esc_attr($UserLogged) ?>" data-posted="<?php echo esc_attr($alreadyPosted)  ?>" data-date="<?php echo esc_attr($date)  ?>" data-week="<?php echo esc_attr($week)?>" data-year="<?php echo esc_attr($year)  ?>">
               <div class="like-box-inner">
               <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
               <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
@@ -96,7 +96,7 @@
        $data = get_the_ID();
       ?>
 
-      <img src="<?php echo $image['url']; ?>" alt="what the" width="<?php echo $width; ?>" height="<?php echo $height; ?>">
+      <img src="<?php echo esc_url($image['url']); ?>" alt="what the" width="<?php echo esc_attr($width); ?>" height="<?php echo esc_attr($height); ?>">
 
     </div>
   </div>
@@ -105,7 +105,7 @@
 
         <div class="single-right-top">
 
-          <h1>Posted by <?php echo get_field(postedBy); ?></h1>
+          <h1>Posted by <?php echo esc_html(get_field(postedBy)); ?></h1>
            <span class="metabox__main"></span> 
            <br>
            <span class="single-right-top-date"><?php the_time('F j Y g:i a'); ?></span> 
@@ -119,10 +119,10 @@
         </div>
 
           <div class="flex-buttons-commentary">
-          <p><?php echo get_field(name); ?>,</p> 
-          <p><?php echo get_field(address); ?>,</p>
-          <p><?php echo get_field(city); ?>,</p>
-          <p><?php echo get_field(country); ?>,</p>                    
+          <p><?php echo esc_html(get_field(name)); ?>,</p> 
+          <p><?php echo esc_html(get_field(address)); ?>,</p>
+          <p><?php echo esc_html(get_field(city)); ?>,</p>
+          <p><?php echo esc_html(get_field(country)); ?>,</p>                    
           </div>
           <hr style="margin-top: 2rem; background-color: rgb(74,126,187); border: none; width: 80%; height: 1px">
         </div>
@@ -134,7 +134,7 @@
         <h1 class="single-right-top-middle-button2">Commentary</h1>
 
         <div class="flex-buttons-commentary2">
-        <p><?php echo get_field(commentary); print_r($existStatus); ?></p>
+        <p><?php echo esc_html(get_field(commentary)); print_r(esc_html($existStatus)); ?></p>
               </div>
         </div>
         <div class="single-right-bottom">
