@@ -135,12 +135,7 @@ class PostShoes {
       return;
     }
 
-     // validate file size
-     if(file.size < 5*300*1200) {
-      alert('Error : less size 5MB');
-      return;
-    }
-
+    
 
     // validation is successful
 
