@@ -16,7 +16,7 @@
 
         <p>Upload Your Photo</p>
         <button id="upload-dialog">Choose Image</button>
-        <input type="file"  class="shoePhoto" id="fileInput" name="image" accept="image/jpg" />
+        <input type="file"  class="shoePhoto" id="fileInput" name="image" accept="image/*" />
         <img id="testing1" />
         <span id="image-name"></span>
         <button id="cancel-image">Cancel</button>
