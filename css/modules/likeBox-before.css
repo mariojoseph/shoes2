@@ -117,17 +117,17 @@
       } */
 
 
-    .fa-heart-o {
+      .like-box-inner .fa-heart-o {
         cursor: pointer;
-        /* transition: all .4s ease-out; */
+        transition: all .4s ease-out;
         color: red;
         position: absolute;
         transform: translate(-50%, -50%);
       }
 
-    .fa-heart {
+      .like-box-inner .fa-heart {
         cursor: pointer;
-        /* transition: all .4s ease-out; */
+        transition: all .4s ease-out;
         color: red;
         position: absolute;
         transform: translate(-50%, -50%);
@@ -148,7 +148,7 @@
 
       @media(min-width:500px){
     
-        /* .like-countF {
+        .like-countF {
           position: absolute;
           left: 60%;
           font-size: 1.5rem;
@@ -163,6 +163,6 @@
         .like-boxF .fa-heart {
           left: 35%;
           margin-top: -1rem;
-        } */
+        }
 
       }

@@ -7,7 +7,7 @@ class Like {
   }
 
   events() {
-    $(".like-box").on("click", this.ourClickDispatcher.bind(this));
+    $(".like-box-inner-side").on("click", this.ourClickDispatcher.bind(this));
   }
 
   // methods

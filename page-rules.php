@@ -18,7 +18,7 @@
                 <ul>
                     <li>The Rules are to have Fun !!!</li>
                     <li><p> <u>VOTE</u>&nbsp for your favorite shoes of the week </p> AND</li>
-                    <li><p> <u>POST</u> your favorite shoes </p> and maybe win the prize of "SHOES OF THE WEEK" and soon we will be giving prizes for the winners !!!</li>
+                    <li><p> <u>POST</u> your favorite shoes </p> and maybe win the prize of "SHOES OF THE WEEK" !!!</li>
                 </ul>
             </div>
            
@@ -57,7 +57,7 @@
                         <div class="rulesContent-Post-Image2a"></div>
                     </li>
                     <li>You can also leave any comments you would like to make</li>
-                    <li>If you win your photo will be the folowing week's "SHOE OF THE WEEK" and we will be offering prizes (also for past winners)</li>
+                    <li>If you win your photo will be the folowing week's "SHOE OF THE WEEK"</li>
                     <li>Your shoes will also be pride of place in our "PAST WINNERS GALLERY"</li>
                 </ul>  
             </div>

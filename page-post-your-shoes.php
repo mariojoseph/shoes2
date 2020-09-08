@@ -67,6 +67,8 @@
             <p class="">Commentary</p>
             <textarea placeholder="Any comments here..."></textarea>
             <br>
+
+            <?php ?>
             <span class="ShoesSubmit-note">Create Post</span>
     </div>
 </div>

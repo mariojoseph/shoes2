@@ -112,7 +112,7 @@
                 <ul>
                     <li>The Rules are to have Fun !!!</li>
                     <li><p> <u>VOTE</u>&nbsp for your favorite shoes of the week (See this week's contenders below !!!) </p> AND</li>
-                    <li><p> <u>POST</u> your favorite shoes </p> and maybe win the prize of "SHOES OF THE WEEK" and soon we will be giving prizes for the winners !!!</li>
+                    <li><p> <u>POST</u> your favorite shoes </p> and maybe win the prize of "SHOES OF THE WEEK" !!!</li>
                 </ul>
     
                 <div class="grid5-button">
