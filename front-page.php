@@ -41,6 +41,7 @@
                 </div>
                 <div class="grid1-likeScore">
                 <h1> <img src="<?php echo esc_url(get_theme_file_uri('/images/smallHeart.png')); ?>" alt=""> &nbsp <?php print_r($imageWinnerLikes) ; ?></h1>
+                <!-- <h1> <img src="<?php echo esc_url(get_theme_file_uri('/images/smallHeart.png')); ?>" alt=""> &nbsp <?php print_r($imageWinnerLikes) ; ?></h1> -->
                 </div>
                 <!-- </div> -->
 
@@ -88,7 +89,9 @@
 
                            <div class="shellContainer">
                            <div class="grid4-likeScore">
+ 
                            <h1> <img class= "likeImage" src="<?php echo get_theme_file_uri('/images/smallHeart.png'); ?>" alt=""> &nbsp <?php print_r(esc_attr($likesBestShoes)) ; ?></h1>
+   
                             </div>                                
             
                            <img class="photoImages" src="<?php echo( esc_url($imageBestShoes1[0]) ); ?>" alt="shoe1">

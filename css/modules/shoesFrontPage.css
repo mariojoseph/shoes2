@@ -69,7 +69,7 @@ align-items: center;
 .grid1-likeScore h1 img{
   display: inline-block;
   margin-bottom: -0.5rem;
-  width: 25%;
+  width: 20%;
 }
 
 .grid2{
@@ -181,13 +181,15 @@ max-width: 100vw;
 }
 
 .grid4-likeScore{
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid4-likeScore h1{
   color: white;
   font-weight: 100;
-  display: inline-block;
+  /* display: inline-block; */
   font-size:1.4rem;
   /* max-width: 100%;
   z-index: 50; */
@@ -196,8 +198,8 @@ max-width: 100vw;
 
 .likeImage{
   z-index: 50;
-  width: 40%;
-  height: 40%;
+  width: 30%;
+  height: 30%;
 }
 
 .shellContainer{

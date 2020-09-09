@@ -33,6 +33,7 @@
 
       .like-countF {
         position: absolute;
+        top: 0%;
         left: 55%;
         font-size: 1.3rem;
         margin-top:-0.7rem;
