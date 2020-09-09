@@ -2,23 +2,16 @@
 
 
      .like-boxF {
-        /* position: absolute; */
-        display: block;
-        /* left:  15%;
-        top: 13rem; */
-        width: 20vw;
-        height: 2.0rem;
-        /* margin-top: 1rem; */
-        /* display: block; */
-        /* width: 50px;
-        height: 100px; */
-        /* border: 2px solid yellow; */
-        /* z-index: 70; */
+      display: flex;
+      /* position: relative; */
+      justify-content: stretch;
+      align-items: center;
+        /* width: 20vw;
+        height: 2.0rem; */
+
         font-size: 1rem;
         background-color: none;
-        /* background-color: #EDEDED; */
-          /* background-color: #EDEDED; */
-        /* box-shadow: 1px 1px 1px rgba(0, 0, 0, .25); */
+
         color: red;
         padding: 15px 10px 10px 25px;
         border-radius: 4px;
@@ -27,16 +20,15 @@
 
       }
 
-      .like-boxF:hover {
-        /* background-color: #DEDEDE; */
-      }
 
       .like-countF {
-        position: absolute;
+        /* position: absolute;
         top: 0%;
-        left: 55%;
-        font-size: 1.3rem;
-        margin-top:-0.7rem;
+        left: 55%; */
+        font-size:1.4rem;
+        padding: 2rem;
+        margin-bottom: 1.9rem;
+        /* margin-top:-0.7rem; */
         /* display: inline-block;
       left: float; */
         /* margin-top: 1rem;
@@ -48,8 +40,8 @@
 
       .like-boxF .fa-heart-o {
         /* display: inline-block; */
-        left: 20%;
-        margin-top: -1rem;
+        /* left: 20%; */
+        /* margin-top: -1rem; */
         cursor: pointer;
         transition: all .4s ease-out;
         color: red;
@@ -60,8 +52,8 @@
       }
 
       .like-boxF .fa-heart {
-        left: 20%;
-        margin-top: -1rem;
+        /* left: 20%; */
+        /* margin-top: -1rem; */
         cursor: pointer;
         transition: all .4s ease-out;
         color: red;
