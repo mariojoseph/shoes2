@@ -5,14 +5,15 @@ class PostShoes {
 
     if(window.location.href.indexOf('/post-your-shoes') > -1){
       
-      // Variable for Images
-          this.uploadDialog;
-      var _PREVIEW_URL =0  
-  
-      // Call to start events function
-      this.events();
-  
-      self = this;
+    // Variable for Images
+        this.uploadDialog;
+    var _PREVIEW_URL =0  
+    this.shoesMessage = $(".shoesMessage"); 
+
+    // Call to start events function
+    this.events();
+    
+    this.postShoes = this;
 
 
     }
@@ -35,30 +36,16 @@ class PostShoes {
 
   // Image creation
   uploadDialog() {
-    
-    console.log('is this working');
+    console.log(this.postShoes);
     const uploadDialogBox = document.querySelector("#fileInput");
 
     if (uploadDialogBox.getAttribute('data-logged') == 'no') {
+      console.log(self);
       
-      const message = "You need to Log In / Sign In to Upload a Photo";
+      const message = "You need to Log In / Sign In to Vote";
       const messageColor = "orange";
-      const shoesMessage = document.querySelector('.shoesMessage');
-      console.log(shoesMessage);
-      // shoesMessage.textContent(message);
-      shoesMessage.textContent = message;
-      shoesMessage.style.backgroundColor = messageColor;
-      shoesMessage.style.width = "80%";
-      shoesMessage.style.margin = "auto";
-      shoesMessage.style.marginTop = "1rem";
-      shoesMessage.style.marginBottom = "4rem";
-      shoesMessage.style.padding = "4px 3px";
-      shoesMessage.style.borderRadius = "5px";
-      
-      setTimeout(function(){ 
-        // window.location.href = "https://www.haveyouseenmyshoes.com/wp-login.php";
-        window.location.href = "http://localhost:3000/wp-login.php";
-        ; }, 2000);
+      console.log(`This is self again ${self}`);
+      // self.messageResponse(message, messageColor);
 
     } else{
       document.querySelector("#fileInput").click();
@@ -292,8 +279,18 @@ setTimeout(() =>{
  
 }
 
-
-
+messageResponse(message, messageColor){
+   
+  this.shoesMessage.html(message);
+  this.shoesMessage.css('color', 'yellow');
+  this.shoesMessage.css('background-color', messageColor);
+  this.shoesMessage.css('width', '80%');
+  this.shoesMessage.css('margin', 'auto');
+  this.shoesMessage.css('margin-top', '1rem');
+  this.shoesMessage.css('margin-bottom', '4rem');
+  this.shoesMessage.css('padding', '4px 3px');
+  this.shoesMessage.css('border-radius', '5px');
+}
 
 }
 

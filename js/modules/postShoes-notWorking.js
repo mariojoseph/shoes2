@@ -5,13 +5,16 @@ class PostShoes {
 
     if(window.location.href.indexOf('/post-your-shoes') > -1){
       
-    // Variable for Images
-        this.uploadDialog;
-    var _PREVIEW_URL =0
+      // Variable for Images
+          this.uploadDialog;
+      var _PREVIEW_URL =0  
+  
+      // Call to start events function
+      this.events();
+  
+      self = this;
 
-    // Call to start events function
-    this.events();
-    // alert("is anybody out there cara");
+
     }
   }
 
@@ -25,117 +28,71 @@ class PostShoes {
     //   IMAGE CONTROL EVENTS - Reset file input
         document.querySelector("#cancel-image").addEventListener('click', this.resetFile);
 
-  // SHOE EVENTS
-    // $(".delete-note").on("click", this.deleteNote.bind(this));
-    // $(".edit-note").on("click", this.editNote.bind(this));
-    // $(".update-note").on("click", this.updateNote.bind(this));
     $(".ShoesSubmit-note").on("click", this.createNote.bind(this));
 
 
   }
 
-  // methods
-  // deleteNote(e) {
-  //   var thisNote = $(e.target).parents("li");
-  //           console.log(thisNote);
-  //   $.ajax({
-  //     beforeSend: (xhr) => {
-  //       xhr.setRequestHeader('X-WP-Nonce', shoeData.nonce);
-  //     },
-  //     url: shoeData.root_url + '/wp-json/shoes/v1/manageShoe' + thisNote.data('id'),
-  //     type: 'DELETE',
-  //     success: (response) => {
-  //       thisNote.slideUp();
-  //       console.log("congrats");
-  //       console.log(response);
-  //     },
-  //     error: (response) => {
-  //       console.log("Sorry");
-  //       console.log(response);
-  //     }
-  //   });
-  // }
-
-  // editNote(e) {
-  //   var thisNote = $(e.target).parents("li");
-  //   if (thisNote.data("state") == "editable") {
-  //     this.makeNoteReadOnly(thisNote);
-  //   } else {
-  //     this.makeNoteEditable(thisNote);
-  //   }
-  // }
-
-  // makeNoteEditable(thisNote) {
-  //   thisNote.find(".edit-note").html('<i class="fa fa-times" aria-hidden="true"></i> Cancel');
-  //   thisNote.find(".note-title-field, .note-body-field").removeAttr("readonly").addClass("note-active-field");
-  //   thisNote.find(".update-note").addClass("update-note--visible");
-  //   thisNote.data("state", "editable");
-  // }
-
-  // makeNoteReadOnly(thisNote) {
-  //   thisNote.find(".edit-note").html('<i class="fa fa-pencil" aria-hidden="true"></i> Edit');
-  //   thisNote.find(".note-title-field, .note-body-field").attr("readonly", "readonly").removeClass("note-active-field");
-  //   thisNote.find(".update-note").removeClass("update-note--visible");
-  //   thisNote.data("state", "cancel");
-  // }
-
-  // updateNote(e) {
-  //   var thisNote = $(e.target).parents("li");
-
-  //   var ourUpdatedPost = {
-  //     'title': thisNote.find(".note-title-field").val(),
-  //     'content': thisNote.find(".note-body-field").val()
-  //   }
-
-  //   $.ajax({
-  //     beforeSend: (xhr) => {
-  //       xhr.setRequestHeader('X-WP-Nonce', shoeData.nonce);
-  //     },
-  //     url: shoeData.root_url + '/wp-json/shoes/v1/manageShoe' + thisNote.data('id'),
-  //     type: 'POST',
-  //     data: ourUpdatedPost,
-  //     success: (response) => {
-  //       this.makeNoteReadOnly(thisNote);
-  //       console.log("Congrats");
-  //       console.log(response);
-  //     },
-  //     error: (response) => {
-  //       console.log("Sorry");
-  //       console.log(response);
-  //     }
-  //   });
-  // }
-
-
   // Image creation
   uploadDialog() {
+    
+    console.log('is this working');
+    const uploadDialogBox = document.querySelector("#fileInput");
 
-    document.querySelector("#fileInput").click();
+    if (uploadDialogBox.getAttribute('data-logged') == 'no') {
+      
+      const message = "You need to Log In / Sign In to Upload a Photo";
+      const messageColor = "orange";
+      const shoesMessage = document.querySelector('.shoesMessage');
+      console.log(shoesMessage);
+      // shoesMessage.textContent(message);
+      shoesMessage.textContent = message;
+      shoesMessage.style.backgroundColor = messageColor;
+      shoesMessage.style.width = "80%";
+      shoesMessage.style.margin = "auto";
+      shoesMessage.style.marginTop = "1rem";
+      shoesMessage.style.marginBottom = "4rem";
+      shoesMessage.style.padding = "4px 3px";
+      shoesMessage.style.borderRadius = "5px";
+      
+      setTimeout(function(){ 
+        window.location.href = "https://www.haveyouseenmyshoes.com/wp-login.php";
+        ; }, 2000);
 
+    } else{
+      document.querySelector("#fileInput").click();
+    }
+ 
    }
    
+
   fileChange() {
-    
+  
     // user selected file	
           var file = this.files[0];
     // var file = this.files[0];
 
+    // AGAIN TRYING
+
+
     // allowed MIME types
-    var mime_types = [ 'image/jpeg', 'image/png' ];
+    var mime_types = [ 'image/jpeg', 'image/png', 'image/gif', 'imagejpg', 'image/tiff' ];
     
     // validate MIME
     if(mime_types.indexOf(file.type) == -1) {
-      alert('Error : Incorrect file type');
+      // alert('Error : Incorrect file type');
+     
+      self.readImageFile("Incorrect File Type. Only JPG and PNG accepted");
       return;
     }
 
     // validate file size
     if(file.size > 5*1200*1200) {
-      alert('Error : Exceeded size 5MB');
+      // alert('Error : Exceeded size 5MB');
+      self.readImageFile("Image too large please choose another one");
       return;
     }
 
-    
 
     // validation is successful
 
@@ -149,7 +106,7 @@ class PostShoes {
     // local url
     this._PREVIEW_URL = URL.createObjectURL(file);
 
-    console.log("value is " + this._PREVIEW_URL);
+    // console.log("value is " + this._PREVIEW_URL);
     // set src of image and show
     
     document.querySelector("#preview-image").setAttribute('src', this._PREVIEW_URL);
@@ -159,7 +116,67 @@ class PostShoes {
     // show cancel and upload buttons now
     document.querySelector("#cancel-image").style.display = 'inline-block';
     // document.querySelector("#upload-button").style.display = 'inline-block';
-   }
+     
+    // if image is too small
+   
+
+    // NOW
+ 
+    var reader = new FileReader(); // CREATE AN NEW INSTANCE.
+  
+    var img = document.getElementById('preview-image');    
+    reader.onload = function (e) {
+
+      let width = img.naturalWidth;
+      let height = img.naturalHeight;
+
+      if(width < 400 || height < 400){
+        self.readImageFile("Image too small please choose another one");
+        console.log(`width is ${width} and height is ${height}`);
+     
+      }
+    };
+    reader.readAsDataURL(file);
+    // console.log(reader);
+
+    // END AGAIN TRYING
+    // END NOW
+    }
+  
+
+readImageFile(textToShow){
+
+const message =  document.querySelector('.post-grid1-left-bottom-photo p');
+
+message.textContent = textToShow;
+message.style.color = 'red';
+message.style.textAlign = 'center';
+
+setTimeout(() =>{
+  location.reload();
+}, 1800);
+
+
+}
+  //  readImageFile(file){
+
+
+  //   console.log('HALLO DUDE');
+  //   // var reader = new FileReader(); // CREATE AN NEW INSTANCE.
+  
+  //   // reader.onload = function (e) {
+  //   //     var img = new Image();      
+  //   //     img.src = e.target.result;
+  
+  //   //     img.onload = function () {
+  //   //         var w = this.width;
+  //   //         var h = this.height;
+  //   //     }
+  //   // };
+  //   // // reader.readAsDataURL(file);
+  //   // console.log(reader);
+  // };
+
    
    resetFile() {
 
@@ -273,6 +290,9 @@ class PostShoes {
       
  
 }
+
+
+
 
 }
 

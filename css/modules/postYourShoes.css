@@ -226,7 +226,7 @@
     .post-grid2-left-top-name input,
     .post-grid2-right-top-address input,
     .post-grid2-left-bottom-city input,
-    .post-grid2-right-bottom-country select{
+    .post-grid2-right-bottom-country input{
 
       display: block;
       width: 80%;
@@ -234,7 +234,7 @@
       font-size: 0.9rem;
     }
 
-    .post-grid2-right-bottom-country select{
+    .post-grid2-right-bottom-country input{
 
       background-color: white;
     }

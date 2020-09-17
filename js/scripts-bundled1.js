@@ -13720,36 +13720,13 @@ function () {
   }, {
     key: "uploadDialog",
     value: function uploadDialog() {
-      console.log('is this working');
-      var uploadDialogBox = document.querySelector("#fileInput");
-
-      if (uploadDialogBox.getAttribute('data-logged') == 'no') {
-        var message = "You need to Log In / Sign In to Upload a Photo";
-        var messageColor = "orange";
-        var shoesMessage = document.querySelector('.shoesMessage');
-        console.log(shoesMessage); // shoesMessage.textContent(message);
-
-        shoesMessage.textContent = message;
-        shoesMessage.style.backgroundColor = messageColor;
-        shoesMessage.style.width = "80%";
-        shoesMessage.style.margin = "auto";
-        shoesMessage.style.marginTop = "1rem";
-        shoesMessage.style.marginBottom = "4rem";
-        shoesMessage.style.padding = "4px 3px";
-        shoesMessage.style.borderRadius = "5px";
-        setTimeout(function () {
-          // window.location.href = "https://www.haveyouseenmyshoes.com/wp-login.php";
-          window.location.href = "http://localhost:3000/wp-login.php";
-          ;
-        }, 2000);
-      } else {
-        document.querySelector("#fileInput").click();
-      }
+      document.querySelector("#fileInput").click();
     }
   }, {
     key: "fileChange",
     value: function fileChange() {
-      // user selected file	
+      console.log(self); // user selected file	
+
       var file = this.files[0]; // var file = this.files[0];
       // AGAIN TRYING
       // allowed MIME types

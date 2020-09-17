@@ -14,22 +14,9 @@
 
     <div class="post-grid1-left-top-upload"  id="mario">
 
-        <?php 
-        
-        // Checking if user logged in
-        
-        $UserLogged = "no";
-
-        if(is_user_logged_in()){
-          $UserLogged = "yes";
-        }
-        
-        ?>
-
         <p>Upload Your Photo</p>
         <button id="upload-dialog">Choose Image</button>
-         <p class="shoesMessage"></p>
-        <input type="file"  class="shoePhoto" id="fileInput" name="image" accept="image/*" data-logged="<?php echo esc_attr($UserLogged)?>" />
+        <input type="file"  class="shoePhoto" id="fileInput" name="image" accept="image/*" />
         <img id="testing1" />
         <span id="image-name"></span>
         <button id="cancel-image">Cancel</button>

@@ -5,15 +5,14 @@ class PostShoes {
 
     if(window.location.href.indexOf('/post-your-shoes') > -1){
       
-      // Variable for Images
-          this.uploadDialog;
-      var _PREVIEW_URL =0  
-  
-      // Call to start events function
-      this.events();
-  
-      self = this;
+    // Variable for Images
+        this.uploadDialog;
+    var _PREVIEW_URL =0  
 
+    // Call to start events function
+    this.events();
+
+    self = this;
 
     }
   }
@@ -33,37 +32,14 @@ class PostShoes {
 
   }
 
+
+
+
   // Image creation
   uploadDialog() {
     
-    console.log('is this working');
-    const uploadDialogBox = document.querySelector("#fileInput");
+    document.querySelector("#fileInput").click();
 
-    if (uploadDialogBox.getAttribute('data-logged') == 'no') {
-      
-      const message = "You need to Log In / Sign In to Upload a Photo";
-      const messageColor = "orange";
-      const shoesMessage = document.querySelector('.shoesMessage');
-      console.log(shoesMessage);
-      // shoesMessage.textContent(message);
-      shoesMessage.textContent = message;
-      shoesMessage.style.backgroundColor = messageColor;
-      shoesMessage.style.width = "80%";
-      shoesMessage.style.margin = "auto";
-      shoesMessage.style.marginTop = "1rem";
-      shoesMessage.style.marginBottom = "4rem";
-      shoesMessage.style.padding = "4px 3px";
-      shoesMessage.style.borderRadius = "5px";
-      
-      setTimeout(function(){ 
-        // window.location.href = "https://www.haveyouseenmyshoes.com/wp-login.php";
-        window.location.href = "http://localhost:3000/wp-login.php";
-        ; }, 2000);
-
-    } else{
-      document.querySelector("#fileInput").click();
-    }
- 
    }
    
 
@@ -291,9 +267,6 @@ setTimeout(() =>{
       
  
 }
-
-
-
 
 }
 
