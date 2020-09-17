@@ -3,12 +3,11 @@ class PostShoesCountry{
     constructor(){
         
         this.events();
-        self = this;
     }
 
     events(){
         // this.results = this.obtainJSONFile();
-        document.querySelector('#countrylist').addEventListener('keyup', function(e){
+        document.querySelector('#countrylist').addEventListener('keyup', (e) =>{
             // clearing the list before populating again
             const clearList = document.getElementById('countrylist1');
             console.log(clearList);
@@ -20,7 +19,7 @@ class PostShoesCountry{
             let searchBox = e.target.value;
             // console.log(searchBox);
 
-            self.obtainJSONFile(searchBox);
+            this.obtainJSONFile(searchBox);
 
         })
 
@@ -53,7 +52,8 @@ class PostShoesCountry{
 
                 // console.log(regex);
 
-                if(countryName.match(regex) || countryCode.match(regex)){
+                // if(countryName.match(regex) || countryCode.match(regex)){
+                if(countryName.match(regex)){
                     var option = document.createElement('option');
                     option.setAttribute('value', countryName);
                     option.appendChild(document.createTextNode(countryName));

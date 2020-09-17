@@ -44,11 +44,11 @@
 
     </div>
 
-    <!-- <div class="post-grid1-right-top-posted">
+    <div class="post-grid1-right-top-posted">
         <p>Email Address (Required):</p>  
         <input class="posted-by" type="text" placeholder="posted by" name="posted-by"><br>
 
-    </div> -->
+    </div>
 <div class="post-grid1-right-middle-bought">
                 <div class="post-grid2-left-top-label">
                         <p class="bought-from">Brought From (Optional)</p>

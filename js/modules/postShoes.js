@@ -13,7 +13,7 @@ class PostShoes {
       this.events();
   
       self = this;
-
+      console.log(self);
 
     }
   }

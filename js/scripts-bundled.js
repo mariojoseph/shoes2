@@ -13701,6 +13701,7 @@ function () {
 
       this.events();
       self = this;
+      console.log(self);
     }
   }
 
@@ -13947,12 +13948,13 @@ function () {
     _classCallCheck(this, PostShoesCountry);
 
     this.events();
-    self = this;
   }
 
   _createClass(PostShoesCountry, [{
     key: "events",
     value: function events() {
+      var _this = this;
+
       // this.results = this.obtainJSONFile();
       document.querySelector('#countrylist').addEventListener('keyup', function (e) {
         // clearing the list before populating again
@@ -13966,7 +13968,7 @@ function () {
 
         var searchBox = e.target.value; // console.log(searchBox);
 
-        self.obtainJSONFile(searchBox);
+        _this.obtainJSONFile(searchBox);
       });
     }
   }, {
@@ -13989,8 +13991,9 @@ function () {
 
           var countryName = country.name.toLowerCase();
           var countryCode = country.code.toLowerCase(); // console.log(regex);
+          // if(countryName.match(regex) || countryCode.match(regex)){
 
-          if (countryName.match(regex) || countryCode.match(regex)) {
+          if (countryName.match(regex)) {
             var option = document.createElement('option');
             option.setAttribute('value', countryName);
             option.appendChild(document.createTextNode(countryName));
