@@ -54,10 +54,11 @@ class PostShoes {
       shoesMessage.style.marginBottom = "4rem";
       shoesMessage.style.padding = "4px 3px";
       shoesMessage.style.borderRadius = "5px";
+      shoesMessage.style.fontSize = "0.8rem";
       
       setTimeout(function(){ 
-        // window.location.href = "https://www.haveyouseenmyshoes.com/wp-login.php";
-        window.location.href = "http://localhost:3000/wp-login.php";
+        window.location.href = "https://www.haveyouseenmyshoes.com/wp-login.php";
+  
         ; }, 2000);
 
     } else{
