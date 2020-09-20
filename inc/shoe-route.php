@@ -30,8 +30,12 @@ function createShoe($data) {
   $city = sanitize_text_field($data['city']);
   $commentary = sanitize_text_field($data['commentary']);
   $location = $address . ', ' . $city .', '. $country;
-  $value = array("address" => $location, "lat" => $lat, "lng" => $lng, "zoom" => $zoom);
+  $lat = '50.81411';
+  $lng = '244.96328';
+  $zoom = '16';
   
+  // $value = array("address" => $location, "lat" => $lat, "lng" => $lng, "zoom" => $zoom);
+  $value = array("address" => $location, "lat" => $lat, "lng" => $lng, "zoom" => $zoom);
   print_r("is this working??");
   print_r($value);
   print_r("is this working?? END");

@@ -230,7 +230,8 @@ function pageBanner($args=null){
 
 // register scripts / styles
 function shoes_files() {
-wp_enqueue_script('googleMap', '//maps.googleapis.com/maps/api/js?key=AIzaSyDn63VvrALmyYEatDMhxwyLKzx_jwcIOBI', NULL, '1.0', false);
+// wp_enqueue_script('googleMap', '//maps.googleapis.com/maps/api/js?key=AIzaSyDn63VvrALmyYEatDMhxwyLKzx_jwcIOBI', NULL, '1.0', false);
+wp_enqueue_script('googleMap', '//maps.googleapis.com/maps/api/js?key=AIzaSyAxmes2pIhDACDBKaBif8T5geXCfWTLNmQ', NULL, '1.0', false);
 wp_enqueue_script('shoes2-js', get_theme_file_uri('/js/scripts-bundled.js'), NULL, 'microtime()', true);
 wp_enqueue_script('shoes3-js', get_theme_file_uri('/js/additionalJS.js'), NULL, 'microtime()', true);
 wp_enqueue_style('shoes2_style', get_stylesheet_uri(), NULL, microtime());
@@ -262,12 +263,20 @@ add_action('after_setup_theme', 'shoe_features');
 
 
 function shoeMapKey($api){
-    // $api['key'] = 'AIzaSyAxmes2pIhDACDBKaBif8T5geXCfWTLNmQ';
-    $api['key'] = 'AIzaSyDn63VvrALmyYEatDMhxwyLKzx_jwcIOBI';
+    $api['key'] = 'AIzaSyAxmes2pIhDACDBKaBif8T5geXCfWTLNmQ';
+    // $api['key'] = 'AIzaSyDn63VvrALmyYEatDMhxwyLKzx_jwcIOBI';
 	return $api;
 }
 
 add_filter('acf/fields/google_map/api', 'shoeMapKey');
+
+// function shoeMapKeyUpdate(){
+
+//     acf_update_setting('google_api_key', 'AIzaSyAxmes2pIhDACDBKaBif8T5geXCfWTLNmQ');
+// }
+
+// add_action('acf/init', 'shoeMapKeyUpdate');
+
 
 
 // finding out current user

@@ -184,8 +184,8 @@
                           
                             $image = get_field('shoePhoto');
                             $imageLike = get_field('number_of_likes');
-                            $size = "frontPageSlider2";
-                            // $size = "Slider";
+                            // $size = "frontPageSlider2";
+                            $size = "Slider";
                             $longDescThumb =  get_permalink();
                             $image1 = wp_get_attachment_image_src($image['id'], $size);
                             $thumb = $image['sizes'][ $size ];
@@ -248,9 +248,7 @@
                                 
                         <?php wp_reset_postdata();} }
                     ?>
-
-            <script>
-            </script>                            
+                        
             </div>
 
 

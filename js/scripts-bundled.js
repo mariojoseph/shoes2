@@ -13852,14 +13852,20 @@ function () {
     value: function createNote(e) {
       e.preventDefault();
       var ourNewPost = {
-        // 'postedBy': $(".postedBy").val(),
-        'posted': (0, _jquery.default)(".posted-by").val(),
         'name': (0, _jquery.default)(".name").val(),
         'address': (0, _jquery.default)(".address").val(),
         'city': (0, _jquery.default)(".city").val(),
-        'country': (0, _jquery.default)("#countryList option:selected").val(),
+        'country': (0, _jquery.default)("#countrylist").val(),
         'commentary': (0, _jquery.default)(".commentary").val(),
-        'status': 'publish'
+        'status': 'publish' // var ourNewPost = {
+        //   'posted': $(".posted-by").val(),
+        //   'name': $(".name").val(),
+        //   'address': $(".address").val(),
+        //   'city': $(".city").val(),
+        //   'country': $("#countryList option:selected").val(),
+        //   'commentary': $(".commentary").val(),
+        //   'status': 'publish'
+
       };
       var files = document.querySelector('#fileInput').files;
       var formData = new FormData();
@@ -13868,9 +13874,9 @@ function () {
         var file = files[i];
         console.log(file);
         formData.append('files[]', file);
-      }
+      } //  formData.append('posted',ourNewPost.posted);
+      //  formData.append('postedBy',ourNewPost.postedBy);
 
-      formData.append('posted', ourNewPost.posted); //  formData.append('postedBy',ourNewPost.postedBy);
 
       formData.append('name', ourNewPost.name);
       formData.append('address', ourNewPost.address);
@@ -14233,6 +14239,7 @@ function () {
   function GMap() {
     _classCallCheck(this, GMap);
 
+    console.log('i am being accessed');
     var self = this;
     (0, _jquery.default)('.acf-map').each(function () {
       self.new_map((0, _jquery.default)(this));

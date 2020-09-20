@@ -27,16 +27,13 @@
 
     <h2>Below is the location of the seller, thanks to the contribution of <?php echo get_field('postedBy', $maybe); ?></h2>
   
-    <?php
-    $testing = get_field('shoeLocation');
-   ?>
     <table class="location-Details">
-      <tr class="location-row"><td class="location-detail">Name of Store:</td><td class="location-detail"><?php echo esc_html(get_field('name')); ?></td></tr>
-      <tr class="location-row"><td class="location-detail">Address:</td><td class="location-detail"><?php echo esc_html(get_field(address)); ?></td></tr>
+      <tr class="location-row"><td class="location-detail">Name of Store:</td><td class="location-detail">Patrick Shops</td></tr>
+      <tr class="location-row"><td class="location-detail">Address:</td><td class="location-detail">64 Stevenage Road</td></tr>
       <tr class="location-row"><td class="location-detail">Town:</td><td class="location-detail">Wittington Spa</td></tr>
       <tr class="location-row"><td class="location-detail">Country:</td><td class="location-detail">United States</td></tr>
     </table>
-    <script>console.log(`please work ${testing}`)</script>
+
   </div>
 
 

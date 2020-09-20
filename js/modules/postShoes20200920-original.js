@@ -211,23 +211,14 @@ setTimeout(() =>{
   e.preventDefault();
 
     var ourNewPost = {
+    // 'postedBy': $(".postedBy").val(),
+    'posted': $(".posted-by").val(),
     'name': $(".name").val(),
     'address': $(".address").val(),
     'city': $(".city").val(),
-    'country': $("#countrylist").val(),
+    'country': $("#countryList option:selected").val(),
     'commentary': $(".commentary").val(),
     'status': 'publish'
-
-    // var ourNewPost = {
-    //   'posted': $(".posted-by").val(),
-    //   'name': $(".name").val(),
-    //   'address': $(".address").val(),
-    //   'city': $(".city").val(),
-    //   'country': $("#countryList option:selected").val(),
-    //   'commentary': $(".commentary").val(),
-    //   'status': 'publish'
-
-    
   }
  
 
@@ -241,7 +232,7 @@ setTimeout(() =>{
       formData.append('files[]', file);
 
 	}
-    //  formData.append('posted',ourNewPost.posted);
+     formData.append('posted',ourNewPost.posted);
     //  formData.append('postedBy',ourNewPost.postedBy);
      formData.append('name',ourNewPost.name);
      formData.append('address',ourNewPost.address);

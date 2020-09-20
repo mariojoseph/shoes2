@@ -79,7 +79,7 @@
 </div>
     <div class="post-grid1-right-bottom-commentary">
             <p class="">Commentary (Optional)</p>
-            <textarea placeholder="Any comments here..."></textarea>
+            <textarea placeholder="Any comments here..." class="commentary"></textarea>
             <br>
 
             <?php ?>

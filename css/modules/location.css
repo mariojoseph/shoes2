@@ -61,3 +61,30 @@
   font-family: 'Kalam', cursive;
 
 }
+
+.locationButton{
+
+  margin: auto;
+  border: 1px solid rgb(225, 240, 15);
+  /* border: 1px solid red; */
+  border-radius: 4px;
+  padding: 5px 8px;
+  }
+
+  .locationButton a{
+    /* color: red; */
+    color: yellow;
+    text-decoration: none;
+   
+  }
+
+  .location-Details{
+    background-color: rgba(146, 140, 140, 0.2);
+    width: 100%;
+    padding: 0.5rem 0 0.5rem 0;
+  }
+
+  .location-detail{
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  } 
