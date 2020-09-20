@@ -13850,8 +13850,10 @@ function () {
   }, {
     key: "createNote",
     value: function createNote(e) {
+      var postedby = (0, _jquery.default)(e.target).attr('data-user');
       e.preventDefault();
       var ourNewPost = {
+        'posted': postedby,
         'name': (0, _jquery.default)(".name").val(),
         'address': (0, _jquery.default)(".address").val(),
         'city': (0, _jquery.default)(".city").val(),
@@ -13875,9 +13877,9 @@ function () {
         var file = files[i];
         console.log(file);
         formData.append('files[]', file);
-      } //  formData.append('posted',ourNewPost.posted);
-      //  formData.append('postedBy',ourNewPost.postedBy);
+      }
 
+      formData.append('posted', ourNewPost.posted); //  formData.append('postedBy',ourNewPost.postedBy);
 
       formData.append('name', ourNewPost.name);
       formData.append('address', ourNewPost.address);

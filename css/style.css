@@ -42,7 +42,7 @@ Version: 1.1
 @import "modules/contact-us";
 @import "modules/history";
 @import "modules/popular";
-@import "modules/popular-single";
+/* @import "modules/popular-single"; */
 @import "modules/blog";
 @import "modules/blog-single";
 @import "modules/comments";

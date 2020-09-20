@@ -22,6 +22,8 @@
 
         if(is_user_logged_in()){
           $UserLogged = "yes";
+          $UserName = wp_get_current_user();
+
         }
         
         ?>
@@ -34,6 +36,7 @@
         <span id="image-name"></span>
         <button id="cancel-image">Cancel</button>
 
+ 
     </div>
 
     <div class="post-grid1-left-bottom-photo">
@@ -83,8 +86,10 @@
             <br>
 
             <?php ?>
-            <span class="ShoesSubmit-note">Create Post</span>
+            <span class="ShoesSubmit-note" data-user="<?php esc_attr(print_r($UserName->user_login)) ?>">Create Post</span>
     </div>
+
+   <!-- <script>console.log(<?php echo($UserName->user_login) ?>) </script> -->
 </div>
 
 <div class="post-shoes-modal">

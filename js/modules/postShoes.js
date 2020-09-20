@@ -36,7 +36,7 @@ class PostShoes {
   // Image creation
   uploadDialog() {
     
-   
+
     const uploadDialogBox = document.querySelector("#fileInput");
 
     if (uploadDialogBox.getAttribute('data-logged') == 'no') {
@@ -207,11 +207,14 @@ setTimeout(() =>{
   // Creation of Post Your Shoes Post
 
   createNote(e) {
-  
-  
+ 
+    var postedby = $(e.target).attr('data-user');
+ 
+
   e.preventDefault();
 
     var ourNewPost = {
+    'posted': postedby,
     'name': $(".name").val(),
     'address': $(".address").val(),
     'city': $(".city").val(),
@@ -244,7 +247,7 @@ setTimeout(() =>{
       formData.append('files[]', file);
 
 	}
-    //  formData.append('posted',ourNewPost.posted);
+     formData.append('posted',ourNewPost.posted);
     //  formData.append('postedBy',ourNewPost.postedBy);
      formData.append('name',ourNewPost.name);
      formData.append('address',ourNewPost.address);
