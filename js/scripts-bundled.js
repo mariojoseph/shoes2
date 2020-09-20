@@ -13721,7 +13721,6 @@ function () {
   }, {
     key: "uploadDialog",
     value: function uploadDialog() {
-      console.log('is this working');
       var uploadDialogBox = document.querySelector("#fileInput");
 
       if (uploadDialogBox.getAttribute('data-logged') == 'no') {
@@ -13833,7 +13832,8 @@ function () {
   }, {
     key: "resetFile",
     value: function resetFile() {
-      // destroy previous local url
+      console.log('is this mikey'); // destroy previous local url
+
       URL.revokeObjectURL(this._PREVIEW_URL); // show upload dialog button and hide image and cancel buttons
 
       document.querySelector("#upload-dialog").style.display = 'inline-block';
@@ -13867,6 +13867,7 @@ function () {
         //   'status': 'publish'
 
       };
+      console.log((0, _jquery.default)("#countrylist").val());
       var files = document.querySelector('#fileInput').files;
       var formData = new FormData();
 
@@ -13995,8 +13996,7 @@ function () {
           // // console.log(country.name);
           var regex = new RegExp("^".concat(searchBox.toLowerCase())); // let regex = searchBox.toLowerCase();
 
-          var countryName = country.name.toLowerCase();
-          var countryCode = country.code.toLowerCase(); // console.log(regex);
+          var countryName = country.name.toLowerCase(); // console.log(regex);
           // if(countryName.match(regex) || countryCode.match(regex)){
 
           if (countryName.match(regex)) {

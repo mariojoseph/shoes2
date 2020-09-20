@@ -48,7 +48,7 @@ class PostShoesCountry{
 
                 // let regex = searchBox.toLowerCase();
                 let countryName = country.name.toLowerCase();
-                let countryCode = country.code.toLowerCase(); 
+        
 
                 // console.log(regex);
 

@@ -36,7 +36,7 @@ class PostShoes {
   // Image creation
   uploadDialog() {
     
-    console.log('is this working');
+   
     const uploadDialogBox = document.querySelector("#fileInput");
 
     if (uploadDialogBox.getAttribute('data-logged') == 'no') {
@@ -69,7 +69,7 @@ class PostShoes {
    
 
   fileChange() {
-  
+   
     // user selected file	
           var file = this.files[0];
     // var file = this.files[0];
@@ -181,7 +181,7 @@ setTimeout(() =>{
 
    
    resetFile() {
-
+    console.log('is this mikey');
      // destroy previous local url
     URL.revokeObjectURL(this._PREVIEW_URL);
 
@@ -207,7 +207,8 @@ setTimeout(() =>{
   // Creation of Post Your Shoes Post
 
   createNote(e) {
-
+  
+  
   e.preventDefault();
 
     var ourNewPost = {
@@ -218,6 +219,7 @@ setTimeout(() =>{
     'commentary': $(".commentary").val(),
     'status': 'publish'
 
+   
     // var ourNewPost = {
     //   'posted': $(".posted-by").val(),
     //   'name': $(".name").val(),
@@ -230,6 +232,7 @@ setTimeout(() =>{
     
   }
  
+  console.log($("#countrylist").val());
 
   const files = document.querySelector('#fileInput').files;
 
@@ -249,6 +252,7 @@ setTimeout(() =>{
      formData.append('country',ourNewPost.country);
      formData.append('commentary',ourNewPost.commentary);
      
+
   // formData.append('dummy', $(".postedBy"),val());
 
   // const files = document.querySelector('.post-grid1').files;
