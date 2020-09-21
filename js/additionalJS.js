@@ -1,14 +1,13 @@
-// const postShoes = document.querySelector('.main-header-image a');
+const loginBtn = document.querySelector('#wp-submit');
 
-// postShoes.addEventListener('click', function(){
+loginBtn.addEventListener('click', () =>{
 
+
+ console.log('should be working');
  
+ setTimeout(function(){ 
+    window.history.go(-1);
+    ; }, 500);
 
-// });
-
-
-
-
-
-  
+})
   
