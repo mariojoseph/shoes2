@@ -3,11 +3,25 @@ const loginBtn = document.querySelector('#wp-submit');
 loginBtn.addEventListener('click', () =>{
 
 
- console.log('should be working again');
  
  setTimeout(function(){ 
-    window.history.go(-1);
-    ; }, 10);
+    // window.history.go(-1);
+    window.location=document.referrer;
+    console.log('reload worked again');
+    
+   
+    ; }, 500);
 
+    
+    window.location.reload();
+
+    // setTimeout(function(){ 
+    //     window.location.reload();
+    //     console.log('reload worked again');
+    //     ; }, 2000);
+ 
+   
 })
+
+
   
