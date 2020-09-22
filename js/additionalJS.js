@@ -10,7 +10,7 @@ loginBtn.addEventListener('click', () =>{
     console.log('reload worked again');
     
    
-    ; }, 500);
+    ; }, 50);
 
     
     window.location.reload();
