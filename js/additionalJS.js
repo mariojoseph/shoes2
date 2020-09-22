@@ -1,3 +1,13 @@
+
+const locationDetails = document.querySelector('.store-location')
+
+locationDetails.addEventListener('click', function(e){
+   
+    console.log(locationDetails.getAttribute('data-shoeid') );
+});
+
+
+
 // const loginBtn = document.querySelector('#wp-submit');
 
 // loginBtn.addEventListener('click', () =>{

@@ -31,7 +31,6 @@
             
               $author = get_current_user_id();
               $image = get_the_ID();
-              
               $alreadyPosted = 'no';
               $existStatus = 'no';
             $week = date('W');
@@ -95,7 +94,6 @@
       $width = $image['sizes'][ $size . '-width' ];
       $height = $image['sizes'][ $size . '-height' ];
        $data = get_the_ID();
-       $idForLocation = "BB King";
       ?>
 
       <img src="<?php echo esc_url($image['url']); ?>" alt="what the" width="<?php echo esc_attr($width); ?>" height="<?php echo esc_attr($height); ?>">

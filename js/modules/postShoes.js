@@ -329,7 +329,7 @@ messageBank(){
   shoesMessage.style.width = "80%";
   shoesMessage.style.margin = "auto";
   // shoesMessage.style.marginTop = "0.2rem";
-  // shoesMessage.style.marginBottom = "4rem";
+  shoesMessage.style.marginBottom = "1rem";
   shoesMessage.style.padding = "4px 3px";
   shoesMessage.style.borderRadius = "5px";
   shoesMessage.style.fontSize = "0.8rem";

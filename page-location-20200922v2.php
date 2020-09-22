@@ -28,27 +28,14 @@
     <h2>Below is the location of the seller, thanks to the contribution of <?php echo get_field('postedBy', $maybe); ?></h2>
   
     <?php
-    // $testing = get_field('shoeLocation');
-    $postInfo  = new WP_Query(array(
-      'post_type' => 'shoes',
-      'p' => $maybe
-
-      ));
-    while($postInfo ->have_posts()){
-      $postInfo->the_post();
-      $storeName = get_field('name'); ?>
-    <table class="location-Details">
-      <tr class="location-row"><td class="location-detail">Name of Store:</td><td class="location-detail"><?php echo esc_html(get_field(name)); ?></td></tr>
-      <tr class="location-row"><td class="location-detail">Address:</td><td class="location-detail"><?php echo esc_html(get_field(address)); ?></td></tr>
-      <tr class="location-row"><td class="location-detail">Town:</td><td class="location-detail"><?php echo esc_html(get_field(city)); ?></td></tr>
-      <tr class="location-row"><td class="location-detail">Country:</td><td class="location-detail"><?php echo esc_html(get_field(country)); ?></td></tr>
-    </table>
-
-<?php
-    }
-    wp_reset_postdata();
+    $testing = get_field('shoeLocation');
    ?>
-
+    <table class="location-Details">
+      <tr class="location-row"><td class="location-detail">Name of Store:</td><td class="location-detail"><?php echo esc_html(get_field('name')); ?></td></tr>
+      <tr class="location-row"><td class="location-detail">Address:</td><td class="location-detail"><?php echo esc_html(get_field(address)); ?></td></tr>
+      <tr class="location-row"><td class="location-detail">Town:</td><td class="location-detail">Wittington Spa</td></tr>
+      <tr class="location-row"><td class="location-detail">Country:</td><td class="location-detail">United States</td></tr>
+    </table>
     <script>console.log(`please work ${testing}`)</script>
   </div>
 
