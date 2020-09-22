@@ -13872,58 +13872,84 @@ function () {
       };
       console.log((0, _jquery.default)("#countrylist").val());
       var files = document.querySelector('#fileInput').files;
-      var formData = new FormData();
 
-      for (var i = 0; i < files.length; i++) {
-        var file = files[i];
-        console.log(file);
-        formData.append('files[]', file);
-      }
+      if (files.length == 0) {
+        console.log('please upload an image');
+        this.messageBank();
+      } else {
+        var formData = new FormData();
 
-      formData.append('posted', ourNewPost.posted); //  formData.append('postedBy',ourNewPost.postedBy);
-
-      formData.append('name', ourNewPost.name);
-      formData.append('address', ourNewPost.address);
-      formData.append('city', ourNewPost.city);
-      formData.append('country', ourNewPost.country);
-      formData.append('commentary', ourNewPost.commentary); // formData.append('dummy', $(".postedBy"),val());
-      // const files = document.querySelector('.post-grid1').files;
-      // const formData = new FormData(files);
-
-      _jquery.default.ajax({
-        beforeSend: function beforeSend(xhr) {
-          xhr.setRequestHeader('X-WP-Nonce', shoeData.nonce);
-        },
-        url: shoeData.root_url + '/wp-json/shoes/v1/manageShoe',
-        type: 'POST',
-        data: formData,
-        // extra Info
-        cache: false,
-        processData: false,
-        contentType: false,
-        // extra Info End
-        success: function success(response) {
-          // $(".name, .shoePhoto").val('');
-          // console.log(formData);
-          console.log("Congrats");
-          console.log(response);
-        },
-        error: function error(response) {
-          if (response.responseText == "You have reached your note limit.") {
-            (0, _jquery.default)(".note-limit-message").addClass("active");
-          }
-
-          console.log("Stevie");
-          console.log(response);
+        for (var i = 0; i < files.length; i++) {
+          var file = files[i];
+          formData.append('files[]', file);
         }
-      }); // Response from Shoe - Creation of Modal Fixed
+
+        formData.append('posted', ourNewPost.posted); //  formData.append('postedBy',ourNewPost.postedBy);
+
+        formData.append('name', ourNewPost.name);
+        formData.append('address', ourNewPost.address);
+        formData.append('city', ourNewPost.city);
+        formData.append('country', ourNewPost.country);
+        formData.append('commentary', ourNewPost.commentary); // formData.append('dummy', $(".postedBy"),val());
+        // const files = document.querySelector('.post-grid1').files;
+        // const formData = new FormData(files);
+
+        _jquery.default.ajax({
+          beforeSend: function beforeSend(xhr) {
+            xhr.setRequestHeader('X-WP-Nonce', shoeData.nonce);
+          },
+          url: shoeData.root_url + '/wp-json/shoes/v1/manageShoe',
+          type: 'POST',
+          data: formData,
+          // extra Info
+          cache: false,
+          processData: false,
+          contentType: false,
+          // extra Info End
+          success: function success(response) {
+            // $(".name, .shoePhoto").val('');
+            // console.log(formData);
+            console.log("Congrats");
+            console.log(response);
+          },
+          error: function error(response) {
+            if (response.responseText == "You have reached your note limit.") {
+              (0, _jquery.default)(".note-limit-message").addClass("active");
+            }
+
+            console.log("Stevie");
+            console.log(response);
+          }
+        }); // Response from Shoe - Creation of Modal Fixed
 
 
-      var shoesModal = document.querySelector('.post-shoes-modal');
-      shoesModal.style.display = 'block';
+        var shoesModal = document.querySelector('.post-shoes-modal');
+        shoesModal.style.display = 'block';
+        setTimeout(function () {
+          shoesModal.style.display = 'none';
+        }, 4000);
+      }
+    }
+  }, {
+    key: "messageBank",
+    value: function messageBank() {
+      var message = "You need to upload a photo";
+      var shoesMessage = document.querySelector('.whenNoImage');
+      shoesMessage.style.display = 'block';
+      shoesMessage.textContent = message;
+      shoesMessage.style.backgroundColor = 'red';
+      shoesMessage.style.width = "80%";
+      shoesMessage.style.margin = "auto"; // shoesMessage.style.marginTop = "0.2rem";
+      // shoesMessage.style.marginBottom = "4rem";
+
+      shoesMessage.style.padding = "4px 3px";
+      shoesMessage.style.borderRadius = "5px";
+      shoesMessage.style.fontSize = "0.8rem";
+      shoesMessage.style.textAlign = "center";
       setTimeout(function () {
-        shoesModal.style.display = 'none';
-      }, 4000);
+        shoesMessage.style.display = 'none';
+        window.location.reload();
+      }, 2000);
     }
   }]);
 
@@ -14083,8 +14109,8 @@ function () {
         var messageColor = "orange";
         this.messageResponse(message, messageColor);
         setTimeout(function () {
-          // window.location.href = "http://localhost:3000/wp-login.php";
-          window.location.href = "https://www.haveyouseenmyshoes.com/wp-login.php";
+          window.location.href = "http://localhost:3000/wp-login.php"; // window.location.href = "https://www.haveyouseenmyshoes.com/wp-login.php";
+
           ;
         }, 2000);
         return null;

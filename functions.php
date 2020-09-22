@@ -136,7 +136,11 @@ function pageBanner1($args=null){
           <div class="site-header__menu_items__home"><i class="fa fa-home" style="color: yellow;" aria-hidden="true" alt="mario"></i><a href="<?php echo esc_url(site_url(' ')); ?>" class="removeHyphen">&nbsp Home</a></div>
       <div class="site-header__menu_items__rules"><i class="fa fa-heartbeat" aria-hidden="true" style="color: #E75480;"></i><a href="<?php echo esc_url(site_url('rules')); ?>" class="removeHyphen">&nbsp Rules</a></div>
       <div class="site-header__menu_items__past"><i class="fa fa-trophy" aria-hidden="true" style="color: goldenrod;"></i><a href="<?php echo esc_url(site_url('past-winners')); ?>" >&nbsp Past Shoe Winners</a></div>
-      <div class="site-header__menu_items__about"><i class="fa fa-heart" style="color: red;" aria-hidden="true" style="color: white;"></i><a href="<?php echo esc_url(site_url('about-us')); ?>" >&nbsp About Us</a></div>
+      <div class="site-header__menu_items__about"><i class="fa fa-users" style="color: yellowgreen;" aria-hidden="true" style="color: white;"></i><a href="<?php echo esc_url(site_url('about-us')); ?>" >&nbsp About Us</a></div>
+      <div class="site-header__menu_items__about"><i class="fa fa-users" style="color: gold;" aria-hidden="true" style="color: white;"></i><a href="<?php echo esc_url(site_url('brands')); ?>" >&nbsp Brands</a></div>
+      <div class="site-header__menu_items__about"><i class="fa fa-history" style="color: cyan;" aria-hidden="true" style="color: white;"></i><a href="<?php echo esc_url(site_url('history-of-shoes')); ?>" >&nbsp History of Shoes</a></div>
+      <div class="site-header__menu_items__about"><i class="fa fa-phone" style="color: 	pink;" aria-hidden="true" style="color: white;"></i><a href="<?php echo esc_url(site_url('contact-us')); ?>" >&nbsp Contact Us</a></div>
+      <div class="site-header__menu_items__about"><i class="fa fa-bold" style="color: 	brown;" aria-hidden="true" style="color: brown;"></i><a href="<?php echo esc_url(site_url('blog')); ?>" >&nbsp Blog</a></div>
   </div>
 
 </div>
@@ -365,6 +369,27 @@ function total_child_enqueue_parent_theme_style() {
 }
 add_action( 'wp_enqueue_scripts', 'total_child_enqueue_parent_theme_style' );
 
+
+// removing default redirect login
+// add_action('init', 'remove_default_redirect');
+// add_filter('auth_redirect_scheme', 'stop_redirect', 9999);
+
+// function stop_redirect($scheme)
+// {
+//     if ( $user_id = wp_validate_auth_cookie( '',  $scheme) ) {
+//         return $scheme;
+//     }
+
+//     global $wp_query;
+//     $wp_query->set_404();
+//     get_template_part( 404 );
+//     exit();
+// }
+
+// function remove_default_redirect()
+// {
+//     remove_action('template_redirect', 'wp_redirect_admin_locations', 1000);
+// }
 
 ?>
 

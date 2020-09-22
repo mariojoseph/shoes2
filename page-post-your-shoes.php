@@ -87,6 +87,8 @@
 
             <?php ?>
             <span class="ShoesSubmit-note" data-user="<?php esc_attr(print_r($UserName->user_login)) ?>">Create Post</span>
+
+            <p class="whenNoImage"></p>
     </div>
 
    <!-- <script>console.log(<?php echo($UserName->user_login) ?>) </script> -->

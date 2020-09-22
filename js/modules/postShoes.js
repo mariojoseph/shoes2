@@ -239,14 +239,22 @@ setTimeout(() =>{
 
   const files = document.querySelector('#fileInput').files;
 
-	const formData = new FormData();
+  if(files.length == 0){
+      console.log('please upload an image');
+      this.messageBank();
+  } else{
+
+    const formData = new FormData();
 
 	for (let i = 0; i < files.length; i++) {
       let file = files[i];
-      console.log(file);
-      formData.append('files[]', file);
 
-	}
+      formData.append('files[]', file);
+  }
+  
+    
+
+
      formData.append('posted',ourNewPost.posted);
     //  formData.append('postedBy',ourNewPost.postedBy);
      formData.append('name',ourNewPost.name);
@@ -304,12 +312,34 @@ setTimeout(() =>{
 
   }, 4000);
 
+    
+  }
 
-      
+    
  
 }
 
 
+messageBank(){
+  const message = "You need to upload a photo";
+  const shoesMessage = document.querySelector('.whenNoImage');
+  shoesMessage.style.display = 'block'; 
+  shoesMessage.textContent = message;
+  shoesMessage.style.backgroundColor = 'red';
+  shoesMessage.style.width = "80%";
+  shoesMessage.style.margin = "auto";
+  // shoesMessage.style.marginTop = "0.2rem";
+  // shoesMessage.style.marginBottom = "4rem";
+  shoesMessage.style.padding = "4px 3px";
+  shoesMessage.style.borderRadius = "5px";
+  shoesMessage.style.fontSize = "0.8rem";
+  shoesMessage.style.textAlign = "center";
+
+  setTimeout(function(){
+   shoesMessage.style.display = 'none'; 
+   window.location.reload();
+  }, 2000);
+}
 
 
 }

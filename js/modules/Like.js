@@ -32,8 +32,8 @@ class Like {
       this.messageResponse(message, messageColor);
 
       setTimeout(function(){ 
-        // window.location.href = "http://localhost:3000/wp-login.php";
-        window.location.href = "https://www.haveyouseenmyshoes.com/wp-login.php";
+        window.location.href = "http://localhost:3000/wp-login.php";
+        // window.location.href = "https://www.haveyouseenmyshoes.com/wp-login.php";
         ; }, 2000);
 
 

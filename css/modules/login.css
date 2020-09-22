@@ -1,7 +1,7 @@
-/* Turning log in black */
+/* Turning log in #151e2d */
 
 div#login{
-    background-color: black;
+    background-color: #151e2d;
     max-width: 960px !important;
     width: 100% !important;
     margin: auto;
@@ -31,7 +31,7 @@ div#login{
 
 /* Decorating Login form */
 .login form{
-    background-color: black;
+    background-color: #151e2d;
     width: 80%;
     margin: auto;
     /* background-color: #151e2d; */
@@ -151,7 +151,7 @@ p.message.register{
 }
 
 .site-footer__grid1 h2{
-    color: black;
+    color: #151e2d;
     font-size: 1.4rem;
     margin-bottom: 1rem;
     margin-top: 2rem;
