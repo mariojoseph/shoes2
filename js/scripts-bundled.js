@@ -10334,34 +10334,33 @@ var _jquery = _interopRequireDefault(__webpack_require__(0));
 
 var _slickCarousel = _interopRequireDefault(__webpack_require__(2));
 
-var _template = _interopRequireDefault(__webpack_require__(3));
+var _Gallery = _interopRequireDefault(__webpack_require__(3));
 
-var _Gallery = _interopRequireDefault(__webpack_require__(4));
+var _headerSlider = _interopRequireDefault(__webpack_require__(4));
 
-var _headerSlider = _interopRequireDefault(__webpack_require__(5));
+var _fpSlider = _interopRequireDefault(__webpack_require__(5));
 
-var _fpSlider = _interopRequireDefault(__webpack_require__(6));
+var _postShoes = _interopRequireDefault(__webpack_require__(6));
 
-var _postShoes = _interopRequireDefault(__webpack_require__(7));
+var _postShoesCountry = _interopRequireDefault(__webpack_require__(7));
 
-var _postShoesCountry = _interopRequireDefault(__webpack_require__(8));
+var _Like = _interopRequireDefault(__webpack_require__(8));
 
-var _Like = _interopRequireDefault(__webpack_require__(9));
+var _GoogleMap = _interopRequireDefault(__webpack_require__(9));
 
-var _GoogleMap = _interopRequireDefault(__webpack_require__(10));
+var _messages = _interopRequireDefault(__webpack_require__(10));
 
-var _messages = _interopRequireDefault(__webpack_require__(11));
-
-var _PWSlider = _interopRequireDefault(__webpack_require__(12));
+var _PWSlider = _interopRequireDefault(__webpack_require__(11));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // 3rd party packages from NPM
 // Our modules / classes
+// import Template from './modules/template';
 // import HeroSliderPast from './modules/HeroSliderPast';
 // Testing
-var pWSlider = new _PWSlider.default();
-var template = new _template.default();
+var pWSlider = new _PWSlider.default(); // var template = new Template();
+
 var gallery = new _Gallery.default();
 var headerSlider = new _headerSlider.default();
 var fpSlider = new _fpSlider.default(); // var heroSliderPast = new HeroSliderPast();
@@ -13415,48 +13414,6 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
-var Template =
-/*#__PURE__*/
-function () {
-  function Template() {// alert("mario is working I think");
-
-    _classCallCheck(this, Template);
-  }
-
-  _createClass(Template, [{
-    key: "events",
-    value: function events() {// keeping empty at the moment
-    }
-  }]);
-
-  return Template;
-}();
-
-var _default = Template;
-exports.default = _default;
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _jquery = _interopRequireDefault(__webpack_require__(0));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
 var Gallery =
 /*#__PURE__*/
 function () {
@@ -13544,7 +13501,7 @@ var _default = Gallery;
 exports.default = _default;
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13606,7 +13563,7 @@ var _default = HeaderSlider;
 exports.default = _default;
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13667,7 +13624,7 @@ var _default = fpSlider;
 exports.default = _default;
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13960,7 +13917,7 @@ var _default = PostShoes;
 exports.default = _default;
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14057,7 +14014,7 @@ var _default = PostShoesCountry;
 exports.default = _default;
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14109,8 +14066,8 @@ function () {
         var messageColor = "orange";
         this.messageResponse(message, messageColor);
         setTimeout(function () {
-          window.location.href = "http://localhost:3000/wp-login.php"; // window.location.href = "https://www.haveyouseenmyshoes.com/wp-login.php";
-
+          // window.location.href = "http://localhost:3000/wp-login.php";
+          window.location.href = "https://www.haveyouseenmyshoes.com/wp-login.php";
           ;
         }, 2000);
         return null;
@@ -14242,7 +14199,7 @@ var _default = Like;
 exports.default = _default;
 
 /***/ }),
-/* 10 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14269,7 +14226,7 @@ function () {
   function GMap() {
     _classCallCheck(this, GMap);
 
-    console.log('i am being accessed');
+    // console.log('i am being accessed');
     var self = this;
     (0, _jquery.default)('.acf-map').each(function () {
       self.new_map((0, _jquery.default)(this));
@@ -14355,7 +14312,7 @@ var _default = GMap;
 exports.default = _default;
 
 /***/ }),
-/* 11 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14469,7 +14426,7 @@ var _default = Messages;
 exports.default = _default;
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

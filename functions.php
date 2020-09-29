@@ -28,20 +28,25 @@ function ourLoginCSS() {
     
     }
 
-// Redirecting Login page to Front Page
 add_action('login_enqueue_scripts', 'ourLoginCSS');
+
+// Redirecting Login page to Front Page
 
 add_action('admin_init', 'redirectSubsToFrontend');
 
 function redirectSubsToFrontend() {
-
+    
 	$ourCurrentUser = wp_get_current_user();
 
 	if (count($ourCurrentUser->roles)== 1 AND $ourCurrentUser->roles[0] == 'subscriber'){
-		wp_redirect(site_url('/'));
+        wp_redirect(site_url('/'));
+        
+        // // $url = $_SERVER['HTTP_REFERER'];
+        // header('location:'. $url);
 		exit;
 	} 
 }
+
 
 // Header Login page ......................................................................
 
@@ -390,6 +395,27 @@ add_action( 'wp_enqueue_scripts', 'total_child_enqueue_parent_theme_style' );
 // {
 //     remove_action('template_redirect', 'wp_redirect_admin_locations', 1000);
 // }
+
+
+// CODE TO REDIRECT LOGIN if you don't waht to go the user to go to the login page
+// add_action(  'login_init', 'user_registration_login_init'  );
+// function user_registration_login_init () {
+//      if( ! is_user_logged_in() ) {
+//         wp_redirect( '/about-us' );
+//         exit;
+//       }
+// }
+// function admin_default_page() {
+
+//     $url = $_SERVER['HTTP_REFERER'];
+//     // $url = "about-us";
+//     return $url;
+  
+//     // echo '<script type="text/javascript"> console.log("mario";)</script>'; 
+//     // return '/about-us';
+//     // echo '<p><a href="javascript:history.go(-1)" title="Return to previous page">&laquo; Go back</a></p>';
+//   }
+  
 
 ?>
 

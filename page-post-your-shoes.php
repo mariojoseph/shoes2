@@ -87,7 +87,7 @@
 
             <?php ?>
             <span class="ShoesSubmit-note" data-user="<?php esc_attr(print_r($UserName->user_login)) ?>">Create Post</span>
-
+            <input type="hidden" id ="loginData">   
             <p class="whenNoImage"></p>
     </div>
 
@@ -101,7 +101,7 @@
             <h3>Many thanks for your post.</h3>
             <h5>Please be patient our team will publish it as soon as it meets the house rules</h5>
             <a href="<?php echo esc_url(site_url('/')); ?>"><button class="ShoesImage-button">Home</button></a>
-        
+         
         </div>
 
     </div>

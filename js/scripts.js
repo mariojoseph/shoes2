@@ -3,7 +3,7 @@ import $ from 'jquery';
 import slick from 'slick-carousel';
 
 // Our modules / classes
-import Template from './modules/template';
+// import Template from './modules/template';
 
 import Gallery from './modules/Gallery';
 import HeaderSlider from './modules/headerSlider';
@@ -19,7 +19,7 @@ import Messages from './modules/messages';
 import PWSlider from './modules/PWSlider';
 
 var pWSlider = new PWSlider();
-var template = new Template();
+// var template = new Template();
 var gallery = new Gallery();
 
 var headerSlider = new HeaderSlider();

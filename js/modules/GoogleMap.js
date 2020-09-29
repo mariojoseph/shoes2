@@ -2,7 +2,7 @@ import $ from 'jquery';
 
 class GMap {
   constructor() {
-    console.log('i am being accessed');
+    // console.log('i am being accessed');
     var self = this;
     $('.acf-map').each(function(){
       self.new_map( $(this) );

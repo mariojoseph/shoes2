@@ -2,6 +2,10 @@
 
 <footer class="site-footer">
 
+<!-- <div id="datafetch">
+    <button class="fetchIt">Click Here</button>
+</div> -->
+
 <div class="site-footer__grid1">
 
     <h1 class=""><a href="<?php echo esc_url(site_url()) ?>">Have You Seen My <strong>Shoes</strong></a></h1>

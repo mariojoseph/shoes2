@@ -1,5 +1,5 @@
 <?php get_header();?>
-   
+ 
 <div class="single-blog">
 <div class="single-blog-cover">
     <div class="single-blog-image">
