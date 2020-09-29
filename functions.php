@@ -37,8 +37,7 @@ add_action('admin_init', 'redirectSubsToFrontend');
 function redirectSubsToFrontend() {
     
 	$ourCurrentUser = wp_get_current_user();
-
-	if (count($ourCurrentUser->roles)== 1 AND $ourCurrentUser->roles[0] == 'subscriber'){
+    if (count($ourCurrentUser->roles)== 1 AND $ourCurrentUser->roles[0] == 'subscriber'){
         wp_redirect(site_url('/'));
         
         // // $url = $_SERVER['HTTP_REFERER'];
@@ -47,6 +46,17 @@ function redirectSubsToFrontend() {
 	} 
 }
 
+// LOGGING TO CONSOLE
+
+function console_log($output, $with_script_tags = true) {
+    $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) . ');';
+    if ($with_script_tags) {
+        $js_code = '<script>' . $js_code . '</script>';
+    }
+    echo $js_code;
+}
+
+// END LOGGING TO CONSOLE
 
 // Header Login page ......................................................................
 
@@ -309,36 +319,6 @@ function noSubsAdminBar(){
 	}
 }
      
-function wp_request_localize_my_json_data(){
-
-	// Helpers to define the $url path
-    //$protocol = is_ssl() ? 'https' : 'http';
-    $directory = trailingslashit( get_template_directory_uri() );
-
-    // Define the URL
-    $url = $directory . 'network.json';
-
-	wp_enqueue_script('network-js', get_theme_file_uri('/js/network.js'), NULL, 'microtime()', true);
-
-    // Make the request
-    $request = wp_remote_get( $url );
-
-//     // Retrieve the data
-    $body = wp_remote_retrieve_body( $request );
-    $data = json_decode( $body );
-
-    // Localize script exposing $data contents
-    wp_localize_script( 'network-js', 'networkJSON', array( 
-            'network_url' => admin_url( 'admin-ajax.php' ),
-            'full_data' => $data
-        )
-    );
-
-}
-
-add_action( 'wp_enqueue_scripts', 'wp_request_localize_my_json_data', 10);
-
-
 // numbers
 
 add_filter('acf/format_value/name=number_of_likes', 'fix_number', 20, 3);
