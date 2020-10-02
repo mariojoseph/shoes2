@@ -153,9 +153,10 @@ function pageBanner1($args=null){
       <div class="site-header__menu_items__past"><i class="fa fa-trophy" aria-hidden="true" style="color: goldenrod;"></i><a href="<?php echo esc_url(site_url('past-winners')); ?>" >&nbsp Past Shoe Winners</a></div>
       <div class="site-header__menu_items__about"><i class="fa fa-users" style="color: yellowgreen;" aria-hidden="true" style="color: white;"></i><a href="<?php echo esc_url(site_url('about-us')); ?>" >&nbsp About Us</a></div>
       <div class="site-header__menu_items__about"><i class="fa fa-users" style="color: gold;" aria-hidden="true" style="color: white;"></i><a href="<?php echo esc_url(site_url('brands')); ?>" >&nbsp Brands</a></div>
+      <div class="site-header__menu_items__about"><i class="fa fa-th-list" style="color: orange;" aria-hidden="true" style="color: white;"></i><a href="<?php echo esc_url(site_url('popular-shoe-sites')); ?>" >&nbsp Shoe Web Sites</a></div>
+      <div class="site-header__menu_items__about"><i class="fa fa-users" style="color: yellowgreen;" aria-hidden="true" style="color: white;"></i><a href="<?php echo esc_url(site_url('about-us')); ?>" >&nbsp About Us</a></div>
       <div class="site-header__menu_items__about"><i class="fa fa-history" style="color: cyan;" aria-hidden="true" style="color: white;"></i><a href="<?php echo esc_url(site_url('history-of-shoes')); ?>" >&nbsp History of Shoes</a></div>
       <div class="site-header__menu_items__about"><i class="fa fa-phone" style="color: 	pink;" aria-hidden="true" style="color: white;"></i><a href="<?php echo esc_url(site_url('contact-us')); ?>" >&nbsp Contact Us</a></div>
-      <div class="site-header__menu_items__about"><i class="fa fa-bold" style="color: 	brown;" aria-hidden="true" style="color: brown;"></i><a href="<?php echo esc_url(site_url('blog')); ?>" >&nbsp Blog</a></div>
   </div>
 
 </div>
@@ -194,7 +195,8 @@ function pageBanner($args=null){
         <div class="site-footer__grid2_ul">
             <div><a href="<?php echo site_url('/about-us') ?>">About Us</a></div>
             <div><a href="<?php echo site_url('/popular-shoe-types') ?>">Popular Shoe Types</a></div>
-            <div><a href="<?php echo site_url('/history-of-shoes') ?>">History of Shoes</a></div>
+            <div><a href="<?php echo esc_url(site_url('/popular-shoe-sites')) ?>">Popular Shoe Websites</a></div>
+            <div><a href="<?php echo esc_url(site_url('/history-of-shoes')) ?>">History of Shoes</a></div>
         </div>
 
 </div>

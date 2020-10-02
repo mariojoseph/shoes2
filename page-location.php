@@ -30,7 +30,7 @@
     <?php
     // $testing = get_field('shoeLocation');
     $postInfo  = new WP_Query(array(
-      'post_type' => 'shoes',
+      'post_type' => array('shoes', 'pastwinners'),
       'p' => $maybe
 
       ));
