@@ -4821,6 +4821,9 @@ margin: 0 0;
         -webkit-box-pack: space-evenly;
             -ms-flex-pack: space-evenly;
                 justify-content: space-evenly;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         border: 1px solid rgb(65, 63, 63);
         background-color: rgba(48, 47, 47, 0.8);
         margin: 0rem 1rem;
@@ -4832,9 +4835,9 @@ margin: 0 0;
       }
 
 .popularShoesContent-1-title img{
-        width: 3rem;
-        -o-object-fit: contain;
-           object-fit: contain;
+        width: 2rem;
+        height: 2rem;
+        /* object-fit: contain; */
          z-index: 203;
     }
 
@@ -4918,6 +4921,9 @@ margin: 0 0;
       -webkit-box-pack: space-evenly;
           -ms-flex-pack: space-evenly;
               justify-content: space-evenly;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       border: 1px solid rgb(65, 63, 63);
       background-color: rgba(48, 47, 47, 0.8);
       margin: 0rem 1rem;
@@ -4929,9 +4935,10 @@ margin: 0 0;
     }
 
 .popularShoesContent-2-title img{
-       width: 3rem;
-       -o-object-fit: contain;
-          object-fit: contain;
+       /* width: 3rem;
+       object-fit: contain; */
+       width: 2rem;
+       height: 2rem;
         z-index: 203;
   }
 
@@ -5017,6 +5024,9 @@ margin: 0 0;
       -webkit-box-pack: space-evenly;
           -ms-flex-pack: space-evenly;
               justify-content: space-evenly;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       border: 1px solid rgb(65, 63, 63);
       background-color: rgba(48, 47, 47, 0.8);
       margin: 0rem 1rem;
@@ -5028,9 +5038,10 @@ margin: 0 0;
     }
 
 .popularShoesContent-3-title img{
-      width: 3rem;
-      -o-object-fit: contain;
-         object-fit: contain;
+      /* width: 3rem;
+      object-fit: contain; */
+      width: 2rem;
+      height: 2rem;
        z-index: 203;
   }
 
