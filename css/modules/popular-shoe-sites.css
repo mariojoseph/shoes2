@@ -136,10 +136,9 @@
       }
 
       .popularShoesContent-1-title img{
-         width: 4rem;
-         height: auto;
-         object-fit: cover;
-          z-index: 203;
+        width: 3rem;
+        object-fit: contain;
+         z-index: 203;
     }     
 
 
@@ -234,7 +233,6 @@
 
     .popularShoesContent-2-title img{
        width: 3rem;
-       height: 3rem;
        object-fit: contain;
         z-index: 203;
   }     
@@ -331,10 +329,9 @@
     }
 
     .popularShoesContent-3-title img{
-       width: 3rem;
-       height: auto;
-       object-fit: contain;
-        z-index: 203;
+      width: 3rem;
+      object-fit: contain;
+       z-index: 203;
   }     
 
 
