@@ -4832,10 +4832,10 @@ margin: 0 0;
       }
 
 .popularShoesContent-1-title img{
-         width: 3rem;
+         width: 4rem;
          height: auto;
-         -o-object-fit: contain;
-            object-fit: contain;
+         -o-object-fit: cover;
+            object-fit: cover;
           z-index: 203;
     }
 
