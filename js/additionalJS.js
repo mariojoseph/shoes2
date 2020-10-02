@@ -10,7 +10,7 @@ if(window.location.href ==  'https://www.haveyouseenmyshoes.com/wp-login.php?che
     const nextTo = document.querySelector('#backtoblog a')
     
     const messageContent = document.createElement('p');
-      messageContent.textContent = "Thanks for registering. Check your email to set your password";
+      messageContent.textContent = "Thanks for registering. Check your email to set your password & login";
       messageContent.style.color = 'white';
       messageContent.style.backgroundColor = 'green';
       messageContent.style.width = "80%";

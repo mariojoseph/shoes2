@@ -1,0 +1,620 @@
+.popularShoesBackground{
+    position: relative;
+    max-width: 960px;
+    margin: auto;
+    display:grid;
+    grid-gap: 0px;
+    grid-template-areas:
+    'popularShoesTitle'
+    'popularShoesMessage'
+    'popularShoesContent'
+    'popularShoesContent2'
+    'popularShoesContent3'
+    /* 'popularShoesContent4' */
+    /* 'popularShoesContent5'*/;
+
+    box-sizing: border-box;
+    margin-top: 0.1rem;
+    background-color: #151e2d;
+  
+  }
+  
+  /* Title and Buttons */
+  
+  .popularShoesTitle {
+    grid-area: popularShoesTitle;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
+  
+  
+  .popularShoesTitle h1{
+    color: white;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+  }
+  
+  
+  .popularShoesButton{
+  
+    margin: auto;
+    border: 1px solid rgb(225, 240, 15);
+    border-radius: 4px;
+    padding: 5px 8px;
+    }
+  
+    .popularShoesButton a{
+      color: yellow;
+      text-decoration: none;
+     
+    }
+   
+  
+  /* popularShoes MESSAGE */
+  .popularShoesMessage{
+    padding: 1rem;
+    grid-area: popularShoesMessage;
+  
+  }
+  
+  
+  .popularShoesMessage ul{
+    list-style-type: square;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .popularShoesMessage li:first-child{
+    /* color: yellow; */
+  
+  }
+  
+  .popularShoesMessage li{
+    padding: 0.5rem 0rem;
+    color: white
+  }
+  
+  .popularShoesMessage h2{
+    text-align: center;
+    color: white
+  }
+  
+
+    
+  
+  /* popularShoes CONTENT */
+  
+  .popularShoesContent{
+    grid-area:popularShoesContent;
+    display: grid;
+    grid-template-columns: '1fr';
+    color: white;
+  }
+
+  
+  /* popularShoes CONTENT - GENERAL */
+  
+  .popularShoesContent-General{
+    padding-top: 1rem;
+    /* grid-area:popularShoesContent-General; */
+    font-style: italic;
+  }
+  
+  
+  .popularShoesContent-General ul{
+
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  
+  .popularShoesContent-General h2{
+    text-align: center;
+    color: yellow;
+  }
+  
+/* popularShoes CONTENT - 1 */
+  
+    .popularShoesContent-1{
+        /* grid-area:popularShoesContent-1; */
+        display: grid;
+        grid-template-areas: 
+        'popularShoesContent-1-title',
+        'popularShoesContent-1-content';
+      }
+      .popularShoesContent-1-title {
+        display: flex;
+        justify-content: space-evenly;
+        border: 1px solid rgb(65, 63, 63);
+        background-color: rgba(48, 47, 47, 0.8);
+        margin: 0rem 1rem;
+        color: yellow;
+      }
+      .popularShoesContent-1-title h4{
+        font-size: 1rem;
+      }
+
+      .popularShoesContent-1-title img{
+         width: 3rem;
+         height: auto;
+         object-fit: contain;
+          z-index: 203;
+    }     
+
+
+      .popularShoesContent-1 ul{
+       
+        display: block;
+        border: 1px solid rgb(48, 47, 47);
+        background-color: rgba(48, 47, 47, 0.6);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-top: 0rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        list-style-type: square;
+        line-height: 1.5rem;
+        font-size: 1rem;
+      }
+      
+
+      .popularShoesContent-1 li{
+        padding: 0.5rem 1rem;
+      }
+
+      .popularShoesContent-1 p{
+        padding: 0rem;
+        margin: 0rem;
+      }
+
+      .popularShoesContent-1-content-li p:nth-child(2){
+        font-style: italic;
+      }
+
+      .popularShoesContent-1 a{
+          text-decoration: underline;
+          color: orange;
+      }
+     
+
+ /*   CLASSIC SHOES */
+
+/* popularShoes CONTENT */
+  
+.popularShoesContent2{
+  grid-area:popularShoesContent2;
+  display: grid;
+  grid-template-columns: '1fr';
+  color: white;
+}
+
+
+/* popularShoes CONTENT - GENERAL */
+
+.popularShoesContent-General2{
+  padding-top: 1rem;
+  /* grid-area:popularShoesContent-General; */
+  font-style: italic;
+}
+
+
+.popularShoesContent-General2 ul{
+
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+
+
+.popularShoesContent-General2 h2{
+  text-align: center;
+  color: yellow;
+}
+
+/* popularShoes CONTENT - 1 */
+
+  .popularShoesContent-2{
+      /* grid-area:popularShoesContent-1; */
+      display: grid;
+      grid-template-areas: 
+      'popularShoesContent-1-title',
+      'popularShoesContent-1-content';
+    }
+    .popularShoesContent-2-title {
+      display: flex;
+      justify-content: space-evenly;
+      border: 1px solid rgb(65, 63, 63);
+      background-color: rgba(48, 47, 47, 0.8);
+      margin: 0rem 1rem;
+      color: yellow;
+    }
+    .popularShoesContent-2-title h4{
+      font-size: 1rem;
+    }
+
+    .popularShoesContent-2-title img{
+       width: 3rem;
+       height: auto;
+       object-fit: contain;
+        z-index: 203;
+  }     
+
+
+    .popularShoesContent-2 ul{
+     
+      display: block;
+      border: 1px solid rgb(48, 47, 47);
+      background-color: rgba(48, 47, 47, 0.6);
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      margin-top: 0rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      list-style-type: square;
+      line-height: 1.5rem;
+      font-size: 1rem;
+    }
+    
+
+    .popularShoesContent-2 li{
+      padding: 0.5rem 1rem;
+    }
+
+    .popularShoesContent-2 p{
+      padding: 0rem;
+      margin: 0rem;
+    }
+
+    .popularShoesContent-2-content-li p:nth-child(2){
+      font-style: italic;
+    }
+
+    .popularShoesContent-2 a{
+        text-decoration: underline;
+        color: orange;
+    }
+   
+ /* CLASSIC SHOES END */
+
+ /*   WOMENS SHOES */
+
+/* popularShoes CONTENT */
+  
+.popularShoesContent3{
+  grid-area:popularShoesContent3;
+  display: grid;
+  grid-template-columns: '1fr';
+  color: white;
+}
+
+
+/* popularShoes CONTENT - GENERAL */
+
+.popularShoesContent-General3{
+  padding-top: 1rem;
+  /* grid-area:popularShoesContent-General; */
+  font-style: italic;
+}
+
+
+.popularShoesContent-General3 ul{
+
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+
+
+.popularShoesContent-General3 h2{
+  text-align: center;
+  color: yellow;
+}
+
+/* popularShoes CONTENT - 1 */
+
+  .popularShoesContent-3{
+      /* grid-area:popularShoesContent-1; */
+      display: grid;
+      grid-template-areas: 
+      'popularShoesContent-1-title',
+      'popularShoesContent-1-content';
+    }
+    .popularShoesContent-3-title {
+      display: flex;
+      justify-content: space-evenly;
+      border: 1px solid rgb(65, 63, 63);
+      background-color: rgba(48, 47, 47, 0.8);
+      margin: 0rem 1rem;
+      color: yellow;
+    }
+    .popularShoesContent-3-title h4{
+      font-size: 1rem;
+    }
+
+    .popularShoesContent-3-title img{
+       width: 3rem;
+       height: auto;
+       object-fit: contain;
+        z-index: 203;
+  }     
+
+
+    .popularShoesContent-3 ul{
+     
+      display: block;
+      border: 1px solid rgb(48, 47, 47);
+      background-color: rgba(48, 47, 47, 0.6);
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      margin-top: 0rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      list-style-type: square;
+      line-height: 1.5rem;
+      font-size: 1rem;
+    }
+    
+
+    .popularShoesContent-3 li{
+      padding: 0.5rem 1rem;
+    }
+
+    .popularShoesContent-3 p{
+      padding: 0rem;
+      margin: 0rem;
+    }
+
+    .popularShoesContent-3-content-li p:nth-child(2){
+      font-style: italic;
+    }
+
+    .popularShoesContent-3 a{
+        text-decoration: underline;
+        color: orange;
+    }
+   
+ /* CLASSIC WOMENS END */
+
+ /*  MENS SHOES */
+
+/* popularShoes CONTENT */
+  
+.popularShoesContent4{
+  grid-area:popularShoesContent4;
+  display: grid;
+  grid-template-columns: '1fr';
+  color: white;
+}
+
+
+/* popularShoes CONTENT - GENERAL */
+
+.popularShoesContent-General4{
+  padding-top: 1rem;
+  /* grid-area:popularShoesContent-General; */
+  font-style: italic;
+}
+
+
+.popularShoesContent-General4 ul{
+
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+
+
+.popularShoesContent-General4 h2{
+  text-align: center;
+  color: yellow;
+}
+
+/* popularShoes CONTENT - 1 */
+
+  .popularShoesContent-4{
+      /* grid-area:popularShoesContent-1; */
+      display: grid;
+      grid-template-areas: 
+      'popularShoesContent-1-title',
+      'popularShoesContent-1-content';
+    }
+    .popularShoesContent-4-title {
+      display: flex;
+      justify-content: space-evenly;
+      border: 1px solid rgb(65, 63, 63);
+      background-color: rgba(48, 47, 47, 0.8);
+      margin: 0rem 1rem;
+      color: yellow;
+    }
+    .popularShoesContent-4-title h4{
+      font-size: 1rem;
+    }
+
+    .popularShoesContent-4-title img{
+       width: 3rem;
+       height: auto;
+       object-fit: contain;
+        z-index: 203;
+  }     
+
+
+    .popularShoesContent-4 ul{
+     
+      display: block;
+      border: 1px solid rgb(48, 47, 47);
+      background-color: rgba(48, 47, 47, 0.6);
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      margin-top: 0rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      list-style-type: square;
+      line-height: 1.5rem;
+      font-size: 1rem;
+    }
+    
+
+    .popularShoesContent-4 li{
+      padding: 0.5rem 1rem;
+    }
+
+    .popularShoesContent-4 p{
+      padding: 0rem;
+      margin: 0rem;
+    }
+
+    .popularShoesContent-4-content-li p:nth-child(2){
+      font-style: italic;
+    }
+
+    .popularShoesContent-4 a{
+        text-decoration: underline;
+        color: orange;
+    }
+   
+ /* MENS SHOES END */
+
+ /*   SPORTS SHOES */
+
+/* popularShoes CONTENT */
+  
+.popularShoesContent5{
+  grid-area:popularShoesContent5;
+  display: grid;
+  grid-template-columns: '1fr';
+  color: white;
+}
+
+
+/* popularShoes CONTENT - GENERAL */
+
+.popularShoesContent-General5{
+  padding-top: 1rem;
+  /* grid-area:popularShoesContent-General; */
+  font-style: italic;
+}
+
+
+.popularShoesContent-General5 ul{
+
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+
+
+.popularShoesContent-General5 h2{
+  text-align: center;
+  color: yellow;
+}
+
+/* popularShoes CONTENT - 1 */
+
+  .popularShoesContent-5{
+      /* grid-area:popularShoesContent-1; */
+      display: grid;
+      grid-template-areas: 
+      'popularShoesContent-1-title',
+      'popularShoesContent-1-content';
+    }
+    .popularShoesContent-5-title {
+      display: flex;
+      justify-content: space-evenly;
+      border: 1px solid rgb(65, 63, 63);
+      background-color: rgba(48, 47, 47, 0.8);
+      margin: 0rem 1rem;
+      color: yellow;
+    }
+    .popularShoesContent-5-title h4{
+      font-size: 1rem;
+    }
+
+    .popularShoesContent-5-title img{
+       width: 3rem;
+       height: auto;
+       object-fit: contain;
+        z-index: 203;
+  }     
+
+
+    .popularShoesContent-5 ul{
+     
+      display: block;
+      border: 1px solid rgb(48, 47, 47);
+      background-color: rgba(48, 47, 47, 0.6);
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      margin-top: 0rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      list-style-type: square;
+      line-height: 1.5rem;
+      font-size: 1rem;
+    }
+    
+
+    .popularShoesContent-5 li{
+      padding: 0.5rem 1rem;
+    }
+
+    .popularShoesContent-5 p{
+      padding: 0rem;
+      margin: 0rem;
+    }
+
+    .popularShoesContent-5-content-li p:nth-child(2){
+      font-style: italic;
+    }
+
+    .popularShoesContent-5 a{
+        text-decoration: underline;
+        color: orange;
+    }
+   
+ /* SPORTS SHOES END */
+  
+  @media(min-width:760px) and (max-width: 960px){
+  
+    /* .popularShoesTitle {
+      margin-top: 2rem;
+      grid-area:'aboutUsTitle';
+      display: grid;
+      grid-template-columns: 6fr 1fr;
+      box-sizing: border-box;
+      
+    }
+   */
+    /* .popularShoesContent{
+      grid-area:'popularShoesContent';
+      display: grid;
+      grid-gap: 0px;
+      grid-template-areas: 
+      'popularShoesContent-General popularShoesContent-General'
+      'popularShoesContent-2 popularShoesContent-Post'
+      'popularShoesContent-End popularShoesContent-End'
+      ;
+      grid-template-columns: 1fr 1fr;
+      color: white;
+     
+    } */
+  
+    /* .popularShoesContent-General{
+      border: solid 1px yellow;
+      margin: 2rem;
+    } */
+
+    .popularShoesContent-ipad{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+  }
+  
+  @media(min-width:960px){
+  
+    .popularShoesContent-ipad{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  
+  
+  }
+  
+  

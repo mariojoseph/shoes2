@@ -20,6 +20,7 @@
         <div class="site-footer__grid2_ul">
             <div><a href="<?php echo esc_url(site_url('/about-us')) ?>">About Us</a></div>
             <div><a href="<?php echo esc_url(site_url('/brands ')); ?>">Popular Shoe Brands</a></div>
+            <div><a href="<?php echo esc_url(site_url('/popular-shoe-sites')) ?>">Popular Shoe Websites</a></div>
             <div><a href="<?php echo esc_url(site_url('/history-of-shoes')) ?>">History of Shoes</a></div>
         </div>
 

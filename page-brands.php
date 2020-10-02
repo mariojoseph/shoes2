@@ -27,7 +27,7 @@
             <p class="brands-grid-middle1-p2">Click on each photo to find more information</p>  
         </div>
         <div class="brands-grid-middle2">
-            <label for=""><p>Ladies Shoes</p></label>
+            <label for=""><p>Ladies Dress Shoes</p></label>
             <div class="brands-thumbnails2">
                 <div class="brands-imgs2">
                 
@@ -69,7 +69,7 @@
             </div>
         </div>
         <div class="brands-grid-middle3">
-        <label for=""><p>Men's Shoes</p></label>
+        <label for=""><p>Men's Dress Shoes</p></label>
         <div class="brands-thumbnails3">
                 <div class="brands-imgs3">
                 
