@@ -85,6 +85,13 @@
     text-align: center;
 }
 
+.single-blogContent-post p{
+        font-size: 1.4rem;
+        line-height: 2rem;
+        font-family: 'Kalam', cursive;
+
+}
+
 .single-blogContent-post-content{
     /* margin-top: -20px; */
     /* border: solid 1px  rgba(15, 185, 92, 0.3);; */
@@ -111,3 +118,4 @@
     /* background-color: green;
     border-radius: 2px; */
 }
+

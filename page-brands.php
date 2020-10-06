@@ -13,7 +13,7 @@
 <div class="brands-grid">
 
     <div class="brands-grid-header">
-                <h1>Brands</h1>
+                <h1>Popular Shoe Types</h1>
 
                 <div class="brands-grid-header-btn">
                 <i class="fa fa-home" style="color: yellow;" aria-hidden="true" alt="mario"></i><a href="<?php echo esc_url(site_url(' ')); ?>" class="removeHyphen">&nbsp Home</a>

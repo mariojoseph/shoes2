@@ -94,6 +94,12 @@
 
 }
 
+.blogContent-post-content p{
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-family: 'Kalam', cursive;
+}
+
 .blogContent-post a{
     color: rgb(150, 150, 137);
     background-color: rgb(24, 24, 53);

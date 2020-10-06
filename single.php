@@ -13,7 +13,7 @@
                     <article class="single-blogContent-post">
                         <h2 class="single-blogContent-post-title"><?php the_title(); ?></h2>
                         <h4>Posted on <?php the_time('n,j,y');?></h4>
-                        <h2 class="single-blogContent-post-content"><?php the_content();?></h2>
+                        <p class="single-blogContent-post-content"><?php the_content();?></p>
 
                     </article>
                 
