@@ -3988,10 +3988,14 @@ padding-top:30%;
 }
 
 .single-brandsContent-post-content p{
-    /* margin-top: -20px; */
-    /* border: solid 1px  rgba(15, 185, 92, 0.3);; */
-    /* padding: 0rem 0rem 5rem 5rem; */
-    /* line-height: 2rem; */
+
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-family: 'Kalam', cursive;
+}
+
+.single-brandsContent-post-content li{
+
     font-size: 1.4rem;
     line-height: 2rem;
     font-family: 'Kalam', cursive;
@@ -5552,6 +5556,13 @@ margin: 0 0;
         font-size: 1.4rem;
         line-height: 2rem;
         font-family: 'Kalam', cursive;
+
+}
+
+.single-blogContent-post li{
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-family: 'Kalam', cursive;
 
 }
 
