@@ -33,6 +33,7 @@ class Gallery {
 
     });
 
+
     // Closing Image
     this.closeImage = document.querySelector('.close');
     this.closeImage.addEventListener('click', this.closingImage.bind(this));

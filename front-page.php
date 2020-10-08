@@ -138,7 +138,7 @@
                     <div class="grid6-content-image"></div>
                 </div>
                 <div class="grid6-button">
-                <div class="grid6-button-case"><i class="fa fa-newspaper-o" aria-hidden="true" style="color: #F5DEB3;"></i><a href="<?php echo esc_url(site_url('blog')); ?>" class="removeHyphen">&nbsp Shoes Blog</a></div>
+                <div class="grid6-button-case"><i class="fa fa-bold" aria-hidden="true" style="color: #F5DEB3;"></i><a href="<?php echo esc_url(site_url('blog')); ?>" class="removeHyphen">&nbsp Shoes Blog</a></div>
                 </div>
             </div>
         </div>                
