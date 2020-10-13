@@ -25,7 +25,7 @@
                             $lastWinner->the_post(); 
                             $imageWinner = get_field('shoePhoto');
                             $imageWinnerLikes = get_field('number_of_likes');
-                            $size = "full";
+                            $size = "Slider";
                             $imageWinner1 = wp_get_attachment_image_src($imageWinner['id'], $size);
                         }
                 ?>
