@@ -153,7 +153,7 @@ function pageBanner1($args=null){
       <div class="site-header__menu_items__past"><i class="fa fa-trophy" aria-hidden="true" style="color: goldenrod;"></i><a href="<?php echo esc_url(site_url('past-winners')); ?>" >&nbsp Past Shoe Winners</a></div>
       <div class="site-header__menu_items__about"><i class="fa fa-bold" style="color: #F5DEB3;" aria-hidden="true" ></i><a href="<?php echo esc_url(site_url('blog')); ?>" >&nbsp Blog</a></div>
       <div class="site-header__menu_items__about"><i class="fa fa-users" style="color: gold;" aria-hidden="true" ></i><a href="<?php echo esc_url(site_url('brands')); ?>" >&nbsp Popular Shoe Types</a></div>
-      <div class="site-header__menu_items__about"><i class="fa fa-th-list" style="color: orange;" aria-hidden="true" ></i><a href="<?php echo esc_url(site_url('popular-shoe-sites')); ?>" >&nbsp Shoe Web Sites</a></div>
+      <div class="site-header__menu_items__about"><i class="fa fa-th-list" style="color: orange;" aria-hidden="true" ></i><a href="<?php echo esc_url(site_url('popular-shoe-sites')); ?>" >&nbsp Popular Shoe Web Sites</a></div>
       <div class="site-header__menu_items__about"><i class="fa fa-users" style="color: yellowgreen;" aria-hidden="true" ></i><a href="<?php echo esc_url(site_url('about-us')); ?>" >&nbsp About Us</a></div>
       <div class="site-header__menu_items__about"><i class="fa fa-history" style="color: cyan;" aria-hidden="true" ></i><a href="<?php echo esc_url(site_url('history-of-shoes')); ?>" >&nbsp History of Shoes</a></div>
       <div class="site-header__menu_items__about"><i class="fa fa-phone" style="color: 	pink;" aria-hidden="true" ></i><a href="<?php echo esc_url(site_url('contact-us')); ?>" >&nbsp Contact Us</a></div>

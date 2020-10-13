@@ -9,7 +9,7 @@
                     if(have_posts()):
                         while(have_posts()):the_post();?>
 
-                    <a class="btn"href="<?php echo esc_url(site_url('/brands')); ?>"><i class="fa fa-home"></i> brands Home</a>
+                    <a class="btn"href="<?php echo esc_url(site_url('/brands')); ?>"><i class="fa fa-home"></i> Shoe Types Home</a>
                     <article class="single-brandsContent-post">
                         <h2 class="single-brandsContent-post-title"><?php the_title(); ?></h2>
                         <h4>Posted on <?php the_time('n,j,y');?></h4>
