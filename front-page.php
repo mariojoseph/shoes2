@@ -132,8 +132,8 @@
             <div class="grid6-content">
                 <div class="grid6-text">
                     <ul>
-                        <li>Please visit our Blog where we will tell you weekly the latest trends on Shoes</li>
-                        <li>We'll also give advice on what shoes goes with what clothes, where to get the best discounts and lots more</li>
+                        <li>Read about everything related to shoes, including latest Shoe trends</li>
+                        <li>See our tips on what shoes goes with what clothes, where to get the best discounts and lots more</li>
                     </ul>
                     <div class="grid6-content-image"></div>
                 </div>

@@ -35,7 +35,7 @@
                                     <div class="rulesContent-Vote-Image2a"></div>
                                     <div class="rulesContent-Vote-Image2b"></div>
                     </li>
-                    <li>Remember you can only vote once for a Photo. To ensure this we require you to Log On / Sign In</li>
+                    <li>Remember you can only vote once for the same Photo. To ensure this we require you to Log On / Sign In</li>
                     <li>The following week we will show the winner of the week</li> 
                 </ul>
             </div>
