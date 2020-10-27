@@ -9,39 +9,38 @@
                 <!-- <div class="grid1-image">  -->
                     <div class="grid1-image-case">
 
+   
                     <?php
                     // content from database
-
-                        $lastWinner = new WP_Query(array(
-                                    'post_type' => 'pastwinners',
-                                    'posts_per_page' => -1,
-                                    'meta_key' => 'winner_of_the_week',
-                                    'orderby' => 'meta_value_num',
-                                    'order' => 'ASC'
-
-                        ));
-
-                        while($lastWinner->have_posts()) {
-                            $lastWinner->the_post(); 
-                            $imageWinner = get_field('shoePhoto');
-                            $imageWinnerLikes = get_field('number_of_likes');
-                            $size = "full";
-                            $imageWinner1 = wp_get_attachment_image_src($imageWinner['id'], $size);
-                        }
+                        //$posts = $wpdb->get_results("SELECT ID, post_title FROM $wpdb->posts WHERE  post_type='pastwinners' ORDER BY comment_count DESC LIMIT 0,4");
+                        $posts = $wpdb->get_results("
+                        SELECT m.post_id,
+                               m1.meta_value likes,
+                               (select meta_value from wp_postmeta where meta_key = '_wp_attached_file' and post_id = m2.meta_value) as file_name
+                        FROM 
+                           wp_posts p,wp_postmeta as m  
+                           left join wp_postmeta as m1 on (m.post_id = m1.post_id and m1.meta_key = 'number_of_likes')
+                           left join wp_postmeta as m2 on (m.post_id = m2.post_id and m2.meta_key = 'ShoePhoto')
+                        WHERE p.post_type = 'pastwinners'
+                              and p.id = m.post_id
+                              and m.meta_key  = 'winner_of_the_week'
+                              and p.post_status = 'publish'
+                              order by m.meta_value desc limit 1 
+                        ");
+                        $pj_likes = $posts[0]->likes;
+			$pj_image_url = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $posts[0]->file_name;
                 ?>
-                
-                <img class="grid1-image-case-sub" src="<?php echo esc_url($imageWinner1[0]); ?>" longdesc=" <?php esc_attr(print_r($longDesc)) ?> "alt="what the" width="<?php echo esc_attr($width); ?>" height="<?php echo esc_attr($height); ?>" alt="shoe1">
+                <img class="grid1-image-case-sub" src="<?php echo esc_url($pj_image_url); ?>" longdesc=" <?php esc_attr(print_r($longDesc)) ?> "alt="what the" width="<?php echo esc_attr($width); ?>" height="<?php echo esc_attr($height); ?>" alt="shoe1">
 
-                <?php wp_reset_postdata(); ?>
 
                 </div>  
                 <div class="grid1-title">
-                <h1> Shoes of Last Week</h1>
+		<h1> Shoes of Last Week</h1>
                 
                 </div>
                 <div class="grid1-likeScore">
-                <h1> <img src="<?php echo esc_url(get_theme_file_uri('/images/smallHeart.png')); ?>" alt=""> &nbsp <?php print_r($imageWinnerLikes) ; ?></h1>
-                <!-- <h1> <img src="<?php echo esc_url(get_theme_file_uri('/images/smallHeart.png')); ?>" alt=""> &nbsp <?php print_r($imageWinnerLikes) ; ?></h1> -->
+                <h1> <img src="<?php echo esc_url(get_theme_file_uri('/images/smallHeart.png')); ?>" alt=""> &nbsp <?php print_r($pj_likes) ; ?></h1>
+                <!-- <h1> <img src="<?php echo esc_url(get_theme_file_uri('/images/smallHeart.png')); ?>" alt=""> &nbsp <?php print_r($pj_likes) ; ?></h1> -->
                 </div>
                 <!-- </div> -->
 
@@ -66,42 +65,54 @@
                 <div class="grid4-image">
 
                         <?php
-                            $BestShoes = new WP_Query(array(
-                                    'post_type' => 'shoes',
-                                    'posts_per_page' => 7,
-                                    'meta_key' => 'number_of_likes',
-                                    'orderby' => 'meta_value_num',
-                                    'order' => 'DESC'
-                            ));
-
-                            
-                            while($BestShoes->have_posts()) {
-                                $BestShoes->the_post(); 
-                                $imageBestShoes = get_field('shoePhoto');
-                                $likesBestShoes = get_field('number_of_likes');
-                                // $size1 = "full";
-                                $size1 = "Slider";
-                                // $size1 = "frontPageSlider2";
-                                $imageBestShoes1 = wp_get_attachment_image_src($imageBestShoes['id'], $size1);
-                                $longDesc =  get_permalink();
+                        $postss = $wpdb->get_results("
+                           SELECT m.post_id,
+                           p.post_name,
+                           m.meta_value likes,
+                           (select meta_value from wp_postmeta where meta_key = '_wp_attached_file' and post_id = m2.meta_value) as file_name
+                           FROM 
+                             wp_posts p,wp_postmeta as m  
+                             left join wp_postmeta as m2 on (m.post_id = m2.post_id and m2.meta_key = 'ShoePhoto')
+                           WHERE p.post_type = 'shoes'
+                             and p.id = m.post_id
+                             and m.meta_key  = 'number_of_likes'
+                             and p.post_status = 'publish'
+                           order by cast(m.meta_value as unsigned) desc limit 7
+			   ")
+			    ;
+			    foreach ($postss as $post) {
+                              $pj_likes = $post->likes;
+			      $pj_unscale = str_replace("-scaled","",$post->file_name);
+                  $pj_400v4 = str_replace(".".pathinfo($pj_unscale,1),"-156x156.". pathinfo($pj_unscale,1),$pj_unscale);
+                  $pj_400v4a = substr($pj_unscale,0,-4);
+                  $pj_400v4ext = substr($pj_unscale,-4);
+                  $pj_400v4comp = $pj_400v4a."-400x400".$pj_400v4ext;           
+			      $pj_image_url4 = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $pj_400v4comp;
+			      $pj_image_lurl4 = $_SERVER['HTTP_HOST'] . "/shoes/" . $post->post_name .  "/";
        
                         ?> 
 
                            <div class="shellContainer">
                            <div class="grid4-likeScore">
  
-                           <h1> <img class= "likeImage" src="<?php echo get_theme_file_uri('/images/smallHeart.png'); ?>" alt=""> &nbsp <?php print_r(esc_attr($likesBestShoes)) ; ?></h1>
+                           <h1> <img class= "likeImage" src="<?php echo get_theme_file_uri('/images/smallHeart.png'); ?>" alt=""> &nbsp <?php print_r(esc_attr($pj_likes)) ; ?></h1>
    
                             </div>                                
             
-                           <img class="photoImages" src="<?php echo( esc_url($imageBestShoes1[0]) ); ?>" alt="shoe1">
-                            <a href="<?php echo esc_url($longDesc) ?>"  ><button id="testing" type="button" name="button">Vote</button></a>   
-                            </div>       
+                           <img class="photoImages" src="<?php echo( esc_url($pj_image_url4) ); ?>" alt="shoe1">
+                            <a href="<?php echo esc_url($pj_image_lurl4) ?>"  ><button id="testing" type="button" name="button">Vote</button></a>   
+                            </div> 
+
+                            <script>
+                                console.log("cara sabe muito")
+                                console.log("changed")
+                                console.log(<?php print_r(json_encode( $pj_400v4comp)) ; ?>)
+                                console.log("cara sabe muito")
+                            </script>      
                             <?php
    
                         } ?>
 
-                        <?php wp_reset_postdata(); ?>
                 </div>
 
         </div>
@@ -160,65 +171,40 @@
 
                     // content from database
 
-                        $userNotes = new WP_Query(array(
-                            'post_type' => 'shoes',
-                            'posts_per_page' => -1,
-                            'meta_key' => 'number_of_likes',
-                            'orderby' => 'meta_value_num',
-                            'order' => 'DESC'
-                            // 'author' => get_current_user_id()
-                        ));
+                        $postsd = $wpdb->get_results("
+                            SELECT m.post_id,
+                              p.post_name,
+                              m.meta_value likes,
+                              (select meta_value from wp_postmeta where meta_key = '_wp_attached_file' and post_id = m2.meta_value) as file_name
+                            FROM 
+                              wp_posts p,wp_postmeta as m  
+                              left join wp_postmeta as m2 on (m.post_id = m2.post_id and m2.meta_key = 'ShoePhoto')
+                            WHERE p.post_type = 'shoes'
+                              and p.id = m.post_id
+                              and m.meta_key  = 'number_of_likes'
+                              and p.post_status = 'publish'
+                             order by cast(m.meta_value as unsigned) desc limit 100 OFFSET 5
+
+                        ");
                         
-                        $counter = 1;
 
                     //processing
+		       foreach ($postsd as $post) {
+                              $pj_likes = $post->likes;
+			      $pj_unscale = str_replace("-scaled","",$post->file_name);
+                //   $pj_400 = str_replace("." . pathinfo($pj_unscale,1),"-400x400." . pathinfo($pj_unscale,1),$pj_unscale);
+                  
+                  $pj_400v5a = substr($pj_unscale,0,-4);
+                  $pj_400v5ext = substr($pj_unscale,-4);
+                  $pj_400v5comp = $pj_400v5a."-400x400".$pj_400v5ext;  
+
+			      $pj_image_url = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $pj_400v5comp;
+			      $pj_image_lurl = $_SERVER['HTTP_HOST'] . "/shoes/" . $post->post_name .  "/";
+			      $width="400";
+                  $height="400";
                        
-                        while($userNotes->have_posts()) {
-                            $userNotes->the_post(); 
-                            if($counter <= 5){
-                                $counter++;
-                                continue;
-                            } 
-                            else{
-                            $counter++;
-                          
-                            $image = get_field('shoePhoto');
-                            $imageLike = get_field('number_of_likes');
-                            // $size = "frontPageSlider2";
-                            $size = "Slider";
-                            $longDescThumb =  get_permalink();
-                            $image1 = wp_get_attachment_image_src($image['id'], $size);
-                            $thumb = $image['sizes'][ $size ];
-                            // $width = $image['sizes'][ $size . '-width' ];
-                            // $height = $image['sizes'][ $size . '-height' ];
-                            $width = $image['sizes'][ $size . '-width'];
-                            $height = $image['sizes'][ $size . '-height'];
-
-                            // while($likeCount->have_posts()){
-                            //     $count = $likeCount->the_post();
-                                
-                            // }
-                       
-                            $longDesc =  get_permalink();
-
-                            // content for like
-                            $IDforCount = get_the_ID();
-
-                            // $likeCount = new WP_Query(array(
-                            //     'post_type' => 'like',
-                            //     'meta_query' => array(
-                            //       array(
-                            //           'key' => 'liked',
-                            //           'compare' => '=',
-                            //           'value' =>  $IDforCount 
-                            //       )
-                            //     )));
-                            
-                            // $likeCount->the_post();
-
-                            // $count = $likeCount->found_posts;
-                            settype($imageLike, "integer");
-                            if($imageLike === 0){
+                            settype($pj_likes, "integer");
+                            if($pj_likes === 0){
                                 $existStatusF = 'no';
                             }else{
                                 $existStatusF = 'yes';
@@ -228,25 +214,26 @@
                       
 
                             <div class="thumbnails-slider">
-                            <img class="thumbnails-slider-img" src="<?php echo esc_url($image1[0]); ?>" longdesc=" <?php  print_r(esc_attr($longDesc)) ?> "alt="what the" width="<?php echo esc_attr($width); ?>" height="<?php echo esc_attr($height); ?>" alt="shoe1">
+                            <img class="thumbnails-slider-img" src="<?php echo esc_url($pj_image_url); ?>" longdesc=" <?php  print_r(esc_attr($pj_image_lurl)) ?> "alt="what the" width="<?php echo esc_attr($width); ?>" height="<?php echo esc_attr($height); ?>" alt="shoe1">
                                 <div class="thumbnails-slider-like">
                                      
                                 <span class="like-boxF" data-exists="<?php esc_attr(print_r($existStatusF)) ?>">
                                     <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
                                     <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
-                                    <span class="like-countF"><?php esc_attr(print_r($imageLike)) ?></span>
+                                    <span class="like-countF"><?php esc_attr(print_r($pj_likes)) ?></span>
                   
                                 </span>
 
                                 </div>
                                 <div class="thumbnails-container">
-                                     <a href="<?php echo esc_url($longDescThumb) ;?>"><button>Vote</button> </a>  
+                                     <a href="<?php echo esc_url($pj_image_lurl) ;?>"><button>Vote</button> </a>  
                                 </div>
 
                             </div>                
         
                                 
-                        <?php wp_reset_postdata();} }
+                            <?php
+                         }
                     ?>
                         
             </div>

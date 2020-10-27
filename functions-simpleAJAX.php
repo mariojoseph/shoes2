@@ -370,19 +370,15 @@ add_action('wp_ajax_nopriv_my_action', 'data_fetch');
 function data_fetch(){
 
     $id = $_POST['id'];
-    $step = $_POST['step'];
  
     $args = array (
         'ID' => $id,
-        'post_status' => $step,
+        'post_status' => 'publish',
     );
 
-    print_r("working");
     wp_update_post($args);
 
     return $id;
 }
 
 // END OF TESTING AJAX 20200926
-
-

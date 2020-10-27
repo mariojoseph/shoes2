@@ -39,7 +39,9 @@ function redirectSubsToFrontend() {
 	$ourCurrentUser = wp_get_current_user();
     if (count($ourCurrentUser->roles)== 1 AND $ourCurrentUser->roles[0] == 'subscriber'){
         wp_redirect(site_url('/'));
-
+        
+        // // $url = $_SERVER['HTTP_REFERER'];
+        // header('location:'. $url);
 		exit;
 	} 
 }
@@ -354,35 +356,50 @@ function total_child_enqueue_parent_theme_style() {
 }
 add_action( 'wp_enqueue_scripts', 'total_child_enqueue_parent_theme_style' );
 
+
+// removing default redirect login
+// add_action('init', 'remove_default_redirect');
+// add_filter('auth_redirect_scheme', 'stop_redirect', 9999);
+
+// function stop_redirect($scheme)
+// {
+//     if ( $user_id = wp_validate_auth_cookie( '',  $scheme) ) {
+//         return $scheme;
+//     }
+
+//     global $wp_query;
+//     $wp_query->set_404();
+//     get_template_part( 404 );
+//     exit();
+// }
+
+// function remove_default_redirect()
+// {
+//     remove_action('template_redirect', 'wp_redirect_admin_locations', 1000);
+// }
+
+
+// CODE TO REDIRECT LOGIN if you don't waht to go the user to go to the login page
+// add_action(  'login_init', 'user_registration_login_init'  );
+// function user_registration_login_init () {
+//      if( ! is_user_logged_in() ) {
+//         wp_redirect( '/about-us' );
+//         exit;
+//       }
+// }
+// function admin_default_page() {
+
+//     $url = $_SERVER['HTTP_REFERER'];
+//     // $url = "about-us";
+//     return $url;
+  
+//     // echo '<script type="text/javascript"> console.log("mario";)</script>'; 
+//     // return '/about-us';
+//     // echo '<p><a href="javascript:history.go(-1)" title="Return to previous page">&laquo; Go back</a></p>';
+//   }
+  
+
 // ADMIN PAGE FOR SHOE POSTS
 
 require get_theme_file_path('/inc/function-admin.php');
 require get_theme_file_path('/inc/enqueue.php');
-
-
-// TRYING AJAX FOR ADMIN PAGE
-
-// TESTING AJAX 20200926
-
-add_action('wp_ajax_my_action', 'data_fetch');
-add_action('wp_ajax_nopriv_my_action', 'data_fetch');
-
-function data_fetch(){
-
-    $id = $_POST['id'];
-    $step = $_POST['step'];
- 
-    $args = array (
-        'ID' => $id,
-        'post_status' => $step,
-    );
-
-    print_r("working");
-    wp_update_post($args);
-
-    return $id;
-}
-
-// END OF TESTING AJAX 20200926
-
-

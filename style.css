@@ -1042,6 +1042,10 @@ body{
   
   }
 
+/* Admin Page */
+
+/* @import "modules/admin"; */
+
 /* Pages */
 
 .container{
@@ -5926,7 +5930,7 @@ width: 100%;
     position: relative;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    height: 20rem;
+    height: 30rem;
     width: 100%;
 
   }
@@ -5948,6 +5952,7 @@ width: 100%;
   .imgs {
     position: relative;
     display: grid;
+    height: 40rem;
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
 
@@ -5969,6 +5974,7 @@ width: 100%;
   .imgs {
     position: relative;
     display: grid;
+    height: 40rem;
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
 
