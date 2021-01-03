@@ -82,9 +82,23 @@
 			    ;
 			    foreach ($postss as $post) {
                               $pj_likes = $post->likes;
-			      $pj_unscale = str_replace("-scaled","",$post->file_name);
-			      $pj_400 = str_replace("." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),"-400x400." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),$pj_unscale);
-			      $pj_image_url = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $pj_400;
+                  $pj_unscale = str_replace("-scaled","",$post->file_name);
+                  
+
+                  //   For Website
+                  $pj_400 = str_replace("." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),"-400x400." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),$pj_unscale);
+			      $pj_image_url = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $pj_400;                  
+                  //   End For Website
+                
+                
+                  //   For Local Server
+                // $pj_400v4a = substr($pj_unscale,0,-4);
+                // $pj_400v4ext = substr($pj_unscale,-4);
+                // $pj_400v4comp = $pj_400v4a."-400x400".$pj_400v4ext;           
+                // $pj_image_url4 = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $pj_400v4comp;
+
+                // End for Local Server
+
 			      $pj_image_lurl = $_SERVER['HTTP_HOST'] . "/shoes/" . $post->post_name .  "/";
        
                         ?> 
@@ -95,8 +109,14 @@
                            <h1> <img class= "likeImage" src="<?php echo get_theme_file_uri('/images/smallHeart.png'); ?>" alt=""> &nbsp <?php print_r(esc_attr($pj_likes)) ; ?></h1>
    
                             </div>                                
-            
+                <!-- For Website  -->
                            <img class="photoImages" src="<?php echo( esc_url($pj_image_url) ); ?>" alt="shoe1">
+               <!-- End for Website  --> 
+ 
+                 <!-- For Local Server  -->
+                 <!-- <img class="photoImages" src="<?php // echo( esc_url($pj_image_url4) ); ?>" alt="shoe1"> -->
+               <!-- End for Local Server  --> 
+
                             <a href="<?php echo esc_url($pj_image_lurl) ?>"  ><button id="testing" type="button" name="button">Vote</button></a>   
                             </div>       
                             <?php
