@@ -5751,8 +5751,7 @@ width: 100%;
  height: auto;
  -o-object-fit: cover;
     object-fit: cover;
- -webkit-transform: rotate(90deg);
-         transform: rotate(90deg);
+ /* transform: rotate(90deg); */
  /* transform: rotate(90deg); */
 
 
