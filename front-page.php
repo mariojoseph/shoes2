@@ -43,7 +43,7 @@
                 <!-- <h1> <img src="<?php echo esc_url(get_theme_file_uri('/images/smallHeart.png')); ?>" alt=""> &nbsp <?php print_r($pj_likes) ; ?></h1> -->
                 </div>
                 <!-- </div> -->
-
+<!--  -->
             </div>
 
             <div class="grid2">
