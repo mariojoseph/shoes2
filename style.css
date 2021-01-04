@@ -1087,7 +1087,7 @@ left: 50%;
 width: 60%;
 background-color: rgba(40, 40, 40, 0.3);
 /* background-image: linear-gradient(to bottom, rgb(96, 97, 99), rgba(177, 180, 184, 0.1)); */
-padding: 0.5rem 1vw;
+padding: 0.5rem 1rem;
 display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
@@ -1150,7 +1150,6 @@ display: flex;
 }
 
 .grid2-image{
-  /* flex: 0 95vw; */
   width: 80%;
   height: 0;
   padding-top:40%;
@@ -1654,8 +1653,6 @@ margin-top: 2rem;
 
   .grid6{
     grid-area: grid6;
-    /* border-top: 1px solid rgb(99, 97, 97); */
-    /* z-index: 45; */
     height: 26rem;
     border-bottom: 1px solid rgb(99, 97, 97);
   }
@@ -1664,11 +1661,14 @@ margin-top: 2rem;
     height: 4rem;
 
   }
+  .grid6-button-case{
+    height: 20px;
+  }
 
   
 }
 
-@media(min-width: 700px) and (max-width:960px){
+/* @media(min-width: 700px) and (max-width:960px){
 
   .container{
     display: grid;
@@ -1695,8 +1695,6 @@ margin-top: 2rem;
   
   }
     .grid1-image-case{
-      /* position: relative; */
-      /* background-color: green; */
       height: 40rem;
       padding-top: 0;
     }
@@ -1709,12 +1707,8 @@ margin-top: 2rem;
     }
 
   .grid2{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     height: 10rem;
     border-bottom: 1px solid silver;
   }
@@ -1748,7 +1742,6 @@ margin-top: 2rem;
   .grid5{
     grid-area: grid5;
     border-top: 1px solid rgb(99, 97, 97);
-    /* z-index: 5; */
     height: 26rem;
     border-right: 1px solid rgb(99, 97, 97);
     border-bottom: 1px solid rgb(99, 97, 97);
@@ -1762,8 +1755,6 @@ margin-top: 2rem;
 
   .grid6{
     grid-area: grid6;
-    /* border-top: 1px solid rgb(99, 97, 97); */
-    /* z-index: 5; */
     height: 26rem;
     border-bottom: 1px solid rgb(99, 97, 97);
   }
@@ -1772,7 +1763,7 @@ margin-top: 2rem;
   }
 
   
-}
+} */
 
 @media(min-width: 960px) and (max-width:1200px){
 
@@ -1843,12 +1834,12 @@ margin-top: 2rem;
  
   .grid4-image{
     height: 29rem;
-    width: 50vw;
+    width: 400px;
   }
 
   .photoImages{
     height: 30rem;
-    width: 50vw;
+    width: 400px;
   }
   
   .grid5{
@@ -2028,13 +2019,13 @@ margin-top: 2rem;
  
   .grid4-image{
     height: 31rem;
-    width: 28vw;
+    width: 475px;
   }
 
 
   .photoImages{
     height: 32rem;
-    width: 29vw;
+    width: 475px;
   }
 
   
