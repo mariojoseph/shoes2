@@ -5815,8 +5815,7 @@ width: 100%;
 
 .main-img img{
   width: 100%;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  /* transform: rotate(90deg); */
 
 }
 
