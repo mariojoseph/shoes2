@@ -82,13 +82,24 @@
 			    ;
 			    foreach ($postss as $post) {
                               $pj_likes = $post->likes;
-			      $pj_unscale = str_replace("-scaled","",$post->file_name);
-                  $pj_400v4 = str_replace(".".pathinfo($pj_unscale,1),"-156x156.". pathinfo($pj_unscale,1),$pj_unscale);
-                  $pj_400v4a = substr($pj_unscale,0,-4);
-                  $pj_400v4ext = substr($pj_unscale,-4);
-                  $pj_400v4comp = $pj_400v4a."-400x400".$pj_400v4ext;           
-			      $pj_image_url4 = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $pj_400v4comp;
-			      $pj_image_lurl4 = $_SERVER['HTTP_HOST'] . "/shoes/" . $post->post_name .  "/";
+                  $pj_unscale = str_replace("-scaled","",$post->file_name);
+                  
+
+                  //   For Website
+                  $pj_400 = str_replace("." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),"-400x400." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),$pj_unscale);
+			      $pj_image_url = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $pj_400;                  
+                  //   End For Website
+                
+                
+                  //   For Local Server
+                // $pj_400v4a = substr($pj_unscale,0,-4);
+                // $pj_400v4ext = substr($pj_unscale,-4);
+                // $pj_400v4comp = $pj_400v4a."-400x400".$pj_400v4ext;           
+                // $pj_image_url4 = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $pj_400v4comp;
+
+                // End for Local Server
+
+			      $pj_image_lurl = $_SERVER['HTTP_HOST'] . "/shoes/" . $post->post_name .  "/";
        
                         ?> 
 
@@ -98,17 +109,16 @@
                            <h1> <img class= "likeImage" src="<?php echo get_theme_file_uri('/images/smallHeart.png'); ?>" alt=""> &nbsp <?php print_r(esc_attr($pj_likes)) ; ?></h1>
    
                             </div>                                
-            
-                           <img class="photoImages" src="<?php echo( esc_url($pj_image_url4) ); ?>" alt="shoe1">
-                            <a href="<?php echo esc_url($pj_image_lurl4) ?>"  ><button id="testing" type="button" name="button">Vote</button></a>   
-                            </div> 
+                <!-- For Website  -->
+                           <img class="photoImages" src="<?php echo( esc_url($pj_image_url) ); ?>" alt="shoe1">
+               <!-- End for Website  --> 
+ 
+                 <!-- For Local Server  -->
+                 <!-- <img class="photoImages" src="<?php // echo( esc_url($pj_image_url4) ); ?>" alt="shoe1"> -->
+               <!-- End for Local Server  --> 
 
-                            <script>
-                                console.log("cara sabe muito")
-                                console.log("changed")
-                                console.log(<?php print_r(json_encode( $pj_400v4comp)) ; ?>)
-                                console.log("cara sabe muito")
-                            </script>      
+                            <a href="<?php echo esc_url($pj_image_lurl) ?>"  ><button id="testing" type="button" name="button">Vote</button></a>   
+                            </div>       
                             <?php
    
                         } ?>
@@ -192,16 +202,11 @@
 		       foreach ($postsd as $post) {
                               $pj_likes = $post->likes;
 			      $pj_unscale = str_replace("-scaled","",$post->file_name);
-                //   $pj_400 = str_replace("." . pathinfo($pj_unscale,1),"-400x400." . pathinfo($pj_unscale,1),$pj_unscale);
-                  
-                  $pj_400v5a = substr($pj_unscale,0,-4);
-                  $pj_400v5ext = substr($pj_unscale,-4);
-                  $pj_400v5comp = $pj_400v5a."-400x400".$pj_400v5ext;  
-
-			      $pj_image_url = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $pj_400v5comp;
+			      $pj_400 = str_replace("." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),"-400x400." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),$pj_unscale);
+			      $pj_image_url = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $pj_400;
 			      $pj_image_lurl = $_SERVER['HTTP_HOST'] . "/shoes/" . $post->post_name .  "/";
 			      $width="400";
-                  $height="400";
+                              $height="400";
                        
                             settype($pj_likes, "integer");
                             if($pj_likes === 0){
