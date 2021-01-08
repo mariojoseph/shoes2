@@ -100,7 +100,7 @@ width: 100%;
 
 .main-img img{
   width: 100%;
-  transform: rotate(180deg);
+  /* transform: rotate(-90deg); */
 
 }
 
