@@ -27,10 +27,10 @@
                         order by cast(m.meta_value as unsigned) desc limit 1
                         ");
 
-                        $pj_likes1 = $posts1[0]->likes;
-			    $pj_image_url1 = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $posts1[0]->file_name;
+                        $pj_likes = $posts1[0]->likes;
+			    $pj_image_url = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $posts1[0]->file_name;
                 ?>
-                <img class="grid1-image-case-sub" src="<?php echo esc_url($pj_image_url1); ?>" longdesc=" <?php esc_attr(print_r($longDesc)) ?> "alt="what the" width="<?php echo esc_attr($width); ?>" height="<?php echo esc_attr($height); ?>" alt="shoe1">
+                <img class="grid1-image-case-sub" src="<?php echo esc_url($pj_image_url); ?>" longdesc=" <?php esc_attr(print_r($longDesc)) ?> "alt="what the" width="<?php echo esc_attr($width); ?>" height="<?php echo esc_attr($height); ?>" alt="shoe1">
 
                 </div>  
                 <div class="grid1-title">
@@ -38,8 +38,8 @@
                 
                 </div>
                 <div class="grid1-likeScore">
-                <h1> <img src="<?php echo esc_url(get_theme_file_uri('/images/smallHeart.png')); ?>" alt=""> &nbsp <?php print_r($pj_likes1) ; ?></h1>
-                <!-- <h1> <img src="<?php echo esc_url(get_theme_file_uri('/images/smallHeart.png')); ?>" alt=""> &nbsp <?php print_r($pj_likes1) ; ?></h1> -->
+                <h1> <img src="<?php echo esc_url(get_theme_file_uri('/images/smallHeart.png')); ?>" alt=""> &nbsp <?php print_r($pj_likes) ; ?></h1>
+                <!-- <h1> <img src="<?php echo esc_url(get_theme_file_uri('/images/smallHeart.png')); ?>" alt=""> &nbsp <?php print_r($pj_likes) ; ?></h1> -->
                 </div>
                 <!-- </div> -->
 
@@ -76,7 +76,7 @@
                              and p.id = m.post_id
                              and m.meta_key  = 'number_of_likes'
                              and p.post_status = 'publish'
-                           order by cast(m.meta_value as unsigned) desc limit 7
+                           order by cast(m.meta_value as unsigned) desc limit 6 offset 1
 			   ")
 			    ;
 			    foreach ($postss as $post) {
