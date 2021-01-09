@@ -12,24 +12,23 @@
    
                     <?php
                     // content from database
-                        //$posts = $wpdb->get_results("SELECT ID, post_title FROM $wpdb->posts WHERE  post_type='pastwinners' ORDER BY comment_count DESC LIMIT 0,4");
-                //         $posts = $wpdb->get_results("
-                //         SELECT m.post_id,
-                //         p.post_name,
-                //         m.meta_value likes,
-                //         (select meta_value from wp_postmeta where meta_key = '_wp_attached_file' and post_id = m2.meta_value) as file_name
-                //         FROM 
-                //           wp_posts p,wp_postmeta as m  
-                //           left join wp_postmeta as m2 on (m.post_id = m2.post_id and m2.meta_key = 'ShoePhoto')
-                //         WHERE p.post_type = 'shoes'
-                //           and p.id = m.post_id
-                //           and m.meta_key  = 'number_of_likes'
-                //           and p.post_status = 'publish'
-                //         order by cast(m.meta_value as unsigned) desc limit 1
-                //         ");
+                        $posts1 = $wpdb->get_results("
+                        SELECT m.post_id,
+                        p.post_name,
+                        m.meta_value likes,
+                        (select meta_value from wp_postmeta where meta_key = '_wp_attached_file' and post_id = m2.meta_value) as file_name
+                        FROM 
+                          wp_posts p,wp_postmeta as m  
+                          left join wp_postmeta as m2 on (m.post_id = m2.post_id and m2.meta_key = 'ShoePhoto')
+                        WHERE p.post_type = 'shoes'
+                          and p.id = m.post_id
+                          and m.meta_key  = 'number_of_likes'
+                          and p.post_status = 'publish'
+                        order by cast(m.meta_value as unsigned) desc limit 1
+                        ");
 
-                //         $pj_likes = $posts[0]->likes;
-			    // $pj_image_url = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $posts[0]->file_name;
+                        $pj_likes = $posts1[0]->likes;
+			    $pj_image_url = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $posts1[0]->file_name;
                 ?>
                 <img class="grid1-image-case-sub" src="<?php echo esc_url($pj_image_url); ?>" longdesc=" <?php esc_attr(print_r($longDesc)) ?> "alt="what the" width="<?php echo esc_attr($width); ?>" height="<?php echo esc_attr($height); ?>" alt="shoe1">
 
