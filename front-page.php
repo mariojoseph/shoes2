@@ -53,7 +53,7 @@
             </div>
 
             <div class="grid3">
-                <h1>This week's TOP Contenders  <i class=" fa fa-caret-down" ></i></h1>
+                <h1>Runners Up  <i class=" fa fa-caret-down" ></i></h1>
               
 
                 
