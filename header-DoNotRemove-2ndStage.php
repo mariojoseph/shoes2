@@ -88,7 +88,7 @@
   <div class="site-header__menu_items">
           <div class="site-header__menu_items__home"><i class="fa fa-home" style="color: yellow;" aria-hidden="true" alt="mario"></i><a href="<?php echo esc_url(site_url(' ')); ?>" class="removeHyphen">&nbsp Home</a></div>
       <div class="site-header__menu_items__rules"><i class="fa fa-heartbeat" aria-hidden="true" style="color: #E75480;"></i><a href="<?php echo esc_url(site_url('rules')); ?>" class="removeHyphen">&nbsp Rules</a></div>
-      <!-- <div class="site-header__menu_items__past"><i class="fa fa-trophy" aria-hidden="true" style="color: goldenrod;"></i><a href="<?php echo esc_url(site_url('past-winners')); ?>" >&nbsp Past Shoe Winners</a></div> -->
+      <div class="site-header__menu_items__past"><i class="fa fa-trophy" aria-hidden="true" style="color: goldenrod;"></i><a href="<?php echo esc_url(site_url('past-winners')); ?>" >&nbsp Past Shoe Winners</a></div>
       <div class="site-header__menu_items__about"><i class="fa fa-bold" style="color: #F5DEB3;" aria-hidden="true" ></i><a href="<?php echo esc_url(site_url('blog')); ?>" >&nbsp Blog</a></div>
       <div class="site-header__menu_items__about"><i class="fa fa-users" style="color: gold;" aria-hidden="true" ></i><a href="<?php echo esc_url(site_url('brands')); ?>" >&nbsp Popular Shoe Types</a></div>
       <div class="site-header__menu_items__about"><i class="fa fa-th-list" style="color: orange;" aria-hidden="true" ></i><a href="<?php echo esc_url(site_url('popular-shoe-sites')); ?>" >&nbsp Popular Shoe Web Sites</a></div>
