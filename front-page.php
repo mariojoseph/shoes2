@@ -134,8 +134,8 @@
             <div class="grid5-content">          
                 <ul>
                     <li>The Rules are to have Fun !!!</li>
-                    <li><p> <u>VOTE</u>&nbsp for your favorite shoes of the week (See this week's contenders below !!!) </p> AND</li>
-                    <li><p> <u>POST</u> your favorite shoes </p> and maybe win the prize of "SHOES OF THE WEEK" !!!</li>
+                    <li><p> <u>VOTE</u>&nbsp for your favorite shoes (See all the contenders above and below !!!) </p> AND</li>
+                    <li><p> <u>POST</u> your favorite shoes to see if you can be the Current Winner</p> </li>
                 </ul>
     
                 <div class="grid5-button">
