@@ -67,9 +67,9 @@
                         <?php
                         $i=1;
 			    foreach ($posts1 as $post) {
-                        if($i==1){
-                            $i++;
-                        } else{
+                        // if($i==1){
+                        //     $i++;
+                        // } else{
                         if($i<8){
                             $i++;
                         $pj_likes = $post->likes;
@@ -117,7 +117,7 @@
     
                             <?php
                             }
-                        }
+                        // }
                         } ?>
 
                 </div>
