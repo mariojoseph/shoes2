@@ -97,7 +97,7 @@
 .blogContent-post-content p{
     font-size: 1.4rem;
     line-height: 2rem;
-    font-family: 'Kalam', cursive;
+    /* font-family: 'Kalam', cursive; */
 }
 
 .blogContent-post a{
@@ -118,3 +118,19 @@
     /* background-color: green;
     border-radius: 2px; */
 }
+
+.btn1 {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 6px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #FFF;
+    border: none;
+    outline: none;
+    margin-right: 1rem;
+    z-index: 100;
+    font-size: .88rem;
+    padding: 2px 5px;
+    font-weight: 300;
+  }
