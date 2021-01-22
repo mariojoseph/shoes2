@@ -107,7 +107,8 @@
 }
 
 .single-blogContent a{
-    color: rgb(150, 150, 137);
+    color: yellow;
+    /* color: rgb(150, 150, 137); */
     background-color: rgb(24, 24, 53);
     font-size: 1rem;
     text-decoration: none;
