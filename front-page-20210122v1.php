@@ -24,7 +24,7 @@
                           and p.id = m.post_id
                           and m.meta_key  = 'number_of_likes'
                           and p.post_status = 'publish'
-                        order by cast(m.meta_value as unsigned) desc
+                        order by cast(m.meta_value as unsigned) desc limit 1
                         ");
 
                         $pj_likes = $posts1[0]->likes;
@@ -65,59 +65,62 @@
                 <div class="grid4-image">
 
                         <?php
-                        $i=1;
-			    foreach ($posts1 as $post) {
-                        if($i==1){
-                            $i++;
-                        } else{
-                        if($i<5){
-                            $i++;
-                        $pj_likes = $post->likes;
-                        $pj_unscale = str_replace("-scaled","",$post->file_name);
-                        
-                          
-                        //   For Website
-                        $pj_400 = str_replace("." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),"-400x400." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),$pj_unscale);
-                        $pj_image_url = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $pj_400;                  
-                        //   End For Website
-                      
-                      
-                        //   For Local Server
-                      // $pj_400v4a = substr($pj_unscale,0,-4);
-                      // $pj_400v4ext = substr($pj_unscale,-4);
-                      // $pj_400v4comp = $pj_400v4a."-400x400".$pj_400v4ext;           
-                      // $pj_image_url4 = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $pj_400v4comp;
-      
-                      // End for Local Server
-      
-                        $pj_image_lurl = $_SERVER['HTTP_HOST'] . "/shoes/" . $post->post_name .  "/";
-             
-                              ?> 
-      
-                                 <div class="shellContainer">
-                                 <div class="grid4-likeScore">
-       
-                                 <h1> <img class= "likeImage" src="<?php echo get_theme_file_uri('/images/smallHeart.png'); ?>" alt=""> &nbsp <?php print_r(esc_attr($pj_likes)) ; ?></h1>
-         
-                                  </div>                                
-                      <!-- For Website  -->
-                                 <img class="photoImages" src="<?php echo( esc_url($pj_image_url) ); ?>" alt="shoe1">
-                     <!-- End for Website  --> 
-       
-                       <!-- For Local Server  -->
-                       <!-- <img class="photoImages" src="<?php // echo( esc_url($pj_image_url4) ); ?>" alt="shoe1"> -->
-                     <!-- End for Local Server  --> 
-      
-                                  <a href="<?php echo esc_url($pj_image_lurl) ?>"  ><button id="testing" type="button" name="button">Vote</button></a>   
-                                 
-                                </div>     
+                        $postss = $wpdb->get_results("
+                           SELECT m.post_id,
+                           p.post_name,
+                           m.meta_value likes,
+                           (select meta_value from wp_postmeta where meta_key = '_wp_attached_file' and post_id = m2.meta_value) as file_name
+                           FROM 
+                             wp_posts p,wp_postmeta as m  
+                             left join wp_postmeta as m2 on (m.post_id = m2.post_id and m2.meta_key = 'ShoePhoto')
+                           WHERE p.post_type = 'shoes'
+                             and p.id = m.post_id
+                             and m.meta_key  = 'number_of_likes'
+                             and p.post_status = 'publish'
+                           order by cast(m.meta_value as unsigned) desc limit 6 offset 1
+			   ")
+			    ;
+			    foreach ($postss as $post) {
+                              $pj_likes = $post->likes;
+                  $pj_unscale = str_replace("-scaled","",$post->file_name);
+                  
 
+                  //   For Website
+                  $pj_400 = str_replace("." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),"-400x400." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),$pj_unscale);
+			      $pj_image_url = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $pj_400;                  
+                  //   End For Website
+                
+                
+                  //   For Local Server
+                // $pj_400v4a = substr($pj_unscale,0,-4);
+                // $pj_400v4ext = substr($pj_unscale,-4);
+                // $pj_400v4comp = $pj_400v4a."-400x400".$pj_400v4ext;           
+                // $pj_image_url4 = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $pj_400v4comp;
 
-                    
-    
+                // End for Local Server
+
+			      $pj_image_lurl = $_SERVER['HTTP_HOST'] . "/shoes/" . $post->post_name .  "/";
+       
+                        ?> 
+
+                           <div class="shellContainer">
+                           <div class="grid4-likeScore">
+ 
+                           <h1> <img class= "likeImage" src="<?php echo get_theme_file_uri('/images/smallHeart.png'); ?>" alt=""> &nbsp <?php print_r(esc_attr($pj_likes)) ; ?></h1>
+   
+                            </div>                                
+                <!-- For Website  -->
+                           <img class="photoImages" src="<?php echo( esc_url($pj_image_url) ); ?>" alt="shoe1">
+               <!-- End for Website  --> 
+ 
+                 <!-- For Local Server  -->
+                 <!-- <img class="photoImages" src="<?php // echo( esc_url($pj_image_url4) ); ?>" alt="shoe1"> -->
+               <!-- End for Local Server  --> 
+
+                            <a href="<?php echo esc_url($pj_image_lurl) ?>"  ><button id="testing" type="button" name="button">Vote</button></a>   
+                            </div>       
                             <?php
-                            }
-                        }
+   
                         } ?>
 
                 </div>
@@ -177,15 +180,27 @@
                     <?php
 
                     // content from database
-                        
-                   $ind = 1;     
-                    //processing
-		       foreach ($posts1 as $post) {
-                 if($ind <5){
-                     $ind++;
-                 } else{
 
-                  $pj_likes = $post->likes;
+                        $postsd = $wpdb->get_results("
+                            SELECT m.post_id,
+                              p.post_name,
+                              m.meta_value likes,
+                              (select meta_value from wp_postmeta where meta_key = '_wp_attached_file' and post_id = m2.meta_value) as file_name
+                            FROM 
+                              wp_posts p,wp_postmeta as m  
+                              left join wp_postmeta as m2 on (m.post_id = m2.post_id and m2.meta_key = 'ShoePhoto')
+                            WHERE p.post_type = 'shoes'
+                              and p.id = m.post_id
+                              and m.meta_key  = 'number_of_likes'
+                              and p.post_status = 'publish'
+                             order by cast(m.meta_value as unsigned) desc limit 100 OFFSET 5
+
+                        ");
+                        
+
+                    //processing
+		       foreach ($postsd as $post) {
+                              $pj_likes = $post->likes;
 			      $pj_unscale = str_replace("-scaled","",$post->file_name);
 			      $pj_400 = str_replace("." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),"-400x400." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),$pj_unscale);
 			      $pj_image_url = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $pj_400;
@@ -220,13 +235,9 @@
                                 </div>
 
                             </div>                
-                            <script>
-                                 console.log(<?php echo(json_encode($i)); ?>)
-                                // console.log(<?php json_encode($i); ?>);
-                            </script>
+        
                                 
                             <?php
-                                             }
                          }
                     ?>
                         
