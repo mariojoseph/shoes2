@@ -40,11 +40,12 @@
     <!-- <nav> -->
 
         <div class="social-icons-list">
-            <div class=""><a href="https://www.facebook.com/haveyouseenmyshoes-112529203843527" class="social-color-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+            <div class=""><a href="https://www.facebook.com/nicky.sambua.58" class="social-color-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
             <div class=""><a href="https://twitter.com/haveyouseenmys7" class="social-color-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
             <div class=""><a href="https://www.youtube.com/channel/UC0586AAuVdLtiFF2WJmRkIg/?guided_help_flow=5" class="social-color-youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a></div>
             <!-- <div class=""><a href="#" class="social-color-facebook"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div> -->
-            <div class=""><a href="https://www.instagram.com/husmshoes/" class="social-color-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+            <div class=""><a href="https://www.instagram.com/husm_shoes/" class="social-color-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+            <div class=""><a href=" https://www.snapchat.com/add/husmshoes" class="social-color-snapchat"><i class="fa fa-snapchat" aria-hidden="true"></i></a></div>
         </div>
 
     <!-- </nav> -->

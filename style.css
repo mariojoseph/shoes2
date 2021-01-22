@@ -6600,6 +6600,8 @@ justify-content: space-between;
 
 .social-color-instagram {background-color: #d8226b}
 
+.social-color-snapchat {background-color: rgb(233, 233, 13)}
+
 .site-footer__grid5{
     grid-area: site-footer__grid5;
     display: -webkit-box;
