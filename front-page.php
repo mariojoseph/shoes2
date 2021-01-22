@@ -28,7 +28,8 @@
                         ");
 
                         $pj_likes = $posts1[0]->likes;
-			    $pj_image_url = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $posts1[0]->file_name;
+                $pj_image_url = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $posts1[0]->file_name;
+                $pj_image_lurl2 = $_SERVER['HTTP_HOST'] . "/shoes/" . $posts1[0]->post_name .  "/";			      $pj_image_lurl = $_SERVER['HTTP_HOST'] . "/shoes/" . $post->post_name .  "/";
                 ?>
                 <img class="grid1-image-case-sub" src="<?php echo esc_url($pj_image_url); ?>" longdesc=" <?php esc_attr(print_r($longDesc)) ?> "alt="what the" width="<?php echo esc_attr($width); ?>" height="<?php echo esc_attr($height); ?>" alt="shoe1">
 
@@ -42,7 +43,7 @@
                 <!-- <h1> <img src="<?php echo esc_url(get_theme_file_uri('/images/smallHeart.png')); ?>" alt=""> &nbsp <?php print_r($pj_likes) ; ?></h1> -->
                 </div>
                 <!-- </div> -->
-                <a href="<?php echo esc_url($pj_image_url) ?>"  ><button id="testing" type="button" name="button">Vote</button></a>   
+                <a href="<?php echo esc_url($pj_image_lurl2) ?>"  ><button id="testing" type="button" name="button">Vote</button></a>   
             </div>
 
             <div class="grid2">
