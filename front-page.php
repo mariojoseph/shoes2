@@ -70,7 +70,7 @@
                         if($i==1){
                             $i++;
                         } else{
-                        if($i<7){
+                        if($i<8){
                             $i++;
                         $pj_likes = $post->likes;
                         $pj_unscale = str_replace("-scaled","",$post->file_name);
@@ -181,7 +181,7 @@
                    $ind = 1;     
                     //processing
 		       foreach ($posts1 as $post) {
-                 if($ind <7){
+                 if($ind <8){
                      $ind++;
                  } else{
 
