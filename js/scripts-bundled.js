@@ -13438,9 +13438,15 @@ function () {
 
       if (document.URL === 'https://www.haveyouseenmyshoes.com/' || document.URL === 'http://localhost:3000/') {
         // Image Click
-        this.imgs = document.querySelectorAll('.imgs img');
+        this.imgs = document.querySelectorAll('.thumbnails-slider img');
         this.imgs.forEach(function (img) {
           img.addEventListener('click', _this.imgClick.bind(_this));
+        }); // Like Image Click
+        // this is to capture the inner part of the image which contains the like
+
+        this.imgLikes = document.querySelectorAll('.like-countF');
+        this.imgLikes.forEach(function (imgLike) {
+          imgLike.addEventListener('click', _this.imgClickLike.bind(_this));
         }); // Closing Image
 
         this.closeImage = document.querySelector('.close');
@@ -13451,12 +13457,49 @@ function () {
       }
     }
   }, {
-    key: "imgClick",
-    value: function imgClick(e) {
+    key: "imgClickLike",
+    value: function imgClickLike(e) {
       var _this2 = this;
 
+      // This function captures the inner like
+      this.imageCollector = e.target.parentNode.parentNode.parentNode; // console.log(e.target.parentNode.parentNode.parentNode);
+
+      var imageCollectorImage = this.imageCollector.firstElementChild; // modal Setup
+
+      this.modal.style.display = 'block';
+      console.log('hallo');
+      console.log(e.target); // // Something Else
+      // this.imgs[0].style.opacity = this.opacity;
+      // // TESTING BEGINNING
+      // var mario = this.imgTotal.getBoundingClientRect();
+
+      this.link = imageCollectorImage.getAttribute('longdesc');
+      this.imgMain.style.display = 'block'; // TESTING END
+      // Reset the opacity
+
+      this.imgs.forEach(function (img) {
+        return img.style.opacity = 1;
+      }); // Change current timage to src of clicked image
+
+      this.current.src = imageCollectorImage.src; // Add fade in class
+
+      this.current.classList.add('fade-in'); // Remove fade-in class after .5 seconds)
+
+      setTimeout(function () {
+        return _this2.current.classList.remove('fade-in');
+      }, 500); // Change the opacity to opacity var 
+
+      e.target.style.opacity = this.opacity;
+    }
+  }, {
+    key: "imgClick",
+    value: function imgClick(e) {
+      var _this3 = this;
+
       // Modaly Set Up
-      this.modal.style.display = 'block'; // // Something Else
+      this.modal.style.display = 'block';
+      console.log('hallo');
+      console.log(e.target); // // Something Else
       // this.imgs[0].style.opacity = this.opacity;
       // // TESTING BEGINNING
       // var mario = this.imgTotal.getBoundingClientRect();
@@ -13474,7 +13517,7 @@ function () {
       this.current.classList.add('fade-in'); // Remove fade-in class after .5 seconds)
 
       setTimeout(function () {
-        return _this2.current.classList.remove('fade-in');
+        return _this3.current.classList.remove('fade-in');
       }, 500); // Change the opacity to opacity var 
 
       e.target.style.opacity = this.opacity;

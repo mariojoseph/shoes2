@@ -42,7 +42,7 @@
                 <!-- <h1> <img src="<?php echo esc_url(get_theme_file_uri('/images/smallHeart.png')); ?>" alt=""> &nbsp <?php print_r($pj_likes) ; ?></h1> -->
                 </div>
                 <!-- </div> -->
-
+                <a href="<?php echo esc_url($pj_image_url) ?>"  ><button id="testing" type="button" name="button">Vote</button></a>   
             </div>
 
             <div class="grid2">
@@ -52,7 +52,7 @@
             </div>
 
             <div class="grid3">
-                <h1>Runners Up  <i class=" fa fa-caret-down" ></i></h1>
+                <h1>Runners Up &nbsp &nbsp<i class=" fa fa-caret-down" ></i></h1>
               
 
                 
@@ -134,8 +134,8 @@
             <div class="grid5-content">          
                 <ul>
                     <li>The Rules are to have Fun !!!</li>
-                    <li><p> <u>VOTE</u>&nbsp for your favorite shoes (See all the contenders above and below !!!) </p> AND</li>
-                    <li><p> <u>POST</u> your favorite shoes to see if you can be the Current Winner</p> </li>
+                    <li><p> <u>POST</u> your favorite shoes to see if you can be the Current Winner</p> AND </li>
+                    <li><p> <u>VOTE</u>&nbsp for your favorite shoes (See all the contenders above and below !!!) </p></li>
                 </ul>
     
                 <div class="grid5-button">
@@ -164,7 +164,7 @@
         </div>                
 
         <div class="grid7">
-        <h1>Rest of the Pack<i class=" fa fa-caret-down" ></i></h1>
+        <h1>Rest of the Pack &nbsp &nbsp<i class=" fa fa-caret-down" ></i></h1>
             </div>
 
     </div>

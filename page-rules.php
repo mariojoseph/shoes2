@@ -17,8 +17,8 @@
             <div class="rulesContent-General">
                 <ul>
                     <li>The Rules are to have Fun !!!</li>
-                    <li><p> <u>VOTE</u>&nbsp for your favorite shoes of the week </p> AND</li>
                     <li><p> <u>POST</u> your favorite shoes </p> and see if you are the "CURRENT WINNER" !!!</li>
+                    <li><p> <u>VOTE</u>&nbsp for your favorite shoes</p> and see them climb up the list</li>
                 </ul>
             </div>
            

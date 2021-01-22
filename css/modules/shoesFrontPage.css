@@ -72,6 +72,24 @@ align-items: center;
   width: 20%;
 }
 
+.grid1 button{
+  text-shadow: 1px 1px 1px rgba(245, 245, 245, 0.12);
+  background-image: linear-gradient(to bottom, red, #7c2424);
+  position: absolute;
+  display: inline-block;
+  padding: 0.4rem;
+  font-size: 0.8rem;
+  z-index: 50;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    width: 100px;
+  border: none;
+  border-radius: 5px;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
 .grid2{
   grid-area: grid2;
   width: 100%;
