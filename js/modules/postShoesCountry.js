@@ -6,6 +6,9 @@ class PostShoesCountry{
     }
 
     events(){
+
+        if(window.location.href ==  'https://www.haveyouseenmyshoes.com/wp-login.php?checkemail=registered'){
+        // if(window.location.href ==  'http://localhost:3000/wp-login.php?checkemail=registered'){
         // this.results = this.obtainJSONFile();
         document.querySelector('#countrylist').addEventListener('keyup', (e) =>{
             // clearing the list before populating again
@@ -22,7 +25,10 @@ class PostShoesCountry{
             this.obtainJSONFile(searchBox);
 
         })
-
+    } else{
+        // console.log('not there yet');
+        // console.log(window.location.href);
+    }
       
 
     }

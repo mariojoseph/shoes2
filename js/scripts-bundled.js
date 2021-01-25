@@ -13991,21 +13991,26 @@ function () {
     value: function events() {
       var _this = this;
 
-      // this.results = this.obtainJSONFile();
-      document.querySelector('#countrylist').addEventListener('keyup', function (e) {
-        // clearing the list before populating again
-        var clearList = document.getElementById('countrylist1');
-        console.log(clearList);
+      if (window.location.href == 'https://www.haveyouseenmyshoes.com/wp-login.php?checkemail=registered') {
+        // if(window.location.href ==  'http://localhost:3000/wp-login.php?checkemail=registered'){
+        // this.results = this.obtainJSONFile();
+        document.querySelector('#countrylist').addEventListener('keyup', function (e) {
+          // clearing the list before populating again
+          var clearList = document.getElementById('countrylist1');
+          console.log(clearList);
 
-        while (clearList.firstChild) {
-          clearList.removeChild(clearList.firstChild);
-        } // Getting value of input and then checking it against JSON file
+          while (clearList.firstChild) {
+            clearList.removeChild(clearList.firstChild);
+          } // Getting value of input and then checking it against JSON file
 
 
-        var searchBox = e.target.value; // console.log(searchBox);
+          var searchBox = e.target.value; // console.log(searchBox);
 
-        _this.obtainJSONFile(searchBox);
-      });
+          _this.obtainJSONFile(searchBox);
+        });
+      } else {// console.log('not there yet');
+        // console.log(window.location.href);
+      }
     }
   }, {
     key: "obtainJSONFile",

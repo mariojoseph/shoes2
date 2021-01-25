@@ -132,8 +132,8 @@
             <div class="grid5-content">          
                 <ul>
                     <li>The Rules are to have Fun !!!</li>
-                    <li><p> <u>POST</u> your favorite shoes to see if you can be the Current Winner</p> AND </li>
-                    <li><p> <u>VOTE</u>&nbsp for your favorite shoes (See all the contenders above and below !!!) </p></li>
+                    <li><p> Press &nbsp<a href="<?php echo esc_url(site_url('post-your-shoes')); ?>" ><i class="fa fa-camera fa-lg" style="color: rgb(244,232,23); width: 2rem;"></i></a>to POST your favorite shoes and see if you can be the Current Winner</p> AND </li>
+                    <li><p> VOTE &nbsp for your favorite shoes (See all the contenders above and below !!!) </p></li>
                 </ul>
     
                 <div class="grid5-button">
@@ -221,7 +221,7 @@
 
                             </div>                
                             <script>
-                                 console.log(<?php echo(json_encode($i)); ?>)
+                                //  console.log(<?php echo(json_encode($i)); ?>)
                                 // console.log(<?php json_encode($i); ?>);
                             </script>
                                 

@@ -26,8 +26,8 @@ if(window.location.href ==  'https://www.haveyouseenmyshoes.com/wp-login.php?che
 
 
 } else{
-    console.log('not there yet');
-    console.log(window.location.href);
+    // console.log('not there yet');
+    // console.log(window.location.href);
 }
 
  
