@@ -564,7 +564,7 @@ body{
 
 .main-header{
   position: relative;
-   display: grid;
+   display: grid !important;
    height:4.0rem;
    grid-template-columns: 5fr 1fr 1fr;
   }
