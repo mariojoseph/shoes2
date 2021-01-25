@@ -132,8 +132,13 @@
         margin: 0rem 1rem;
         color: yellow;
       }
+
+      .popularShoesContent-1-title a{
+        text-decoration: none;
+      }
       .popularShoesContent-1-title h4{
-        font-size: 1rem;
+        font-size: 1.2rem;
+        color: yellow;
       }
 
       .popularShoesContent-1-title img{
@@ -174,7 +179,7 @@
       }
 
       .popularShoesContent-1 a{
-          text-decoration: underline;
+          /* text-decoration: underline; */
           color: orange;
       }
      

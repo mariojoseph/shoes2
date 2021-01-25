@@ -2862,8 +2862,8 @@ width:80%;
  
   grid-template-areas: 
   'rulesContent-General '
-  'rulesContent-Vote'
   'rulesContent-Post'
+  'rulesContent-Vote'
   'rulesContent-End'
   ;
   grid-gap: 20px;
@@ -3154,7 +3154,7 @@ padding-top:30%;
     grid-gap: 0px;
     grid-template-areas: 
     'rulesContent-General rulesContent-General'
-    'rulesContent-Vote rulesContent-Post'
+    'rulesContent-Post rulesContent-Vote '
     'rulesContent-End rulesContent-End'
     ;
     grid-template-columns: 1fr 1fr;
@@ -3186,7 +3186,7 @@ padding-top:30%;
     grid-gap: 0px;
     grid-template-areas: 
     'rulesContent-General rulesContent-General'
-    'rulesContent-Vote rulesContent-Post'
+    'rulesContent-Post rulesContent-Vote '
     'rulesContent-End rulesContent-End'
     ;
     grid-template-columns: 1fr 1fr;
@@ -3704,6 +3704,7 @@ padding-top:30%;
 
 .brands-grid-middle1-p1{
         text-align: justify;
+        font-size: 1.2rem;
     }
 
 .brands-grid-middle1-p2{
@@ -3737,11 +3738,11 @@ padding-top:30%;
 
 .brands-grid-middle2 label p, .brands-grid-middle3 label p , .brands-grid-middle4 label p  {
        display: inline-block;
-       background-color: rgba(245, 245, 245, 0.1);
+       /* background-color: rgba(245, 245, 245, 0.1); */
        padding: 0.5rem;
        font-size: 1.4rem;
        color: white;
-       border: 1px yellow solid;
+       /* border: 1px yellow solid; */
       }
 
 /* Gallery Boxes*/
@@ -3848,13 +3849,15 @@ padding-top:30%;
     .brands-grid-header{
       margin-top: 2rem;
       display: grid;
-      grid-template-columns: 4fr 4fr;
+      grid-template-columns: 7fr 2fr;
+      justify-items: center;
     
     }
   
     .brands-grid-header h1{
-      text-align: right;
+      text-align: unset;
     }
+
   
     .brands-grid-middle{
       
@@ -3902,7 +3905,7 @@ padding-top:30%;
       /* display: inline-block; */
       background-color: rgba(64, 66, 64, 0.4);
       padding: 2px;
-      width: 50%;
+      width: 100%;
       margin: auto;
       color:yellow;
       font-size: 1.3rem;
@@ -4015,7 +4018,8 @@ padding-top:30%;
 }
 
 .single-brandsContent a{
-    color: rgb(150, 150, 137);
+    /* color: rgb(150, 150, 137); */
+    color: yellow;
     background-color: rgb(24, 24, 53);
     font-size: 1rem;
     text-decoration: none;
@@ -4850,8 +4854,13 @@ margin: 0 0;
         color: yellow;
       }
 
+.popularShoesContent-1-title a{
+        text-decoration: none;
+      }
+
 .popularShoesContent-1-title h4{
-        font-size: 1rem;
+        font-size: 1.2rem;
+        color: yellow;
       }
 
 .popularShoesContent-1-title img{
@@ -4890,7 +4899,7 @@ margin: 0 0;
       }
 
 .popularShoesContent-1 a{
-          text-decoration: underline;
+          /* text-decoration: underline; */
           color: orange;
       }
 

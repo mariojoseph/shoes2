@@ -100,7 +100,8 @@
 }
 
 .single-brandsContent a{
-    color: rgb(150, 150, 137);
+    /* color: rgb(150, 150, 137); */
+    color: yellow;
     background-color: rgb(24, 24, 53);
     font-size: 1rem;
     text-decoration: none;

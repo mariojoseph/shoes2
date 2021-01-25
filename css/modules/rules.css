@@ -55,8 +55,8 @@
  
   grid-template-areas: 
   'rulesContent-General '
-  'rulesContent-Vote'
   'rulesContent-Post'
+  'rulesContent-Vote'
   'rulesContent-End'
   ;
   grid-gap: 20px;
@@ -321,7 +321,7 @@ padding-top:30%;
     grid-gap: 0px;
     grid-template-areas: 
     'rulesContent-General rulesContent-General'
-    'rulesContent-Vote rulesContent-Post'
+    'rulesContent-Post rulesContent-Vote '
     'rulesContent-End rulesContent-End'
     ;
     grid-template-columns: 1fr 1fr;
@@ -352,7 +352,7 @@ padding-top:30%;
     grid-gap: 0px;
     grid-template-areas: 
     'rulesContent-General rulesContent-General'
-    'rulesContent-Vote rulesContent-Post'
+    'rulesContent-Post rulesContent-Vote '
     'rulesContent-End rulesContent-End'
     ;
     grid-template-columns: 1fr 1fr;

@@ -75,6 +75,7 @@
 
     .brands-grid-middle1-p1{
         text-align: justify;
+        font-size: 1.2rem;
     }
 
     .brands-grid-middle1-p2{
@@ -112,11 +113,11 @@
  
      .brands-grid-middle2 label p, .brands-grid-middle3 label p , .brands-grid-middle4 label p  {
        display: inline-block;
-       background-color: rgba(245, 245, 245, 0.1);
+       /* background-color: rgba(245, 245, 245, 0.1); */
        padding: 0.5rem;
        font-size: 1.4rem;
        color: white;
-       border: 1px yellow solid;
+       /* border: 1px yellow solid; */
       }
 
   /* Gallery Boxes*/
@@ -221,13 +222,15 @@
     .brands-grid-header{
       margin-top: 2rem;
       display: grid;
-      grid-template-columns: 4fr 4fr;
+      grid-template-columns: 7fr 2fr;
+      justify-items: center;
     
     }
   
     .brands-grid-header h1{
-      text-align: right;
+      text-align: unset;
     }
+
   
     .brands-grid-middle{
       
@@ -276,7 +279,7 @@
       /* display: inline-block; */
       background-color: rgba(64, 66, 64, 0.4);
       padding: 2px;
-      width: 50%;
+      width: 100%;
       margin: auto;
       color:yellow;
       font-size: 1.3rem;

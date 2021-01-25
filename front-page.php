@@ -28,8 +28,8 @@
                         ");
 
                         $pj_likes = $posts1[0]->likes;
-                $pj_image_url = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $posts1[0]->file_name;
-                $pj_image_lurl2 = $_SERVER['HTTP_HOST'] . "/shoes/" . $posts1[0]->post_name .  "/";			      $pj_image_lurl = $_SERVER['HTTP_HOST'] . "/shoes/" . $post->post_name .  "/";
+                $pj_image_url = $_SERVER['HTTPS_HOST'] . "/wp-content/uploads/" . $posts1[0]->file_name;
+                $pj_image_lurl2 = $_SERVER['HTTPS_HOST'] . "/shoes/" . $posts1[0]->post_name .  "/";			      $pj_image_lurl = $_SERVER['HTTPS_HOST'] . "/shoes/" . $post->post_name .  "/";
                 ?>
                 <img class="grid1-image-case-sub" src="<?php echo esc_url($pj_image_url); ?>" longdesc=" <?php esc_attr(print_r($longDesc)) ?> "alt="what the" width="<?php echo esc_attr($width); ?>" height="<?php echo esc_attr($height); ?>" alt="shoe1">
 
@@ -78,7 +78,7 @@
                           
                         //   For Website
                         $pj_400 = str_replace("." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),"-400x400." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),$pj_unscale);
-                        $pj_image_url = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $pj_400;                  
+                        $pj_image_url = $_SERVER['HTTPS_HOST'] . "/wp-content/uploads/" . $pj_400;                  
                         //   End For Website
                       
                       
@@ -90,7 +90,7 @@
       
                       // End for Local Server
       
-                        $pj_image_lurl = $_SERVER['HTTP_HOST'] . "/shoes/" . $post->post_name .  "/";
+                        $pj_image_lurl = $_SERVER['HTTPS_HOST'] . "/shoes/" . $post->post_name .  "/";
              
                               ?> 
       
@@ -188,8 +188,8 @@
                   $pj_likes = $post->likes;
 			      $pj_unscale = str_replace("-scaled","",$post->file_name);
 			      $pj_400 = str_replace("." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),"-400x400." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),$pj_unscale);
-			      $pj_image_url = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $pj_400;
-			      $pj_image_lurl = $_SERVER['HTTP_HOST'] . "/shoes/" . $post->post_name .  "/";
+			      $pj_image_url = $_SERVER['HTTPS_HOST'] . "/wp-content/uploads/" . $pj_400;
+			      $pj_image_lurl = $_SERVER['HTTPS_HOST'] . "/shoes/" . $post->post_name .  "/";
 			      $width="400";
                               $height="400";
                        

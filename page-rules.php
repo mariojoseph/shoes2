@@ -21,25 +21,6 @@
                     <li><p> <u>VOTE</u>&nbsp for your favorite shoes</p> and see them climb up the list</li>
                 </ul>
             </div>
-           
-            <div class="rulesContent-Vote">
-                <h4>Vote for your favorite shoes</h4>
-                <ul>
-                    <li>Choose your favorite shoes from the contenders</li>
-                    <li>Click on the photo and then you can choose on the individual photo page if you want to vote or not</li>
-                    <li class="rulesContent-Vote-Image1">
-                        <div class="rulesContent-Vote-Image1a"></div>
-                    </li>
-                    <li>You can vote by pressing the heart, which will change from hollow to complete.</li>
-                    <li class="rulesContent-Vote-Image2">
-                                    <div class="rulesContent-Vote-Image2a"></div>
-                                    <div class="rulesContent-Vote-Image2b"></div>
-                    </li>
-                    <li>Remember you can only vote once for the same Photo. To ensure this we require you to Log On / Sign In</li>
-                    <!-- <li>The following week we will show the winner of the week</li>  -->
-                </ul>
-            </div>
-
             <div class="rulesContent-Post">
                 <div class="rulesContent-Post-Case">
                 <h4>Post your favorite shoes</h4>
@@ -61,6 +42,26 @@
                     <!-- <li>Your shoes will also be pride of place in our "PAST WINNERS GALLERY"</li> -->
                 </ul>  
             </div>
+                     
+            <div class="rulesContent-Vote">
+                <h4>Vote for your favorite shoes</h4>
+                <ul>
+                    <li>Choose your favorite shoes from the contenders</li>
+                    <li>Click on the photo and then you can choose on the individual photo page if you want to vote or not</li>
+                    <li class="rulesContent-Vote-Image1">
+                        <div class="rulesContent-Vote-Image1a"></div>
+                    </li>
+                    <li>You can vote by pressing the heart, which will change from hollow to complete.</li>
+                    <li class="rulesContent-Vote-Image2">
+                                    <div class="rulesContent-Vote-Image2a"></div>
+                                    <div class="rulesContent-Vote-Image2b"></div>
+                    </li>
+                    <li>Remember you can only vote once for the same Photo. To ensure this we require you to Log On / Sign In</li>
+                    <!-- <li>The following week we will show the winner of the week</li>  -->
+                </ul>
+            </div>
+
+
 
             <div class="rulesContent-End">
                     <h2>Good Luck and have Fun !!!!</h2>
