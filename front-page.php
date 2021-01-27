@@ -28,8 +28,10 @@
                         ");
 
                         $pj_likes = $posts1[0]->likes;
+                        $pj_likes1 = number_format($pj_likes);
                 $pj_image_url = $_SERVER['HTTPS_HOST'] . "/wp-content/uploads/" . $posts1[0]->file_name;
-                $pj_image_lurl2 = $_SERVER['HTTPS_HOST'] . "/shoes/" . $posts1[0]->post_name .  "/";			      $pj_image_lurl = $_SERVER['HTTPS_HOST'] . "/shoes/" . $post->post_name .  "/";
+                $pj_image_lurl2 = $_SERVER['HTTPS_HOST'] . "/shoes/" . $posts1[0]->post_name .  "/";			     
+                 $pj_image_lurl = $_SERVER['HTTPS_HOST'] . "/shoes/" . $post->post_name .  "/";
                 ?>
                 <img class="grid1-image-case-sub" src="<?php echo esc_url($pj_image_url); ?>" longdesc=" <?php esc_attr(print_r($longDesc)) ?> "alt="what the" width="<?php echo esc_attr($width); ?>" height="<?php echo esc_attr($height); ?>" alt="shoe1">
 
@@ -39,8 +41,8 @@
                 
                 </div>
                 <div class="grid1-likeScore">
-                <h1> <img src="<?php echo esc_url(get_theme_file_uri('/images/smallHeart.png')); ?>" alt=""> &nbsp <?php print_r($pj_likes) ; ?></h1>
-                <!-- <h1> <img src="<?php echo esc_url(get_theme_file_uri('/images/smallHeart.png')); ?>" alt=""> &nbsp <?php print_r($pj_likes) ; ?></h1> -->
+                <h1> <img src="<?php echo esc_url(get_theme_file_uri('/images/smallHeart.png')); ?>" alt=""> &nbsp <?php print_r($pj_likes1) ; ?></h1>
+                <!-- <h1> <img src="<?php echo esc_url(get_theme_file_uri('/images/smallHeart.png')); ?>" alt=""> &nbsp <?php print_r($pj_likes1) ; ?></h1> -->
                 </div>
                 <!-- </div> -->
                 <a href="<?php echo esc_url($pj_image_lurl2) ?>"  ><button id="testing" type="button" name="button">Vote</button></a>   
@@ -73,6 +75,7 @@
                         if($i<8){
                             $i++;
                         $pj_likes = $post->likes;
+                        $pj_likes1 = number_format($pj_likes);
                         $pj_unscale = str_replace("-scaled","",$post->file_name);
                         
                           
@@ -97,7 +100,7 @@
                                  <div class="shellContainer">
                                  <div class="grid4-likeScore">
        
-                                 <h1> <img class= "likeImage" src="<?php echo get_theme_file_uri('/images/smallHeart.png'); ?>" alt=""> &nbsp <?php print_r(esc_attr($pj_likes)) ; ?></h1>
+                                 <h1> <img class= "likeImage" src="<?php echo get_theme_file_uri('/images/smallHeart.png'); ?>" alt=""> &nbsp <?php print_r(esc_attr($pj_likes1)) ; ?></h1>
          
                                   </div>                                
                       <!-- For Website  -->
@@ -186,6 +189,7 @@
                  } else{
 
                   $pj_likes = $post->likes;
+                  $pj_likes1 = number_format($pj_likes);
 			      $pj_unscale = str_replace("-scaled","",$post->file_name);
 			      $pj_400 = str_replace("." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),"-400x400." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),$pj_unscale);
 			      $pj_image_url = $_SERVER['HTTPS_HOST'] . "/wp-content/uploads/" . $pj_400;
@@ -210,7 +214,7 @@
                                 <span class="like-boxF" data-exists="<?php esc_attr(print_r($existStatusF)) ?>">
                                     <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
                                     <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
-                                    <span class="like-countF"><?php esc_attr(print_r($pj_likes)) ?></span>
+                                    <span class="like-countF"><?php esc_attr(print_r($pj_likes1)) ?></span>
                   
                                 </span>
 
