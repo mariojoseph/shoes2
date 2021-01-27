@@ -53,6 +53,7 @@
       top: 3rem;
       left: 50%;
       color: white;
+      font-family: 'Pacifico', cursive;
       transform: translate(-50%, -50%);
       margin-bottom: 2rem;
   }
@@ -68,12 +69,13 @@
       margin: 20px;
       /* border: 1px solid silver; */
       color: white;
-
+      font-family: 'Kalam', cursive;
 
   }
 
   .blogContent-post{
       padding: 1rem 0rem 1rem 1rem;
+    
   }
 
   .blogContent-post-title{
