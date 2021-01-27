@@ -174,7 +174,7 @@ function shoe_draft(){
                     $userNotes = new WP_Query(array(
                         'post_type' => 'shoes',
                         'posts_per_page' => -1,
-                        'post_status' => 'published'
+                        'post_status' => 'draft'
                         // 'author' => get_current_user_id()
                     ));
                     
