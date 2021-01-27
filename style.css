@@ -1853,7 +1853,7 @@ margin-top: 2rem;
     height: 29rem;
   }
  
-  .grid4-image{
+  /* .grid4-image{
     height: 29rem;
     width: 400px;
   }
@@ -1861,6 +1861,16 @@ margin-top: 2rem;
   .photoImages{
     height: 30rem;
     width: 400px;
+  } */
+  .grid4-image{
+    height: 31rem;
+    width: 475px;
+  }
+
+
+  .photoImages{
+    height: 32rem;
+    width: 475px;
   }
   
   .grid5{
