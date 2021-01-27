@@ -2870,7 +2870,7 @@ width:80%;
 .rulesContent{
   grid-area:'rulesContent';
   display: grid;
- 
+  font-family: 'Kalam', cursive;
   grid-template-areas: 
   'rulesContent-General '
   'rulesContent-Post'
@@ -3696,6 +3696,7 @@ padding-top:30%;
       color: white;
       background-color: #151e2d;
       color: white;
+      font-family: 'Kalam', cursive;
       /* overflow: hidden; */
       grid-area:'brands-grid-middle';
       display: grid;
@@ -4787,7 +4788,7 @@ margin: 0 0;
 .popularShoesMessage{
     padding: 1rem;
     grid-area: popularShoesMessage;
-  
+    font-family: 'Kalam', cursive;
   }
 
 .popularShoesMessage ul{
@@ -4809,6 +4810,7 @@ margin: 0 0;
 .popularShoesMessage h2{
     text-align: center;
     color: white
+    
   }
 
 /* popularShoes CONTENT */
@@ -4818,6 +4820,7 @@ margin: 0 0;
     display: grid;
     grid-template-columns: '1fr';
     color: white;
+    font-family: 'Kalam', cursive;
   }
 
 /* popularShoes CONTENT - GENERAL */
@@ -4923,6 +4926,7 @@ margin: 0 0;
   display: grid;
   grid-template-columns: '1fr';
   color: white;
+  font-family: 'Kalam', cursive;
 }
 
 /* popularShoes CONTENT - GENERAL */
@@ -5026,6 +5030,7 @@ margin: 0 0;
   display: grid;
   grid-template-columns: '1fr';
   color: white;
+  font-family: 'Kalam', cursive;
 }
 
 /* popularShoes CONTENT - GENERAL */

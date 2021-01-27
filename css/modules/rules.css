@@ -52,7 +52,7 @@
 .rulesContent{
   grid-area:'rulesContent';
   display: grid;
- 
+  font-family: 'Kalam', cursive;
   grid-template-areas: 
   'rulesContent-General '
   'rulesContent-Post'

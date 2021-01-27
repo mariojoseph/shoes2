@@ -55,7 +55,7 @@
   .popularShoesMessage{
     padding: 1rem;
     grid-area: popularShoesMessage;
-  
+    font-family: 'Kalam', cursive;
   }
   
   
@@ -78,6 +78,7 @@
   .popularShoesMessage h2{
     text-align: center;
     color: white
+    
   }
   
 
@@ -90,6 +91,7 @@
     display: grid;
     grid-template-columns: '1fr';
     color: white;
+    font-family: 'Kalam', cursive;
   }
 
   
@@ -193,6 +195,7 @@
   display: grid;
   grid-template-columns: '1fr';
   color: white;
+  font-family: 'Kalam', cursive;
 }
 
 
@@ -293,6 +296,7 @@
   display: grid;
   grid-template-columns: '1fr';
   color: white;
+  font-family: 'Kalam', cursive;
 }
 
 
