@@ -45,7 +45,7 @@
               while($brand->have_posts()){
                   $brand->the_post();
                   $brandImage = get_field('brandphoto');
-                  $brandImageSize = 'thumbnail';
+                  $brandImageSize = 'Slider';
                   $brandImage1 = wp_get_attachment_image_src($brandImage['id'], $brandImageSize);
                      ?>
                                 <div class="brands-thumbnails-slider">
@@ -87,7 +87,7 @@
               while($brand->have_posts()){
                   $brand->the_post();
                   $brandImage = get_field('brandphoto');
-                  $brandImageSize = 'thumbnail';
+                  $brandImageSize = 'Slider';
                   $brandImage1 = wp_get_attachment_image_src($brandImage['id'], $brandImageSize);
                      ?>
                                 <div class="brands-thumbnails-slider">
@@ -129,7 +129,7 @@
               while($brand->have_posts()){
                   $brand->the_post();
                   $brandImage = get_field('brandphoto');
-                  $brandImageSize = 'thumbnail';
+                  $brandImageSize = 'Slider';
                   $brandImage1 = wp_get_attachment_image_src($brandImage['id'], $brandImageSize);
                      ?>
                                 <div class="brands-thumbnails-slider">

@@ -4,9 +4,8 @@
 */
 
 function shoes_add_admin_page(){
-
-    add_menu_page('ShoePost Control', 'ShoePending', 'manage_options', 'shoePostCtrl', 'shoe_post_ctrl','dashicons-camera-alt' ,110);
-    add_menu_page('Shoes Published', 'ShoePublished', 'manage_options', 'shoePublished', 'shoe_published','dashicons-camera' ,120);
+    add_menu_page('Shoes Published', 'ShoePublished', 'manage_options', 'shoePublished', 'shoe_published','dashicons-camera' ,110);
+    add_menu_page('ShoePost Control', 'ShoePending', 'manage_options', 'shoePostCtrl', 'shoe_post_ctrl','dashicons-camera-alt' ,120);
     add_menu_page('Shoes Draft', 'ShoeDraft', 'manage_options', 'shoeDraft', 'shoe_draft','dashicons-video-alt' ,130);
 }
 
