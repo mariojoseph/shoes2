@@ -44,7 +44,6 @@
 
         <img id="preview-image" src="<?php echo esc_url(get_theme_file_uri('/images/FrontPageShoes.jpg')); ?>" alt="heart">
 
-
     </div>
 
     <!-- <div class="post-grid1-right-top-posted">

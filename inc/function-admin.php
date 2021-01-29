@@ -4,15 +4,20 @@
 */
 
 function shoes_add_admin_page(){
-    add_menu_page('Shoes Published', 'ShoePublished', 'manage_options', 'shoePublished', 'shoe_published','dashicons-camera' ,110);
-    add_menu_page('ShoePost Control', 'ShoePending', 'manage_options', 'shoePostCtrl', 'shoe_post_ctrl','dashicons-camera-alt' ,120);
-    add_menu_page('Shoes Draft', 'ShoeDraft', 'manage_options', 'shoeDraft', 'shoe_draft','dashicons-video-alt' ,130);
+    add_menu_page('Shoe Post Control', 'ShoePostCtrl', 'manage_options', 'shoePostCtrl', 'shoe_published',get_template_directory_uri().'2/images/admin/AdminLogo.png' ,2); 
+    add_submenu_page('shoePostCtrl','Shoe Post Control', 'Shoe Published', 'manage_options', 'shoePostCtrl', 'shoe_published');
+    // add_submenu_page('shoePostCtrl','Shoes Published', 'Shoe Published', 'manage_options', 'shoePublished', 'shoe_published');
+    add_submenu_page('shoePostCtrl','Shoes Pending', 'Shoe Pending', 'manage_options', 'shoePending', 'shoe_pending');
+    add_submenu_page('shoePostCtrl','Shoes Draft', 'Shoe Draft', 'manage_options', 'shoeDraft', 'shoe_draft');
 }
 
 add_action('admin_menu', 'shoes_add_admin_page');
 
+function shoe_post_ctrl(){
+    // Generation of Admin Page
+}
 
-function shoe_post_ctrl(){ 
+function shoe_pending(){ 
     
         ?>
 
