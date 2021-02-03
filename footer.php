@@ -41,7 +41,8 @@
 
         <div class="social-icons-list">
             <div class=""><a href="https://www.facebook.com/nicky.sambua.58" class="social-color-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
-            <div class=""><a href="https://twitter.com/haveyouseenmys7" class="social-color-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+            <div class=""><a href="https://twitter.com/HaveUSeenMySho1?ref_src=twsrc%5Etfw" class="social-color-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+            <!-- <div><a href="https://twitter.com/HaveUSeenMySho1?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false"><i class="fa fa-twitter" aria-hidden="true"></i></a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div> -->
             <div class=""><a href="https://www.youtube.com/channel/UC0586AAuVdLtiFF2WJmRkIg/?guided_help_flow=5" class="social-color-youtube"><i class="fa fa-youtube" aria-hidden="true"></i></a></div>
             <!-- <div class=""><a href="#" class="social-color-facebook"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div> -->
             <div class=""><a href="https://www.instagram.com/husm_shoes/" class="social-color-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
