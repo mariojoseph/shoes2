@@ -14106,7 +14106,7 @@ function () {
       var heart = (0, _jquery.default)(e.target);
       console.log("testing beginning");
       var shoeNumber = currentLikeBox.attr('data-shoe');
-      var shoeNumberStr = shoeNumber.substring(26);
+      var shoeNumberStr = shoeNumber.substring(34);
       console.log(shoeNumberStr); // console.log(currentLikeBox.attr('data-posted'));
 
       console.log("testing end"); // Week and Year Declaration
