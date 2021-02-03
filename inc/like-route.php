@@ -79,7 +79,7 @@ return testing;
 
 function createLike($data) {
 
-
+print_r('we are in the create like post');
 
   if (is_user_logged_in()) {
     $shoe = sanitize_text_field($data['shoeId']);

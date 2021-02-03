@@ -14105,8 +14105,12 @@ function () {
       var currentLikeBox = (0, _jquery.default)(e.target).closest(".like-box");
       var heart = (0, _jquery.default)(e.target);
       console.log("testing beginning");
-      var shoeNumber = currentLikeBox.attr('data-shoe');
-      var shoeNumberStr = shoeNumber.substring(34);
+      var shoeNumber = currentLikeBox.attr('data-shoePost1'); // For localhost
+      // var shoeNumberStr = shoeNumber.substring(16);
+      // For Server
+
+      var shoeNumberStr = shoeNumber.substring(34); // Console Logging
+
       console.log(shoeNumberStr); // console.log(currentLikeBox.attr('data-posted'));
 
       console.log("testing end"); // Week and Year Declaration
@@ -14116,8 +14120,9 @@ function () {
         var messageColor = "orange";
         this.messageResponse(message, messageColor);
         setTimeout(function () {
+          // For localhost
           // window.location.href = "http://localhost:3000/wp-login.php?redirect_to="+shoeNumberStr;
-          // window.location.href = "http://localhost:3000/wp-login.php?redirect_to="+shoeNumber;
+          // For Server
           window.location.href = "https://www.haveyouseenmyshoes.com/wp-login.php?redirect_to=" + shoeNumberStr;
           ;
         }, 2000);
