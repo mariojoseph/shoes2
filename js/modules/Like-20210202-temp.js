@@ -15,14 +15,13 @@ class Like {
     var currentLikeBox = $(e.target).closest(".like-box");
     var heart = $(e.target);
 
-    console.log("testing beginning");
-    var shoeNumber = currentLikeBox.attr('data-shoe');
-    var shoeNumberStr = shoeNumber.substring(26);
-    console.log(shoeNumberStr);
+    // console.log("testing beginning");
+
+    // console.log(currentLikeBox.attr('data-exists'));
     // console.log(currentLikeBox.attr('data-posted'));
 
 
-    console.log("testing end");
+    // console.log("testing end");
 
     // Week and Year Declaration
 
@@ -33,9 +32,8 @@ class Like {
       this.messageResponse(message, messageColor);
 
       setTimeout(function(){ 
-        // window.location.href = "http://localhost:3000/wp-login.php?redirect_to="+shoeNumberStr;
-        // window.location.href = "http://localhost:3000/wp-login.php?redirect_to="+shoeNumber;
-        window.location.href = "https://www.haveyouseenmyshoes.com/wp-login.php?redirect_to="+shoeNumberStr;
+        // window.location.href = "http://localhost:3000/wp-login.php";
+        window.location.href = "https://www.haveyouseenmyshoes.com/wp-login.php";
         ; }, 2000);
 
 

@@ -14103,19 +14103,22 @@ function () {
     key: "ourClickDispatcher",
     value: function ourClickDispatcher(e) {
       var currentLikeBox = (0, _jquery.default)(e.target).closest(".like-box");
-      var heart = (0, _jquery.default)(e.target); // console.log("testing beginning");
-      // console.log(currentLikeBox.attr('data-exists'));
-      // console.log(currentLikeBox.attr('data-posted'));
-      // console.log("testing end");
-      // Week and Year Declaration
+      var heart = (0, _jquery.default)(e.target);
+      console.log("testing beginning");
+      var shoeNumber = currentLikeBox.attr('data-shoe');
+      var shoeNumberStr = shoeNumber.substring(26);
+      console.log(shoeNumberStr); // console.log(currentLikeBox.attr('data-posted'));
+
+      console.log("testing end"); // Week and Year Declaration
 
       if (currentLikeBox.attr('data-logged') == 'no') {
         var message = "You need to Log In / Sign In to Vote";
         var messageColor = "orange";
         this.messageResponse(message, messageColor);
         setTimeout(function () {
-          // window.location.href = "http://localhost:3000/wp-login.php";
-          window.location.href = "https://www.haveyouseenmyshoes.com/wp-login.php";
+          // window.location.href = "http://localhost:3000/wp-login.php?redirect_to="+shoeNumberStr;
+          // window.location.href = "http://localhost:3000/wp-login.php?redirect_to="+shoeNumber;
+          window.location.href = "https://www.haveyouseenmyshoes.com/wp-login.php?redirect_to=" + shoeNumberStr;
           ;
         }, 2000);
         return null;
