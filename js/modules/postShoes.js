@@ -58,7 +58,7 @@ class PostShoes {
       
       setTimeout(function(){ 
         window.location.href = "https://www.haveyouseenmyshoes.com/wp-login.php?redirect_to=post-your-shoes";
-        // window.location.href = "http://localhost:3000/wp-login.php";
+        // window.location.href = "http://localhost:3000/wp-login.php?redirect_to=post-your-shoes";
         ; }, 2000);
 
     } else{
