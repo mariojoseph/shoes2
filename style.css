@@ -5539,24 +5539,20 @@ margin: 0 0;
 
 .single-blog-cover{
     position: relative;
-    background: black;
+    background: #151e2d;
     width: 100%;
     z-index: 2;
 }
 
 .single-blog-image{
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; */
-    position: relative;
-    /* padding-top:40%; */
+
+    /* position: relative;
+  
     background-image: url('images/blog3.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: repeat;
-    /* z-index: 23; */
-    z-index: 3;
+    z-index: 3; */
 
 }
 
@@ -5566,7 +5562,7 @@ margin: 0 0;
     left: 0;
     width: 100%;
 
-    background-color: rgb(14, 13, 13, 0.6);
+    background-color: #151e2d;
 }
 
 .single-blogTitle{
