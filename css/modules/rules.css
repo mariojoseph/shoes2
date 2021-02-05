@@ -106,7 +106,8 @@
   justify-content: space-between;
   /* padding: 0.5rem 0rem; */
   margin: 0rem 1rem;
-  border: 1px solid rgb(65, 63,2, 63);
+  border: solid 1px rgb(110, 107, 74);
+  /* border: 1px solid rgb(65, 63,2, 63); */
   background-color: rgba(48, 47, 47, 0.8);
   /* background-color: grey; */
 }
@@ -128,7 +129,8 @@
 .rulesContent-Vote h4 {
   text-align: center;
   display: block;
-  border: 1px solid rgb(65, 63, 63);
+  border: solid 1px rgb(110, 107, 74);
+  /* border: 1px solid rgb(65, 63, 63); */
   /* background-color: rgba(65, 63, 63, 0.2); */
   background-color: rgba(48, 47, 47, 0.8);
   margin: 0rem 1rem;
@@ -138,7 +140,8 @@
 .rulesContent-Vote ul, .rulesContent-Post ul{
  
   display: block;
-  border: 1px solid rgb(48, 47, 47);
+  /* border: 1px solid rgb(48, 47, 47); */
+  border: solid 1px rgb(110, 107, 74);
   background-color: rgba(48, 47, 47, 0.6);
   padding-top: 1rem;
   padding-bottom: 1rem;

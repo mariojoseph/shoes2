@@ -129,7 +129,8 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        border: 1px solid rgb(65, 63, 63);
+        border: solid 1px rgb(110, 107, 74);
+        /* border: 1px solid rgb(65, 63, 63); */
         background-color: rgba(48, 47, 47, 0.8);
         margin: 0rem 1rem;
         color: yellow;
@@ -139,7 +140,7 @@
         text-decoration: none;
       }
       .popularShoesContent-1-title h4{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         color: yellow;
       }
 
@@ -154,7 +155,8 @@
       .popularShoesContent-1 ul{
        
         display: block;
-        border: 1px solid rgb(48, 47, 47);
+        /* border: 1px solid rgb(48, 47, 47); */
+        border: solid 1px rgb(110, 107, 74);
         background-color: rgba(48, 47, 47, 0.6);
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -233,7 +235,7 @@
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      border: 1px solid rgb(65, 63, 63);
+      border: solid 1px rgb(110, 107, 74);
       background-color: rgba(48, 47, 47, 0.8);
       margin: 0rem 1rem;
       color: yellow;
@@ -254,7 +256,7 @@
     .popularShoesContent-2 ul{
      
       display: block;
-      border: 1px solid rgb(48, 47, 47);
+      border: solid 1px rgb(110, 107, 74);
       background-color: rgba(48, 47, 47, 0.6);
       padding-top: 1rem;
       padding-bottom: 1rem;
@@ -334,7 +336,7 @@
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      border: 1px solid rgb(65, 63, 63);
+      border: solid 1px rgb(110, 107, 74);
       background-color: rgba(48, 47, 47, 0.8);
       margin: 0rem 1rem;
       color: yellow;
@@ -355,7 +357,7 @@
     .popularShoesContent-3 ul{
      
       display: block;
-      border: 1px solid rgb(48, 47, 47);
+      border: solid 1px rgb(110, 107, 74);
       background-color: rgba(48, 47, 47, 0.6);
       padding-top: 1rem;
       padding-bottom: 1rem;
@@ -433,7 +435,7 @@
     .popularShoesContent-4-title {
       display: flex;
       justify-content: space-evenly;
-      border: 1px solid rgb(65, 63, 63);
+      border: solid 1px rgb(110, 107, 74);
       background-color: rgba(48, 47, 47, 0.8);
       margin: 0rem 1rem;
       color: yellow;
@@ -453,7 +455,7 @@
     .popularShoesContent-4 ul{
      
       display: block;
-      border: 1px solid rgb(48, 47, 47);
+      border: solid 1px rgb(110, 107, 74);
       background-color: rgba(48, 47, 47, 0.6);
       padding-top: 1rem;
       padding-bottom: 1rem;
@@ -531,7 +533,7 @@
     .popularShoesContent-5-title {
       display: flex;
       justify-content: space-evenly;
-      border: 1px solid rgb(65, 63, 63);
+      border: solid 1px rgb(110, 107, 74);
       background-color: rgba(48, 47, 47, 0.8);
       margin: 0rem 1rem;
       color: yellow;
@@ -551,7 +553,7 @@
     .popularShoesContent-5 ul{
      
       display: block;
-      border: 1px solid rgb(48, 47, 47);
+      border: solid 1px rgb(110, 107, 74);
       background-color: rgba(48, 47, 47, 0.6);
       padding-top: 1rem;
       padding-bottom: 1rem;
