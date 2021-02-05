@@ -212,8 +212,8 @@
                                 <div class="thumbnails-slider-like">
                                      
                                 <span class="like-boxF" data-exists="<?php esc_attr(print_r($existStatusF)) ?>">
-                                    <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
-                                    <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
+                                    <i class="fa fa-heart-o fa-x" aria-hidden="true"></i>
+                                    <i class="fa fa-heart fa-x" aria-hidden="true"></i>
                                     <span class="like-countF"><?php esc_attr(print_r($pj_likes1)) ?></span>
                   
                                 </span>
