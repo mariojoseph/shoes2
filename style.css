@@ -6214,8 +6214,8 @@ opacity: 1;
         top: 0%;
         left: 55%; */
         font-size:1.4rem;
-        padding: 1rem;
-        margin-bottom: 0.9rem;
+        padding: 0rem 1rem;
+        margin-bottom: 1.0rem;
         /* margin-top:-0.7rem; */
         /* display: inline-block;
       left: float; */
@@ -6234,7 +6234,7 @@ opacity: 1;
         -webkit-transition: all .4s ease-out;
         transition: all .4s ease-out;
         color: red;
-        position: absolute;
+        /* position: absolute; */
         /* margin-left: 47%; */
 
         /* left: 10px; */
@@ -6247,7 +6247,7 @@ opacity: 1;
         -webkit-transition: all .4s ease-out;
         transition: all .4s ease-out;
         color: red;
-        position: absolute;
+        /* position: absolute; */
         visibility: hidden;
         /* transform: scale(.2); */
         opacity: 0;
