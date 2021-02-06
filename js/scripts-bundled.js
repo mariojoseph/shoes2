@@ -14293,25 +14293,28 @@ function () {
   _createClass(GMap, [{
     key: "new_map",
     value: function new_map($el) {
-      // var
-      var $markers = $el.find('.marker'); // vars
+      if (document.URL === 'https://www.haveyouseenmyshoes.com/location' || document.URL === 'http://localhost:3000/location') {
+        console.log("cug code working"); // var
 
-      var args = {
-        zoom: 16,
-        center: new google.maps.LatLng(0, 0),
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-      }; // create map
+        var $markers = $el.find('.marker'); // vars
 
-      var map = new google.maps.Map($el[0], args); // add a markers reference
+        var args = {
+          zoom: 16,
+          center: new google.maps.LatLng(0, 0),
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }; // create map
 
-      map.markers = [];
-      var that = this; // add markers
+        var map = new google.maps.Map($el[0], args); // add a markers reference
 
-      $markers.each(function () {
-        that.add_marker((0, _jquery.default)(this), map);
-      }); // center map
+        map.markers = [];
+        var that = this; // add markers
 
-      this.center_map(map);
+        $markers.each(function () {
+          that.add_marker((0, _jquery.default)(this), map);
+        }); // center map
+
+        this.center_map(map);
+      }
     } // end new_map
 
   }, {

@@ -7,6 +7,10 @@ function LikeRoutes() {
     'callback' => 'createLike'
   ));
 
+  // register_rest_route('shoes/v1', 'manageLike', array(
+  //   'methods' => 'POST',
+  //   'callback' => 'updateShoesPost'
+  // ));
 
   register_rest_route('shoes/v1', 'manageLike', array(
     'methods' => 'DELETE',
@@ -14,6 +18,63 @@ function LikeRoutes() {
   ));
 }
 
+// function createLike($data) {
+
+//   echo "<pre>";
+// 	print_r($_POST);
+// 	echo "</pre>";
+
+
+
+// 	echo "<pre>";
+// 	print_r($_FILES);
+//   echo "</pre>";
+
+
+// }
+
+function updateShoesPost($data) {
+
+
+
+ 
+  $selector = 'field_5cebf5c256328';
+  $post_id = sanitize_text_field($data['shoeId']);
+  $previous_like_value = get_field($selector, $post_id);
+  $value = $previous_like_value+1;
+ //  $post_id = $data['shoeId'];
+
+ 
+  update_field($selector, $value, $post_id);
+ 
+
+
+// AGAIN
+//  $selector = 'field_5cebf5ef56329';
+//  $value = 'Amy';
+// //  $post_id = $data['shoeId'];
+// $post_id = '400';
+
+//  update_field($selector, $value, $post_id);
+
+// print_r($post_id);
+
+// AGAIN END
+
+// NORMAL APPROACH 
+// Update post 37
+// $my_post = array();
+// $my_post['ID'] = 400;
+// $my_post['post_title'] = 'mark';
+// // Update the post into the database
+// wp_update_post( $my_post );
+
+// print_r($my_post['post_title']);
+
+// NORMAL APPROACH END
+
+return testing;
+}
 
 
 function createLike($data) {

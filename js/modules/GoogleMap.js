@@ -11,7 +11,9 @@ class GMap {
   } // end constructor
 
   new_map( $el ) {
-
+    if(document.URL === 'https://www.haveyouseenmyshoes.com/location' || document.URL === 'http://localhost:3000/location' ){
+    
+    console.log("cug code working");
     // var
     var $markers = $el.find('.marker');
 
@@ -38,6 +40,7 @@ class GMap {
     // center map
     this.center_map( map );
   
+  }
     } // end new_map
 
     add_marker( $marker, map ) {

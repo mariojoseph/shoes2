@@ -28,7 +28,7 @@
     <h2>Below is the location of the seller, thanks to the contribution of <?php echo get_field('postedBy', $maybe); ?></h2>
   
     <?php
-    // $testing = get_field('shoeLocation');
+
     $postInfo  = new WP_Query(array(
       'post_type' => array('shoes', 'pastwinners'),
       'p' => $maybe
@@ -49,7 +49,7 @@
     wp_reset_postdata();
    ?>
 
-    <script>console.log(`please work ${testing}`)</script>
+  
   </div>
 
 
