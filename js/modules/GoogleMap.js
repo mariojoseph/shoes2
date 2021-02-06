@@ -11,10 +11,13 @@ class GMap {
   } // end constructor
 
   new_map( $el ) {
+    var currentURL = window.location.pathname;
+    console.log(currentURL)
+    // create a regular expression that will match all pages under user
 
     console.log("stopped at the entrance");
-    if(document.URL === 'https://www.haveyouseenmyshoes.com/location' || document.URL === 'http://localhost:3000/location' ){
-    
+    if(currentURL === '/location/'){
+      // if(document.URL === 'https://www.haveyouseenmyshoes.com/location.*' || document.URL === 'http://localhost:3000/location/?variable=1086' ){
     console.log("cug code working");
     // var
     var $markers = $el.find('.marker');
