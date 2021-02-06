@@ -11,6 +11,8 @@ class GMap {
   } // end constructor
 
   new_map( $el ) {
+
+    console.log("stopped at the entrance");
     if(document.URL === 'https://www.haveyouseenmyshoes.com/location' || document.URL === 'http://localhost:3000/location' ){
     
     console.log("cug code working");
