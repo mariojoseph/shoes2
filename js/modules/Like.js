@@ -13,7 +13,6 @@ class Like {
   // methods
   ourClickDispatcher(e) {
 
-    console.log('inside');
     var currentLikeBox = $(e.target).closest(".like-boxM");
     var heart = $(e.target);
 
@@ -97,13 +96,13 @@ class Like {
             setTimeout(function(){ 
             location.reload();
             ; }, 100);
-          console.log(response);
+          // console.log(response);
         },
         error: (response) => {
           if(response.responseText == "You have reached your note limit.") {
             $(".note-limit-message").addClass("active");
           }
-          console.log(response);
+          // console.log(response);
         }
       });
    
