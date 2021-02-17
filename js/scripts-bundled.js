@@ -14096,71 +14096,47 @@ function () {
   _createClass(Like, [{
     key: "events",
     value: function events() {
-      (0, _jquery.default)(".like-box-inner-side").on("click", this.ourClickDispatcher.bind(this));
+      (0, _jquery.default)(".like-boxM-inner").one("click", this.ourClickDispatcher.bind(this));
     } // methods
 
   }, {
     key: "ourClickDispatcher",
     value: function ourClickDispatcher(e) {
-      var currentLikeBox = (0, _jquery.default)(e.target).closest(".like-box");
+      console.log('inside');
+      var currentLikeBox = (0, _jquery.default)(e.target).closest(".like-boxM");
       var heart = (0, _jquery.default)(e.target);
-      console.log("testing beginning");
-      var shoeNumber = currentLikeBox.attr('data-shoePost1'); // For localhost
-      // var shoeNumberStr = shoeNumber.substring(16);
-      // For Server
-
-      var shoeNumberStr = shoeNumber.substring(34); // Console Logging
-
-      console.log(shoeNumberStr); // console.log(currentLikeBox.attr('data-posted'));
-
-      console.log("testing end"); // Week and Year Declaration
 
       if (currentLikeBox.attr('data-logged') == 'no') {
         var message = "You need to Log In / Sign In to Vote";
         var messageColor = "orange";
         this.messageResponse(message, messageColor);
         setTimeout(function () {
-          // For localhost
-          // window.location.href = "http://localhost:3000/wp-login.php?redirect_to="+shoeNumberStr;
-          // For Server
-          window.location.href = "https://www.haveyouseenmyshoes.com/wp-login.php?redirect_to=" + shoeNumberStr;
+          // window.location.href = "http://localhost:3000/wp-login.php";
+          window.location.href = "https://www.haveyouseenmyshoes.com/wp-login.php";
           ;
-        }, 2000);
+        }, 100);
         return null;
       } else {
         if (currentLikeBox.attr('data-exists') == 'yes') {
           var _message = "You have deleted your vote. You can now vote again";
           var _messageColor = "green";
           this.messageResponse(_message, _messageColor);
-          heart.removeClass('fa-heart');
-          heart.addClass('fa-heart-o');
-          heart.css('visibility', 'visible');
-          heart.css('opacity', 1);
-          this.deleteLike(currentLikeBox);
-          setTimeout(function () {
-            location.reload();
-            ;
-          }, 2000);
+          this.deleteLike(currentLikeBox); // setTimeout(function(){ 
+          //   location.reload();
+          //   ; }, 10);
         } else {
           var _message2 = "Thank You for Voting";
           var _messageColor2 = "green";
           this.messageResponse(_message2, _messageColor2);
-          heart.removeClass('fa-heart-o');
-          heart.addClass('fa-heart');
-          heart.css('visibility', 'visible');
-          heart.css('opacity', 1);
-          this.createLike(currentLikeBox);
-          setTimeout(function () {
-            location.reload();
-            ;
-          }, 2000);
+          this.createLike(currentLikeBox); // setTimeout(function(){ 
+          //   location.reload();
+          //   ; }, 10);
         }
       }
     }
   }, {
     key: "createLike",
     value: function createLike(currentLikeBox) {
-      //  const $professorId = currentLikeBox.data('professor');   
       var $shoeId = {
         'shoeId': currentLikeBox.data('shoe'),
         'userId': currentLikeBox.data('user'),
@@ -14170,7 +14146,7 @@ function () {
         'status': 'publish'
       };
       console.log("checking");
-      console.log($shoeId); //  alert(currentLikeBox.data('professor'));
+      console.log($shoeId);
 
       _jquery.default.ajax({
         beforeSend: function beforeSend(xhr) {
@@ -14178,19 +14154,14 @@ function () {
         },
         url: shoeData.root_url + '/wp-json/shoes/v1/manageLike',
         type: 'POST',
+        dataType: 'text',
         data: $shoeId,
-        // extra Info
-        // cache: false,
-        // processData: false,
-        // contentType: false,
-        // extra Info End
         success: function success(response) {
-          currentLikeBox.attr('data-exists', 'yes');
-          var likeCount = parseInt(currentLikeBox.find(".like-count").html(), 10);
-          likeCount++;
-          currentLikeBox.find(".like-count").html(likeCount);
-          currentLikeBox.attr("data-like", response);
-          alert("stevie pass");
+          // location.reload();
+          setTimeout(function () {
+            location.reload();
+            ;
+          }, 100);
           console.log(response);
         },
         error: function error(response) {
@@ -14200,8 +14171,7 @@ function () {
 
           console.log(response);
         }
-      }); // location.reload();
-
+      });
     }
   }, {
     key: "deleteLike",
@@ -14218,20 +14188,20 @@ function () {
         },
         url: shoeData.root_url + '/wp-json/shoes/v1/manageLike',
         data: $like,
+        dataType: 'text',
         type: 'DELETE',
         success: function success(response) {
-          currentLikeBox.attr('data-exists', 'no');
-          var likeCount = parseInt(currentLikeBox.find(".like-count").html(), 10);
-          likeCount--;
-          currentLikeBox.find(".like-count").html(likeCount);
-          currentLikeBox.attr("data-like", '');
+          // location.reload();
+          setTimeout(function () {
+            location.reload();
+            ;
+          }, 100);
           console.log(response);
         },
         error: function error(response) {
           console.log(response);
         }
-      }); // location.reload();
-
+      });
     }
   }, {
     key: "messageResponse",
@@ -14295,13 +14265,12 @@ function () {
     value: function new_map($el) {
       var currentURL = window.location.pathname;
       console.log(currentURL); // create a regular expression that will match all pages under user
-
-      console.log("stopped at the entrance");
+      // console.log("stopped at the entrance");
 
       if (currentURL === '/location/') {
         // if(document.URL === 'https://www.haveyouseenmyshoes.com/location.*' || document.URL === 'http://localhost:3000/location/?variable=1086' ){
-        console.log("cug code working"); // var
-
+        // console.log("cug code working");
+        // var
         var $markers = $el.find('.marker'); // vars
 
         var args = {

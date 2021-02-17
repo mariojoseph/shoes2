@@ -15,10 +15,10 @@ class GMap {
     console.log(currentURL)
     // create a regular expression that will match all pages under user
 
-    console.log("stopped at the entrance");
+    // console.log("stopped at the entrance");
     if(currentURL === '/location/'){
       // if(document.URL === 'https://www.haveyouseenmyshoes.com/location.*' || document.URL === 'http://localhost:3000/location/?variable=1086' ){
-    console.log("cug code working");
+    // console.log("cug code working");
     // var
     var $markers = $el.find('.marker');
 

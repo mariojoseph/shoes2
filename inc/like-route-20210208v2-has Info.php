@@ -74,6 +74,7 @@ print_r('we are in the create like post');
     die("Only logged in users can create a like.");
   }
 
+  return "we have money";
 }
 
 function deleteLike($data) {

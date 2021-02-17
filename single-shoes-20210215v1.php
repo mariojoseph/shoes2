@@ -73,10 +73,10 @@
               
            ?>
            
-          <span class="like-boxM" data-like="<?php echo esc_attr($likeCount->posts[0]->ID);?>" data-shoePost1="<?php the_permalink();?>" data-shoe="<?php the_ID();?>" data-exists="<?php echo esc_attr($existStatus);?>" data-user="<?php echo esc_attr($author) ?>" data-logged="<?php echo esc_attr($UserLogged) ?>" data-posted="<?php echo esc_attr($alreadyPosted)  ?>" data-date="<?php echo esc_attr($date)  ?>" data-week="<?php echo esc_attr($week)?>" data-year="<?php echo esc_attr($year)  ?>">
-              <div class="like-boxM-inner">
-              <i class="fa like-boxM-inner-side fa-heart fa-2x" aria-hidden="true"></i>
-              <i class="fa like-boxM-inner-side-o fa-heart-o fa-2x" aria-hidden="true"></i>
+          <span class="like-box" data-like="<?php echo esc_attr($likeCount->posts[0]->ID);?>" data-shoePost1="<?php the_permalink();?>" data-shoe="<?php the_ID();?>" data-exists="<?php echo esc_attr($existStatus);?>" data-user="<?php echo esc_attr($author) ?>" data-logged="<?php echo esc_attr($UserLogged) ?>" data-posted="<?php echo esc_attr($alreadyPosted)  ?>" data-date="<?php echo esc_attr($date)  ?>" data-week="<?php echo esc_attr($week)?>" data-year="<?php echo esc_attr($year)  ?>">
+              <div class="like-box-inner">
+              <i class="fa like-box-inner-side fa-heart-o fa-2x" aria-hidden="true"></i>
+              <i class="fa like-box-inner-side fa-heart fa-2x" aria-hidden="true"></i>
               </div>
               </span>
     

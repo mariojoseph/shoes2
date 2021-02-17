@@ -7,10 +7,6 @@ function LikeRoutes() {
     'callback' => 'createLike'
   ));
 
-  // register_rest_route('shoes/v1', 'manageLike', array(
-  //   'methods' => 'POST',
-  //   'callback' => 'updateShoesPost'
-  // ));
 
   register_rest_route('shoes/v1', 'manageLike', array(
     'methods' => 'DELETE',
@@ -33,19 +29,19 @@ function LikeRoutes() {
 
 // }
 
-function updateShoesPost($data) {
+// function updateShoesPost($data) {
 
 
 
  
-  $selector = 'field_5cebf5c256328';
-  $post_id = sanitize_text_field($data['shoeId']);
-  $previous_like_value = get_field($selector, $post_id);
-  $value = $previous_like_value+1;
- //  $post_id = $data['shoeId'];
+//   $selector = 'field_5cebf5c256328';
+//   $post_id = sanitize_text_field($data['shoeId']);
+//   $previous_like_value = get_field($selector, $post_id);
+//   $value = $previous_like_value+1;
+//  //  $post_id = $data['shoeId'];
 
  
-  update_field($selector, $value, $post_id);
+//   update_field($selector, $value, $post_id);
  
 
 
@@ -73,8 +69,8 @@ function updateShoesPost($data) {
 
 // NORMAL APPROACH END
 
-return testing;
-}
+// return testing;
+// }
 
 
 function createLike($data) {

@@ -165,7 +165,7 @@
         </div>                
 
         <div class="grid7">
-        <h1>Rest of the Pack &nbsp &nbsp<i class=" fa fa-caret-down" ></i></h1>
+        <h1>All Contestants &nbsp &nbsp<i class=" fa fa-caret-down" ></i></h1>
             </div>
 
     </div>
@@ -184,9 +184,9 @@
                    $ind = 1;     
                     //processing
 		       foreach ($posts1 as $post) {
-                 if($ind <8){
-                     $ind++;
-                 } else{
+                //  if($ind <8){
+                //      $ind++;
+                //  } else{
 
                   $pj_likes = $post->likes;
                   $pj_likes1 = number_format($pj_likes);
@@ -212,8 +212,8 @@
                                 <div class="thumbnails-slider-like">
                                      
                                 <span class="like-boxF" data-exists="<?php esc_attr(print_r($existStatusF)) ?>">
-                                    <i class="fa fa-heart-o fa-x" aria-hidden="true"></i>
-                                    <i class="fa fa-heart fa-x" aria-hidden="true"></i>
+                                    <i class="like-boxF-inner-side-o fa fa-heart-o fa-x" aria-hidden="true"></i>
+                                    <i class="like-boxF-inner-side fa fa-heart fa-x" aria-hidden="true"></i>
                                     <span class="like-countF"><?php esc_attr(print_r($pj_likes1)) ?></span>
                   
                                 </span>
@@ -230,7 +230,7 @@
                             </script>
                                 
                             <?php
-                                             }
+                                            //  }
                          }
                     ?>
                         
