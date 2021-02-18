@@ -184,7 +184,7 @@
                    $ind = 1;     
                     //processing
 		       foreach ($posts1 as $post) {
-                 if($ind <1){
+                 if($ind < 8){
                      $ind++;
                  } else{
 
