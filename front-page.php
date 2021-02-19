@@ -220,7 +220,7 @@
 
                                 </div>
                                 <div class="thumbnails-container">
-                                     <a href="<?php echo esc_url($pj_image_lurl) ;?>"><button>Vote</button> </a>  
+                                     <a href='<?php echo esc_url($pj_image_lurl) ;?> '><button>Vote</button> </a>  
                                 </div>
 
                             </div>                
