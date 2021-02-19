@@ -225,8 +225,7 @@
 
                             </div>                
                             <script>
-                                //  console.log(<?php echo(json_encode($i)); ?>)
-                                // console.log(<?php json_encode($i); ?>);
+                                 console.log(<?php echo(json_encode($pj_image_lurl)); ?>)
                             </script>
                                 
                             <?php
