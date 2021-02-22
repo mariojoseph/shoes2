@@ -42,7 +42,7 @@
     <div class="post-grid1-left-bottom-photo">
         <p>Photo Chosen </p>
 
-        <img id="preview-image" src="<?php echo esc_url(get_theme_file_uri('/images/FrontPageShoes.jpg')); ?>" alt="heart">
+        <img id="preview-image" src="<?php echo esc_url(get_theme_file_uri('/images/FrontPageShoes2.png')); ?>" alt="heart">
 
     </div>
 
