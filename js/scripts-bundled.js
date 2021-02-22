@@ -13924,10 +13924,9 @@ function () {
 
 
         var shoesModal = document.querySelector('.post-shoes-modal');
-        shoesModal.style.display = 'block';
-        setTimeout(function () {
-          shoesModal.style.display = 'none';
-        }, 4000);
+        shoesModal.style.display = 'block'; // setTimeout(function(){
+        // shoesModal.style.display = 'none';
+        // }, 4000);
       }
     }
   }, {
@@ -14102,7 +14101,6 @@ function () {
   }, {
     key: "ourClickDispatcher",
     value: function ourClickDispatcher(e) {
-      console.log('inside');
       var currentLikeBox = (0, _jquery.default)(e.target).closest(".like-boxM");
       var heart = (0, _jquery.default)(e.target);
 
@@ -14161,15 +14159,13 @@ function () {
           setTimeout(function () {
             location.reload();
             ;
-          }, 100);
-          console.log(response);
+          }, 100); // console.log(response);
         },
         error: function error(response) {
           if (response.responseText == "You have reached your note limit.") {
             (0, _jquery.default)(".note-limit-message").addClass("active");
-          }
+          } // console.log(response);
 
-          console.log(response);
         }
       });
     }
