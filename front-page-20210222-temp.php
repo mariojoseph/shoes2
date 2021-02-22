@@ -11,7 +11,6 @@
 
    
                     <?php
-                         $urlA = print_r(get_site_url());
                     // content from database
                         $posts1 = $wpdb->get_results("
                         SELECT m.post_id,
@@ -68,7 +67,6 @@
                 <div class="grid4-image">
 
                         <?php
-                      
                         $i=1;
 			    foreach ($posts1 as $post) {
                         if($i==1){
@@ -80,12 +78,12 @@
                         $pj_likes1 = number_format($pj_likes);
                         $pj_unscale = str_replace("-scaled","",$post->file_name);
                         
-                     
+                        $urlA = get_site_url();
 
-                        if($urlA == '//localhost:3000')
+                        if($urlA != '//localhost:3000')
                         {
-                            // $pj_400a = str_replace(".".pathinfo($pj_unscale,1),"-400x400.". pathinfo($pj_unscale,1),$pj_unscale);
-                            // $pj_400ab = "2020/10/rachmat-agung-FOm-8f9hntQ-unsplash-400x400.jpg";
+                            $pj_400ab = str_replace(".".pathinfo($pj_unscale,1),"-400x400.". pathinfo($pj_unscale,1),$pj_unscale);
+                            $pj_400ab = "2020/10/rachmat-agung-FOm-8f9hntQ-unsplash-400x400.jpg";
                             // $pj_400 = str_replace("." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),"-400x400." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),$pj_unscale);
                             // print_r($pj_400);
                             // print_r('jimmy start');
@@ -94,13 +92,7 @@
                             // print_r('jimmy start');
                             // $pj_400v4a = substr($pj_unscale,0,-4);
                             // $pj_400v4ext = substr($pj_unscale,-4);
-                            // $pj_400 = $pj_400v4a."-400x400".$pj_400v4ext;  
-
-                            $pj_400a = substr($pj_unscale,0,-4);
-                            $pj_400b = substr($pj_unscale,-4);
-                            $pj_400ab = $pj_400a."-400x400".$pj_400b;           
-                        
-          
+                            // $pj_400 = $pj_400v4a."-400x400".$pj_400v4ext;           
                             $pj_image_url = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $pj_400ab;
                             $pj_image_lurl = $_SERVER['HTTP_HOST'] . "/shoes/" . $post->post_name .  "/";
                         } else {
@@ -140,7 +132,7 @@
                      <!-- End for Local Server  --> 
       
                                   <a href="<?php echo esc_url($pj_image_lurl) ?>"  ><button id="testing" type="button" name="button">Vote</button></a>   
-                                  
+                                 
                                 </div>     
 
 
@@ -219,28 +211,11 @@
                   $pj_likes = $post->likes;
                   $pj_likes1 = number_format($pj_likes);
 			      $pj_unscale = str_replace("-scaled","",$post->file_name);
-
-                  if($urlA == '//localhost:3000')
-                  {
-                    $pj_400a = substr($pj_unscale,0,-4);
-                    $pj_400b = substr($pj_unscale,-4);
-                    $pj_400ab = $pj_400a."-400x400".$pj_400b;           
-                
-    
-                    $pj_image_url = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $pj_400ab;
-                    $pj_image_lurl = $_SERVER['HTTP_HOST'] . "/shoes/" . $post->post_name .  "/";
-
-                  } else{
-
-                    $pj_400 = str_replace("." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),"-400x400." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),$pj_unscale);
-                    $pj_image_url = $_SERVER['HTTPS_HOST'] . "/wp-content/uploads/" . $pj_400;
-                    $pj_image_lurl = $_SERVER['HTTPS_HOST'] . "/shoes/" . $post->post_name .  "/";
-                      
-                  }
-
-
+			      $pj_400 = str_replace("." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),"-400x400." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),$pj_unscale);
+			      $pj_image_url = $_SERVER['HTTPS_HOST'] . "/wp-content/uploads/" . $pj_400;
+			      $pj_image_lurl = $_SERVER['HTTPS_HOST'] . "/shoes/" . $post->post_name .  "/";
 			      $width="400";
-                  $height="400";
+                              $height="400";
                        
                             settype($pj_likes, "integer");
                             if($pj_likes === 0){
