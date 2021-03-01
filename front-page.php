@@ -208,7 +208,7 @@
                     <?php
 
                     // content from database
-                      print_r($urlA);  
+                        
                    $ind = 1;     
                     //processing
 		       foreach ($posts1 as $post) {
