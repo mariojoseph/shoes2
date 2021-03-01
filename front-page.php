@@ -206,6 +206,7 @@
             <div class="imgs">
             
                     <?php
+                                     print_r('cruddy');
 
                     // content from database
                         
