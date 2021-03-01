@@ -235,10 +235,6 @@
                     $pj_400 = str_replace("." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),"-400x400." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),$pj_unscale);
                     $pj_image_url = $_SERVER['HTTPS_HOST'] . "/wp-content/uploads/" . $pj_400;
                     $pj_image_lurl = $_SERVER['HTTPS_HOST'] . "/shoes/" . $post->post_name .  "/";
-                    
-                    print_r('cruddy');
-                    print_r($pj_image_url);
-                    print_r($pj_image_lurl);
                   }
 
 
