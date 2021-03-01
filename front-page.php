@@ -230,10 +230,6 @@
                     $pj_image_url = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $pj_400ab;
                     $pj_image_lurl = $_SERVER['HTTP_HOST'] . "/shoes/" . $post->post_name .  "/";
 
-                    print_r('stevie');
-                    print_r($pj_image_url);
-                    print_r($pj_image_lurl);
-
                   } else{
 
                     $pj_400 = str_replace("." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),"-400x400." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),$pj_unscale);
