@@ -222,14 +222,10 @@
 
                   if($urlA == '//localhost:3000')
                   {
-                    $pj_400a = substr($pj_unscale,0,-4);
-                    $pj_400b = substr($pj_unscale,-4);
-                    $pj_400ab = $pj_400a."-400x400".$pj_400b;           
-                
-    
-                    $pj_image_url = $_SERVER['HTTP_HOST'] . "/wp-content/uploads/" . $pj_400ab;
-                    $pj_image_lurl = $_SERVER['HTTP_HOST'] . "/shoes/" . $post->post_name .  "/";
-
+                    $pj_400 = str_replace("." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),"-400x400." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),$pj_unscale);
+                    $pj_image_url = $_SERVER['HTTPS_HOST'] . "/wp-content/uploads/" . $pj_400;
+                    $pj_image_lurl = $_SERVER['HTTPS_HOST'] . "/shoes/" . $post->post_name .  "/";
+                    
                   } else{
 
                     $pj_400 = str_replace("." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),"-400x400." . pathinfo($pj_unscale,'PATHINFO_EXTENSION'),$pj_unscale);
