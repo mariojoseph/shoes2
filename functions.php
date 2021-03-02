@@ -387,4 +387,14 @@ function data_fetch(){
 
 // BEGINNING OF TESTING EMAIL CHANGES
 
+add_filter( 'wp_mail_from_name', 'custom_wpse_mail_from_name' );
+function custom_wpse_mail_from_name( $original_email_from ) {
+    return 'Other worldly';
+}
+
+add_filter( 'wp_mail_from', 'custom_wpse_mail_from' );
+function custom_wpse_mail_from( $original_email_address ) {
+    return 'tp@gmail.com';
+}
+
 // END OF TESTING EMAIL CHANGES
