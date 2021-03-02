@@ -387,14 +387,10 @@ function data_fetch(){
 
 // BEGINNING OF TESTING EMAIL CHANGES
 
-add_filter( 'wp_mail_from_name', 'custom_wpse_mail_from_name' );
-function custom_wpse_mail_from_name( $original_email_from ) {
-    return 'Other worldly';
-}
-
-add_filter( 'wp_mail_from', 'custom_wpse_mail_from' );
-function custom_wpse_mail_from( $original_email_address ) {
-    return 'tp@gmail.com';
-}
+add_filter('wp_mail','mail_subject', 10,1);
+function mail_subject($args){
+    $args['subject'] .= ' - Site Name';
+    return $args;
+  }
 
 // END OF TESTING EMAIL CHANGES
