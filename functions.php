@@ -387,12 +387,4 @@ function data_fetch(){
 
 // BEGINNING OF TESTING EMAIL CHANGES
 
-add_filter(  'gettext',  'register_text'  );
-add_filter(  'ngettext',  'register_text'  );
-function register_text( $translated ) {
-     $translated = str_ireplace(  'Username or Email Address',  'CARA SABE MUITO',  $translated );
-     return $translated;
-}
-
-
 // END OF TESTING EMAIL CHANGES
