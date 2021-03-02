@@ -208,7 +208,7 @@
                     <?php
 
                     // content from database
-                        
+                    $urlA1 = print_r(get_site_url());
                    $ind = 1;     
                     //processing
 		       foreach ($posts1 as $post) {
@@ -220,7 +220,7 @@
                   $pj_likes1 = number_format($pj_likes);
 			      $pj_unscale = str_replace("-scaled","",$post->file_name);
 
-                  if($urlA == '//localhost:3000')
+                  if($urlA1 == '//localhost:3000')
                   {
                     $pj_400a = substr($pj_unscale,0,-4);
                     $pj_400b = substr($pj_unscale,-4);
