@@ -390,7 +390,7 @@ function data_fetch(){
 add_filter('wp_mail','mail_subject', 10,1);
 function mail_subject($args){
     // $args['subject'] .= ' - Site Name';
-    $args['subject'] = 'Site Name';
+    $args['subject'] = 'Have You Seen My Shoes Registration';
     return $args;
   }
 
