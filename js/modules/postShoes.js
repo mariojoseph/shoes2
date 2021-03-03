@@ -307,10 +307,10 @@ setTimeout(() =>{
   const shoesModal = document.querySelector('.post-shoes-modal');
   shoesModal.style.display = 'block';
 
-  // setTimeout(function(){
-  // shoesModal.style.display = 'none';
+  setTimeout(function(){
+  shoesModal.style.display = 'none';
 
-  // }, 4000);
+  }, 8000);
 
     
   }

@@ -13924,9 +13924,10 @@ function () {
 
 
         var shoesModal = document.querySelector('.post-shoes-modal');
-        shoesModal.style.display = 'block'; // setTimeout(function(){
-        // shoesModal.style.display = 'none';
-        // }, 4000);
+        shoesModal.style.display = 'block';
+        setTimeout(function () {
+          shoesModal.style.display = 'none';
+        }, 8000);
       }
     }
   }, {
