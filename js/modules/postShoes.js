@@ -78,13 +78,13 @@ class PostShoes {
 
 
     // allowed MIME types
-    var mime_types = [ 'image/jpeg', 'image/png', 'image/gif', 'imagejpg', 'image/tiff' ];
+    var mime_types = [ 'image/jpeg', 'image/png', 'image/gif', 'image/jpg', 'image/tiff' ];
     
     // validate MIME
     if(mime_types.indexOf(file.type) == -1) {
       // alert('Error : Incorrect file type');
      
-      self.readImageFile("Incorrect File Type. Only JPG and PNG accepted");
+      self.readImageFile("Incorrect File Type. Only Image File Types accepted");
       return;
     }
 

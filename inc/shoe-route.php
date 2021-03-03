@@ -113,6 +113,7 @@ function createShoe($data) {
         'jpg|jpeg' => 'image/jpeg',
         'gif' => 'image/gif',
         'png' => 'image/png',
+        'tiff' => 'image/tiff'
       ));
       if ($file_type['type']) {
         print_r("programend 3 ");
