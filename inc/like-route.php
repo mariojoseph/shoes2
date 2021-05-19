@@ -15,7 +15,7 @@ function LikeRoutes() {
 
 function createLike($data) {
 
-print_r('we are in the create like post');
+print_r('we are in the create like post baby');
 
   if (is_user_logged_in()) {
     $shoe = sanitize_text_field($data['shoeId']);
@@ -23,7 +23,7 @@ print_r('we are in the create like post');
     $dateId = sanitize_text_field($data['dateId']);
     $weekId = sanitize_text_field($data['weekId']);
     $yearId = sanitize_text_field($data['yearId']);
-    print_r($data);
+    // print_r($data);
 
    print_r("why is it not printing the rest");
 
@@ -33,17 +33,23 @@ print_r('we are in the create like post');
     $selector1 = 'liked';
     $post_id1 = sanitize_text_field($data['shoeId']);
     $previous_like_value1 = get_field($selector1, $post_id1);
-    print_r($previous_like_value1);
+    
     print_r('did it work');
     echo "</pre>";
   //  START OF SHOE UPDATE
    $selector = 'field_5cebf5c256328';
    $post_id = sanitize_text_field($data['shoeId']);
    $previous_like_value = get_field($selector, $post_id);
-   $value = $previous_like_value+1;
+   $previous_like_value1= (int) str_replace(',', '', $previous_like_value);
+   $value = $previous_like_value1 + 1;
   //  $post_id = $data['shoeId'];
- 
-  
+  echo "</pre>";
+  print_r($previous_like_value1);
+  print_r(gettype($previous_like_value1));
+  echo "</pre>";
+  echo "</pre>";
+  print_r($value);
+  echo "</pre>";
    update_field($selector, $value, $post_id);
 
       if (get_post_type($shoe) == 'shoes') {
@@ -85,7 +91,8 @@ function deleteLike($data) {
     $selector = 'field_5cebf5c256328';
     $post_id = sanitize_text_field($data['shoeId']);
     $previous_like_value = get_field($selector, $post_id);
-    $value = $previous_like_value - 1;
+    $previous_like_value1= (int) str_replace(',', '', $previous_like_value);
+    $value = $previous_like_value1 - 1;
    //  $post_id = $data['shoeId'];
   
    
